@@ -1,0 +1,32 @@
+[
+  {
+    "document_id": "DOC-001",
+    "path": "inputs/01_w2.pdf",
+    "sha256": "99aacad453112c5340671ca2af94175703ccbbcd0c7f5725894ff4027838160b",
+    "page_count": 1
+  },
+  {
+    "document_id": "DOC-002",
+    "path": "inputs/02_1099_int.pdf",
+    "sha256": "2162250cb39d81bd1f38b5857d0b970c607c5e2464d95da3e5f454fdd1814cc6",
+    "page_count": 1
+  },
+  {
+    "document_id": "DOC-003",
+    "path": "inputs/03_k1_1065.pdf",
+    "sha256": "f1721042ccc48dc6ff625374e51e836ba1878580909616ec28bd277871abf592",
+    "page_count": 1
+  },
+  {
+    "document_id": "DOC-004",
+    "path": "inputs/04_form_8959.pdf",
+    "sha256": "b9fb22618022d45a169429ce64a713ea8a6bd2d2ae6ab9cf74f2389e49770c27",
+    "page_count": 1
+  },
+  {
+    "document_id": "DOC-005",
+    "path": "inputs/05_ca_sdi_summary.pdf",
+    "sha256": "1b922b2a15d0732d353945190ae6b7c3fc21cc8d6fc576cc387a12708e69cdd8",
+    "page_count": 1
+  }
+]

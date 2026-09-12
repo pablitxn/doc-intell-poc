@@ -1,0 +1,137 @@
+{
+  "case_id": "SYNTHETIC-2025-001",
+  "tax_year": 2025,
+  "tasks": [
+    {
+      "task_id": "extract_doc_001",
+      "documents": [
+        "inputs/01_w2.pdf"
+      ],
+      "instruction": "Extract the requested fields. Cite document_id, page and box for every value. Return monetary amounts as decimal strings with two fractional digits; percentages are percentage points (1.20 means 1.20%).",
+      "fields": {
+        "wages": "money",
+        "federal_income_tax_withheld": "money",
+        "social_security_wages": "money",
+        "social_security_tax_withheld": "money",
+        "medicare_wages": "money",
+        "medicare_tax_withheld": "money",
+        "retirement_deferral_D": "money",
+        "retirement_plan": "boolean",
+        "employee_sdi_withheld": "money",
+        "state": "string",
+        "state_wages": "money",
+        "state_income_tax_withheld": "money"
+      }
+    },
+    {
+      "task_id": "extract_doc_002",
+      "documents": [
+        "inputs/02_1099_int.pdf"
+      ],
+      "instruction": "Extract the requested fields. Cite document_id, page and box for every value. Return monetary amounts as decimal strings with two fractional digits; percentages are percentage points (1.20 means 1.20%).",
+      "fields": {
+        "interest_income": "money",
+        "early_withdrawal_penalty": "money",
+        "us_savings_bond_interest": "money",
+        "federal_income_tax_withheld": "money",
+        "tax_exempt_interest": "money",
+        "account_number": "string",
+        "corrected": "boolean"
+      }
+    },
+    {
+      "task_id": "extract_doc_003",
+      "documents": [
+        "inputs/03_k1_1065.pdf"
+      ],
+      "instruction": "Extract the requested fields. Cite document_id, page and box for every value. Return monetary amounts as decimal strings with two fractional digits; percentages are percentage points (1.20 means 1.20%).",
+      "fields": {
+        "partner_type": "string",
+        "domestic_partner": "boolean",
+        "entity_type": "string",
+        "profit_share_end": "percent",
+        "ordinary_business_income": "money",
+        "net_rental_real_estate_income": "money",
+        "guaranteed_payments_services": "money",
+        "interest_income": "money",
+        "net_earnings_self_employment": "money"
+      }
+    },
+    {
+      "task_id": "extract_doc_004",
+      "documents": [
+        "inputs/04_form_8959.pdf"
+      ],
+      "instruction": "Extract the requested fields. Cite document_id, page and box for every value. Return monetary amounts as decimal strings with two fractional digits; percentages are percentage points (1.20 means 1.20%).",
+      "fields": {
+        "line_1": "money",
+        "line_4": "money",
+        "line_5": "money",
+        "line_6": "money",
+        "line_7": "money",
+        "line_18": "money",
+        "line_19": "money",
+        "line_20": "money",
+        "line_21": "money",
+        "line_22": "money",
+        "line_24": "money"
+      }
+    },
+    {
+      "task_id": "extract_doc_005",
+      "documents": [
+        "inputs/05_ca_sdi_summary.pdf"
+      ],
+      "instruction": "Extract the requested fields. Cite document_id, page and box for every value. Return monetary amounts as decimal strings with two fractional digits; percentages are percentage points (1.20 means 1.20%).",
+      "fields": {
+        "state": "string",
+        "program": "string",
+        "coverage_start": "date",
+        "coverage_end": "date",
+        "sdi_taxable_wages": "money",
+        "employee_sdi_rate": "percent",
+        "employee_sdi_withheld": "money",
+        "employee_ui_applicable": "boolean",
+        "payroll_reference": "string"
+      }
+    },
+    {
+      "task_id": "reconcile_case",
+      "documents": [
+        "inputs/01_w2.pdf",
+        "inputs/02_1099_int.pdf",
+        "inputs/03_k1_1065.pdf",
+        "inputs/04_form_8959.pdf",
+        "inputs/05_ca_sdi_summary.pdf"
+      ],
+      "instruction": "Reconcile this single taxpayer case for 2025. Report federal income tax withheld on W-2, federal income tax withheld on 1099, Additional Medicare withholding from Form 8959, their combined federal withholding credit, CA income tax withheld and unique employee SDI withheld. Do not count tax liability as another payment, regular Medicare as a federal income tax credit, or a payroll-summary copy as an additional SDI deduction. Cite the contributing document boxes; for unique SDI cite both records supporting the same deduction. This task does not request total tax due.",
+      "fields": {
+        "w2_federal_withheld": "money",
+        "form1099_federal_withheld": "money",
+        "additional_medicare_withheld": "money",
+        "combined_federal_withholding_credit": "money",
+        "ca_income_tax_withheld": "money",
+        "unique_employee_sdi_withheld": "money"
+      }
+    }
+  ],
+  "response_format": {
+    "answers": {
+      "TASK_ID": {
+        "values": {
+          "FIELD_KEY": "value"
+        },
+        "evidence": {
+          "FIELD_KEY": [
+            {
+              "document_id": "DOC-ID",
+              "page": 1,
+              "box": "BOX_ID"
+            }
+          ]
+        }
+      }
+    }
+  },
+  "evidence_note": "Box identifiers are printed at the start of each field label. Bboxes are optional in answers."
+}

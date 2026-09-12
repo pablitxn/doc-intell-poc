@@ -1,0 +1,68 @@
+{
+  "extract_doc_001": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages": "money",
+    "medicare_tax_withheld": "money",
+    "retirement_deferral_D": "money",
+    "retirement_plan": "boolean",
+    "employee_sdi_withheld": "money",
+    "state": "string",
+    "state_wages": "money",
+    "state_income_tax_withheld": "money"
+  },
+  "extract_doc_002": {
+    "interest_income": "money",
+    "early_withdrawal_penalty": "money",
+    "us_savings_bond_interest": "money",
+    "federal_income_tax_withheld": "money",
+    "tax_exempt_interest": "money",
+    "account_number": "string",
+    "corrected": "boolean"
+  },
+  "extract_doc_003": {
+    "partner_type": "string",
+    "domestic_partner": "boolean",
+    "entity_type": "string",
+    "profit_share_end": "percent",
+    "ordinary_business_income": "money",
+    "net_rental_real_estate_income": "money",
+    "guaranteed_payments_services": "money",
+    "interest_income": "money",
+    "net_earnings_self_employment": "money"
+  },
+  "extract_doc_004": {
+    "line_1": "money",
+    "line_4": "money",
+    "line_5": "money",
+    "line_6": "money",
+    "line_7": "money",
+    "line_18": "money",
+    "line_19": "money",
+    "line_20": "money",
+    "line_21": "money",
+    "line_22": "money",
+    "line_24": "money"
+  },
+  "extract_doc_005": {
+    "state": "string",
+    "program": "string",
+    "coverage_start": "date",
+    "coverage_end": "date",
+    "sdi_taxable_wages": "money",
+    "employee_sdi_rate": "percent",
+    "employee_sdi_withheld": "money",
+    "employee_ui_applicable": "boolean",
+    "payroll_reference": "string"
+  },
+  "reconcile_case": {
+    "w2_federal_withheld": "money",
+    "form1099_federal_withheld": "money",
+    "additional_medicare_withheld": "money",
+    "combined_federal_withholding_credit": "money",
+    "ca_income_tax_withheld": "money",
+    "unique_employee_sdi_withheld": "money"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "case_id": "SYNTHETIC-2025-001",
+  "facts": [
+    {
+      "fact_id": "SDI-2025-0001",
+      "amount": "3000.00",
+      "currency": "USD",
+      "supporting_documents": [
+        "DOC-001",
+        "DOC-005"
+      ],
+      "count_once": true
+    },
+    {
+      "fact_id": "ADDITIONAL-MEDICARE-WH-2025-0001",
+      "amount": "450.00",
+      "currency": "USD",
+      "supporting_documents": [
+        "DOC-001",
+        "DOC-004"
+      ],
+      "count_once": true
+    }
+  ],
+  "independent_arithmetic_checks": [
+    "250000.00 * 0.012 = 3000.00 CA SDI",
+    "176100.00 * 0.062 = 10918.20 Social Security",
+    "250000.00 * 0.0145 + 50000.00 * 0.009 = 4075.00 Medicare withheld",
+    "1250.00 * 0.24 = 300.00 backup withholding",
+    "42000.00 + 300.00 + 450.00 = 42750.00 combined federal withholding credit"
+  ]
+}

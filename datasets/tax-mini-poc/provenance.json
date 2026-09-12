@@ -1,0 +1,27 @@
+{
+  "version": "0.1",
+  "synthetic": true,
+  "source_corpus_records_reused": 0,
+  "scope": "Five simplified digital-text PDFs, one coherent synthetic case; extraction and reconciliation smoke tests only.",
+  "templates": "Original simplified layouts; no official logos or copied source PDFs.",
+  "reviewed_rules_tax_year": 2025,
+  "references": [
+    "https://www.irs.gov/pub/irs-prior/fw2--2025.pdf",
+    "https://www.irs.gov/pub/irs-pdf/f1099int.pdf",
+    "https://www.irs.gov/pub/irs-prior/f1065sk1--2025.pdf",
+    "https://www.irs.gov/pub/irs-prior/f8959--2025.pdf",
+    "https://www.ssa.gov/oact/cola/cbb.html",
+    "https://edd.ca.gov/en/payroll_taxes/rates_and_withholding/",
+    "https://www.irs.gov/businesses/small-businesses-self-employed/backup-withholding"
+  ],
+  "exclusions": [
+    "Other 1099 subtypes",
+    "K-1 1120-S and 1041",
+    "W-2c",
+    "State K-1/PTET/composite",
+    "Actual payment receipts/refunds",
+    "Full return calculation",
+    "Scans/photos/long files"
+  ],
+  "SUI_DI_note": "CA SDI is the selected employee-insurance example. It is a payroll summary, not an official universal SUI/DUI form. DUI remains unresolved."
+}

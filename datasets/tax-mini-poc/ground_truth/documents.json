@@ -1,0 +1,797 @@
+[
+  {
+    "document_id": "DOC-001",
+    "family": "W-2",
+    "path": "inputs/01_w2.pdf",
+    "sha256": "99aacad453112c5340671ca2af94175703ccbbcd0c7f5725894ff4027838160b",
+    "page_count": 1,
+    "expected": {
+      "values": {
+        "wages": "240000.00",
+        "federal_income_tax_withheld": "42000.00",
+        "social_security_wages": "176100.00",
+        "social_security_tax_withheld": "10918.20",
+        "medicare_wages": "250000.00",
+        "medicare_tax_withheld": "4075.00",
+        "retirement_deferral_D": "10000.00",
+        "retirement_plan": true,
+        "employee_sdi_withheld": "3000.00",
+        "state": "CA",
+        "state_wages": "240000.00",
+        "state_income_tax_withheld": "16000.00"
+      },
+      "evidence": {
+        "wages": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "1",
+            "bbox": [
+              0.05556,
+              0.23232,
+              0.49346,
+              0.30051
+            ]
+          }
+        ],
+        "federal_income_tax_withheld": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "2",
+            "bbox": [
+              0.50654,
+              0.23232,
+              0.94444,
+              0.30051
+            ]
+          }
+        ],
+        "social_security_wages": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "3",
+            "bbox": [
+              0.05556,
+              0.30808,
+              0.49346,
+              0.37626
+            ]
+          }
+        ],
+        "social_security_tax_withheld": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "4",
+            "bbox": [
+              0.50654,
+              0.30808,
+              0.94444,
+              0.37626
+            ]
+          }
+        ],
+        "medicare_wages": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "5",
+            "bbox": [
+              0.05556,
+              0.38384,
+              0.49346,
+              0.45202
+            ]
+          }
+        ],
+        "medicare_tax_withheld": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "6",
+            "bbox": [
+              0.50654,
+              0.38384,
+              0.94444,
+              0.45202
+            ]
+          }
+        ],
+        "retirement_deferral_D": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "12 D",
+            "bbox": [
+              0.05556,
+              0.4596,
+              0.49346,
+              0.52778
+            ]
+          }
+        ],
+        "retirement_plan": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "13",
+            "bbox": [
+              0.50654,
+              0.4596,
+              0.94444,
+              0.52778
+            ]
+          }
+        ],
+        "employee_sdi_withheld": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "14",
+            "bbox": [
+              0.05556,
+              0.57071,
+              0.49346,
+              0.63889
+            ]
+          }
+        ],
+        "state": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "15",
+            "bbox": [
+              0.50654,
+              0.57071,
+              0.94444,
+              0.63889
+            ]
+          }
+        ],
+        "state_wages": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "16",
+            "bbox": [
+              0.05556,
+              0.64646,
+              0.49346,
+              0.71465
+            ]
+          }
+        ],
+        "state_income_tax_withheld": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "17",
+            "bbox": [
+              0.50654,
+              0.64646,
+              0.94444,
+              0.71465
+            ]
+          }
+        ]
+      }
+    },
+    "value_types": {
+      "wages": "money",
+      "federal_income_tax_withheld": "money",
+      "social_security_wages": "money",
+      "social_security_tax_withheld": "money",
+      "medicare_wages": "money",
+      "medicare_tax_withheld": "money",
+      "retirement_deferral_D": "money",
+      "retirement_plan": "boolean",
+      "employee_sdi_withheld": "money",
+      "state": "string",
+      "state_wages": "money",
+      "state_income_tax_withheld": "money"
+    }
+  },
+  {
+    "document_id": "DOC-002",
+    "family": "1099-INT",
+    "path": "inputs/02_1099_int.pdf",
+    "sha256": "2162250cb39d81bd1f38b5857d0b970c607c5e2464d95da3e5f454fdd1814cc6",
+    "page_count": 1,
+    "expected": {
+      "values": {
+        "interest_income": "1250.00",
+        "early_withdrawal_penalty": "0.00",
+        "us_savings_bond_interest": "0.00",
+        "federal_income_tax_withheld": "300.00",
+        "tax_exempt_interest": "0.00",
+        "account_number": "DEMO-00125",
+        "corrected": false
+      },
+      "evidence": {
+        "interest_income": [
+          {
+            "document_id": "DOC-002",
+            "page": 1,
+            "box": "1",
+            "bbox": [
+              0.05556,
+              0.23232,
+              0.94444,
+              0.28662
+            ]
+          }
+        ],
+        "early_withdrawal_penalty": [
+          {
+            "document_id": "DOC-002",
+            "page": 1,
+            "box": "2",
+            "bbox": [
+              0.05556,
+              0.29419,
+              0.94444,
+              0.34848
+            ]
+          }
+        ],
+        "us_savings_bond_interest": [
+          {
+            "document_id": "DOC-002",
+            "page": 1,
+            "box": "3",
+            "bbox": [
+              0.05556,
+              0.35606,
+              0.94444,
+              0.41035
+            ]
+          }
+        ],
+        "federal_income_tax_withheld": [
+          {
+            "document_id": "DOC-002",
+            "page": 1,
+            "box": "4",
+            "bbox": [
+              0.05556,
+              0.41793,
+              0.94444,
+              0.47222
+            ]
+          }
+        ],
+        "tax_exempt_interest": [
+          {
+            "document_id": "DOC-002",
+            "page": 1,
+            "box": "8",
+            "bbox": [
+              0.05556,
+              0.4798,
+              0.94444,
+              0.53409
+            ]
+          }
+        ],
+        "account_number": [
+          {
+            "document_id": "DOC-002",
+            "page": 1,
+            "box": "Account number",
+            "bbox": [
+              0.05556,
+              0.57702,
+              0.49346,
+              0.6452
+            ]
+          }
+        ],
+        "corrected": [
+          {
+            "document_id": "DOC-002",
+            "page": 1,
+            "box": "CORRECTED",
+            "bbox": [
+              0.50654,
+              0.57702,
+              0.94444,
+              0.6452
+            ]
+          }
+        ]
+      }
+    },
+    "value_types": {
+      "interest_income": "money",
+      "early_withdrawal_penalty": "money",
+      "us_savings_bond_interest": "money",
+      "federal_income_tax_withheld": "money",
+      "tax_exempt_interest": "money",
+      "account_number": "string",
+      "corrected": "boolean"
+    }
+  },
+  {
+    "document_id": "DOC-003",
+    "family": "K-1 (1065)",
+    "path": "inputs/03_k1_1065.pdf",
+    "sha256": "f1721042ccc48dc6ff625374e51e836ba1878580909616ec28bd277871abf592",
+    "page_count": 1,
+    "expected": {
+      "values": {
+        "partner_type": "Limited partner",
+        "domestic_partner": true,
+        "entity_type": "Individual",
+        "profit_share_end": "10.00",
+        "ordinary_business_income": "5000.00",
+        "net_rental_real_estate_income": "0.00",
+        "guaranteed_payments_services": "0.00",
+        "interest_income": "0.00",
+        "net_earnings_self_employment": "0.00"
+      },
+      "evidence": {
+        "partner_type": [
+          {
+            "document_id": "DOC-003",
+            "page": 1,
+            "box": "G",
+            "bbox": [
+              0.05556,
+              0.23232,
+              0.49346,
+              0.30051
+            ]
+          }
+        ],
+        "domestic_partner": [
+          {
+            "document_id": "DOC-003",
+            "page": 1,
+            "box": "H1",
+            "bbox": [
+              0.50654,
+              0.23232,
+              0.94444,
+              0.30051
+            ]
+          }
+        ],
+        "entity_type": [
+          {
+            "document_id": "DOC-003",
+            "page": 1,
+            "box": "I1",
+            "bbox": [
+              0.05556,
+              0.30808,
+              0.49346,
+              0.37626
+            ]
+          }
+        ],
+        "profit_share_end": [
+          {
+            "document_id": "DOC-003",
+            "page": 1,
+            "box": "J",
+            "bbox": [
+              0.50654,
+              0.30808,
+              0.94444,
+              0.37626
+            ]
+          }
+        ],
+        "ordinary_business_income": [
+          {
+            "document_id": "DOC-003",
+            "page": 1,
+            "box": "1",
+            "bbox": [
+              0.05556,
+              0.41919,
+              0.94444,
+              0.47348
+            ]
+          }
+        ],
+        "net_rental_real_estate_income": [
+          {
+            "document_id": "DOC-003",
+            "page": 1,
+            "box": "2",
+            "bbox": [
+              0.05556,
+              0.48106,
+              0.94444,
+              0.53535
+            ]
+          }
+        ],
+        "guaranteed_payments_services": [
+          {
+            "document_id": "DOC-003",
+            "page": 1,
+            "box": "4a",
+            "bbox": [
+              0.05556,
+              0.54293,
+              0.94444,
+              0.59722
+            ]
+          }
+        ],
+        "interest_income": [
+          {
+            "document_id": "DOC-003",
+            "page": 1,
+            "box": "5",
+            "bbox": [
+              0.05556,
+              0.6048,
+              0.94444,
+              0.65909
+            ]
+          }
+        ],
+        "net_earnings_self_employment": [
+          {
+            "document_id": "DOC-003",
+            "page": 1,
+            "box": "14 A",
+            "bbox": [
+              0.05556,
+              0.66667,
+              0.94444,
+              0.72096
+            ]
+          }
+        ]
+      }
+    },
+    "value_types": {
+      "partner_type": "string",
+      "domestic_partner": "boolean",
+      "entity_type": "string",
+      "profit_share_end": "percent",
+      "ordinary_business_income": "money",
+      "net_rental_real_estate_income": "money",
+      "guaranteed_payments_services": "money",
+      "interest_income": "money",
+      "net_earnings_self_employment": "money"
+    }
+  },
+  {
+    "document_id": "DOC-004",
+    "family": "8959",
+    "path": "inputs/04_form_8959.pdf",
+    "sha256": "b9fb22618022d45a169429ce64a713ea8a6bd2d2ae6ab9cf74f2389e49770c27",
+    "page_count": 1,
+    "expected": {
+      "values": {
+        "line_1": "250000.00",
+        "line_4": "250000.00",
+        "line_5": "200000.00",
+        "line_6": "50000.00",
+        "line_7": "450.00",
+        "line_18": "450.00",
+        "line_19": "4075.00",
+        "line_20": "250000.00",
+        "line_21": "3625.00",
+        "line_22": "450.00",
+        "line_24": "450.00"
+      },
+      "evidence": {
+        "line_1": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "1",
+            "bbox": [
+              0.05556,
+              0.23232,
+              0.94444,
+              0.27273
+            ]
+          }
+        ],
+        "line_4": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "4",
+            "bbox": [
+              0.05556,
+              0.2803,
+              0.94444,
+              0.32071
+            ]
+          }
+        ],
+        "line_5": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "5",
+            "bbox": [
+              0.05556,
+              0.32828,
+              0.94444,
+              0.36869
+            ]
+          }
+        ],
+        "line_6": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "6",
+            "bbox": [
+              0.05556,
+              0.37626,
+              0.94444,
+              0.41667
+            ]
+          }
+        ],
+        "line_7": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "7",
+            "bbox": [
+              0.05556,
+              0.42424,
+              0.94444,
+              0.46465
+            ]
+          }
+        ],
+        "line_18": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "18",
+            "bbox": [
+              0.05556,
+              0.50758,
+              0.94444,
+              0.54798
+            ]
+          }
+        ],
+        "line_19": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "19",
+            "bbox": [
+              0.05556,
+              0.59091,
+              0.94444,
+              0.63131
+            ]
+          }
+        ],
+        "line_20": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "20",
+            "bbox": [
+              0.05556,
+              0.63889,
+              0.94444,
+              0.67929
+            ]
+          }
+        ],
+        "line_21": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "21",
+            "bbox": [
+              0.05556,
+              0.68687,
+              0.94444,
+              0.72727
+            ]
+          }
+        ],
+        "line_22": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "22",
+            "bbox": [
+              0.05556,
+              0.73485,
+              0.94444,
+              0.77525
+            ]
+          }
+        ],
+        "line_24": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "24",
+            "bbox": [
+              0.05556,
+              0.78283,
+              0.94444,
+              0.82323
+            ]
+          }
+        ]
+      }
+    },
+    "value_types": {
+      "line_1": "money",
+      "line_4": "money",
+      "line_5": "money",
+      "line_6": "money",
+      "line_7": "money",
+      "line_18": "money",
+      "line_19": "money",
+      "line_20": "money",
+      "line_21": "money",
+      "line_22": "money",
+      "line_24": "money"
+    }
+  },
+  {
+    "document_id": "DOC-005",
+    "family": "CA SDI summary",
+    "path": "inputs/05_ca_sdi_summary.pdf",
+    "sha256": "1b922b2a15d0732d353945190ae6b7c3fc21cc8d6fc576cc387a12708e69cdd8",
+    "page_count": 1,
+    "expected": {
+      "values": {
+        "state": "CA",
+        "program": "CA SDI",
+        "coverage_start": "2025-01-01",
+        "coverage_end": "2025-12-31",
+        "sdi_taxable_wages": "250000.00",
+        "employee_sdi_rate": "1.20",
+        "employee_sdi_withheld": "3000.00",
+        "employee_ui_applicable": false,
+        "payroll_reference": "PAYROLL-2025-0001"
+      },
+      "evidence": {
+        "state": [
+          {
+            "document_id": "DOC-005",
+            "page": 1,
+            "box": "State",
+            "bbox": [
+              0.05556,
+              0.23232,
+              0.49346,
+              0.30051
+            ]
+          }
+        ],
+        "program": [
+          {
+            "document_id": "DOC-005",
+            "page": 1,
+            "box": "Program",
+            "bbox": [
+              0.50654,
+              0.23232,
+              0.94444,
+              0.30051
+            ]
+          }
+        ],
+        "coverage_start": [
+          {
+            "document_id": "DOC-005",
+            "page": 1,
+            "box": "Period start",
+            "bbox": [
+              0.05556,
+              0.30808,
+              0.49346,
+              0.37626
+            ]
+          }
+        ],
+        "coverage_end": [
+          {
+            "document_id": "DOC-005",
+            "page": 1,
+            "box": "Period end",
+            "bbox": [
+              0.50654,
+              0.30808,
+              0.94444,
+              0.37626
+            ]
+          }
+        ],
+        "sdi_taxable_wages": [
+          {
+            "document_id": "DOC-005",
+            "page": 1,
+            "box": "SDI wages",
+            "bbox": [
+              0.05556,
+              0.41919,
+              0.49346,
+              0.48737
+            ]
+          }
+        ],
+        "employee_sdi_rate": [
+          {
+            "document_id": "DOC-005",
+            "page": 1,
+            "box": "SDI rate",
+            "bbox": [
+              0.50654,
+              0.41919,
+              0.94444,
+              0.48737
+            ]
+          }
+        ],
+        "employee_sdi_withheld": [
+          {
+            "document_id": "DOC-005",
+            "page": 1,
+            "box": "SDI withheld",
+            "bbox": [
+              0.05556,
+              0.49495,
+              0.49346,
+              0.56313
+            ]
+          }
+        ],
+        "employee_ui_applicable": [
+          {
+            "document_id": "DOC-005",
+            "page": 1,
+            "box": "Employee UI",
+            "bbox": [
+              0.50654,
+              0.49495,
+              0.94444,
+              0.56313
+            ]
+          }
+        ],
+        "payroll_reference": [
+          {
+            "document_id": "DOC-005",
+            "page": 1,
+            "box": "Payroll reference",
+            "bbox": [
+              0.05556,
+              0.60606,
+              0.94444,
+              0.66035
+            ]
+          }
+        ]
+      }
+    },
+    "value_types": {
+      "state": "string",
+      "program": "string",
+      "coverage_start": "date",
+      "coverage_end": "date",
+      "sdi_taxable_wages": "money",
+      "employee_sdi_rate": "percent",
+      "employee_sdi_withheld": "money",
+      "employee_ui_applicable": "boolean",
+      "payroll_reference": "string"
+    }
+  }
+]
