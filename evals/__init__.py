@@ -1,1 +1,1 @@
-"""Small, offline evaluation loop for tax-mini-poc."""
+"""Minimal evaluation loop for an externally configured harness."""

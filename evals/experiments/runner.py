@@ -1,8 +1,6 @@
 """Sequential task execution, deterministic evaluation and local artifacts."""
 
 from collections import Counter
-from copy import deepcopy
-from dataclasses import asdict
 from datetime import datetime, timezone
 import csv
 import hashlib
@@ -14,6 +12,7 @@ from uuid import uuid4
 from ..contracts import HarnessAdapter
 from ..datasets.loader import load_examples
 from ..evaluators.tax_mini import EVALUATOR_VERSION, GRADER_PATH, evaluate
+from .prompt import PROMPT_VERSION, build_prompt
 
 
 def run_experiment(
@@ -21,7 +20,7 @@ def run_experiment(
     adapter: HarnessAdapter,
     output_dir: Path,
     *,
-    mode: str,
+    adapter_name: str | None = None,
     task_id: str | None = None,
 ) -> Path:
     examples, version = load_examples(dataset)
@@ -34,10 +33,11 @@ def run_experiment(
     run_dir.mkdir(parents=True, exist_ok=False)
     rows = []
     for example in examples:
+        input_text = build_prompt(example.input, dataset)
         output, error, status = None, None, "success"
         started = perf_counter()
         try:
-            output = adapter(deepcopy(example.input))
+            output = adapter(input_text)
             # Roundtrip enforces JSON output and rejects nonfinite numbers.
             output = json.loads(json.dumps(output, allow_nan=False))
         except TimeoutError:
@@ -58,7 +58,7 @@ def run_experiment(
             "group": example.group,
             "document_ids": [doc["document_id"] for doc in example.input.documents],
             "repetition": 1,
-            "input": asdict(example.input),
+            "input": input_text,
             "output": output,
             "elapsed_seconds": elapsed,
             "error": error,
@@ -82,10 +82,13 @@ def run_experiment(
     code_root = Path(__file__).resolve().parents[1]
     report = {
         "run_id": run_id,
-        "mode": mode,
-        "is_benchmark": False,
+        "adapter": adapter_name or (
+            f"{getattr(adapter, '__module__', type(adapter).__module__)}:"
+            f"{getattr(adapter, '__qualname__', type(adapter).__qualname__)}"
+        ),
         "dataset": dataset.name,
         "dataset_version": version,
+        "prompt_version": PROMPT_VERSION,
         "evaluator_version": EVALUATOR_VERSION,
         "grader_sha256": hashlib.sha256(GRADER_PATH.read_bytes()).hexdigest(),
         "eval_code_sha256": hashlib.sha256(b"".join(

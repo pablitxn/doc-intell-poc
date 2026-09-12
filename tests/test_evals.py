@@ -1,18 +1,32 @@
 """Reference answers are used here to test the evaluator, never as model results."""
 
 from copy import deepcopy
+from contextlib import redirect_stderr, redirect_stdout
 from dataclasses import asdict
+from io import StringIO
 import json
 from pathlib import Path
 from tempfile import TemporaryDirectory
 import unittest
+from unittest.mock import patch
 
-from evals.adapters.offline import empty_response, replay
+from evals.__main__ import main
 from evals.datasets.loader import load_examples, read_json
 from evals.evaluators.tax_mini import evaluate
 from evals.experiments.runner import run_experiment
+from evals.experiments.prompt import PROMPT_VERSION, build_prompt
 
 DATASET = Path(__file__).resolve().parents[1] / "datasets/tax-mini-poc"
+
+
+def empty_response(input_text):
+    """A local test double; production runs always invoke the injected harness."""
+    assert isinstance(input_text, str)
+    return {"values": {}, "evidence": {}}
+
+
+def task_id_from_text(input_text):
+    return input_text.split("Task ID: ", 1)[1].splitlines()[0]
 
 
 class EvaluatorTests(unittest.TestCase):
@@ -99,30 +113,33 @@ class EvaluatorTests(unittest.TestCase):
 class RunnerTests(unittest.TestCase):
     def test_unique_artifacts_and_fixed_denominator(self):
         with TemporaryDirectory() as tmp:
-            first = run_experiment(DATASET, empty_response, Path(tmp), mode="smoke")
-            second = run_experiment(DATASET, empty_response, Path(tmp), mode="smoke")
+            first = run_experiment(DATASET, empty_response, Path(tmp))
+            second = run_experiment(DATASET, empty_response, Path(tmp))
             self.assertNotEqual(first, second)
             report = read_json(first / "report.json")
             self.assertEqual(report["summary"]["fields_evaluated"], 54)
             self.assertEqual(report["summary"]["tasks_passed"], 0)
             self.assertIsNone(report["summary"]["total_service_cost_usd"])
-            self.assertFalse(report["is_benchmark"])
+            self.assertEqual(report["adapter"], f"{empty_response.__module__}:{empty_response.__qualname__}")
+            self.assertNotIn("mode", report)
+            self.assertNotIn("is_benchmark", report)
             self.assertEqual(len((first / "scores.csv").read_text().splitlines()), 7)
 
     def test_errors_do_not_drop_tasks_or_leak_messages(self):
         answers = read_json(DATASET / "ground_truth/expected.json")["answers"]
 
-        def adapter(task):
-            if task.task_id == "extract_doc_001":
+        def adapter(input_text):
+            task_id = task_id_from_text(input_text)
+            if task_id == "extract_doc_001":
                 raise TimeoutError("private diagnostic")
-            if task.task_id == "extract_doc_002":
+            if task_id == "extract_doc_002":
                 raise NotImplementedError("private diagnostic")
-            if task.task_id == "extract_doc_003":
+            if task_id == "extract_doc_003":
                 raise RuntimeError("private diagnostic")
-            return answers[task.task_id]
+            return answers[task_id]
 
         with TemporaryDirectory() as tmp:
-            path = run_experiment(DATASET, adapter, Path(tmp), mode="test") / "report.json"
+            path = run_experiment(DATASET, adapter, Path(tmp)) / "report.json"
             report = read_json(path)
             self.assertEqual(report["summary"]["fields_evaluated"], 54)
             self.assertEqual(report["summary"]["tasks_passed"], 3)
@@ -131,30 +148,99 @@ class RunnerTests(unittest.TestCase):
             })
             self.assertNotIn("private diagnostic", path.read_text())
 
-    def test_replay_one_task_and_reject_unknown_task(self):
+    def test_select_one_task_and_record_adapter_name(self):
         answers = read_json(DATASET / "ground_truth/expected.json")["answers"]
+
+        def adapter(input_text):
+            return deepcopy(answers[task_id_from_text(input_text)])
+
         with TemporaryDirectory() as tmp:
-            path = run_experiment(DATASET, replay(answers), Path(tmp), mode="test", task_id="reconcile_case")
-            summary = read_json(path / "report.json")["summary"]
+            path = run_experiment(
+                DATASET, adapter, Path(tmp),
+                adapter_name="my-harness", task_id="reconcile_case",
+            )
+            report = read_json(path / "report.json")
+            self.assertEqual(report["adapter"], "my-harness")
+            summary = report["summary"]
             self.assertEqual(summary["fields_evaluated"], 6)
             self.assertEqual(summary["tasks_passed"], 1)
             with self.assertRaisesRegex(ValueError, "Unknown task"):
-                run_experiment(DATASET, empty_response, Path(tmp), mode="test", task_id="typo")
+                run_experiment(DATASET, empty_response, Path(tmp), task_id="typo")
 
     def test_non_json_output_is_an_explicit_failure(self):
         with TemporaryDirectory() as tmp:
-            path = run_experiment(DATASET, lambda task: {"bad": float("nan")}, Path(tmp), mode="test")
+            path = run_experiment(DATASET, lambda task: {"bad": float("nan")}, Path(tmp))
             report = read_json(path / "report.json")
             self.assertEqual(report["summary"]["execution_status_counts"], {"invalid_response": 6})
 
-    def test_adapter_cannot_mutate_evaluator_inputs(self):
-        def adapter(task):
-            task.fields.clear()
+    def test_harness_receives_only_text_and_report_preserves_it(self):
+        received = []
+
+        def adapter(input_text):
+            self.assertIsInstance(input_text, str)
+            received.append(input_text)
             return {"values": {}, "evidence": {}}
 
         with TemporaryDirectory() as tmp:
-            path = run_experiment(DATASET, adapter, Path(tmp), mode="test")
-            self.assertEqual(read_json(path / "report.json")["summary"]["fields_evaluated"], 54)
+            path = run_experiment(DATASET, adapter, Path(tmp))
+            report = read_json(path / "report.json")
+            self.assertEqual(report["summary"]["fields_evaluated"], 54)
+            self.assertEqual([row["input"] for row in report["rows"]], received)
+            self.assertEqual(report["prompt_version"], PROMPT_VERSION)
+            self.assertEqual(len(received), 6)
+
+
+class PromptTests(unittest.TestCase):
+    def test_prompt_contains_dataset_reference_and_only_requested_documents(self):
+        examples, _ = load_examples(DATASET)
+        task = examples[0].input
+        text = build_prompt(task, DATASET)
+        self.assertIn(str(DATASET / "inputs"), text)
+        self.assertIn(str(DATASET / "inputs/01_w2.pdf"), text)
+        self.assertNotIn("02_1099_int.pdf", text)
+        self.assertIn(task.instruction, text)
+        self.assertIn("wages: money", text)
+        self.assertIn("DOC-001", text)
+        self.assertNotIn("ground_truth", text)
+        self.assertNotIn("240000.00", text)
+        self.assertNotIn("grade.py", text)
+        self.assertEqual(task_id_from_text(text), task.task_id)
+
+
+class CLITests(unittest.TestCase):
+    def test_harness_command_is_required(self):
+        with patch("sys.argv", ["evals"]), redirect_stderr(StringIO()):
+            with patch("evals.__main__.command_harness") as factory, patch("evals.__main__.run_experiment") as runner:
+                with self.assertRaises(SystemExit) as error:
+                    main()
+                self.assertEqual(error.exception.code, 2)
+                factory.assert_not_called()
+                runner.assert_not_called()
+
+    def test_missing_executable_does_not_start_an_experiment(self):
+        with patch("sys.argv", ["evals", "--harness-command", "missing"]), redirect_stderr(StringIO()):
+            with patch("evals.__main__.command_harness", side_effect=ValueError("Executable not found")):
+                with patch("evals.__main__.run_experiment") as runner:
+                    with self.assertRaises(SystemExit) as error:
+                        main()
+                    self.assertEqual(error.exception.code, 2)
+                    runner.assert_not_called()
+
+    def test_cli_passes_command_as_arguments_and_run_options(self):
+        argv = ["evals", "--harness-command", 'my-harness run --label "two words"',
+                "--dataset", "custom-dataset", "--task", "reconcile_case",
+                "--output-dir", "custom-runs", "--timeout", "30"]
+        summary = {"tasks_passed": 1, "tasks_evaluated": 1, "fields_evaluated": 6}
+        with patch("sys.argv", argv), redirect_stdout(StringIO()):
+            with patch("evals.__main__.command_harness", return_value=empty_response) as factory:
+                with patch("evals.__main__.run_experiment", return_value=Path("custom-runs/run-id")) as runner:
+                    with patch("evals.__main__.read_json", return_value={"summary": summary}):
+                        main()
+            factory.assert_called_once_with(["my-harness", "run", "--label", "two words"], timeout_seconds=30.0)
+            runner.assert_called_once_with(
+                Path("custom-dataset"), empty_response, Path("custom-runs"),
+                adapter_name="my-harness", task_id="reconcile_case",
+            )
 
 
 if __name__ == "__main__":

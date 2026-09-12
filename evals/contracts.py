@@ -1,4 +1,4 @@
-"""The adapter sees TaskInput; only the evaluation process sees Example."""
+"""TaskInput and Example stay local; the harness receives a rendered string."""
 
 from dataclasses import dataclass
 from typing import Callable
@@ -22,6 +22,5 @@ class Example:
     group: str
 
 
-# One call represents one fresh task session. Return the row, not answers/TASK_ID.
-# The runner owns evaluation; a future real adapter owns session isolation.
-HarnessAdapter = Callable[[TaskInput], object]
+# One string in, one parsed JSON answer out. Each call starts a new process.
+HarnessAdapter = Callable[[str], object]
