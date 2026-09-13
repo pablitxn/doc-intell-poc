@@ -1,12 +1,44 @@
 # Document evaluation POC
 
-Evaluaciones contra un harness real, instalado como ejecutable mediante npm global y disponible en `PATH`. Python 3.10+ y biblioteca estándar. El runner construye un único texto por tarea, con la referencia al dataset, y se lo entrega al ejecutable.
+Evaluaciones contra un harness real, instalado como ejecutable mediante npm global y disponible en `PATH`. El runner construye un único texto por tarea, con la referencia al dataset, y se lo entrega al ejecutable. El núcleo usa Python estándar; `run.py` usa `uv` para resolver el cliente de Phoenix y sus dependencias fijadas en `run.py.lock`.
 
-El dataset contiene 5 PDF sintéticos, 6 tareas y 54 valores de un único expediente. Su grader se conserva sin cambios. El adapter de proceso está implementado; la comprobación con el harness real queda pendiente hasta disponer del ejecutable. Azure DI y Phoenix quedan para esa integración.
+El dataset contiene 5 PDF sintéticos, 6 tareas y 54 valores de un único expediente. Su grader se conserva sin cambios. El adapter de proceso y la publicación a Phoenix están implementados; la comprobación con el harness real y sus proveedores queda pendiente hasta disponer del ejecutable.
 
 ## Ejecutar
 
-Una vez instalado y autenticado el harness, desde la raíz:
+Requisitos: Docker con Compose, `uv` y el ejecutable del harness instalado y autenticado. Desde la raíz:
+
+```bash
+docker compose up -d --wait
+./run.py --harness-command nombre-del-harness
+```
+
+Phoenix queda disponible en [http://127.0.0.1:6006](http://127.0.0.1:6006). El Compose fija Phoenix `20.11.0`, publica el puerto únicamente en loopback y conserva SQLite en el volumen `phoenix_data`. `docker compose stop` detiene el servicio conservando sus datos.
+
+`run.py` comprueba el ejecutable y publica el dataset y los evaluadores antes de llamar al harness. Luego ejecuta las tareas, guarda el reporte local y publica sus resultados. Una corrida de las seis tareas produce seis ejecuciones y treinta scores. Para seleccionar una tarea o configurar su timeout:
+
+```bash
+./run.py --harness-command nombre-del-harness --task reconcile_case --timeout 180
+./run.py --harness-command nombre-del-harness --dataset datasets/tax-mini-poc
+```
+
+Si se interrumpe la publicación, el reporte local permite retomarla sin volver a llamar al harness:
+
+```bash
+./run.py --upload-only runs/ID-DE-LA-CORRIDA
+```
+
+`phoenix.json` guarda los IDs remotos y el progreso de carga. Se reutilizan las ejecuciones confirmadas y se actualizan sus scores; cada ejecución nueva del harness crea otro experimento. `--phoenix-url` o `PHOENIX_ENDPOINT` cambia el destino; `PHOENIX_API_KEY` es opcional para un servidor con autenticación. Estas credenciales se comparten entre el cliente REST y el registro GraphQL.
+
+En Phoenix se guardan:
+
+- **Dataset:** las seis tareas, sus textos, referencias esperadas y metadatos. La misma versión se reutiliza incluso al evaluar una sola tarea. Los PDF permanecen locales y se referencian desde los inputs.
+- **Evaluadores:** cinco definiciones CODE con código Python, descripción y nombre versionado por contenido, visibles en Evaluators. El código se exporta de las mismas funciones usadas localmente. El registro utiliza el runtime Python WASM incluido en la imagen de Phoenix, sin servicios adicionales.
+- **Experimentos:** respuesta del harness, estado, tiempos, scores y versiones. En la salida remota, `answer` contiene la respuesta original y `execution_status` conserva el estado del proceso, previo a validar el schema. Así los evaluadores registrados conservan la distinción entre un error de ejecución y un valor correcto con tipo incorrecto.
+
+El harness y el scoring se ejecutan localmente. Las definiciones registradas quedan disponibles en Phoenix; este script no les configura ejecuciones automáticas. Los errores permanecen en el denominador y los costes desconocidos quedan `null`.
+
+La CLI local sigue disponible para trabajar sin publicación:
 
 ```bash
 python3 -m evals --harness-command nombre-del-harness
@@ -40,13 +72,18 @@ evals/
   adapters/
     command.py           # Ejecutable: texto por stdin, JSON por stdout
   evaluators/
+    definitions.py       # Definiciones exportables a Phoenix
     schema.py            # Validación de la respuesta sin consultar GT
     tax_mini.py          # Política de scoring para tax-mini-poc
   experiments/
     prompt.py            # Texto de la tarea y referencia al dataset
     runner.py            # Ejecución y reportes
   __main__.py            # CLI
+  reporting/             # Datasets, evaluadores y resultados en Phoenix
 tests/                   # Tests unitarios y sus dobles
+docker-compose.yml       # Phoenix local con almacenamiento persistente
+run.py                   # Ejecutar y publicar a Phoenix
+run.py.lock              # Dependencias fijadas del script
 ```
 
 `datasets/` contiene los datos; `evals/datasets/` contiene el código que los carga. Cada futuro dataset tendrá su propio directorio. El loader y el runner actuales siguen usando el formato y la política de tax-mini-poc; alojar otro dataset no lo hace automáticamente compatible.
@@ -105,4 +142,6 @@ El resumen pondera por campos, con denominador explícito; todas las filas queda
 
 Esto es separación de datos en el texto, **no aislamiento del filesystem**: el ejecutable hereda el acceso del usuario al host. Para un benchmark válido, su entorno debe permitir únicamente los PDF y la tarea; `ground_truth/`, grader, tests, reportes y README deben quedar fuera. El adapter de proceso no implementa ese sandbox.
 
-La siguiente iteración conectará una sesión real y confirmará su aislamiento. Después se agregan las dos rutas de extracción y Phoenix sobre los mismos evaluadores, con versiones, consumo y trazas reales. Repeticiones, concurrencia, retries y tarifas quedan para esa integración. Cada experimento comienza secuencialmente, con una repetición.
+La siguiente iteración conectará una sesión real y confirmará su aislamiento. Después se integran las dos rutas de extracción, consumo y trazas internas del harness. Repeticiones, concurrencia, retries y tarifas quedan para esa integración. Cada experimento comienza secuencialmente, con una repetición.
+
+La integración se verificó contra [Phoenix 20.11.0](https://github.com/Arize-ai/phoenix/releases/tag/arize-phoenix-v20.11.0) y el [cliente Python 3.5.0](https://pypi.org/project/arize-phoenix-client/3.5.0/). Utiliza las APIs de [datasets](https://arize-phoenix.readthedocs.io/projects/client/api/datasets.html) y [experimentos](https://arize-phoenix.readthedocs.io/projects/client/api/experiments.html), y el esquema GraphQL incluido en esa versión para registrar código.

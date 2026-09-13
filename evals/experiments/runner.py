@@ -35,6 +35,7 @@ def run_experiment(
     for example in examples:
         input_text = build_prompt(example.input, dataset)
         output, error, status = None, None, "success"
+        start_time = datetime.now(timezone.utc)
         started = perf_counter()
         try:
             output = adapter(input_text)
@@ -51,6 +52,7 @@ def run_experiment(
             # Avoid persisting arbitrary exception messages containing credentials.
             status, error = "adapter_error", type(exc).__name__
         elapsed = perf_counter() - started
+        end_time = datetime.now(timezone.utc)
         scores = evaluate(output, example, status)
         rows.append({
             "task_id": example.input.task_id,
@@ -61,7 +63,10 @@ def run_experiment(
             "input": input_text,
             "output": output,
             "elapsed_seconds": elapsed,
+            "start_time": start_time.isoformat(),
+            "end_time": end_time.isoformat(),
             "error": error,
+            "execution_status": status,
             "scores": scores,
             "total_service_cost_usd": None,
         })

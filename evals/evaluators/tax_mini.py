@@ -11,17 +11,21 @@ GRADER_PATH = Path(__file__).resolve().parents[2] / "datasets/tax-mini-poc/grade
 _spec = importlib.util.spec_from_file_location("tax_mini_grader", GRADER_PATH)
 _grader = importlib.util.module_from_spec(_spec)
 _spec.loader.exec_module(_grader)
+grade = _grader.grade
 
 
 def evaluate(output: object, example: Example, execution_status: str = "success") -> dict:
-    errors = schema_errors(output, example.input.fields)
-    task_id = example.input.task_id
+    return score_answer(output, example.expected, example.input.fields, execution_status)
+
+
+def score_answer(output: object, expected: dict, fields: dict, execution_status: str = "success") -> dict:
+    errors = schema_errors(output, fields)
     # Failures stay in the denominator, even if an adapter had partial output.
     prediction = output if execution_status == "success" and isinstance(output, dict) else {}
-    report = _grader.grade(
-        {"answers": {task_id: prediction}},
-        {"answers": {task_id: example.expected}},
-        {task_id: example.input.fields},
+    report = grade(
+        {"answers": {"task": prediction}},
+        {"answers": {"task": expected}},
+        {"task": fields},
     )
     status = "invalid_response" if execution_status == "success" and errors else execution_status
     return {
