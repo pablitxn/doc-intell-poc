@@ -5,7 +5,7 @@ from pathlib import Path
 
 from ..contracts import TaskInput
 
-PROMPT_VERSION = "tax-mini-text-v4"
+PROMPT_VERSION = "tax-fields-text-v5"
 
 
 def build_prompt(task: TaskInput, dataset: Path, *, document_root: Path | None = None) -> str:
@@ -30,8 +30,10 @@ def build_prompt(task: TaskInput, dataset: Path, *, document_root: Path | None =
         "with exactly two fractional digits, no currency/percent symbols and no thousands "
         "separators (for example, \"1234.50\"). Percent values are percentage points "
         "(\"1.20\" means 1.20%). Boolean values must be JSON true/false; dates use YYYY-MM-DD.\n"
-        "For evidence.box, use the box identifier printed at the start of the document's "
-        "field label, without adding a form name or the word box/line.\n"
+        "For evidence.box, use any canonical identifier explicitly defined by the task "
+        "(including row qualifiers or JSON pointers). Otherwise use the box identifier "
+        "printed at the start of the document's field label, without adding a form name "
+        "or the word box/line.\n"
         "Return only one JSON object for this task, with all requested fields.\n"
         "Use exactly the top-level keys values and evidence, with exactly the requested field keys in both. "
         "Evidence is evaluated as the exact set of document_id/page/box references requested by the task, "

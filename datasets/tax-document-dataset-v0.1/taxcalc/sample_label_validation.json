@@ -1,0 +1,195 @@
+{
+  "pairs_checked": 5,
+  "fields_checked": 11,
+  "exact_matches": 11,
+  "scope": "Only these numeric fields in these five document pairs are validated. Other XML fields remain label candidates; no page/box evidence is supplied upstream.",
+  "checks": [
+    {
+      "case_id": "ty25-us-001",
+      "pdf": "w2_1.pdf",
+      "page": 1,
+      "bbox_points_top_left": [
+        330,
+        72,
+        450,
+        84
+      ],
+      "pdf_field": "box_1",
+      "pdf_value": "1100000",
+      "xml_form": "IRSW2",
+      "xml_tag": "WagesAmt",
+      "xml_value": "1100000",
+      "exact_match": true
+    },
+    {
+      "case_id": "ty25-us-001",
+      "pdf": "w2_1.pdf",
+      "page": 1,
+      "bbox_points_top_left": [
+        450,
+        72,
+        577,
+        84
+      ],
+      "pdf_field": "box_2",
+      "pdf_value": "378000",
+      "xml_form": "IRSW2",
+      "xml_tag": "WithholdingAmt",
+      "xml_value": "378000",
+      "exact_match": true
+    },
+    {
+      "case_id": "ty25-us-003",
+      "pdf": "w2_1.pdf",
+      "page": 1,
+      "bbox_points_top_left": [
+        330,
+        72,
+        450,
+        84
+      ],
+      "pdf_field": "box_1",
+      "pdf_value": "32000",
+      "xml_form": "IRSW2",
+      "xml_tag": "WagesAmt",
+      "xml_value": "32000",
+      "exact_match": true
+    },
+    {
+      "case_id": "ty25-us-003",
+      "pdf": "w2_1.pdf",
+      "page": 1,
+      "bbox_points_top_left": [
+        450,
+        72,
+        577,
+        84
+      ],
+      "pdf_field": "box_2",
+      "pdf_value": "3200",
+      "xml_form": "IRSW2",
+      "xml_tag": "WithholdingAmt",
+      "xml_value": "3200",
+      "exact_match": true
+    },
+    {
+      "case_id": "ty25-us-005",
+      "pdf": "w2_1.pdf",
+      "page": 1,
+      "bbox_points_top_left": [
+        330,
+        72,
+        450,
+        84
+      ],
+      "pdf_field": "box_1",
+      "pdf_value": "420000",
+      "xml_form": "IRSW2",
+      "xml_tag": "WagesAmt",
+      "xml_value": "420000",
+      "exact_match": true
+    },
+    {
+      "case_id": "ty25-us-005",
+      "pdf": "w2_1.pdf",
+      "page": 1,
+      "bbox_points_top_left": [
+        450,
+        72,
+        577,
+        84
+      ],
+      "pdf_field": "box_2",
+      "pdf_value": "5000",
+      "xml_form": "IRSW2",
+      "xml_tag": "WithholdingAmt",
+      "xml_value": "5000",
+      "exact_match": true
+    },
+    {
+      "case_id": "ty25-ca-001",
+      "pdf": "w2_1.pdf",
+      "page": 1,
+      "bbox_points_top_left": [
+        330,
+        72,
+        450,
+        84
+      ],
+      "pdf_field": "box_1",
+      "pdf_value": "2248",
+      "xml_form": "CAFormW2",
+      "xml_tag": "WagesAmt",
+      "xml_value": "2248",
+      "exact_match": true
+    },
+    {
+      "case_id": "ty25-ca-001",
+      "pdf": "w2_1.pdf",
+      "page": 1,
+      "bbox_points_top_left": [
+        450,
+        72,
+        577,
+        84
+      ],
+      "pdf_field": "box_2",
+      "pdf_value": "11",
+      "xml_form": "CAFormW2",
+      "xml_tag": "WithholdingAmt",
+      "xml_value": "11",
+      "exact_match": true
+    },
+    {
+      "case_id": "ty25-us-010",
+      "pdf": "1099r_1.pdf",
+      "page": 1,
+      "bbox_points_top_left": [
+        294,
+        57,
+        393,
+        71
+      ],
+      "pdf_field": "box_1",
+      "pdf_value": "11000",
+      "xml_form": "IRS1099R",
+      "xml_tag": "GrossDistributionAmt",
+      "xml_value": "11000",
+      "exact_match": true
+    },
+    {
+      "case_id": "ty25-us-010",
+      "pdf": "1099r_1.pdf",
+      "page": 1,
+      "bbox_points_top_left": [
+        294,
+        93,
+        393,
+        108
+      ],
+      "pdf_field": "box_2a",
+      "pdf_value": "11000",
+      "xml_form": "IRS1099R",
+      "xml_tag": "TaxableAmt",
+      "xml_value": "11000",
+      "exact_match": true
+    },
+    {
+      "case_id": "ty25-us-010",
+      "pdf": "1099r_1.pdf",
+      "page": 1,
+      "bbox_points_top_left": [
+        394,
+        165,
+        489,
+        180
+      ],
+      "pdf_field": "box_4",
+      "pdf_value": "1100",
+      "xml_form": "IRS1099R",
+      "xml_tag": "FederalIncomeTaxWithheldAmt",
+      "xml_value": "1100",
+      "exact_match": true
+    }
+  ]
+}

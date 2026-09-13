@@ -1,6 +1,17 @@
 # Document evaluation POC
 
+El **dataset completo preparado** está en `datasets/tax-document-eval-v1`: 319 documentos, 55 expedientes, 366 tareas y 1.465 campos. La [guía de ejecución](docs/FULL_DATASET_READINESS.md) y la [auditoría de fuentes y evaluadores](docs/FULL_DATASET_AUDIT.md) explican su alcance y las comprobaciones. El kit recibido en `datasets/tax-document-dataset-v0.1` se conserva íntegro; es material de adquisición, no el directorio que se pasa a `--dataset`.
+
+```bash
+uv run scripts/prepare_full_dataset.py --check
+./run.py --dataset datasets/tax-document-eval-v1 --harness codex \
+  --model gpt-5.6-sol --thinking medium \
+  --task extract_taxcalc_ty25_ca_001_w2_1 --timeout 300
+```
+
 Pruebas reales de **Pi, Tau y Codex** sobre cinco PDF sintéticos, seis tareas y 54 valores. Un runner entrega la misma tarea a cada harness, evalúa su JSON y publica resultados y trazas en Phoenix. Se conservan los PDF y valores esperados originales, con consigna explícita y validaciones reforzadas.
+
+Las instrucciones restantes conservan el ejemplo minimal, que sigue siendo el dataset por defecto. El prompt actual es `tax-fields-text-v5`; los reportes históricos citados abajo usaron v4. Para el conjunto completo especificar siempre `--dataset datasets/tax-document-eval-v1`.
 
 Las [definiciones de esta etapa](docs/PLAN.md) describen las condiciones de comparación y el futuro caso MCP → Document Intelligence.
 La [auditoría del dataset y evaluadores](docs/DATASET_AUDIT.md) documenta la revisión de las 54 respuestas y los controles de integridad. La [matriz GPT-5.6](docs/VALIDATION_GPT56.md) completó 54/54 tareas con Luna, Sol y Terra en medium y verificó su publicación en Phoenix. La [validación histórica con GPT-5.5](docs/VALIDATION.md) conserva los resultados anteriores, con su versión de consigna y scoring.
@@ -71,6 +82,12 @@ Los artefactos se guardan después de cada tarea terminada. Si falla la publicac
 ./run.py --upload-only runs/ID-DE-LA-CORRIDA
 ```
 
+Para una corrida del conjunto completo, indicar también su dataset; omitirlo selecciona el minimal:
+
+```bash
+./run.py --dataset datasets/tax-document-eval-v1 --upload-only runs/ID-DE-LA-CORRIDA
+```
+
 Ese comando nunca llama al modelo. Los IDs de tareas y spans se conservan; ante una respuesta de red incierta puede repetirse la transmisión, no la inferencia. `--phoenix-url`/`PHOENIX_ENDPOINT` cambian el destino de los reportes y de ambas rutas de tracing, y `PHOENIX_API_KEY` configura su autenticación. El endpoint admite un origen HTTP(S), sin credenciales embebidas ni prefijo de ruta; los destinos loopback se traducen a `host.docker.internal` para el proxy.
 
 Para reconstruir un historial en **otra instancia** usar `--import-run runs/ID --phoenix-url URL --output-dir runs/restored`. Esa importación conserva los scores históricos, revalida el destino y deja los originales intactos. No usa los checkpoints de la instancia anterior ni registra evaluadores actuales para reetiquetar resultados antiguos. [Detalles y referencias históricas](docs/CORPORATE_READINESS.md#reconstruir-el-historial-en-phoenix).
@@ -83,7 +100,7 @@ El runner crea una traza por tarea/harness/repetición, asociada al experimento 
 
 Un texto UTF-8 por stdin con instrucciones, IDs, documentos, campos/tipos y formato esperado. La respuesta final debe ser un único JSON `{"values": ..., "evidence": ...}`. El adapter separa eventos de respuesta; no corrige JSON, valores ni evidencias.
 
-Cada tarea inicia un contenedor y sesión nuevos. Sólo se montan sus PDF asignados, como `/workspace/inputs/...`; el dataset privado, grader, tests, README y reportes quedan fuera. El agente usa sus herramientas nativas y puede invocar `pdftotext`, `pypdf`, `pdfplumber`, shell, etc. No hay extracción previa desde el runner ni llamadas directas del runner a APIs de modelos.
+Cada tarea inicia un contenedor y sesión nuevos. Sólo se montan sus documentos asignados (PDF, JPG/JPEG, PNG o JSON), como `/workspace/inputs/...`; el dataset privado, grader, tests, README y reportes quedan fuera. El agente usa sus herramientas nativas y puede invocar `pdftotext`, `pypdf`, `pdfplumber`, shell, etc. No hay extracción previa desde el runner ni llamadas directas del runner a APIs de modelos.
 
 El worker usa una red interna con salida por un proxy limitado a los destinos del perfil. El proxy deniega lecturas de Phoenix y permite únicamente POST `/v1/traces` hacia ese servicio. Credenciales de modelo y de Phoenix no se imprimen en argumentos ni se guardan en reportes. El contexto de build es exclusivamente `containers/`.
 
@@ -123,7 +140,7 @@ Ese modo conserva texto stdin/JSON stdout y timeout, pero **no aplica el aislami
 - `task_pass`: ejecución exitosa, schema válido y todos los valores/evidencias correctos.
 - `execution_status`: éxito, respuesta inválida, timeout, no soportado o error del adapter. Los errores de ejecución puntúan cero y permanecen en el denominador. Un error de formato invalida `schema_valid` y `task_pass`; `value_accuracy` sigue siendo una métrica diagnóstica independiente y puede reconocer un valor numéricamente correcto.
 
-Antes de ejecutar modelos, el loader exige que tareas, tipos y ground truth tengan exactamente los mismos campos y valida integridad/rutas de documentos, formato de referencias y páginas dentro del rango declarado en el manifest. La existencia de las casillas y páginas en estos PDF se verificó durante la auditoría documental; el loader no interpreta sus etiquetas. La conciliación pide expresamente el total de Form 8959 línea 24: otro importe idéntico no sustituye esa cita. La política vigente es `tax-mini-v2` y el prompt `tax-mini-text-v4`; no se mezclan reportes de distintos hashes de dataset o evaluador.
+Antes de ejecutar modelos, el loader exige que tareas, tipos y ground truth tengan exactamente los mismos campos y valida integridad/rutas de documentos, formato de referencias y páginas dentro del rango declarado en el manifest. La existencia de las casillas y páginas en estos PDF se verificó durante la auditoría documental; el loader no interpreta sus etiquetas. La conciliación del minimal pide expresamente el total de Form 8959 línea 24: otro importe idéntico no sustituye esa cita. La política vigente es `tax-mini-v2` y el prompt `tax-fields-text-v5`; las corridas minimal v4 permanecen históricas. No se mezclan reportes de distintos hashes de dataset, contrato o evaluador.
 
 Los tests no constituyen resultados de modelos:
 
@@ -133,12 +150,12 @@ DOC_INTELL_DOCKER_TESTS=1 python3 -m unittest discover -s tests -p test_runtime_
 
 # Suite completa, incluido protobuf y transporte OTel a Phoenix activo:
 DOC_INTELL_DOCKER_TESTS=1 DOC_INTELL_PHOENIX_TESTS=1 \
-  uv run --with arize-phoenix-client==3.5.0 --with opentelemetry-proto==1.44.0 \
+  uv run --with-requirements tests/requirements.txt \
   python -m unittest discover -s tests -q
 ```
 
 El primer comando usa Python estándar; el test opcional de protobuf requiere las dependencias fijadas de `run.py`. El segundo prueba aislamiento con Docker real y no llama a proveedores. La suite completa incluye el cliente Phoenix para importar a una instancia efímera real.
 
-El POC sigue usando el formato y grader de tax-mini-poc; agregar otro directorio de dataset no lo hace automáticamente compatible. No hay LLM juez. La CLI retorna 0 al producir/publicar reportes aunque los scores fallen, porque es una herramienta exploratoria, no un gate de CI.
+El POC sigue usando el scorer exacto de tax-mini-poc con tareas por expediente/año y documentos PDF/JPEG/PNG/JSON; agregar otro directorio de fuentes no lo hace automáticamente compatible. El builder del conjunto completo prepara su contrato y referencias verificadas. No hay LLM juez. La CLI retorna 0 al producir/publicar reportes aunque los scores fallen, porque es una herramienta exploratoria, no un gate de CI.
 
 Las nuevas comparaciones separan hashes de contrato/scoring y runtime. Un cambio de adapter ya no bloquea una comparación compatible; el scoring y las consignas sí deben coincidir. La [migración explícita del baseline](docs/FINGERPRINTS.md) permite usar las nueve corridas anteriores sin repetir llamadas a modelos.

@@ -1,0 +1,124 @@
+{
+  "dataset": "llamaindex/ExtractBench",
+  "revision": "f6180e917a050a84582e6366cff85b7dc1e84e58",
+  "total_inspected": 370,
+  "target_tax_rows": 77,
+  "metadata_files": [
+    {
+      "filename": "extractbench_short.txt",
+      "sha256": "e4b07b3612f1d4bcf4157d5b97b8692d671aeddaf96e5b5898338345b654e740",
+      "rows": 252
+    },
+    {
+      "filename": "extractbench_medium.txt",
+      "sha256": "8ae0884d8e8dddb1282eb98282d942b65c8d99b82dd37e650edc53cd0f5bb5df",
+      "rows": 98
+    },
+    {
+      "filename": "extractbench_long_complete.jsonl",
+      "sha256": "ac5b22bbf810548a5e086e792d4afe0aa98dc572d24deceab820a2558570f3bd",
+      "rows": 20
+    }
+  ],
+  "schema_counts": {
+    "Schedule K-1 (Form 1065) Partner's Share of Income, Deductions, Credits, etc.": 10,
+    "RRCH12Extraction": 8,
+    "Schedule K-1 (Form 1120S) Shareholder's Share of Income, Deductions, Credits, etc.": 9,
+    "UNTITLED": 39,
+    "RRC2AExtraction": 11,
+    "MitchellVehicleValuationReport": 9,
+    "Form 1099-B Proceeds From Broker and Barter Exchange Transactions (2009 consolidated statement)": 17,
+    "RRCH9Extraction": 15,
+    "RRCP18Extraction": 11,
+    "RRCP4Extraction": 17,
+    "RRCW1Extraction": 3,
+    "RRCW14ReviewExtraction": 13,
+    "RRCW2Extraction": 4,
+    "Form 1040 (2021) U.S. Individual Income Tax Return with Schedules 1, 2, 3": 5,
+    "Form 1040 (2022) U.S. Individual Income Tax Return with Schedules 1, 2, 3": 5,
+    "Form 1040 (2024) U.S. Individual Income Tax Return with Schedules 1, 2, 3": 4,
+    "WholesaleCatalogPriceList": 4,
+    "StateMedicaidRemittanceAdvice": 8,
+    "Product Spec Sheet / Datasheet \u2014 rated specifications table (vendor-agnostic)": 6,
+    "CBPForm7501EntrySummary": 5,
+    "CCCMarketValuationReport": 18,
+    "ClosingDisclosureTRID": 6,
+    "UtilityBill": 3,
+    "DD1155Schedule": 5,
+    "BrokerageConsolidated1099": 3,
+    "GsaMasItLaborPricelist": 13,
+    "RRCH5Extraction": 13,
+    "PurchaseOrder": 6,
+    "Form W-2 Wage and Tax Statement (2020)": 20,
+    "Bankruptcy Schedule E/F (Form 206E/F) unsecured-creditors extraction schema": 2,
+    "Real-content county AP check register extraction schema": 3,
+    "Synthetic election statement-of-votes pivot schema": 3,
+    "SEC Form 13F Information Table": 5,
+    "GovernmentFleetRateCard": 4,
+    "Form 1040 (2023) U.S. Individual Income Tax Return with Schedules 1, 2, 3": 4,
+    "EarningsDeckHeadlineKPIs": 12,
+    "Schedule of Expenditures of Federal Awards (SEFA) \u2014 Uniform Guidance Single Audit": 3,
+    "DoDClinSchedule": 5,
+    "Real-content Master Service List extraction schema": 2,
+    "BlackRock closed-end municipal fund Schedule of Investments extraction schema": 1,
+    "Real-content schedule of investments extraction schema": 1,
+    "Real-content county fixed-width check register extraction schema": 1,
+    "Real-content legal facts extraction schema": 2,
+    "Fidelity NorthStar Fund Schedule of Investments (real content)": 1,
+    "Penn Hills School District List Of Payments (BAR047) extraction schema": 1,
+    "Real-content district check register summary extraction schema": 1,
+    "Real-content CSR subject disposition listing extraction schema": 2,
+    "Vanguard Schedule of Investments (real content)": 10,
+    "Wright County Audit List for Board (Commissioner's Vouchers) extraction schema": 1,
+    "SF1449 Schedule \u2014 v5 PATCH (placeholder\u2192null + strict title-only)": 5,
+    "Credit fund consolidated schedule of investments (real content)": 1,
+    "Real-content check register extraction schema": 1,
+    "Real-content FTX creditor matrix extraction schema": 2,
+    "Real-content creditor matrix extraction schema": 2,
+    "iShares iBoxx $ bond-ETF Schedules of Investments extraction schema": 1,
+    "Real-content unclaimed-property owner list schema": 1,
+    "Real-content adverse event listing extraction schema": 1,
+    "Real-content CSR expired carbon monoxide listing extraction schema": 2
+  },
+  "tax_counts": {
+    "Form 1040 (2021) U.S. Individual Income Tax Return with Schedules 1, 2, 3": {
+      "rows": 5,
+      "distinct_expected_output_objects": 5
+    },
+    "Form 1099-B Proceeds From Broker and Barter Exchange Transactions (2009 consolidated statement)": {
+      "rows": 17,
+      "distinct_expected_output_objects": 17
+    },
+    "Form 1040 (2024) U.S. Individual Income Tax Return with Schedules 1, 2, 3": {
+      "rows": 4,
+      "distinct_expected_output_objects": 4
+    },
+    "Form W-2 Wage and Tax Statement (2020)": {
+      "rows": 20,
+      "distinct_expected_output_objects": 20
+    },
+    "BrokerageConsolidated1099": {
+      "rows": 3,
+      "distinct_expected_output_objects": 3
+    },
+    "Form 1040 (2022) U.S. Individual Income Tax Return with Schedules 1, 2, 3": {
+      "rows": 5,
+      "distinct_expected_output_objects": 5
+    },
+    "Schedule K-1 (Form 1120S) Shareholder's Share of Income, Deductions, Credits, etc.": {
+      "rows": 9,
+      "distinct_expected_output_objects": 9
+    },
+    "Schedule K-1 (Form 1065) Partner's Share of Income, Deductions, Credits, etc.": {
+      "rows": 10,
+      "distinct_expected_output_objects": 7
+    },
+    "Form 1040 (2023) U.S. Individual Income Tax Return with Schedules 1, 2, 3": {
+      "rows": 4,
+      "distinct_expected_output_objects": 4
+    }
+  },
+  "count_caveat": "Rows are benchmark documents, not independent people/expedientes. Shared-source pages must be grouped for splitting.",
+  "license_declared_by_publisher": "Apache-2.0, including dataset card copyright statement",
+  "coverage_limit": "Counts establish dedicated extraction-schema coverage. Other forms may appear as unlabelled pages inside 1040 packets; not inspected page-by-page."
+}

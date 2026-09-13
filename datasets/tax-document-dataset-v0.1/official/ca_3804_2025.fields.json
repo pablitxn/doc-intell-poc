@@ -1,0 +1,862 @@
+{
+  "Electing Qualified P T E Business name (as shown on tax return)": {
+    "type": "/Tx",
+    "label": "Electing Qualified P T E Business name (as shown on tax return).",
+    "value": ""
+  },
+  "Select Entity type": {
+    "type": "/Btn",
+    "label": "Select Entity type",
+    "value": ""
+  },
+  "F E I N, C A Corporation number, C A S O S file number (12 digits)": {
+    "type": "/Tx",
+    "label": "F E I N, C A Corporation number, C A S O S file number (12 digits).",
+    "value": ""
+  },
+  "Part I, Line 1": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Part I, Line 1. Total qualified net income from all qualified taxpayers (combine all box a amounts from the Schedule of Qualified Taxpayers below, Side 2, and any additional pages)": {
+    "type": "/Tx",
+    "label": "Part I, Line 1. Total qualified net income from all qualified taxpayers (combine all box a amounts from the Schedule of Qualified Taxpayers below, Side 2, and any additional pages).",
+    "value": ""
+  },
+  "Line 3": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 3. Multiply line 1 by line 2": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 3. Multiply line 1 by line 2. This is the total amount of elective tax": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 3. Multiply line 1 by line 2. This is the total amount of elective tax. Enter the result here and on Form 100S, line 29; or Form 565, line 25; or Form 568, line 4": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 3. Multiply line 1 by line 2. This is the total amount of elective tax. Enter the result here and on Form 100S, line 29; or Form 565, line 25; or Form 568, line 4. See instructions": {
+    "type": "/Tx",
+    "label": "Line 3. Multiply line 1 by line 2. This is the total amount of elective tax. Enter the result here and on Form 100S, line 29; or Form 565, line 25; or Form 568, line 4. See instructions.",
+    "value": ""
+  },
+  "Line 3. First name": {
+    "type": "/Tx",
+    "label": "Line 3. First name.",
+    "value": ""
+  },
+  "Line 3. Initial": {
+    "type": "/Tx",
+    "label": "Line 3. Initial.",
+    "value": ""
+  },
+  "Line 3. Last name": {
+    "type": "/Tx",
+    "label": "Line 3. Last name.",
+    "value": ""
+  },
+  "Line 3. Select Entity type": {
+    "type": "/Btn",
+    "label": "Line 3. Select Entity type",
+    "value": ""
+  },
+  "Line 3. S S N or I T I N, F E I N (9 digits)": {
+    "type": "/Tx",
+    "label": "Line 3. S S N or I T I N, F E I N (9 digits).",
+    "value": ""
+  },
+  "Line 3. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income": {
+    "type": "/Tx",
+    "label": "Line 3. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income.",
+    "value": ""
+  },
+  "Line 3. (b) Elective tax credit amount (Multiply box a by 9": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 3. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 3. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.)": {
+    "type": "/Tx",
+    "label": "Line 3. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.).",
+    "value": ""
+  },
+  "Part II, Line 1": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Part II, Line 1. First name": {
+    "type": "/Tx",
+    "label": "Part II, Line 1. First name.",
+    "value": ""
+  },
+  "Line 1": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 1. Initial": {
+    "type": "/Tx",
+    "label": "Line 1. Initial.",
+    "value": ""
+  },
+  "Line 1. Last name": {
+    "type": "/Tx",
+    "label": "Line 1. Last name.",
+    "value": ""
+  },
+  "Line 1. Select Entity type": {
+    "type": "/Btn",
+    "label": "Line 1. Select Entity type",
+    "value": ""
+  },
+  "Line 1. S S N or I T I N, F E I N (9 digits)": {
+    "type": "/Tx",
+    "label": "Line 1. S S N or I T I N, F E I N (9 digits).",
+    "value": ""
+  },
+  "Line 1. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income": {
+    "type": "/Tx",
+    "label": "Line 1. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income.",
+    "value": ""
+  },
+  "Line 1. (b) Elective tax credit amount (Multiply box a by 9": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 1. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 1. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.)": {
+    "type": "/Tx",
+    "label": "Line 1. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.).",
+    "value": ""
+  },
+  "Line 2": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 2. First name": {
+    "type": "/Tx",
+    "label": "Line 2. First name.",
+    "value": ""
+  },
+  "Line 2. Initial": {
+    "type": "/Tx",
+    "label": "Line 2. Initial.",
+    "value": ""
+  },
+  "Line 2. Last name": {
+    "type": "/Tx",
+    "label": "Line 2. Last name.",
+    "value": ""
+  },
+  "Line 2. Select Entity type": {
+    "type": "/Btn",
+    "label": "Line 2. Select Entity type",
+    "value": ""
+  },
+  "Line 2. S S N or I T I N, F E I N (9 digits)": {
+    "type": "/Tx",
+    "label": "Line 2. S S N or I T I N, F E I N (9 digits).",
+    "value": ""
+  },
+  "Line 2. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income": {
+    "type": "/Tx",
+    "label": "Line 2. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income.",
+    "value": ""
+  },
+  "Line 2. (b) Elective tax credit amount (Multiply box a by 9": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 2. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 2. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.)": {
+    "type": "/Tx",
+    "label": "Line 2. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.).",
+    "value": ""
+  },
+  "Line 4": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 4. First name": {
+    "type": "/Tx",
+    "label": "Line 4. First name.",
+    "value": ""
+  },
+  "Line 4. Initial": {
+    "type": "/Tx",
+    "label": "Line 4. Initial.",
+    "value": ""
+  },
+  "Line 4. Last name": {
+    "type": "/Tx",
+    "label": "Line 4. Last name.",
+    "value": ""
+  },
+  "Line 4. Select Entity type": {
+    "type": "/Btn",
+    "label": "Line 4. Select Entity type",
+    "value": ""
+  },
+  "Line 4. S S N or I T I N, F E I N (9 digits)": {
+    "type": "/Tx",
+    "label": "Line 4. S S N or I T I N, F E I N (9 digits).",
+    "value": ""
+  },
+  "Line 4. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income": {
+    "type": "/Tx",
+    "label": "Line 4. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income.",
+    "value": ""
+  },
+  "Line 4. (b) Elective tax credit amount (Multiply box a by 9": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 4. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 4. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.)": {
+    "type": "/Tx",
+    "label": "Line 4. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.).",
+    "value": ""
+  },
+  "Line 5": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 5. First name": {
+    "type": "/Tx",
+    "label": "Line 5. First name.",
+    "value": ""
+  },
+  "Line 5. Initial": {
+    "type": "/Tx",
+    "label": "Line 5. Initial.",
+    "value": ""
+  },
+  "Line 5. Last name": {
+    "type": "/Tx",
+    "label": "Line 5. Last name.",
+    "value": ""
+  },
+  "Line 5. Select Entity type": {
+    "type": "/Btn",
+    "label": "Line 5. Select Entity type",
+    "value": ""
+  },
+  "Line 5. S S N or I T I N, F E I N (9 digits)": {
+    "type": "/Tx",
+    "label": "Line 5. S S N or I T I N, F E I N (9 digits).",
+    "value": ""
+  },
+  "Line 5. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income": {
+    "type": "/Tx",
+    "label": "Line 5. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income.",
+    "value": ""
+  },
+  "Line 5. (b) Elective tax credit amount (Multiply box a by 9": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 5. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 5. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.)": {
+    "type": "/Tx",
+    "label": "Line 5. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.).",
+    "value": ""
+  },
+  "Line 6": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 6. First name": {
+    "type": "/Tx",
+    "label": "Line 6. First name.",
+    "value": ""
+  },
+  "Line 6. Initial": {
+    "type": "/Tx",
+    "label": "Line 6. Initial.",
+    "value": ""
+  },
+  "Line 6. Last name": {
+    "type": "/Tx",
+    "label": "Line 6. Last name.",
+    "value": ""
+  },
+  "Line 6. Select Entity type": {
+    "type": "/Btn",
+    "label": "Line 6. Select Entity type",
+    "value": ""
+  },
+  "Line 6. S S N or I T I N, F E I N (9 digits)": {
+    "type": "/Tx",
+    "label": "Line 6. S S N or I T I N, F E I N (9 digits).",
+    "value": ""
+  },
+  "Line 6. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income": {
+    "type": "/Tx",
+    "label": "Line 6. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income.",
+    "value": ""
+  },
+  "Line 6. (b) Elective tax credit amount (Multiply box a by 9": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 6. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 6. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.)": {
+    "type": "/Tx",
+    "label": "Line 6. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.).",
+    "value": ""
+  },
+  "Line 7": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 7. First name": {
+    "type": "/Tx",
+    "label": "Line 7. First name.",
+    "value": ""
+  },
+  "Line 7. Initial": {
+    "type": "/Tx",
+    "label": "Line 7. Initial.",
+    "value": ""
+  },
+  "Line 7. Last name": {
+    "type": "/Tx",
+    "label": "Line 7. Last name.",
+    "value": ""
+  },
+  "Line 7. Select Entity type": {
+    "type": "/Btn",
+    "label": "Line 7. Select Entity type",
+    "value": ""
+  },
+  "Line 7. S S N or I T I N, F E I N (9 digits)": {
+    "type": "/Tx",
+    "label": "Line 7. S S N or I T I N, F E I N (9 digits).",
+    "value": ""
+  },
+  "Line 7. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income": {
+    "type": "/Tx",
+    "label": "Line 7. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income.",
+    "value": ""
+  },
+  "Line 7. (b) Elective tax credit amount (Multiply box a by 9": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 7. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 7. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.)": {
+    "type": "/Tx",
+    "label": "Line 7. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.).",
+    "value": ""
+  },
+  "Electing Qualified P T E Name": {
+    "type": "/Tx",
+    "label": "Electing Qualified P T E Name.",
+    "value": ""
+  },
+  "Electing Qualified P T E ID Number": {
+    "type": "/Tx",
+    "label": "Electing Qualified P T E ID Number.",
+    "value": ""
+  },
+  "Line 8": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 8. First name": {
+    "type": "/Tx",
+    "label": "Line 8. First name.",
+    "value": ""
+  },
+  "Line 8. Initial": {
+    "type": "/Tx",
+    "label": "Line 8. Initial.",
+    "value": ""
+  },
+  "Line 8. Last name": {
+    "type": "/Tx",
+    "label": "Line 8. Last name.",
+    "value": ""
+  },
+  "Line 8. Select Entity type": {
+    "type": "/Btn",
+    "label": "Line 8. Select Entity type",
+    "value": ""
+  },
+  "Line 8. S S N or I T I N, F E I N (9 digits)": {
+    "type": "/Tx",
+    "label": "Line 8. S S N or I T I N, F E I N (9 digits).",
+    "value": ""
+  },
+  "Line 8. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income": {
+    "type": "/Tx",
+    "label": "Line 8. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income.",
+    "value": ""
+  },
+  "Line 8. (b) Elective tax credit amount (Multiply box a by 9": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 8. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 8. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.)": {
+    "type": "/Tx",
+    "label": "Line 8. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.).",
+    "value": ""
+  },
+  "Line 9": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 9. First name": {
+    "type": "/Tx",
+    "label": "Line 9. First name.",
+    "value": ""
+  },
+  "Line 9. Initial": {
+    "type": "/Tx",
+    "label": "Line 9. Initial.",
+    "value": ""
+  },
+  "Line 9. Last name": {
+    "type": "/Tx",
+    "label": "Line 9. Last name.",
+    "value": ""
+  },
+  "Line 9. Select Entity type": {
+    "type": "/Btn",
+    "label": "Line 9. Select Entity type",
+    "value": ""
+  },
+  "Line 9. S S N or I T I N, F E I N (9 digits)": {
+    "type": "/Tx",
+    "label": "Line 9. S S N or I T I N, F E I N (9 digits).",
+    "value": ""
+  },
+  "Line 9. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income": {
+    "type": "/Tx",
+    "label": "Line 9. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income.",
+    "value": ""
+  },
+  "Line 9. (b) Elective tax credit amount (Multiply box a by 9": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 9. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 9. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.)": {
+    "type": "/Tx",
+    "label": "Line 9. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.).",
+    "value": ""
+  },
+  "Line 10": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 10. First name": {
+    "type": "/Tx",
+    "label": "Line 10. First name.",
+    "value": ""
+  },
+  "Line 10. Initial": {
+    "type": "/Tx",
+    "label": "Line 10. Initial.",
+    "value": ""
+  },
+  "Line 10. Last name": {
+    "type": "/Tx",
+    "label": "Line 10. Last name.",
+    "value": ""
+  },
+  "Line 10. Select Entity type": {
+    "type": "/Btn",
+    "label": "Line 10. Select Entity type",
+    "value": ""
+  },
+  "Line 10. S S N or I T I N, F E I N (9 digits)": {
+    "type": "/Tx",
+    "label": "Line 10. S S N or I T I N, F E I N (9 digits).",
+    "value": ""
+  },
+  "Line 10. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income": {
+    "type": "/Tx",
+    "label": "Line 10. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income.",
+    "value": ""
+  },
+  "Line 10. (b) Elective tax credit amount (Multiply box a by 9": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 10. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 10. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.)": {
+    "type": "/Tx",
+    "label": "Line 10. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.).",
+    "value": ""
+  },
+  "Line 11": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 11. First name": {
+    "type": "/Tx",
+    "label": "Line 11. First name.",
+    "value": ""
+  },
+  "Line 11. Initial": {
+    "type": "/Tx",
+    "label": "Line 11. Initial.",
+    "value": ""
+  },
+  "Line 11. Last name": {
+    "type": "/Tx",
+    "label": "Line 11. Last name.",
+    "value": ""
+  },
+  "Line 11. Select Entity type": {
+    "type": "/Btn",
+    "label": "Line 11. Select Entity type",
+    "value": ""
+  },
+  "Line 11. S S N or I T I N, F E I N (9 digits)": {
+    "type": "/Tx",
+    "label": "Line 11. S S N or I T I N, F E I N (9 digits).",
+    "value": ""
+  },
+  "Line 11. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income": {
+    "type": "/Tx",
+    "label": "Line 11. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income.",
+    "value": ""
+  },
+  "Line 11. (b) Elective tax credit amount (Multiply box a by 9": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 11. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 11. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.)": {
+    "type": "/Tx",
+    "label": "Line 11. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.).",
+    "value": ""
+  },
+  "Line 12": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 12. First name": {
+    "type": "/Tx",
+    "label": "Line 12. First name.",
+    "value": ""
+  },
+  "Line 12. Initial": {
+    "type": "/Tx",
+    "label": "Line 12. Initial.",
+    "value": ""
+  },
+  "Line 12. Last name": {
+    "type": "/Tx",
+    "label": "Line 12. Last name.",
+    "value": ""
+  },
+  "Line 12. Select Entity type": {
+    "type": "/Btn",
+    "label": "Line 12. Select Entity type",
+    "value": ""
+  },
+  "Line 12. S S N or I T I N, F E I N (9 digits)": {
+    "type": "/Tx",
+    "label": "Line 12. S S N or I T I N, F E I N (9 digits).",
+    "value": ""
+  },
+  "Line 12. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income": {
+    "type": "/Tx",
+    "label": "Line 12. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income.",
+    "value": ""
+  },
+  "Line 12. (b) Elective tax credit amount (Multiply box a by 9": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 12. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 12. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.)": {
+    "type": "/Tx",
+    "label": "Line 12. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.).",
+    "value": ""
+  },
+  "Line 13": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 13. First name": {
+    "type": "/Tx",
+    "label": "Line 13. First name.",
+    "value": ""
+  },
+  "Line 13. Initial": {
+    "type": "/Tx",
+    "label": "Line 13. Initial.",
+    "value": ""
+  },
+  "Line 13. Last name": {
+    "type": "/Tx",
+    "label": "Line 13. Last name.",
+    "value": ""
+  },
+  "Line 13. Select Entity type": {
+    "type": "/Btn",
+    "label": "Line 13. Select Entity type",
+    "value": ""
+  },
+  "Line 13. S S N or I T I N, F E I N (9 digits)": {
+    "type": "/Tx",
+    "label": "Line 13. S S N or I T I N, F E I N (9 digits).",
+    "value": ""
+  },
+  "Line 13. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income": {
+    "type": "/Tx",
+    "label": "Line 13. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income.",
+    "value": ""
+  },
+  "Line 13. (b) Elective tax credit amount (Multiply box a by 9": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 13. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 13. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.)": {
+    "type": "/Tx",
+    "label": "Line 13. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.).",
+    "value": ""
+  },
+  "Line 14": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 14. First name": {
+    "type": "/Tx",
+    "label": "Line 14. First name.",
+    "value": ""
+  },
+  "Line 14. Initial": {
+    "type": "/Tx",
+    "label": "Line 14. Initial.",
+    "value": ""
+  },
+  "Line 14. Last name": {
+    "type": "/Tx",
+    "label": "Line 14. Last name.",
+    "value": ""
+  },
+  "Line 14. Select Entity type": {
+    "type": "/Btn",
+    "label": "Line 14. Select Entity type",
+    "value": ""
+  },
+  "Line 14. S S N or I T I N, F E I N (9 digits)": {
+    "type": "/Tx",
+    "label": "Line 14. S S N or I T I N, F E I N (9 digits).",
+    "value": ""
+  },
+  "Line 14. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income": {
+    "type": "/Tx",
+    "label": "Line 14. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income.",
+    "value": ""
+  },
+  "Line 14. (b) Elective tax credit amount (Multiply box a by 9": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 14. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 14. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.)": {
+    "type": "/Tx",
+    "label": "Line 14. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.).",
+    "value": ""
+  },
+  "Line 15": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 15. First name": {
+    "type": "/Tx",
+    "label": "Line 15. First name.",
+    "value": ""
+  },
+  "Line 15. Initial": {
+    "type": "/Tx",
+    "label": "Line 15. Initial.",
+    "value": ""
+  },
+  "Line 15. Last name": {
+    "type": "/Tx",
+    "label": "Line 15. Last name.",
+    "value": ""
+  },
+  "Line 15. Select Entity type": {
+    "type": "/Btn",
+    "label": "Line 15. Select Entity type",
+    "value": ""
+  },
+  "Line 15. S S N or I T I N, F E I N (9 digits)": {
+    "type": "/Tx",
+    "label": "Line 15. S S N or I T I N, F E I N (9 digits).",
+    "value": ""
+  },
+  "Line 15. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income": {
+    "type": "/Tx",
+    "label": "Line 15. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income.",
+    "value": ""
+  },
+  "Line 15. (b) Elective tax credit amount (Multiply box a by 9": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 15. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 15. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.)": {
+    "type": "/Tx",
+    "label": "Line 15. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.).",
+    "value": ""
+  },
+  "Line 16": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 16. First name": {
+    "type": "/Tx",
+    "label": "Line 16. First name.",
+    "value": ""
+  },
+  "Line 16. Initial": {
+    "type": "/Tx",
+    "label": "Line 16. Initial.",
+    "value": ""
+  },
+  "Line 16. Last name": {
+    "type": "/Tx",
+    "label": "Line 16. Last name.",
+    "value": ""
+  },
+  "Line 16. Select Entity type": {
+    "type": "/Btn",
+    "label": "Line 16. Select Entity type",
+    "value": ""
+  },
+  "Line 16. S S N or I T I N, F E I N (9 digits)": {
+    "type": "/Tx",
+    "label": "Line 16. S S N or I T I N, F E I N (9 digits).",
+    "value": ""
+  },
+  "Line 16. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income": {
+    "type": "/Tx",
+    "label": "Line 16. (a) Sum of pro-rata or distributive share and guaranteed payments included in qualified net income.",
+    "value": ""
+  },
+  "Line 16. (b) Elective tax credit amount (Multiply box a by 9": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 16. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 16. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.)": {
+    "type": "/Tx",
+    "label": "Line 16. (b) Elective tax credit amount (Multiply box a by 9.3% and enter the result.).",
+    "value": ""
+  }
+}

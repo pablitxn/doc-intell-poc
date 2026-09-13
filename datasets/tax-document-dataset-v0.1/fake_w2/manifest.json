@@ -1,0 +1,47 @@
+[
+  {
+    "source": "singhsays/fake-w2-us-tax-form-dataset",
+    "revision": "ea077dbeb5715e7765308220c1d8c6e7d36cfd52",
+    "split": "test",
+    "row_idx": 0,
+    "image": "test_000.jpg",
+    "ground_truth": "test_000.json",
+    "sha256": "30860368955a641c36af4459cb7d12e63e403641e32dc62abe73fb81f14d2594"
+  },
+  {
+    "source": "singhsays/fake-w2-us-tax-form-dataset",
+    "revision": "ea077dbeb5715e7765308220c1d8c6e7d36cfd52",
+    "split": "test",
+    "row_idx": 1,
+    "image": "test_001.jpg",
+    "ground_truth": "test_001.json",
+    "sha256": "6965dbdfb974ca9df21abe984462bae2c939bec3a2b082cacb7c9b43321725f7"
+  },
+  {
+    "source": "singhsays/fake-w2-us-tax-form-dataset",
+    "revision": "ea077dbeb5715e7765308220c1d8c6e7d36cfd52",
+    "split": "test",
+    "row_idx": 2,
+    "image": "test_002.jpg",
+    "ground_truth": "test_002.json",
+    "sha256": "b193431f917d9df21e0861e13c921657beaf86ab971367174bcc8ba92fbc191b"
+  },
+  {
+    "source": "singhsays/fake-w2-us-tax-form-dataset",
+    "revision": "ea077dbeb5715e7765308220c1d8c6e7d36cfd52",
+    "split": "test",
+    "row_idx": 3,
+    "image": "test_003.jpg",
+    "ground_truth": "test_003.json",
+    "sha256": "5eb34d23bbc0c335019d6ab759a4188aea39574c9018446facf587d7e8fb7159"
+  },
+  {
+    "source": "singhsays/fake-w2-us-tax-form-dataset",
+    "revision": "ea077dbeb5715e7765308220c1d8c6e7d36cfd52",
+    "split": "test",
+    "row_idx": 4,
+    "image": "test_004.jpg",
+    "ground_truth": "test_004.json",
+    "sha256": "d31c23485803f3587b537baecd4b270448a04c607a88f0dd6e1b819747f33a95"
+  }
+]

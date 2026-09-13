@@ -1,0 +1,302 @@
+{
+  "Name(s) as shown on your California tax return (S M L L C s see instructions)": {
+    "type": "/Tx",
+    "label": "Name(s) as shown on your California tax return (S M L L C s see instructions).",
+    "value": ""
+  },
+  "Select Entity type": {
+    "type": "/Btn",
+    "label": "Select Entity type",
+    "value": ""
+  },
+  "S S N or I T I N, F E I N (9 digits)": {
+    "type": "/Tx",
+    "label": "S S N or I T I N, F E I N (9 digits).",
+    "value": ""
+  },
+  "Part I, Line 1a": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Part I, Line 1a. (a) Electing qualified pass-through entity (P T E) name": {
+    "type": "/Tx",
+    "label": "Part I, Line 1a. (a) Electing qualified pass-through entity (P T E) name.",
+    "value": ""
+  },
+  "Line 1a": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 1a. (b) Entity identification number": {
+    "type": "/Tx",
+    "label": "Line 1a. (b) Entity identification number.",
+    "value": ""
+  },
+  "Line 1a. (c) P T E elective tax credit(s)": {
+    "type": "/Tx",
+    "label": "Line 1a. (c) P T E elective tax credit(s).",
+    "value": ""
+  },
+  "Line 1b": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 1b. (a) Electing qualified pass-through entity (P T E) name": {
+    "type": "/Tx",
+    "label": "Line 1b. (a) Electing qualified pass-through entity (P T E) name.",
+    "value": ""
+  },
+  "Line 1b. (b) Entity identification number": {
+    "type": "/Tx",
+    "label": "Line 1b. (b) Entity identification number.",
+    "value": ""
+  },
+  "Line 1b. (c) P T E elective tax credit(s)": {
+    "type": "/Tx",
+    "label": "Line 1b. (c) P T E elective tax credit(s).",
+    "value": ""
+  },
+  "Line 1c": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 1c. (a) Electing qualified pass-through entity (P T E) name": {
+    "type": "/Tx",
+    "label": "Line 1c. (a) Electing qualified pass-through entity (P T E) name.",
+    "value": ""
+  },
+  "Line 1c. (b) Entity identification number": {
+    "type": "/Tx",
+    "label": "Line 1c. (b) Entity identification number.",
+    "value": ""
+  },
+  "Line 1c. (c) P T E elective tax credit(s)": {
+    "type": "/Tx",
+    "label": "Line 1c. (c) P T E elective tax credit(s).",
+    "value": ""
+  },
+  "Line 1d": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 1d. (a) Electing qualified pass-through entity (P T E) name": {
+    "type": "/Tx",
+    "label": "Line 1d. (a) Electing qualified pass-through entity (P T E) name.",
+    "value": ""
+  },
+  "Line 1d. (b) Entity identification number": {
+    "type": "/Tx",
+    "label": "Line 1d. (b) Entity identification number.",
+    "value": ""
+  },
+  "Line 1d. (c) P T E elective tax credit(s)": {
+    "type": "/Tx",
+    "label": "Line 1d. (c) P T E elective tax credit(s).",
+    "value": ""
+  },
+  "Line 1e": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 1e. (a) Electing qualified pass-through entity (P T E) name": {
+    "type": "/Tx",
+    "label": "Line 1e. (a) Electing qualified pass-through entity (P T E) name.",
+    "value": ""
+  },
+  "Line 1e. (b) Entity identification number": {
+    "type": "/Tx",
+    "label": "Line 1e. (b) Entity identification number.",
+    "value": ""
+  },
+  "Line 1e. (c) P T E elective tax credit(s)": {
+    "type": "/Tx",
+    "label": "Line 1e. (c) P T E elective tax credit(s).",
+    "value": ""
+  },
+  "Line 1f": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 1f. (a) Electing qualified pass-through entity (P T E) name": {
+    "type": "/Tx",
+    "label": "Line 1f. (a) Electing qualified pass-through entity (P T E) name.",
+    "value": ""
+  },
+  "Line 1f. (b) Entity identification number": {
+    "type": "/Tx",
+    "label": "Line 1f. (b) Entity identification number.",
+    "value": ""
+  },
+  "Line 1f. (c) P T E elective tax credit(s)": {
+    "type": "/Tx",
+    "label": "Line 1f. (c) P T E elective tax credit(s).",
+    "value": ""
+  },
+  "Line 1g": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 1g. (a) Electing qualified pass-through entity (P T E) name": {
+    "type": "/Tx",
+    "label": "Line 1g. (a) Electing qualified pass-through entity (P T E) name.",
+    "value": ""
+  },
+  "Line 1g. (b) Entity identification number": {
+    "type": "/Tx",
+    "label": "Line 1g. (b) Entity identification number.",
+    "value": ""
+  },
+  "Line 1g. (c) P T E elective tax credit(s)": {
+    "type": "/Tx",
+    "label": "Line 1g. (c) P T E elective tax credit(s).",
+    "value": ""
+  },
+  "Line 1h": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 1h. (a) Electing qualified pass-through entity (P T E) name": {
+    "type": "/Tx",
+    "label": "Line 1h. (a) Electing qualified pass-through entity (P T E) name.",
+    "value": ""
+  },
+  "Line 1h. (b) Entity identification number": {
+    "type": "/Tx",
+    "label": "Line 1h. (b) Entity identification number.",
+    "value": ""
+  },
+  "Line 1h. (c) P T E elective tax credit(s)": {
+    "type": "/Tx",
+    "label": "Line 1h. (c) P T E elective tax credit(s).",
+    "value": ""
+  },
+  "Line 1i": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 1i. (a) Electing qualified pass-through entity (P T E) name": {
+    "type": "/Tx",
+    "label": "Line 1i. (a) Electing qualified pass-through entity (P T E) name.",
+    "value": ""
+  },
+  "Line 1i. (b) Entity identification number": {
+    "type": "/Tx",
+    "label": "Line 1i. (b) Entity identification number.",
+    "value": ""
+  },
+  "Line 1i. (c) P T E elective tax credit(s)": {
+    "type": "/Tx",
+    "label": "Line 1i. (c) P T E elective tax credit(s).",
+    "value": ""
+  },
+  "Line 1j": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 1j. (a) Electing qualified pass-through entity (P T E) name": {
+    "type": "/Tx",
+    "label": "Line 1j. (a) Electing qualified pass-through entity (P T E) name.",
+    "value": ""
+  },
+  "Line 1j. (b) Entity identification number": {
+    "type": "/Tx",
+    "label": "Line 1j. (b) Entity identification number.",
+    "value": ""
+  },
+  "Line 1j. (c) P T E elective tax credit(s)": {
+    "type": "/Tx",
+    "label": "Line 1j. (c) P T E elective tax credit(s).",
+    "value": ""
+  },
+  "Line 2": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 2. Total P T E elective tax credit amount": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 2. Total P T E elective tax credit amount. Add the amounts in column (c) and enter total here": {
+    "type": "/Tx",
+    "label": "Line 2. Total P T E elective tax credit amount. Add the amounts in column (c) and enter total here.",
+    "value": ""
+  },
+  "Line 2. Credit carryover from prior year": {
+    "type": "/Tx",
+    "label": "Line 2. Credit carryover from prior year.",
+    "value": ""
+  },
+  "Part II, Line 1": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Part II, Line 1. Total credit from electing qualified P T E s": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Part II, Line 1. Total credit from electing qualified P T E s. See instructions": {
+    "type": "/Tx",
+    "label": "Part II, Line 1. Total credit from electing qualified P T E s. See instructions.",
+    "value": ""
+  },
+  "Line 3": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 3. Total available credit": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 3. Total available credit. Add line 1 and line 2": {
+    "type": "/Tx",
+    "label": "Line 3. Total available credit. Add line 1 and line 2.",
+    "value": ""
+  },
+  "Line 4": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 4. Enter the amount of the credit claimed on the current year tax return": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 4. Enter the amount of the credit claimed on the current year tax return. See instructions": {
+    "type": "/Tx",
+    "label": "Line 4. Enter the amount of the credit claimed on the current year tax return. See instructions.",
+    "value": ""
+  },
+  "Line 5": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 5. Credit carryover to future years": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Line 5. Credit carryover to future years. Subtract line 4 from line 3": {
+    "type": "/Tx",
+    "label": "Line 5. Credit carryover to future years. Subtract line 4 from line 3.",
+    "value": ""
+  }
+}

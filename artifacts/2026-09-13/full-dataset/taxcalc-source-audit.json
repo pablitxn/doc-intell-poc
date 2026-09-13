@@ -1,0 +1,4389 @@
+{
+  "scope": "Independent read-only validation, no model calls and no corpus writes",
+  "counts": {
+    "cases": 50,
+    "files": 364,
+    "pdfs": 264,
+    "jsons": 50,
+    "xmls": 50,
+    "pages": 314,
+    "page_distribution": {
+      "2": 50,
+      "1": 214
+    },
+    "pdf_families": {
+      "1040": 50,
+      "1099g": 13,
+      "w2": 56,
+      "1098t": 10,
+      "1099int": 24,
+      "1098e": 6,
+      "1098": 7,
+      "1099b": 21,
+      "1099div": 20,
+      "1099r": 18,
+      "1099misc": 14,
+      "w2g": 5,
+      "1099sa": 3,
+      "1099k": 6,
+      "1099nec": 11
+    },
+    "bytes": 29727900
+  },
+  "integrity_failures": [],
+  "parse_failures": [],
+  "manifest_drift": [],
+  "duplicate_byte_groups": [
+    [
+      "ty25-ca-007/input/1098_1.pdf",
+      "ty25-ca-008/input/1098_1.pdf"
+    ],
+    [
+      "ty25-ca-007/input/1098t_1.pdf",
+      "ty25-ca-008/input/1098t_1.pdf"
+    ],
+    [
+      "ty25-ca-007/input/1099div_1.pdf",
+      "ty25-ca-008/input/1099div_1.pdf"
+    ],
+    [
+      "ty25-ca-007/input/1099misc_1_schedule-c-2-accounting.pdf",
+      "ty25-ca-008/input/1099misc_3_schedule-c-2-accounting.pdf"
+    ],
+    [
+      "ty25-ca-007/input/1099misc_2_schedule-c-2-accounting.pdf",
+      "ty25-ca-008/input/1099misc_4_schedule-c-2-accounting.pdf"
+    ],
+    [
+      "ty25-ca-007/input/1099misc_3_schedule-c-3-spoetzel-brew-distribution.pdf",
+      "ty25-ca-008/input/1099misc_5_schedule-c-3-spoetzel-brew-distribution.pdf"
+    ],
+    [
+      "ty25-ca-007/input/1099r_1.pdf",
+      "ty25-ca-008/input/1099r_1.pdf"
+    ],
+    [
+      "ty25-ca-007/input/1099r_2.pdf",
+      "ty25-ca-008/input/1099r_2.pdf"
+    ],
+    [
+      "ty25-ca-007/input/1099r_3.pdf",
+      "ty25-ca-008/input/1099r_3.pdf"
+    ],
+    [
+      "ty25-ca-007/input/1099r_4.pdf",
+      "ty25-ca-008/input/1099r_4.pdf"
+    ],
+    [
+      "ty25-ca-007/input/w2_1.pdf",
+      "ty25-ca-008/input/w2_1.pdf"
+    ],
+    [
+      "ty25-ca-007/input/w2g_1.pdf",
+      "ty25-ca-008/input/w2g_1.pdf"
+    ],
+    [
+      "ty25-il-009/input/1040_2024.pdf",
+      "ty25-il-010/input/1040_2024.pdf"
+    ],
+    [
+      "ty25-va-006/input/1098t_1.pdf",
+      "ty25-va-007/input/1098t_1.pdf"
+    ],
+    [
+      "ty25-va-006/input/1099b_1.pdf",
+      "ty25-va-007/input/1099b_1.pdf"
+    ],
+    [
+      "ty25-va-006/input/1099b_2.pdf",
+      "ty25-va-007/input/1099b_2.pdf"
+    ],
+    [
+      "ty25-va-006/input/1099b_3.pdf",
+      "ty25-va-007/input/1099b_3.pdf"
+    ],
+    [
+      "ty25-va-006/input/1099div_1.pdf",
+      "ty25-va-007/input/1099div_1.pdf"
+    ],
+    [
+      "ty25-va-006/input/1099int_1.pdf",
+      "ty25-va-007/input/1099int_1.pdf"
+    ],
+    [
+      "ty25-va-006/input/w2_2.pdf",
+      "ty25-va-007/input/w2_1.pdf"
+    ]
+  ],
+  "xml": {
+    "federal_1040_cases": [
+      "ty25-us-001",
+      "ty25-us-002",
+      "ty25-us-003",
+      "ty25-us-004",
+      "ty25-us-005",
+      "ty25-us-006",
+      "ty25-us-007",
+      "ty25-us-008",
+      "ty25-us-009",
+      "ty25-us-010"
+    ],
+    "output_timestamps_before_tax_period_end": [
+      {
+        "case": "ty25-il-001",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-il-003",
+        "ReturnTs": "2025-12-16T02:59:06Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-il-004",
+        "ReturnTs": "2025-12-16T02:59:06Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-il-008",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-il-009",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-il-010",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-ny-001",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-ny-002",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-ny-004",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-ny-008",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-ny-009",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-us-001",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-us-002",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-us-003",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-us-004",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-us-005",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-us-006",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-us-007",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-us-008",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-us-009",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-us-010",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-va-001",
+        "ReturnTs": "2025-12-23T18:37:46Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      },
+      {
+        "case": "ty25-va-002",
+        "ReturnTs": "2025-04-15T00:00:00Z",
+        "TaxPeriodEndDt": "2025-12-31"
+      }
+    ]
+  },
+  "w2": {
+    "pdfs_checked": 38,
+    "numeric_fields_checked": 226,
+    "blank_fields_checked": 2,
+    "matching_fields": 215,
+    "errors": [
+      {
+        "path": "ty25-ca-003/input/w2_1.pdf",
+        "association_candidates": 2
+      },
+      {
+        "path": "ty25-ca-003/input/w2_2.pdf",
+        "association_candidates": 2
+      },
+      {
+        "path": "ty25-ca-004/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "0",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": null,
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ca-005/input/w2_1.pdf",
+        "association_candidates": 2
+      },
+      {
+        "path": "ty25-ca-005/input/w2_2.pdf",
+        "association_candidates": 2
+      },
+      {
+        "path": "ty25-ca-006/input/w2_1.pdf",
+        "association_candidates": 2
+      },
+      {
+        "path": "ty25-ca-006/input/w2_2.pdf",
+        "association_candidates": 2
+      },
+      {
+        "path": "ty25-il-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "0",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-il-010/input/w2_1.pdf",
+        "association_candidates": 2
+      },
+      {
+        "path": "ty25-il-010/input/w2_2.pdf",
+        "association_candidates": 2
+      },
+      {
+        "path": "ty25-ny-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "0",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "0",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "0",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "0",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "0",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "0",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "0",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "0",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "0",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "0",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-004/input/w2_1.pdf",
+        "association_candidates": 2
+      },
+      {
+        "path": "ty25-ny-004/input/w2_2.pdf",
+        "association_candidates": 2
+      },
+      {
+        "path": "ty25-us-004/input/w2_1.pdf",
+        "association_candidates": 2
+      },
+      {
+        "path": "ty25-us-004/input/w2_2.pdf",
+        "association_candidates": 2
+      },
+      {
+        "path": "ty25-us-010/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "0",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-va-004/input/w2_1.pdf",
+        "association_candidates": 2
+      },
+      {
+        "path": "ty25-va-004/input/w2_2.pdf",
+        "association_candidates": 2
+      },
+      {
+        "path": "ty25-va-005/input/w2_1.pdf",
+        "association_candidates": 2
+      },
+      {
+        "path": "ty25-va-005/input/w2_2.pdf",
+        "association_candidates": 2
+      },
+      {
+        "path": "ty25-va-006/input/w2_1.pdf",
+        "association_candidates": 2
+      },
+      {
+        "path": "ty25-va-006/input/w2_2.pdf",
+        "association_candidates": 2
+      }
+    ],
+    "checks": [
+      {
+        "path": "ty25-ca-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "2248",
+        "xml_tag": "WagesAmt",
+        "xml_value": "2248",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "11",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "11",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "2248",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "2248",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "139",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "139",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "2248",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "2248",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "33",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "33",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "65111",
+        "xml_tag": "WagesAmt",
+        "xml_value": "65111",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "7471",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "7471",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "15111",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "15111",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "937",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "937",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "15111",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "15111",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "219",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "219",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-004/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "5500",
+        "xml_tag": "WagesAmt",
+        "xml_value": "5500",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-004/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "0",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": null,
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ca-004/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "5500",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "5500",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-004/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "341",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "341",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-004/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "5500",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "5500",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-004/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "80",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "80",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "35000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "35000",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "3500",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "3500",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "35000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "35000",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "2170",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "2170",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "35000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "35000",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "508",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "508",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "35000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "35000",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "3500",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "3500",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "35000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "35000",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "2170",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "2170",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "35000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "35000",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "508",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "508",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "20000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "20000",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "1117",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "1117",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "20000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "20000",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "1240",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "1240",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "20000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "20000",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "290",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "290",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-010/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "13000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "13000",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-010/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "1000",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "1000",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-010/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "13000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "13000",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-010/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "806",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "806",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-010/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "13000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "13000",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ca-010/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "189",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "189",
+        "xml_form": "CAFormW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "27999",
+        "xml_tag": "WagesAmt",
+        "xml_value": "27999",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "6",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "6",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "6000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "6000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "372",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "372",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "6000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "6000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "87",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "87",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "50000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "50000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": null,
+        "xml_tag": "WithholdingAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "50000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "50000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "3100",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "3100",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "50000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "50000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "725",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "725",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-004/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "50000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "50000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-004/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": null,
+        "xml_tag": "WithholdingAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-004/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "50000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "50000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-004/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "3100",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "3100",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-004/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "50000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "50000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-004/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "725",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "725",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-005/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "28921",
+        "xml_tag": "WagesAmt",
+        "xml_value": "28921",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-005/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "1023",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "1023",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-005/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "28921",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "28921",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-005/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "1793",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "1793",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-005/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "28921",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "28921",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-005/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "419",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "419",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-006/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "30000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "30000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-006/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "3000",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "3000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-006/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "30000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "30000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-006/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "1860",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "1860",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-006/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "30000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "30000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-006/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "435",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "435",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "15000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "15000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "1000",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "1000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "10000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "10000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "620",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "620",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "10000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "10000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "145",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "145",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "20000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "20000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "2000",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "2000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "20000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "20000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "1240",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "1240",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "20000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "20000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "290",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "290",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "527",
+        "xml_tag": "WagesAmt",
+        "xml_value": "527",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "0",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-il-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "527",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "527",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "33",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "33",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "527",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "527",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-il-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "8",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "8",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "13018",
+        "xml_tag": "WagesAmt",
+        "xml_value": "13018",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "0",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "0",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "0",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "0",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "0",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "67550",
+        "xml_tag": "WagesAmt",
+        "xml_value": "67550",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "0",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "0",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "0",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "0",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "0",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-ny-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "27859",
+        "xml_tag": "WagesAmt",
+        "xml_value": "27859",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "1987",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "1987",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "27859",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "27859",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "1727",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "1727",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "27859",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "27859",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "404",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "404",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-005/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "41500",
+        "xml_tag": "WagesAmt",
+        "xml_value": "41500",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-005/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "2100",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "2100",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-005/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "41500",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "41500",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-005/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "2573",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "2573",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-005/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "41500",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "41500",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-005/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "602",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "602",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-006/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "13522",
+        "xml_tag": "WagesAmt",
+        "xml_value": "13522",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-006/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "654",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "654",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-006/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "13522",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "13522",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-006/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "838",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "838",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-006/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "13522",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "13522",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-006/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "196",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "196",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "20000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "20000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "1900",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "1900",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "20000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "20000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "1240",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "1240",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "20000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "20000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "290",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "290",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "20000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "20000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "2000",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "2000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "20000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "20000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "1240",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "1240",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "20000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "20000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "290",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "290",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "18001",
+        "xml_tag": "WagesAmt",
+        "xml_value": "18001",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "1200",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "1200",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "18001",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "18001",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "1116",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "1116",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "18001",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "18001",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-ny-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "261",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "261",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "1100000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "1100000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "378000",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "378000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "168600",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "168600",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "10453",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "10453",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "1100000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "1100000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "24050",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "24050",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "32000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "32000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "2800",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "2800",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "32000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "32000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "1984",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "1984",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "32000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "32000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "464",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "464",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "32000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "32000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "3200",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "3200",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "32000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "32000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "1984",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "1984",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "32000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "32000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "464",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "464",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-005/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "420000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "420000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-005/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "5000",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "5000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-005/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "168600",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "168600",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-005/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "10453",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "10453",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-005/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "420000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "420000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-005/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "8070",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "8070",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-006/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "80000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "80000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-006/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "2000",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "2000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-006/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "80000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "80000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-006/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "1200",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "1200",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-006/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "80000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "80000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-006/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "200",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "200",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "160368",
+        "xml_tag": "WagesAmt",
+        "xml_value": "160368",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "29027",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "29027",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "164772",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "164772",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "10216",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "10216",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "164772",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "164772",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "2389",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "2389",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "160368",
+        "xml_tag": "WagesAmt",
+        "xml_value": "160368",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "28026",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "28026",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "164772",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "164772",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "10216",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "10216",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "164772",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "164772",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "2389",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "2389",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "150000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "150000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "30000",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "30000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "150000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "150000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "9300",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "9300",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "150000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "150000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "2175",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "2175",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-010/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "1000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "1000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-010/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "0",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": null,
+        "xml_form": "IRSW2",
+        "exact_nullable_match": false
+      },
+      {
+        "path": "ty25-us-010/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "1000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "1000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-010/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "62",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "62",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-010/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "1000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "1000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-us-010/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "15",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "15",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "46500",
+        "xml_tag": "WagesAmt",
+        "xml_value": "46500",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "4650",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "4650",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "50000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "50000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "3100",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "3100",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "50000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "50000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-001/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "725",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "725",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "30001",
+        "xml_tag": "WagesAmt",
+        "xml_value": "30001",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "1860",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "1860",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "30001",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "30001",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "1860",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "1860",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "30001",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "30001",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-002/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "435",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "435",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "45000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "45000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "3000",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "3000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "45000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "45000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "2790",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "2790",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "45000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "45000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-003/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "653",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "653",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "7777",
+        "xml_tag": "WagesAmt",
+        "xml_value": "7777",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "77",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "77",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "7777",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "7777",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "482",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "482",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "7777",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "7777",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-007/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "113",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "113",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "442000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "442000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "142088",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "142088",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "165200",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "165200",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "10242",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "10242",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "442000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "442000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-008/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "6409",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "6409",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_1",
+        "bbox_points_top_left": [
+          330,
+          72,
+          450,
+          84
+        ],
+        "pdf_value": "11000",
+        "xml_tag": "WagesAmt",
+        "xml_value": "11000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_2",
+        "bbox_points_top_left": [
+          450,
+          72,
+          577,
+          84
+        ],
+        "pdf_value": "1000",
+        "xml_tag": "WithholdingAmt",
+        "xml_value": "1000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_3",
+        "bbox_points_top_left": [
+          330,
+          96,
+          450,
+          108
+        ],
+        "pdf_value": "11000",
+        "xml_tag": "SocialSecurityWagesAmt",
+        "xml_value": "11000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_4",
+        "bbox_points_top_left": [
+          450,
+          96,
+          577,
+          108
+        ],
+        "pdf_value": "682",
+        "xml_tag": "SocialSecurityTaxAmt",
+        "xml_value": "682",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_5",
+        "bbox_points_top_left": [
+          330,
+          120,
+          450,
+          132
+        ],
+        "pdf_value": "11000",
+        "xml_tag": "MedicareWagesAndTipsAmt",
+        "xml_value": "11000",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      },
+      {
+        "path": "ty25-va-009/input/w2_1.pdf",
+        "page": 1,
+        "box": "box_6",
+        "bbox_points_top_left": [
+          450,
+          120,
+          577,
+          132
+        ],
+        "pdf_value": "160",
+        "xml_tag": "MedicareTaxWithheldAmt",
+        "xml_value": "160",
+        "xml_form": "IRSW2",
+        "exact_nullable_match": true
+      }
+    ],
+    "interpretation": "The 13 exact-nullability mismatches are printed PDF zeros omitted from XML, not conflicting numeric amounts. The 18 EIN+SSN ambiguous associations were intentionally excluded from XML pair validation. The visible PDF extractor independently reads all 56 W2 documents (328 explicitly populated selected boxes).",
+    "printed_zero_omitted_xml_count": 13,
+    "identity_ambiguous_documents": 18
+  },
+  "sample": {
+    "pairs": 5,
+    "fields": 11,
+    "exact_matches": 11,
+    "checks": [
+      {
+        "case": "ty25-us-001",
+        "pdf": "w2_1.pdf",
+        "box": "box_1",
+        "exact_match": true
+      },
+      {
+        "case": "ty25-us-001",
+        "pdf": "w2_1.pdf",
+        "box": "box_2",
+        "exact_match": true
+      },
+      {
+        "case": "ty25-us-003",
+        "pdf": "w2_1.pdf",
+        "box": "box_1",
+        "exact_match": true
+      },
+      {
+        "case": "ty25-us-003",
+        "pdf": "w2_1.pdf",
+        "box": "box_2",
+        "exact_match": true
+      },
+      {
+        "case": "ty25-us-005",
+        "pdf": "w2_1.pdf",
+        "box": "box_1",
+        "exact_match": true
+      },
+      {
+        "case": "ty25-us-005",
+        "pdf": "w2_1.pdf",
+        "box": "box_2",
+        "exact_match": true
+      },
+      {
+        "case": "ty25-ca-001",
+        "pdf": "w2_1.pdf",
+        "box": "box_1",
+        "exact_match": true
+      },
+      {
+        "case": "ty25-ca-001",
+        "pdf": "w2_1.pdf",
+        "box": "box_2",
+        "exact_match": true
+      },
+      {
+        "case": "ty25-us-010",
+        "pdf": "1099r_1.pdf",
+        "box": "box_1",
+        "exact_match": true
+      },
+      {
+        "case": "ty25-us-010",
+        "pdf": "1099r_1.pdf",
+        "box": "box_2a",
+        "exact_match": true
+      },
+      {
+        "case": "ty25-us-010",
+        "pdf": "1099r_1.pdf",
+        "box": "box_4",
+        "exact_match": true
+      }
+    ]
+  },
+  "extra_files": [],
+  "missing_manifest_entries": [],
+  "duplicate_text_groups": [
+    [
+      "ty25-ca-007/input/1098_1.pdf",
+      "ty25-ca-008/input/1098_1.pdf"
+    ],
+    [
+      "ty25-ca-007/input/1098t_1.pdf",
+      "ty25-ca-008/input/1098t_1.pdf"
+    ],
+    [
+      "ty25-ca-007/input/1099div_1.pdf",
+      "ty25-ca-008/input/1099div_1.pdf"
+    ],
+    [
+      "ty25-ca-007/input/1099misc_1_schedule-c-2-accounting.pdf",
+      "ty25-ca-008/input/1099misc_3_schedule-c-2-accounting.pdf"
+    ],
+    [
+      "ty25-ca-007/input/1099misc_2_schedule-c-2-accounting.pdf",
+      "ty25-ca-008/input/1099misc_4_schedule-c-2-accounting.pdf"
+    ],
+    [
+      "ty25-ca-007/input/1099misc_3_schedule-c-3-spoetzel-brew-distribution.pdf",
+      "ty25-ca-008/input/1099misc_5_schedule-c-3-spoetzel-brew-distribution.pdf"
+    ],
+    [
+      "ty25-ca-007/input/1099r_1.pdf",
+      "ty25-ca-008/input/1099r_1.pdf"
+    ],
+    [
+      "ty25-ca-007/input/1099r_2.pdf",
+      "ty25-ca-008/input/1099r_2.pdf"
+    ],
+    [
+      "ty25-ca-007/input/1099r_3.pdf",
+      "ty25-ca-008/input/1099r_3.pdf"
+    ],
+    [
+      "ty25-ca-007/input/1099r_4.pdf",
+      "ty25-ca-008/input/1099r_4.pdf"
+    ],
+    [
+      "ty25-ca-007/input/w2_1.pdf",
+      "ty25-ca-008/input/w2_1.pdf"
+    ],
+    [
+      "ty25-ca-007/input/w2g_1.pdf",
+      "ty25-ca-008/input/w2g_1.pdf"
+    ],
+    [
+      "ty25-il-009/input/1040_2024.pdf",
+      "ty25-il-010/input/1040_2024.pdf"
+    ],
+    [
+      "ty25-va-006/input/1098t_1.pdf",
+      "ty25-va-007/input/1098t_1.pdf"
+    ],
+    [
+      "ty25-va-006/input/1099b_1.pdf",
+      "ty25-va-007/input/1099b_1.pdf"
+    ],
+    [
+      "ty25-va-006/input/1099b_2.pdf",
+      "ty25-va-007/input/1099b_2.pdf"
+    ],
+    [
+      "ty25-va-006/input/1099b_3.pdf",
+      "ty25-va-007/input/1099b_3.pdf"
+    ],
+    [
+      "ty25-va-006/input/1099div_1.pdf",
+      "ty25-va-007/input/1099div_1.pdf"
+    ],
+    [
+      "ty25-va-006/input/1099int_1.pdf",
+      "ty25-va-007/input/1099int_1.pdf"
+    ],
+    [
+      "ty25-va-006/input/w2_2.pdf",
+      "ty25-va-007/input/w2_1.pdf"
+    ]
+  ],
+  "only_2024_in_text": [
+    "ty25-ca-005/input/1099int_1.pdf",
+    "ty25-il-003/input/1099g_1.pdf",
+    "ty25-il-003/input/1099int_1.pdf",
+    "ty25-il-003/input/1099int_2.pdf",
+    "ty25-us-004/input/1099int_1.pdf",
+    "ty25-us-005/input/1099int_1.pdf",
+    "ty25-us-006/input/1099int_1.pdf",
+    "ty25-us-007/input/1099int_1.pdf",
+    "ty25-us-009/input/1099int_1.pdf",
+    "ty25-va-005/input/1099g_1.pdf",
+    "ty25-va-005/input/1099g_2.pdf",
+    "ty25-va-005/input/1099int_1.pdf",
+    "ty25-va-005/input/1099int_2.pdf",
+    "ty25-va-005/input/1099int_3.pdf",
+    "ty25-va-010/input/1099g_1.pdf",
+    "ty25-va-010/input/1099int_1.pdf"
+  ],
+  "limits": [
+    "XML output total tax, derived tax credits, refund/owed amounts and generated schedules are calculation outputs, not extraction labels.",
+    "Only 10 US XML outputs contain IRS1040; state XMLs cannot label 50 federal current-year returns.",
+    "50 prior 1040 PDFs are tax year 2024; current XMLs are tax year 2025. Never pair their current amounts as extraction truth.",
+    "Calendar-year fields can be blank while template revision says 2024. Require explicit supplied case year or score null; do not guess from filename/revision.",
+    "PDF absence and XML omission are not proof of zero. The W2 checks preserve null for blank/absent.",
+    "Identity uniqueness and labeled PDF box location are required; XML row order cannot establish association.",
+    "XML ReturnTs values are fixture metadata; dates before the declared end of the tax period cannot establish a real submission date.",
+    "No input PDFs for K-1, 8959, Schedule A, 6251, payment receipts, corrected W-2c, cancellation or duplicate scenarios."
+  ],
+  "duplicate_byte_summary": {
+    "groups": 20,
+    "total_documents_in_groups": 40,
+    "unique_pdf_contents": 244,
+    "intra_case_groups": [],
+    "recommendation": "Preserve case membership; group linked cases together for any future train/eval split and report both cases and distinct document hashes."
+  },
+  "visible_extraction": {
+    "documents_checked": 214,
+    "explicit_amounts": 649,
+    "errors": [],
+    "evidence_file": "doc-intell-taxcalc-boxes.json",
+    "regression_tests": 6
+  }
+}

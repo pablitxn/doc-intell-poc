@@ -1,0 +1,847 @@
+{
+  "540_form_1035 CB": {
+    "type": "/Btn",
+    "label": "Filing status. If your California filing status is different from your federal filing status, check the box here.",
+    "value": ""
+  },
+  "540_form_1041": {
+    "type": "/Tx",
+    "label": "Exemptions. For line 7, line 8, line 9, and line 10: Multiply the number you enter in the box by the pre-printed dollar amount for that line. Whole dollars only. Line 7. Personal: If you checked box 1, 3, or 4 above, enter 1 in the box. If you checked box 2 or 5, enter 2, in the box. If you checked the box on line 6, see instructions.",
+    "value": ""
+  },
+  "540_form_1043": {
+    "type": "/Tx",
+    "label": "Line 8. Blind: If you (or your spouse / R D P ) are visually impaired, enter 1; if both are visually impaired, enter 2. See instructions.",
+    "value": ""
+  },
+  "540_form_1045": {
+    "type": "/Tx",
+    "label": "Line 9. Senior: If you (or your spouse / R D P) are 65 or older, enter 1; if both are 65 or older, enter 2. See instructions.",
+    "value": ""
+  },
+  "540_form_1042": {
+    "type": "/Tx",
+    "label": "Multiply the number you put in the line 7 box by $153. Enter this number into this field. Whole dollars only.",
+    "value": ""
+  },
+  "540_form_1044": {
+    "type": "/Tx",
+    "label": "Multiply the number you put in the line 8 box by $153. Enter this number into this field. Whole dollars only.",
+    "value": ""
+  },
+  "540_form_1046": {
+    "type": "/Tx",
+    "label": "Multiply the number you put in the line 9 box by $153. Enter this number into this field. Whole dollars only.",
+    "value": ""
+  },
+  "540_form_1039": {
+    "type": "/Tx",
+    "label": "Line 5. See instructions.",
+    "value": ""
+  },
+  "540_form_1037": {
+    "type": "/Tx",
+    "label": "Line 3. Enter spouse\u2019s or R D P 's S S N or I T I N above and full name here.",
+    "value": ""
+  },
+  "540_form_1038": {
+    "type": "/Tx",
+    "label": "Line 5. Enter year spouse or R D P died.",
+    "value": ""
+  },
+  "540_form_1029 CB": {
+    "type": "/Btn",
+    "label": "If your address above is the same as your principal/physical residence address at the time of filing, check this box. If not, enter below your principal/physical residence address at the time of filing.",
+    "value": ""
+  },
+  "540_form_1040 CB": {
+    "type": "/Btn",
+    "label": "Line 6. If someone can claim you (or your spouse or R D P) as a dependent, check the box here. See instructions.",
+    "value": ""
+  },
+  "540_form_1028": {
+    "type": "/Tx",
+    "label": "Principal Residence. Enter your county at time of filing (see instructions).",
+    "value": ""
+  },
+  "540_form_1030": {
+    "type": "/Tx",
+    "label": "Street address (number and street) (If foreign address, see instructions.)",
+    "value": ""
+  },
+  "540_form_1031": {
+    "type": "/Tx",
+    "label": "Apartment number or suite number.",
+    "value": ""
+  },
+  "540_form_1032": {
+    "type": "/Tx",
+    "label": "City.",
+    "value": ""
+  },
+  "540_form_1033": {
+    "type": "/Tx",
+    "label": "State. Enter two letter State abbreviation.",
+    "value": ""
+  },
+  "540_form_1034": {
+    "type": "/Tx",
+    "label": "Zip code. ",
+    "value": ""
+  },
+  "540_form_1024": {
+    "type": "/Tx",
+    "label": "Date of Birth. Your Date of Birth. Enter date as m m / d d / y y y y .",
+    "value": ""
+  },
+  "540_form_1025": {
+    "type": "/Tx",
+    "label": "Spouse's or R D P's Date of Birth. Enter date as m m / d d / y y y y .",
+    "value": ""
+  },
+  "540_form_1027": {
+    "type": "/Tx",
+    "label": "Spouse's or R D P\u2019s prior name (see instructions).",
+    "value": ""
+  },
+  "540_form_1026": {
+    "type": "/Tx",
+    "label": "Prior Name. Your Prior Name (see instructions).",
+    "value": ""
+  },
+  "540_form_1023": {
+    "type": "/Tx",
+    "label": "Foreign postal code.",
+    "value": ""
+  },
+  "540_form_1022": {
+    "type": "/Tx",
+    "label": "Foreign province/state/county.",
+    "value": ""
+  },
+  "540_form_1021": {
+    "type": "/Tx",
+    "label": "Foreign country name.",
+    "value": ""
+  },
+  "540_form_1018": {
+    "type": "/Tx",
+    "label": "City (If you have a foreign address, see instructions).",
+    "value": ""
+  },
+  "540_form_1019": {
+    "type": "/Tx",
+    "label": "State. Enter two letter State abbreviation.",
+    "value": ""
+  },
+  "540_form_1017": {
+    "type": "/Tx",
+    "label": "Private Mailbox.",
+    "value": ""
+  },
+  "540_form_1016": {
+    "type": "/Tx",
+    "label": "Apartment number or suite number.",
+    "value": ""
+  },
+  "540_form_1015": {
+    "type": "/Tx",
+    "label": "Street address (number and street) or Post Office Box.",
+    "value": ""
+  },
+  "540_form_1013": {
+    "type": "/Tx",
+    "label": "Additional information (see instructions).",
+    "value": ""
+  },
+  "540_form_1014": {
+    "type": "/Tx",
+    "label": "Principal Business Activity code.",
+    "value": ""
+  },
+  "540_form_1012": {
+    "type": "/Tx",
+    "label": "Spouse's or R D P's S S N or I T I N.",
+    "value": ""
+  },
+  "540_form_1011": {
+    "type": "/Tx",
+    "label": "Spouse's or R D P 's Suffix.",
+    "value": ""
+  },
+  "540_form_1010": {
+    "type": "/Tx",
+    "label": "Spouse's or R D P 's Last name.",
+    "value": ""
+  },
+  "540_form_1008": {
+    "type": "/Tx",
+    "label": "If joint tax return, spouse\u2019s or Registered Domestic Partner's (R D P 's) first name.",
+    "value": ""
+  },
+  "540_form_1003": {
+    "type": "/Tx",
+    "label": "Your first name.",
+    "value": ""
+  },
+  "540_form_1005": {
+    "type": "/Tx",
+    "label": "Last name.",
+    "value": ""
+  },
+  "540_form_1004": {
+    "type": "/Tx",
+    "label": "Middle Initial.",
+    "value": ""
+  },
+  "540_form_1006": {
+    "type": "/Tx",
+    "label": "Suffix.",
+    "value": ""
+  },
+  "540_form_1007": {
+    "type": "/Tx",
+    "label": "Your Social Security Number (S S N) or Individual Taxpayer Identification Number (I T I N). ",
+    "value": ""
+  },
+  "540_form_1009": {
+    "type": "/Tx",
+    "label": "Spouse's or R D P 's Middle Initial.",
+    "value": ""
+  },
+  "540_form_1020": {
+    "type": "/Tx",
+    "label": "Zip code. ",
+    "value": ""
+  },
+  "540_form_1001 CB": {
+    "type": "/Btn",
+    "label": "Check here if this is an AMENDED return.",
+    "value": ""
+  },
+  "540_form_1002": {
+    "type": "/Tx",
+    "label": "Fiscal year filers only. Enter month of year end. Enter month as two digits for year 2026.\r",
+    "value": ""
+  },
+  "540_form_1036 RB": {
+    "type": "/Btn",
+    "label": "Filing status ",
+    "value": ""
+  },
+  "540_form_2038": {
+    "type": "/Tx",
+    "label": "Line 43. Enter credit name",
+    "value": ""
+  },
+  "540_form_2041": {
+    "type": "/Tx",
+    "label": "Line 44. Enter credit name",
+    "value": ""
+  },
+  "540_form_2039": {
+    "type": "/Tx",
+    "label": "Line 43. Enter credit code",
+    "value": ""
+  },
+  "540_form_2042": {
+    "type": "/Tx",
+    "label": "Line 44. Enter credit code",
+    "value": ""
+  },
+  "540_form_2037": {
+    "type": "/Tx",
+    "label": "Special Credits. Line 40. Nonrefundable Child and Dependent Care Expenses Credit. See instructions.",
+    "value": ""
+  },
+  "540_form_2040": {
+    "type": "/Tx",
+    "label": "Line 43. Enter credit amount",
+    "value": ""
+  },
+  "540_form_2043": {
+    "type": "/Tx",
+    "label": "Line 44. Enter credit amount",
+    "value": ""
+  },
+  "540_form_2030": {
+    "type": "/Tx",
+    "label": "Line 31. Tax amount.",
+    "value": ""
+  },
+  "540_form_2032": {
+    "type": "/Tx",
+    "label": "Line 33. Subtract line 32 from line 31. If less than zero, enter 0.",
+    "value": ""
+  },
+  "540_form_2035": {
+    "type": "/Tx",
+    "label": "Line 34. Tax. See instructions.",
+    "value": ""
+  },
+  "540_form_2036": {
+    "type": "/Tx",
+    "label": "Line 35. Add line 33 and line 34.",
+    "value": ""
+  },
+  "540_form_2031": {
+    "type": "/Tx",
+    "label": "Line 32. Exemption credits. Enter the amount from line 11. If your federal adjusted gross income is more than $252,203, see instructions.",
+    "value": ""
+  },
+  "540_form_2020": {
+    "type": "/Tx",
+    "label": "Line 14. California adjustments \u2013 subtractions. Enter the amount from Schedule CA (540), Part 1, line 27, column B",
+    "value": ""
+  },
+  "540_form_2022": {
+    "type": "/Tx",
+    "label": "Line 16. California adjustments \u2013 additions. Enter the amount from Schedule CA (540), Part 1, line 27, column C",
+    "value": ""
+  },
+  "540_form_2024": {
+    "type": "/Tx",
+    "label": "Line 18. Enter the larger of your California itemized deductions from Schedule CA (540), Part Two, line 30, or Your California standard deduction shown for your filing status. California standard deduction is $5,706 for filing single, or for married or R D P filing separately. California standard deduction is $11,412 for filing married or R D P filing jointly, or for Head of household, or for Qualifying surviving spouse or R D P. If married or R D P filing separately or the box on line 6 is checked, STOP. See instructions.",
+    "value": ""
+  },
+  "540_form_2025": {
+    "type": "/Tx",
+    "label": "Line 19. Subtract line 18 from line 17. This is your taxable income. If less than zero, enter 0.",
+    "value": ""
+  },
+  "540_form_2019": {
+    "type": "/Tx",
+    "label": "Line 13. Enter federal adjusted gross income (A G I) from federal Form 1040 or 1040-SR, line 11b.",
+    "value": ""
+  },
+  "540_form_2023": {
+    "type": "/Tx",
+    "label": "Line 17.  California adjusted gross income. Combine line 15 and line 16.",
+    "value": ""
+  },
+  "540_form_2021": {
+    "type": "/Tx",
+    "label": "Line 15. Subtract line 14 from line 13. If less than zero, enter the result in parentheses. See instructions",
+    "value": ""
+  },
+  "540_form_2017": {
+    "type": "/Tx",
+    "label": "Line 11. Exemption amount: Add line 7 through line 10. Transfer this amount to line 32. Whole dollars only.",
+    "value": ""
+  },
+  "540_form_2018": {
+    "type": "/Tx",
+    "label": "Taxable Income. Line 12. State wages from your federal Form or Forms W-2, box 16 .",
+    "value": ""
+  },
+  "540_form_2011": {
+    "type": "/Tx",
+    "label": "Dependent Three, first name",
+    "value": ""
+  },
+  "540_form_2012": {
+    "type": "/Tx",
+    "label": "Dependent Three, Last name",
+    "value": ""
+  },
+  "540_form_2013": {
+    "type": "/Tx",
+    "label": "Dependent Three, S S N . See instructions.",
+    "value": ""
+  },
+  "540_form_2007": {
+    "type": "/Tx",
+    "label": "Dependent Two, first name",
+    "value": ""
+  },
+  "540_form_2008": {
+    "type": "/Tx",
+    "label": "Dependent Two, Last name",
+    "value": ""
+  },
+  "540_form_2009": {
+    "type": "/Tx",
+    "label": "Dependent Two, S S N . See instructions.",
+    "value": ""
+  },
+  "540_form_2003": {
+    "type": "/Tx",
+    "label": "Line 10. Dependents. Do not include yourself or your spouse / R D P . Dependent One, first name",
+    "value": ""
+  },
+  "540_form_2004": {
+    "type": "/Tx",
+    "label": "Dependent One, Last name",
+    "value": ""
+  },
+  "540_form_2005": {
+    "type": "/Tx",
+    "label": "Dependent One, S S N. See instructions.",
+    "value": ""
+  },
+  "540_form_2015": {
+    "type": "/Tx",
+    "label": "Line 10. Total dependent exemptions",
+    "value": ""
+  },
+  "540_form_2016": {
+    "type": "/Tx",
+    "label": "Multiply the number of total dependent exemptions you put in the line 10 box by $475. Enter this number into this field. Whole dollars only.",
+    "value": ""
+  },
+  "540_form_2014": {
+    "type": "/Tx",
+    "label": "Dependent Three, Dependent's relationship to you",
+    "value": ""
+  },
+  "540_form_2010": {
+    "type": "/Tx",
+    "label": "Dependent Two, Dependent's relationship to you",
+    "value": ""
+  },
+  "540_form_2006": {
+    "type": "/Tx",
+    "label": "Dependent One. Dependent's relationship to you",
+    "value": ""
+  },
+  "540_form_2026 CB": {
+    "type": "/Btn",
+    "label": "Tax. Line 31. Tax.  Check the box if tax is from tax table.",
+    "value": ""
+  },
+  "540_form_2028 CB": {
+    "type": "/Btn",
+    "label": "Line 31. Tax. Check the box if tax is from FTB 3800.",
+    "value": ""
+  },
+  "540_form_2027 CB": {
+    "type": "/Btn",
+    "label": "Line 31. Tax.  Check the box if tax is from Tax Rate Schedule.",
+    "value": ""
+  },
+  "540_form_2029 CB": {
+    "type": "/Btn",
+    "label": "Line 31. Tax.  Check the box if tax is from FTB 3803.",
+    "value": ""
+  },
+  "540_form_2033 CB": {
+    "type": "/Btn",
+    "label": "Line 34. Tax. See instructions.  Check the box if tax is from Schedule G-1.",
+    "value": ""
+  },
+  "540_form_2034 CB": {
+    "type": "/Btn",
+    "label": "Line 34.  Check the box if tax is from FTB 5870A.",
+    "value": ""
+  },
+  "540_form_3003": {
+    "type": "/Tx",
+    "label": "Line 45. To claim more than two credits, see instructions. Attach Schedule P (540).",
+    "value": ""
+  },
+  "540_form_3004": {
+    "type": "/Tx",
+    "label": "Line 46. Nonrefundable Renter\u2019s Credit. See instructions.",
+    "value": ""
+  },
+  "540_form_3005": {
+    "type": "/Tx",
+    "label": "Line 47. Add line 40 through line 46. These are your total credits.",
+    "value": ""
+  },
+  "540_form_3006": {
+    "type": "/Tx",
+    "label": "Line 48. Subtract line 47 from line 35. If less than zero, enter 0.",
+    "value": ""
+  },
+  "540_form_2002": {
+    "type": "/Tx",
+    "label": "Your S S N or I T I N .",
+    "value": ""
+  },
+  "540_form_2001": {
+    "type": "/Tx",
+    "label": "Your name:",
+    "value": ""
+  },
+  "540_form_3023": {
+    "type": "/Tx",
+    "label": "Overpaid Tax or Tax Due. Line 93 Payments balance. If line 78 is more than line 91, subtract line 91 from line 78",
+    "value": ""
+  },
+  "540_form_3024": {
+    "type": "/Tx",
+    "label": "Line 94. Use Tax balance. If line 91 is more than line 78, subtract line 78 from line 91",
+    "value": ""
+  },
+  "540_form_3022": {
+    "type": "/Tx",
+    "label": "Line 92. Individual Shared Responsibility (I S R) Penalty. See instructions.",
+    "value": ""
+  },
+  "540_form_3019": {
+    "type": "/Tx",
+    "label": "Use Tax. Line 91. Use Tax. Do not leave blank. See instructions.",
+    "value": ""
+  },
+  "540_form_3011": {
+    "type": "/Tx",
+    "label": "Payments. Line 71. California income tax withheld. See instructions.",
+    "value": ""
+  },
+  "540_form_3012": {
+    "type": "/Tx",
+    "label": "Line 72. 2025 California estimated tax and other payments. See instructions.",
+    "value": ""
+  },
+  "540_form_3013": {
+    "type": "/Tx",
+    "label": "Line 73. Withholding (Form 592-B and/or Form 593). See instructions",
+    "value": ""
+  },
+  "540_form_3014": {
+    "type": "/Tx",
+    "label": "Line 74. Refundable Program 4.0 California Motion Picture and Television Production Credit. See instructions.",
+    "value": ""
+  },
+  "540_form_3015": {
+    "type": "/Tx",
+    "label": "Line 75. Earned Income Tax Credit (E I T C). See instructions.",
+    "value": ""
+  },
+  "540_form_3016": {
+    "type": "/Tx",
+    "label": "Line 76. Young Child Tax Credit (YCTC). See instructions",
+    "value": ""
+  },
+  "540_form_3018": {
+    "type": "/Tx",
+    "label": "Line 78. Add line 71 through line 77. These are your total payments. See instructions.",
+    "value": ""
+  },
+  "540_form_3020 RB": {
+    "type": "/Btn",
+    "label": "Line 91. If line 91 is zero, check if",
+    "value": ""
+  },
+  "540_form_3008": {
+    "type": "/Tx",
+    "label": "Line 62. Behavioral Health Services Tax. See instructions.",
+    "value": ""
+  },
+  "540_form_3009": {
+    "type": "/Tx",
+    "label": "Line 63. Other taxes and credit recapture. See instructions.",
+    "value": ""
+  },
+  "540_form_3010": {
+    "type": "/Tx",
+    "label": "Line 64. Add line 48, line 61, line 62, and line 63. This is your total tax.",
+    "value": ""
+  },
+  "540_form_3007": {
+    "type": "/Tx",
+    "label": "Other Taxes. Line 61. Alternative Minimum Tax. Attach Schedule P (540).",
+    "value": ""
+  },
+  "540_form_3021 CB": {
+    "type": "/Btn",
+    "label": "Individual Shared Responsibility Penalty. Line 92. If you and your household had full-year health care coverage, check the box. See instructions. Medicare Part A or C coverage is qualifying health care coverage. If you did not check the box, see instructions.",
+    "value": ""
+  },
+  "540_form_3025": {
+    "type": "/Tx",
+    "label": "Line 95. Payments after Individual Shared Responsibility penalty. If line 93 is more than line 92, subtract line 92 from line 93.",
+    "value": ""
+  },
+  "540_form_3026": {
+    "type": "/Tx",
+    "label": "Line 96. Individual Shared Responsibility Penalty Balance. If line 92 is more than line 93, subtract line 93 from line 92.",
+    "value": ""
+  },
+  "540_form_3017": {
+    "type": "/Tx",
+    "label": "Line 77. Foster Youth Tax Credit (FYTC). See instructions.",
+    "value": ""
+  },
+  "540_form_3027": {
+    "type": "/Tx",
+    "label": "Line 97. Overpaid tax. If line 95 is more than line 64, subtract line 64 from line 95.",
+    "value": ""
+  },
+  "540_form_4020": {
+    "type": "/Tx",
+    "label": "Code 445. Mental Health Crisis Prevention Voluntary Tax Contribution Fund.",
+    "value": ""
+  },
+  "540_form_4021": {
+    "type": "/Tx",
+    "label": "Code 447. California A L S Research Network Voluntary Tax Contribution Fund.",
+    "value": ""
+  },
+  "540_form_4022": {
+    "type": "/Tx",
+    "label": "Code 448. California Pediatric Cancer Research Voluntary Tax Contribution Fund",
+    "value": ""
+  },
+  "540_form_4019": {
+    "type": "/Tx",
+    "label": "Code 439. Native California Wildlife Rehabilitation Voluntary Tax Contribution Fund",
+    "value": ""
+  },
+  "540_form_4018": {
+    "type": "/Tx",
+    "label": "Code 438. California Senior Citizen Advocacy Voluntary Tax Contribution Fund",
+    "value": ""
+  },
+  "540_form_4017": {
+    "type": "/Tx",
+    "label": "Code 431. Prevention of Animal Homelessness and Cruelty Voluntary Tax Contribution Fund",
+    "value": ""
+  },
+  "540_form_4016": {
+    "type": "/Tx",
+    "label": "Code 424. Protect Our Coast and Oceans Voluntary Tax Contribution Fund",
+    "value": ""
+  },
+  "540_form_4013": {
+    "type": "/Tx",
+    "label": "Code 413. California Cancer Research Voluntary Tax Contribution Fund",
+    "value": ""
+  },
+  "540_form_4014": {
+    "type": "/Tx",
+    "label": "Code 422. School Supplies for Homeless Children Voluntary Tax Contribution Fund.",
+    "value": ""
+  },
+  "540_form_4015": {
+    "type": "/Tx",
+    "label": "Code 423. State Parks Protection Fund and Parks Pass Purchase",
+    "value": ""
+  },
+  "540_form_4011": {
+    "type": "/Tx",
+    "label": "Code 407. Emergency Food for Families Voluntary Tax Contribution Fund",
+    "value": ""
+  },
+  "540_form_4012": {
+    "type": "/Tx",
+    "label": "Code 408. California Peace Officer Memorial Foundation Voluntary Tax Contribution Fund",
+    "value": ""
+  },
+  "540_form_4009": {
+    "type": "/Tx",
+    "label": "Code 405. California Breast Cancer Research Voluntary Tax Contribution Fund\r",
+    "value": ""
+  },
+  "540_form_4010": {
+    "type": "/Tx",
+    "label": "Code 406. California Firefighters\u2019 Memorial Voluntary Tax Contribution Fund",
+    "value": ""
+  },
+  "540_form_4006": {
+    "type": "/Tx",
+    "label": "Contributions. Code 400. California Seniors Special Fund. See instructions.",
+    "value": ""
+  },
+  "540_form_4007": {
+    "type": "/Tx",
+    "label": "Code 401. Alzheimer\u2019s Disease and Related Dementia Voluntary Tax Contribution Fund.",
+    "value": ""
+  },
+  "540_form_4008": {
+    "type": "/Tx",
+    "label": "Code 403. Rare and Endangered Species Preservation Voluntary Tax Contribution Program.\r",
+    "value": ""
+  },
+  "540_form_4003": {
+    "type": "/Tx",
+    "label": "Line 98. Amount of line 97 you want applied to your 2026 estimated tax.",
+    "value": ""
+  },
+  "540_form_4004": {
+    "type": "/Tx",
+    "label": "Line 99. Overpaid tax available this year. Subtract line 98 from line 97.",
+    "value": ""
+  },
+  "540_form_4005": {
+    "type": "/Tx",
+    "label": "Line 100. Tax due. If line 95 is less than line 64, subtract line 95 from line 64.",
+    "value": ""
+  },
+  "540_form_4023": {
+    "type": "/Tx",
+    "label": "Code 449. Parkinson's Disease Research Voluntary Tax Contribution Fund",
+    "value": ""
+  },
+  "540_form_4024": {
+    "type": "/Tx",
+    "label": "Line 110. Add amounts in code 400 through code 449. This is your total contribution",
+    "value": ""
+  },
+  "540_form_5010": {
+    "type": "/Tx",
+    "label": "Line 116. Account number.",
+    "value": ""
+  },
+  "540_form_5014": {
+    "type": "/Tx",
+    "label": "Line 117. Secondary Account number.",
+    "value": ""
+  },
+  "540_form_5015": {
+    "type": "/Tx",
+    "label": "The remaining amount of my refund (line 115) is authorized for direct deposit into the account shown below. Line 117. Secondary Direct deposit amount.",
+    "value": ""
+  },
+  "540_form_5011": {
+    "type": "/Tx",
+    "label": "Fill in the information to authorize direct deposit of your refund into one or two accounts. Do not attach a voided check or a deposit slip. See instructions. Have you verified the routing and account numbers? Use whole dollars only. All or the following amount of my refund (line 115) is authorized for direct deposit into the account shown below. Line 116. Direct deposit amount.",
+    "value": ""
+  },
+  "540_form_5007": {
+    "type": "/Tx",
+    "label": "Refund and Direct Deposit. Line 115. Refund or no amount due. Subtract the sum of line 110, line 112, and line 113 from line 99. See instructions. You can mail to: Franchise Tax Board, Post Office Box 942840, Sacramento, California, 94240-0001",
+    "value": ""
+  },
+  "540_form_5003": {
+    "type": "/Tx",
+    "label": "Interest and Penalties. Line 112. Interest, late return penalties, and late payment penalties.",
+    "value": ""
+  },
+  "540_form_5005": {
+    "type": "/Tx",
+    "label": "Line 113. Underpayment of estimated tax.",
+    "value": ""
+  },
+  "540_form_5006": {
+    "type": "/Tx",
+    "label": "Line 114. Total amount due. See instructions. Enclose, but do not staple, any payment.",
+    "value": ""
+  },
+  "540_form_5012": {
+    "type": "/Tx",
+    "label": "Line 117. Routing Number for secondary account. ",
+    "value": ""
+  },
+  "540_form_5008": {
+    "type": "/Tx",
+    "label": "Line 116. Enter the account\u2019s routing number.",
+    "value": ""
+  },
+  "540_form_5016 CB": {
+    "type": "/Btn",
+    "label": "Voter information. For voter registration information, check the box and go to sos.ca.gov/elections. See instructions.",
+    "value": ""
+  },
+  "540_form_5002": {
+    "type": "/Tx",
+    "label": "Amount You Owe. Line 111. Amount You Owe. If you do not have an amount on line 99, add line 94, line 96, line 100, and line 110. See instructions. Do not send cash.  You can mail payments to: Franchise Tax Board, Post Office Box, 942867, Sacramento, California, 94267-0001. To pay online, go to ftb.ca.gov/pay for more information.",
+    "value": ""
+  },
+  "540_form_5017 RB": {
+    "type": "/Btn",
+    "label": "Health Care Coverage Information. Do you want information on no-cost or low-cost health care coverage? By checking the \"Yes\" box, you authorize the Franchise Tax Board to share limited information from your tax return with Covered California. See instructions.",
+    "value": ""
+  },
+  "540_form_5018 CB": {
+    "type": "/Btn",
+    "label": "Organ Donor Election. By checking the applicable box you authorize written consent for Donate Life California to enroll you in the Donate Life California Organ and Tissue Donor Registry, and for the Franchise Tax Board to share limited information from your tax return with Donate Life California. If your individual information has changed since the last time you filed a tax return, and are already registered with Donate Life California, re-checking the box will send your most updated individual information to Donate Life California. If you do not check the box, Donate Life California will not enroll you in the registry at this time. To remove your name from the registry contact Donate Life California directly. For more information, see the Consent Language in the instructions. Primary taxpayer. ",
+    "value": ""
+  },
+  "540_form_5019 CB": {
+    "type": "/Btn",
+    "label": "Spouse / R D P (if joint tax return).",
+    "value": ""
+  },
+  "540_form_6002": {
+    "type": "/Tx",
+    "label": "Your email address. Enter only one email address. ",
+    "value": ""
+  },
+  "540_form_6009": {
+    "type": "/Tx",
+    "label": "Print Third Party Designee\u2019s Name",
+    "value": ""
+  },
+  "540_form_6006": {
+    "type": "/Tx",
+    "label": "Firm's address.",
+    "value": ""
+  },
+  "540_form_6010": {
+    "type": "/Tx",
+    "label": "Third party designee's telephone number. ",
+    "value": ""
+  },
+  "540_form_6004": {
+    "type": "/Tx",
+    "label": "Firm\u2019s name (or yours, if self-employed)",
+    "value": ""
+  },
+  "540_form_6005": {
+    "type": "/Tx",
+    "label": "Preparer Tax Identification Number. ",
+    "value": ""
+  },
+  "540_form_6007": {
+    "type": "/Tx",
+    "label": "Firm's Federal Employer Identification Number. ",
+    "value": ""
+  },
+  "540_form_6003": {
+    "type": "/Tx",
+    "label": "Preferred phone number. ",
+    "value": ""
+  },
+  "540_form_6001": {
+    "type": "/Tx",
+    "label": "Date. Enter date signed. Enter date as m m / d d/ y y y y .",
+    "value": ""
+  },
+  "540_form_6008 RB": {
+    "type": "/Btn",
+    "label": "Do you want to allow another person to discuss this tax return with us? See instructions.",
+    "value": ""
+  },
+  "540_form_6003B": {
+    "type": "/Tx",
+    "label": "Print paid preparer\u2019s name.",
+    "value": ""
+  },
+  "540_form_6003C": {
+    "type": "/Tx",
+    "label": "Paid preparer\u2019s phone number.",
+    "value": ""
+  },
+  "540_form_5009A CB": {
+    "type": "/Btn",
+    "label": "Line 116. Account type. Check only one box. Checking.",
+    "value": ""
+  },
+  "540_form_5009B CB": {
+    "type": "/Btn",
+    "label": "Line 116. Account type. Savings.",
+    "value": ""
+  },
+  "540_form_5013A CB": {
+    "type": "/Btn",
+    "label": "Line 117. Secondary Account type. Check only one box. Checking.",
+    "value": ""
+  },
+  "540_form_5013B CB": {
+    "type": "/Btn",
+    "label": "Line 117. Secondary Account type.  Savings.",
+    "value": ""
+  },
+  "540_form_5004A CB": {
+    "type": "/Btn",
+    "label": "Line 113. Underpayment of estimated tax. Check the box if FTB 5805 attached.",
+    "value": ""
+  },
+  "540_form_5004B CB": {
+    "type": "/Btn",
+    "label": "Line 113. Underpayment of estimated tax. Check the box if FTB 5805 F attached.",
+    "value": ""
+  }
+}

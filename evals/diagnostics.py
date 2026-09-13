@@ -1,5 +1,6 @@
 """Check a fresh runtime without invoking a harness, model or scoring function."""
 
+from collections import Counter
 import json
 import os
 from pathlib import Path
@@ -96,6 +97,9 @@ def diagnose(args):
         result['dataset'] = {'version': version, 'tasks': len(examples),
                              'fields': sum(len(example.input.fields) for example in examples)}
         documents = list({doc['path']: doc for example in examples for doc in example.input.documents}.values())
+        result['dataset']['document_formats'] = dict(Counter(Path(doc['path']).suffix.lower() for doc in documents))
+        result['dataset']['cases'] = len({example.input.case_id for example in examples})
+        result['dataset']['tax_years'] = sorted({example.input.tax_year for example in examples})
         profiles = selected_profiles(args)
         phoenix_url = getattr(args, 'phoenix_url', 'http://127.0.0.1:6006')
         trace_endpoint(phoenix_url)
@@ -128,6 +132,9 @@ def diagnose(args):
             row['checks'].update(worker['checks'])
             row['network'] = worker['network']
             row['worker_python'] = worker['python']
+            row['document_content_validation'] = worker.get('document_content_validation', 'not_performed')
+            row['model_document_reading'] = worker.get('model_document_reading', 'not_tested')
+            row['warnings'].append('Document hashes/readability and installed PDF tools do not validate labels, page counts or model reading')
             row['ready'] = all(row['checks'].values())
         except Exception as error:
             row['issue'] = str(error) if isinstance(error, ValueError) else type(error).__name__

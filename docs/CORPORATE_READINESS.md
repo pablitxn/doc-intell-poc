@@ -4,6 +4,8 @@ Esta iteración agrega diagnóstico del entorno, pruebas OTel con spans reales, 
 
 La [validación del 13 de septiembre](VALIDATION_PRE_CORPORATE.md) registra los 225 tests aprobados, el diagnóstico desde una copia limpia y la transferencia a Phoenix efímero.
 
+La ampliación posterior incorpora el [dataset completo preparado](FULL_DATASET_READINESS.md), con 366 tareas y documentos PDF/JPG/JSON; el montaje también admite JPEG y PNG. Su prompt es `tax-fields-text-v5`; las corridas minimal v4 citadas aquí son históricas.
+
 ## Preparar una máquina nueva
 
 Usar un checkout completo, Docker y Python compatible con el proyecto. `run.py` usa `uv` para resolver las dependencias fijadas. El runtime requiere POSIX; en Windows usar WSL2 con integración Docker. La validación local de esta iteración se realiza en Darwin/arm64 con contenedores Linux/arm64; Linux nativo, WSL y la red del trabajo deben pasar su propio diagnóstico.
@@ -18,7 +20,7 @@ python3 -m evals --harness all --check --check-network
 
 La reconstrucción incorpora el proxy actualizado; no cambia las versiones de Pi/Tau/Codex. Las imágenes utilizadas quedan identificadas por su ID en los reportes. Las versiones principales están fijadas, pero un build posterior puede resolver dependencias transitivas distintas; conservar una imagen para la arquitectura destino si hace falta reproducir exactamente su entorno.
 
-`--check` valida dataset, presencia de credenciales configuradas, imagen, ejecutable corporativo, montaje de los cinco PDF, herramientas PDF y separación de referencias. Ejecuta un proceso Python de diagnóstico, omitiendo incluso el entrypoint de la imagen; no ejecuta el CLI del harness. No exporta credenciales de proveedor al proceso de diagnóstico.
+`--check` valida dataset, presencia de credenciales configuradas, imagen, ejecutable corporativo, montaje de los documentos, herramientas PDF y separación de referencias. Ejecuta un proceso Python de diagnóstico, omitiendo incluso el entrypoint de la imagen; no ejecuta el CLI del harness. No exporta credenciales de proveedor al proceso de diagnóstico. La auditoría del contenido y las referencias del conjunto completo usa `scripts/prepare_full_dataset.py --check`.
 
 `--check-network` agrega un handshake TLS a cada destino permitido y dos controles de Phoenix: disponibilidad desde el runner y transporte OTLP desde el worker. No envía prompts, no hace peticiones de inferencia ni publica scores. El probe OTLP contiene cero spans; la prueba del SDK con spans reales se ejecuta por separado. Las redirecciones del readiness se rechazan para no reenviar credenciales a otro destino.
 
@@ -58,14 +60,15 @@ Esta prueba demuestra nuestro contrato/transporte usando un SDK real; la impleme
 
 ## Comparar con la línea base
 
-Los [fingerprints separados](FINGERPRINTS.md) permiten cambiar adapters/reporting sin confundir ese cambio con uno de consigna o evaluador. Las nueve corridas GPT-5.6 existentes tienen una migración explícita, verificada y sin inferencias, que crea copias compatibles y conserva las originales. El dataset y scoring de esa línea base permanecen intactos.
+Los [fingerprints separados](FINGERPRINTS.md) permiten cambiar adapters/reporting sin confundir ese cambio con uno de consigna o evaluador. Las nueve corridas GPT-5.6 existentes tienen una migración explícita, verificada y sin inferencias, que crea copias históricas y conserva las originales. El dataset y scoring de esa línea base permanecen intactos. El prompt actual v5 cambia el contrato: no se compara automáticamente una corrida nueva con aquellos resultados v4.
 
 ```bash
 tar -xzf artifacts/2026-09-13/runs.tar.gz
 python3 -m evals.experiments.fingerprints migrate-baseline \
-  runs/20260913T130955Z-a5ece05863e2 --output-dir runs/baseline-compatible
+  runs/20260913T130955Z-a5ece05863e2 --historical-only \
+  --output-dir runs/baseline-historical
 python3 -m evals.experiments.comparison \
-  runs/baseline-compatible/20260913T130955Z-a5ece05863e2 \
+  runs/ID_REFERENCIA_CON_EL_MISMO_DATASET_Y_CONTRATO \
   runs/ID_DEL_CORPORATIVO --output-dir runs/comparisons
 ```
 
@@ -74,7 +77,7 @@ La extracción del respaldo se realiza en un checkout nuevo; sobrescribe nombres
 ## Reconstruir el historial en Phoenix
 
 ```bash
-./run.py --import-run runs/baseline-compatible/20260913T130955Z-a5ece05863e2 \
+./run.py --import-run runs/baseline-historical/20260913T130955Z-a5ece05863e2 \
   --phoenix-url http://127.0.0.1:6006 --output-dir runs/restored
 ```
 
@@ -84,7 +87,13 @@ Las corridas nuevas y copias migradas llevan un snapshot privado de las referenc
 
 Cada reintento comprueba contenido remoto, no solo IDs locales: recupera tras una respuesta perdida y puede importar a un Phoenix vacío aunque reutilice el mismo localhost. Conserva los IDs de traza y span; agrega un marcador de identidad al exportar, sin alterar el archivo fuente. La lectura de Phoenix tiene precisión de microsegundos, contemplada en la verificación frente a los nanosegundos originales.
 
-`--upload-only` queda para publicación con el contrato/scoring vigentes. Para históricos usar `--import-run` o migrar primero el baseline auditado. No se reinterpreta automáticamente una versión antigua con el evaluador actual.
+`--upload-only` queda para publicación con el contrato/scoring vigentes y requiere seleccionar el dataset de la corrida. Para el conjunto completo:
+
+```bash
+./run.py --dataset datasets/tax-document-eval-v1 --upload-only runs/ID_DE_LA_CORRIDA
+```
+
+Para históricos usar `--import-run`. La migración opcional `--historical-only` agrega un snapshot verificado conservando el contrato v4; esas copias también se publican con `--import-run`, no con `--upload-only`. No se reinterpreta automáticamente una versión antigua con el evaluador actual.
 
 ## Después de esta etapa
 
@@ -92,7 +101,7 @@ Suite completa, incluidos diagnóstico, SDK y transferencia a Phoenix vacío:
 
 ```bash
 DOC_INTELL_DOCKER_TESTS=1 DOC_INTELL_PHOENIX_TESTS=1 \
-  uv run --with arize-phoenix-client==3.5.0 --with opentelemetry-proto==1.44.0 \
+  uv run --with-requirements tests/requirements.txt \
   python -m unittest discover -s tests -q
 ```
 

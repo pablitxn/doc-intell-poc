@@ -191,6 +191,36 @@ class AdversarialDatasetContractTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             load_examples(self.root)
 
+    def test_case_and_year_overrides_preserve_other_tasks_and_change_dataset_identity(self):
+        before, old_version = load_examples(self.root)
+        self.edit("tasks.json", lambda value: value["tasks"][0].update(
+            case_id="independent-case", tax_year=2024))
+        after, new_version = load_examples(self.root)
+        self.assertNotEqual(old_version, new_version)
+        self.assertEqual(after[0].input.case_id, "independent-case")
+        self.assertEqual(after[0].input.tax_year, 2024)
+        self.assertEqual(after[0].input.documents, before[0].input.documents)
+        self.assertEqual(after[0].expected, before[0].expected)
+        self.assertEqual(after[1:], before[1:])
+        prompt = build_prompt(after[0].input, self.root)
+        self.assertIn("Case: independent-case\nTax year: 2024", prompt)
+
+    def test_invalid_task_case_and_year_overrides_are_rejected(self):
+        original = (self.root / "tasks.json").read_text()
+        overrides = [{"case_id": value} for value in (None, "", " ", 7, "case\nother", "case\0")]
+        overrides += [{"tax_year": value} for value in (None, True, "2025", 2025.0, 0, 10000)]
+        for override in overrides:
+            with self.subTest(override=override):
+                (self.root / "tasks.json").write_text(original)
+                self.edit("tasks.json", lambda value: value["tasks"][0].update(override))
+                self.assert_rejected()
+
+    def test_overriding_case_does_not_authorize_another_tasks_document(self):
+        self.edit("tasks.json", lambda value: value["tasks"][0].update(case_id="different-case"))
+        self.edit("ground_truth/expected.json", lambda value:
+                  value["answers"]["extract_doc_001"]["evidence"]["wages"][0].update(document_id="DOC-002"))
+        self.assert_rejected()
+
     def test_added_requested_field_without_expected_cannot_silently_pass(self):
         self.edit("tasks.json", lambda value: value["tasks"][0]["fields"].update(ungraded="money"))
         self.edit("ground_truth/field_types.json", lambda value: value["extract_doc_001"].update(ungraded="money"))

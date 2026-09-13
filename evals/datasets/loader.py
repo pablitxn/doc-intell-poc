@@ -28,6 +28,11 @@ def read_json(path: Path):
 
 
 def load_examples(root: Path) -> tuple[list[Example], str]:
+    if not (root / "tasks.json").is_file() and (root / "coverage.json").is_file():
+        raise ValueError(
+            "This acquisition kit is not a runnable dataset: prepare a derived dataset with "
+            "tasks.json, manifest.json and verified ground_truth before selecting it with --dataset"
+        )
     tasks = read_json(root / "tasks.json")
     manifest = read_json(root / "manifest.json")
     reference = read_json(root / "ground_truth/expected.json")
@@ -82,6 +87,9 @@ def load_examples(root: Path) -> tuple[list[Example], str]:
                  "Task ID must be a safe nonempty filename component")
         _require(tid not in task_ids, "Task IDs must be unique")
         task_ids.add(tid)
+        _require(_text(task.get("case_id", tasks["case_id"])), "Task case_id must be nonempty text")
+        year = task.get("tax_year", tasks["tax_year"])
+        _require(type(year) is int and 1 <= year <= 9999, "Task tax_year must be a calendar year")
         _require(isinstance(task.get("instruction"), str) and bool(task["instruction"].strip()),
                  "Task instruction must be nonempty text")
         fields = task.get("fields")
@@ -115,8 +123,8 @@ def load_examples(root: Path) -> tuple[list[Example], str]:
         Example(
             input=TaskInput(
                 task_id=task["task_id"],
-                case_id=tasks["case_id"],
-                tax_year=tasks["tax_year"],
+                case_id=task.get("case_id", tasks["case_id"]),
+                tax_year=task.get("tax_year", tasks["tax_year"]),
                 instruction=task["instruction"],
                 fields=task["fields"],
                 documents=tuple(documents[path] for path in task["documents"]),

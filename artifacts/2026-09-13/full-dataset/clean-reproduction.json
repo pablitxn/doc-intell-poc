@@ -1,0 +1,142 @@
+{
+  "preparation_version": "tax-document-projection-v1",
+  "source": "tax-document-dataset-v0.1",
+  "release_files_verified": 485,
+  "sha256sums_sha256": "8d29d7b271972247db66801cb65ec6874d78ae88ea071cfc615e0daec87cae64",
+  "dataset_version": "8caee9331e585177a1c26645d29932cf37866d357e657e64b7646fa3c4c60b0c",
+  "model_calls": 0,
+  "documents": 319,
+  "cases": 55,
+  "tasks": 366,
+  "fields": 1465,
+  "extraction_tasks": 319,
+  "reconciliation_tasks": 47,
+  "document_families": {
+    "1040": 50,
+    "1098": 7,
+    "1098e": 6,
+    "1098t": 10,
+    "1099b": 21,
+    "1099div": 20,
+    "1099g": 13,
+    "1099int": 24,
+    "1099k": 6,
+    "1099misc": 14,
+    "1099nec": 11,
+    "1099r": 18,
+    "1099sa": 3,
+    "declared_payments": 50,
+    "fake_w2": 5,
+    "w2": 56,
+    "w2g": 5
+  },
+  "document_formats": {
+    ".jpg": 5,
+    ".json": 50,
+    ".pdf": 264
+  },
+  "field_types": {
+    "boolean": 162,
+    "money": 1253,
+    "string": 50
+  },
+  "monetary_fields": 1253,
+  "printed_or_declared_zero_amounts": 347,
+  "source_groups": 52,
+  "unobservable_aggregate_fields": [
+    {
+      "case_id": "ty25-il-002",
+      "field": "w2_wages_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-il-002",
+      "field": "w2_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-il-002",
+      "field": "documented_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-il-003",
+      "field": "w2_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-il-004",
+      "field": "w2_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-il-004",
+      "field": "documented_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-ny-010",
+      "field": "w2_wages_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-ny-010",
+      "field": "w2_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-ny-010",
+      "field": "documented_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-va-005",
+      "field": "w2_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-va-005",
+      "field": "documented_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-va-010",
+      "field": "w2_wages_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-va-010",
+      "field": "w2_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-va-010",
+      "field": "documented_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    }
+  ],
+  "split_policy": "All tasks are development; no held-out quality claim. Keep source groups together for future splits.",
+  "reference_scope": "Selected observable fields and explicitly defined withholding sums. No full tax-return or leadsheet oracle.",
+  "source_exclusions": {
+    "official_pdfs": {
+      "count": 39,
+      "reason": "37 blank templates and 2 reference documents, not populated labelled cases"
+    },
+    "taxcalc_output_xml": {
+      "count": 50,
+      "reason": "Candidate computed tax outputs; not extraction or general fiscal ground truth"
+    },
+    "extractbench_manifest_tasks": {
+      "count": 77,
+      "reason": "PDF and ground-truth files not acquired"
+    },
+    "fields_outside_projection": "Blank/unreadable/unselected fields are not silently treated as zero or counted as correct."
+  },
+  "preparation_source_sha256": {
+    "scripts/prepare_full_dataset.py": "c4d50c50cda14f9fbb425bef32925994f55f78998c1e30e8b92111b8d3192aae",
+    "scripts/taxcalc_boxes.py": "d10eb5b89c1582942d43da2844ce03f81f87ad593d0ea5da05b8ff3dae994924",
+    "scripts/prior_1040_labels.py": "c8044d0fc8faa4f60d16ce11e1e66a06feb0b99472e39463da4093e3592dfd99",
+    "scripts/fake_w2_labels.py": "84b7b061a9298bcc13a649d10d80e6990742e2dd357d2a69b4d92b7449b28ed6"
+  },
+  "reproduction": "byte-for-byte-identical"
+}

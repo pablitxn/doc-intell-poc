@@ -3,6 +3,7 @@
 from contextlib import redirect_stderr, redirect_stdout
 from io import StringIO
 from pathlib import Path
+import shlex
 from types import ModuleType, SimpleNamespace
 import unittest
 from unittest.mock import MagicMock, patch
@@ -39,6 +40,20 @@ class RunEntrypointTests(unittest.TestCase):
         self.assertEqual(code, 1)
         runner.assert_called_once()
         self.assertIn("--upload-only runs/test", log)
+
+    def test_failed_upload_retry_preserves_the_dataset_and_phoenix_destination(self):
+        dataset = 'datasets/full dataset'
+        endpoint = 'http://127.0.0.1:7777'
+        code, _, _, _, log = self.execute(
+            ['--harness-command', 'my-harness', '--dataset', dataset,
+             '--phoenix-url', endpoint],
+            upload_error=ConnectionError())
+        self.assertEqual(code, 1)
+        retry = next(line.split('retry with ', 1)[1] for line in log.splitlines()
+                     if 'retry with ' in line)
+        self.assertEqual(shlex.split(retry), [
+            './run.py', '--dataset', dataset, '--phoenix-url', endpoint,
+            '--upload-only', 'runs/test'])
 
     def test_upload_only_never_constructs_or_executes_a_harness(self):
         code, factory, runner, upload, _ = self.execute(["--upload-only", "runs/test"])

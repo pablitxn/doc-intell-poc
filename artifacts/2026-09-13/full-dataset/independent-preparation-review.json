@@ -1,0 +1,552 @@
+{
+  "counts": {
+    "jsons_passed": 50,
+    "structured_fields": 431,
+    "1040s_passed": 50,
+    "1040_fields": 124
+  },
+  "fields": {
+    "federal_estimated_tax_payment_1": 27,
+    "federal_estimated_tax_payment_2": 27,
+    "federal_estimated_tax_payment_3": 27,
+    "federal_estimated_tax_payment_4": 27,
+    "federal_paid_estimated_tax_pmts": 50,
+    "federal_schedule3_extension_payment": 27,
+    "ca_applied_from_prior_year": 9,
+    "ca_applied_py_refund": 5,
+    "ca_estimated_tax_payment_1": 9,
+    "ca_estimated_tax_payment_2": 9,
+    "ca_estimated_tax_payment_3": 9,
+    "ca_estimated_tax_payment_4": 9,
+    "ca_extension_payment": 9,
+    "ca_requested_extension": 5,
+    "ca_paid_extension": 1,
+    "federal_schedule3_requested_extension": 41,
+    "il_applied_from_prior_year": 3,
+    "il_estimated_payment_1": 3,
+    "il_estimated_payment_2": 3,
+    "il_estimated_payment_3": 3,
+    "il_estimated_payment_4": 2,
+    "il_extension_payment": 2,
+    "ny_applied_from_prior_year": 9,
+    "ny_estimated_payment_1": 9,
+    "ny_estimated_payment_2": 9,
+    "ny_estimated_payment_3": 9,
+    "ny_estimated_payment_4": 9,
+    "ny_extension_payment": 9,
+    "ny_applied_py_refund": 6,
+    "ny_paid_extension": 6,
+    "ny_requested_extension": 6,
+    "va_applied_refund_from_prior_year": 10,
+    "va_state_extension_requested": 10,
+    "va_estimated_payment_q1": 5,
+    "va_estimated_payment_q2": 5,
+    "va_estimated_payment_q3": 5,
+    "va_estimated_payment_q4": 1,
+    "va_extension_payment": 5,
+    "va_paid_extension": 7,
+    "va_applied_from_prior_year": 4,
+    "form_year": 50,
+    "prior_adjusted_gross_income": 49,
+    "prior_overpayment_elected_for_2025": 25
+  },
+  "errors": [],
+  "prior1040": [
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ca-001/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ca-002/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ca-003/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ca-004/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ca-005/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ca-006/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ca-007/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ca-008/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ca-009/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ca-010/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-il-001/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-il-002/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-il-003/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-il-004/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-il-005/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-il-006/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-il-007/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-il-008/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-il-009/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-il-010/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ny-001/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ny-002/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ny-003/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ny-004/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ny-005/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ny-006/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ny-007/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ny-008/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ny-009/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-ny-010/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-us-001/input/1040_2024.pdf",
+      "fields": [
+        "form_year"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-us-002/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-us-003/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-us-004/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-us-005/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-us-006/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-us-007/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-us-008/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-us-009/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-us-010/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-va-001/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-va-002/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-va-003/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-va-004/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income",
+        "prior_overpayment_elected_for_2025"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-va-005/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-va-006/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-va-007/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-va-008/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-va-009/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    },
+    {
+      "path": "datasets/tax-document-dataset-v0.1/taxcalc/download/ty25-va-010/input/1040_2024.pdf",
+      "fields": [
+        "form_year",
+        "prior_adjusted_gross_income"
+      ]
+    }
+  ],
+  "flag_amount_tensions": [
+    {
+      "case_id": "ty25-ca-002",
+      "false_flag": "federal_paid_estimated_tax_pmts",
+      "positive_amount_fields": [
+        {
+          "field": "federal_estimated_tax_payment_1",
+          "value": "652.00"
+        },
+        {
+          "field": "federal_estimated_tax_payment_2",
+          "value": "753.00"
+        },
+        {
+          "field": "federal_estimated_tax_payment_3",
+          "value": "825.00"
+        },
+        {
+          "field": "federal_estimated_tax_payment_4",
+          "value": "513.00"
+        }
+      ]
+    },
+    {
+      "case_id": "ty25-va-003",
+      "false_flag": "va_state_extension_requested",
+      "positive_amount_fields": [
+        {
+          "field": "va_extension_payment",
+          "value": "6.00"
+        }
+      ]
+    },
+    {
+      "case_id": "ty25-va-003",
+      "false_flag": "va_paid_extension",
+      "positive_amount_fields": [
+        {
+          "field": "va_extension_payment",
+          "value": "6.00"
+        }
+      ]
+    },
+    {
+      "case_id": "ty25-va-003",
+      "false_flag": "va_applied_refund_from_prior_year",
+      "positive_amount_fields": [
+        {
+          "field": "va_applied_from_prior_year",
+          "value": "5.00"
+        }
+      ]
+    },
+    {
+      "case_id": "ty25-va-004",
+      "false_flag": "va_state_extension_requested",
+      "positive_amount_fields": [
+        {
+          "field": "va_extension_payment",
+          "value": "6.00"
+        }
+      ]
+    },
+    {
+      "case_id": "ty25-va-004",
+      "false_flag": "va_paid_extension",
+      "positive_amount_fields": [
+        {
+          "field": "va_extension_payment",
+          "value": "6.00"
+        }
+      ]
+    },
+    {
+      "case_id": "ty25-va-004",
+      "false_flag": "va_applied_refund_from_prior_year",
+      "positive_amount_fields": [
+        {
+          "field": "va_applied_from_prior_year",
+          "value": "5.00"
+        }
+      ]
+    },
+    {
+      "case_id": "ty25-va-009",
+      "false_flag": "va_state_extension_requested",
+      "positive_amount_fields": [
+        {
+          "field": "va_extension_payment",
+          "value": "6.00"
+        }
+      ]
+    },
+    {
+      "case_id": "ty25-va-009",
+      "false_flag": "va_paid_extension",
+      "positive_amount_fields": [
+        {
+          "field": "va_extension_payment",
+          "value": "6.00"
+        }
+      ]
+    },
+    {
+      "case_id": "ty25-va-009",
+      "false_flag": "va_applied_refund_from_prior_year",
+      "positive_amount_fields": [
+        {
+          "field": "va_applied_from_prior_year",
+          "value": "5.00"
+        }
+      ]
+    }
+  ],
+  "review_conclusions": [
+    "Prior 1040 selected boxes visually confirmed on CA001: line11 page1 and line36 page2, retaining printed zero.",
+    "All50 JSON selected payment fields validate explicit types; all50 prior1040 PDFs pass2readers,124fields.",
+    "Flags and positive declared amounts sometimes disagree; preserve both as source observations, not proof of completed payment.",
+    "Empty aggregate contributors must omit requested field rather than synthesize0; parent fixed this during review.",
+    "Only inputs are copied into derived inputs/, answers and provenance are evaluator-side ground_truth/; XML outputs excluded.",
+    "Score scope is explicitly selected fields, not every field on a document or complete tax computation."
+  ]
+}

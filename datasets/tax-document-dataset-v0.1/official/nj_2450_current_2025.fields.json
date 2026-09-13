@@ -1,0 +1,257 @@
+{
+  "Names as shown on Form NJ1040": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Social Security Number": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Claimant Name": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Claimant SSN": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Address": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "City": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "State": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "ZIP Code": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Name1": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Fed Emp ID": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "A1": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "B1": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "C1": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Private Plan": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Wages1": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Name2": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Fed Emp ID2": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "A2": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "B2": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "C2": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Private Plan2": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Name3": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Fed Emp ID3": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "A3": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "B3": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "C3": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Private Plan3": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Wages12": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Name4": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Fed Emp ID4": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "A4": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "B4": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "C4": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Private Plan4": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Wages14": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Name5": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Fed Emp ID5": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "A5": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "B5": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "C5": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Private Plan5": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Wages15": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "If additional space is required enclose a rider and enter the total on this line": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "2If additional space is required enclose a rider and enter the total on this line": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "3If additional space is required enclose a rider and enter the total on this line": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Total Deducted Add lines 1A through 1F Enter here": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "2Total Deducted Add lines 1A through 1F Enter here": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "3Total Deducted Add lines 1A through 1F Enter here": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "14620Subtract line 3 column A from line 2 column A Enter on line 58 of the NJ1040": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "2752Subtract line 3 column C from line 2 column C Enter on line 60 of the NJ1040": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Date": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  }
+}

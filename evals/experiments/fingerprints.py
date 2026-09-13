@@ -75,18 +75,22 @@ def legacy_code_sha256(root: Path = REPO_ROOT) -> str:
     )).hexdigest()
 
 
-def migrate_baseline(run_dir: Path, output_dir: Path, *, dataset: Path | None = None) -> Path:
+def migrate_baseline(run_dir: Path, output_dir: Path, *, dataset: Path | None = None,
+                     historical_only: bool = False) -> Path:
     """Add verified semantic fingerprints to a copy of one audited legacy run.
 
     This is deliberately not a generic 'trust my old report' switch. Report and
     sidecar bytes must match the committed nine-run baseline, current contract and
     scoring sources must match its reviewed commit, and every prompt/score is
-    checked again without invoking a model. Existing publication checkpoints are
-    copied unchanged; importing into another Phoenix uses the separate importer.
+    checked again without invoking a model. In historical-only mode the frozen
+    contract and recorded prompts remain historical while scoring and dataset
+    still must match. Existing publication checkpoints are copied unchanged;
+    importing into another Phoenix uses the separate importer.
     """
     import json
     from ..datasets.loader import load_examples, read_json
     from ..evaluators.tax_mini import evaluate
+    from ..json_io import strict_json_loads
     from .prompt import build_prompt
     from .runner import _summary, build_dataset_snapshot
 
@@ -98,12 +102,17 @@ def migrate_baseline(run_dir: Path, output_dir: Path, *, dataset: Path | None = 
     if allowed is None:
         raise ValueError('Legacy report is not an exact audited baseline; refusing migration')
     fingerprints = code_fingerprints()
-    if source_manifest() != manifest['reviewed_sources'] or any(
-        fingerprints[key] != manifest[key]
-        for key in ('fingerprint_version', 'contract_sha256', 'scoring_sha256')
-    ):
+    current_sources = source_manifest()
+    if historical_only:
+        if (any(current_sources.get(name) != manifest['reviewed_sources'].get(name) for name in SCORING_FILES)
+                or fingerprints['scoring_sha256'] != manifest['scoring_sha256']
+                or fingerprints['fingerprint_version'] != manifest['fingerprint_version']):
+            raise ValueError('Current scoring sources differ from the reviewed baseline; historical migration is unavailable')
+    elif current_sources != manifest['reviewed_sources'] or any(
+            fingerprints[key] != manifest[key]
+            for key in ('fingerprint_version', 'contract_sha256', 'scoring_sha256')):
         raise ValueError('Current contract/scoring sources differ from the reviewed baseline')
-    report = read_json(run_dir / 'report.json')
+    report = strict_json_loads(original_bytes.decode())
     if report.get('complete') is not True or report.get('run_id') != allowed['run_id']:
         raise ValueError('Baseline requires a complete matching run identity')
     for key in ('dataset_version', 'prompt_version', 'evaluator_version', 'grader_sha256'):
@@ -126,7 +135,12 @@ def migrate_baseline(run_dir: Path, output_dir: Path, *, dataset: Path | None = 
         raise ValueError('Baseline task membership is incomplete or duplicated')
     for row in report['rows']:
         example = by_id[row['task_id']]
-        if row['input'] != build_prompt(example.input, dataset, document_root=prompt_root):
+        if (row.get('case_id') != example.input.case_id or row.get('group') != example.group
+                or row.get('document_ids') != [doc['document_id'] for doc in example.input.documents]):
+            raise ValueError('Baseline task metadata differs from the verified dataset')
+        if not isinstance(row.get('input'), str) or not row['input'].strip():
+            raise ValueError('Baseline requires recorded task inputs')
+        if not historical_only and row['input'] != build_prompt(example.input, dataset, document_root=prompt_root):
             raise ValueError('Baseline prompt differs from the current contract')
         if row['scores'] != evaluate(row['output'], example, row['execution_status']):
             raise ValueError('Baseline scores differ from the current evaluator')
@@ -151,10 +165,23 @@ def migrate_baseline(run_dir: Path, output_dir: Path, *, dataset: Path | None = 
         raise ValueError('Baseline migration destination must be separate from the original')
     if destination.exists():
         raise ValueError('Baseline migration destination already exists; refusing overwrite')
-    snapshot = {**build_dataset_snapshot(examples, dataset, prompt_root),
-                'dataset_version': version, 'prompt_version': report['prompt_version']}
+    if historical_only:
+        # Report bytes were verified against the immutable manifest. Use those
+        # exact prompts; rendering them with today's contract would falsify history.
+        snapshot_examples = [
+            {'task_id': row['task_id'], 'case_id': row['case_id'], 'group': row['group'],
+             'field_types': by_id[row['task_id']].input.fields, 'document_ids': row['document_ids'],
+             'input': row['input'], 'expected': by_id[row['task_id']].expected}
+            for row in report['rows']
+        ]
+    else:
+        snapshot_examples = build_dataset_snapshot(examples, dataset, prompt_root)['examples']
+    snapshot = {'examples': snapshot_examples, 'dataset_version': version,
+                'prompt_version': report['prompt_version']}
     snapshot_bytes = (json.dumps(snapshot, indent=2, allow_nan=False) + '\n').encode()
-    report.update({key: fingerprints[key] for key in ('fingerprint_version', 'contract_sha256', 'scoring_sha256')})
+    semantic_fingerprints = manifest if historical_only else fingerprints
+    report.update({key: semantic_fingerprints[key]
+                   for key in ('fingerprint_version', 'contract_sha256', 'scoring_sha256')})
     # The old whole-evals hash is the only observed runtime-source provenance.
     # Never substitute a reconstructed post-run runtime hash and label it native.
     report['runtime_code_sha256'] = report['eval_code_sha256']
@@ -165,7 +192,11 @@ def migrate_baseline(run_dir: Path, output_dir: Path, *, dataset: Path | None = 
         'manifest_sha256': hashlib.sha256(manifest_path.read_bytes()).hexdigest(),
         'original_report_sha256': original_sha,
         'reviewed_source_commit': manifest['reviewed_source_commit'],
-        'validation': 'exact archived bytes, source units, dataset, task membership, prompts and scores',
+        'mode': 'historical-only' if historical_only else 'current-compatible',
+        'validation': ('exact archived report and sidecar bytes, scoring source units, dataset, '
+                       'task membership, recorded prompts and scores; original contract preserved'
+                       if historical_only else
+                       'exact archived bytes, source units, dataset, task membership, prompts and scores'),
     }
     copies[Path('report.json')] = (json.dumps(report, indent=2, allow_nan=False) + '\n').encode()
     copies[Path('dataset-snapshot.json')] = snapshot_bytes
@@ -185,10 +216,13 @@ def main(argv=None) -> int:
     migrate.add_argument('run_dirs', nargs='+', type=Path)
     migrate.add_argument('--output-dir', required=True, type=Path)
     migrate.add_argument('--dataset', type=Path, default=REPO_ROOT / 'datasets/tax-mini-poc')
+    migrate.add_argument('--historical-only', action='store_true',
+                         help='Preserve the audited historical contract; never claim compatibility with the current prompt')
     args = parser.parse_args(argv)
     try:
         for run_dir in args.run_dirs:
-            print(migrate_baseline(run_dir, args.output_dir, dataset=args.dataset))
+            print(migrate_baseline(run_dir, args.output_dir, dataset=args.dataset,
+                                   historical_only=args.historical_only))
     except (ValueError, KeyError, TypeError, OSError) as exc:
         parser.exit(1, f'Baseline migration failed: {exc}\n')
     return 0

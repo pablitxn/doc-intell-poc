@@ -1,0 +1,1213 @@
+[
+  {
+    "id": "short/00581-2011-p0050",
+    "title": "Schedule K-1 (Form 1065) Partner's Share of Income, Deductions, Credits, etc.",
+    "pdf": "docs/short/00581-2011-p0050.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/00581-2011-p0050.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/00581-2011-p0052",
+    "title": "Schedule K-1 (Form 1065) Partner's Share of Income, Deductions, Credits, etc.",
+    "pdf": "docs/short/00581-2011-p0052.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/00581-2011-p0052.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/00581-2011-p0098",
+    "title": "Schedule K-1 (Form 1065) Partner's Share of Income, Deductions, Credits, etc.",
+    "pdf": "docs/short/00581-2011-p0098.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/00581-2011-p0098.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/00581-2011-p0102",
+    "title": "Schedule K-1 (Form 1065) Partner's Share of Income, Deductions, Credits, etc.",
+    "pdf": "docs/short/00581-2011-p0102.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/00581-2011-p0102.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/07021-2016-p0014",
+    "title": "Schedule K-1 (Form 1065) Partner's Share of Income, Deductions, Credits, etc.",
+    "pdf": "docs/short/07021-2016-p0014.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/07021-2016-p0014.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/07021-2016-p0016",
+    "title": "Schedule K-1 (Form 1065) Partner's Share of Income, Deductions, Credits, etc.",
+    "pdf": "docs/short/07021-2016-p0016.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/07021-2016-p0016.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/07021-2016-p0018",
+    "title": "Schedule K-1 (Form 1065) Partner's Share of Income, Deductions, Credits, etc.",
+    "pdf": "docs/short/07021-2016-p0018.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/07021-2016-p0018.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/07021-2016-p0026",
+    "title": "Schedule K-1 (Form 1065) Partner's Share of Income, Deductions, Credits, etc.",
+    "pdf": "docs/short/07021-2016-p0026.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/07021-2016-p0026.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/07021-2016-p0029",
+    "title": "Schedule K-1 (Form 1065) Partner's Share of Income, Deductions, Credits, etc.",
+    "pdf": "docs/short/07021-2016-p0029.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/07021-2016-p0029.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/07021-2016-p0032",
+    "title": "Schedule K-1 (Form 1065) Partner's Share of Income, Deductions, Credits, etc.",
+    "pdf": "docs/short/07021-2016-p0032.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/07021-2016-p0032.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/07021-2016-p0038",
+    "title": "Schedule K-1 (Form 1120S) Shareholder's Share of Income, Deductions, Credits, etc.",
+    "pdf": "docs/short/07021-2016-p0038.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/07021-2016-p0038.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/07021-2016-p0039",
+    "title": "Schedule K-1 (Form 1120S) Shareholder's Share of Income, Deductions, Credits, etc.",
+    "pdf": "docs/short/07021-2016-p0039.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/07021-2016-p0039.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/07021-2016-p0040",
+    "title": "Schedule K-1 (Form 1120S) Shareholder's Share of Income, Deductions, Credits, etc.",
+    "pdf": "docs/short/07021-2016-p0040.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/07021-2016-p0040.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/07021-2016-p0051",
+    "title": "Schedule K-1 (Form 1120S) Shareholder's Share of Income, Deductions, Credits, etc.",
+    "pdf": "docs/short/07021-2016-p0051.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/07021-2016-p0051.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/07021-2016-p0052",
+    "title": "Schedule K-1 (Form 1120S) Shareholder's Share of Income, Deductions, Credits, etc.",
+    "pdf": "docs/short/07021-2016-p0052.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/07021-2016-p0052.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/07021-2016-p0053",
+    "title": "Schedule K-1 (Form 1120S) Shareholder's Share of Income, Deductions, Credits, etc.",
+    "pdf": "docs/short/07021-2016-p0053.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/07021-2016-p0053.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/07021-2016-p0074",
+    "title": "Schedule K-1 (Form 1120S) Shareholder's Share of Income, Deductions, Credits, etc.",
+    "pdf": "docs/short/07021-2016-p0074.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/07021-2016-p0074.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/07021-2016-p0078",
+    "title": "Schedule K-1 (Form 1120S) Shareholder's Share of Income, Deductions, Credits, etc.",
+    "pdf": "docs/short/07021-2016-p0078.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/07021-2016-p0078.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/07021-2016-p0082",
+    "title": "Schedule K-1 (Form 1120S) Shareholder's Share of Income, Deductions, Credits, etc.",
+    "pdf": "docs/short/07021-2016-p0082.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/07021-2016-p0082.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/593338187_200912_990PF-p0023",
+    "title": "Form 1099-B Proceeds From Broker and Barter Exchange Transactions (2009 consolidated statement)",
+    "pdf": "docs/short/593338187_200912_990PF-p0023.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/593338187_200912_990PF-p0023.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/593338187_200912_990PF-p0024",
+    "title": "Form 1099-B Proceeds From Broker and Barter Exchange Transactions (2009 consolidated statement)",
+    "pdf": "docs/short/593338187_200912_990PF-p0024.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/593338187_200912_990PF-p0024.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/593338187_200912_990PF-p0025",
+    "title": "Form 1099-B Proceeds From Broker and Barter Exchange Transactions (2009 consolidated statement)",
+    "pdf": "docs/short/593338187_200912_990PF-p0025.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/593338187_200912_990PF-p0025.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/593338187_200912_990PF-p0026",
+    "title": "Form 1099-B Proceeds From Broker and Barter Exchange Transactions (2009 consolidated statement)",
+    "pdf": "docs/short/593338187_200912_990PF-p0026.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/593338187_200912_990PF-p0026.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/593338187_200912_990PF-p0027",
+    "title": "Form 1099-B Proceeds From Broker and Barter Exchange Transactions (2009 consolidated statement)",
+    "pdf": "docs/short/593338187_200912_990PF-p0027.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/593338187_200912_990PF-p0027.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/593338187_200912_990PF-p0030",
+    "title": "Form 1099-B Proceeds From Broker and Barter Exchange Transactions (2009 consolidated statement)",
+    "pdf": "docs/short/593338187_200912_990PF-p0030.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/593338187_200912_990PF-p0030.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/593338187_200912_990PF-p0031",
+    "title": "Form 1099-B Proceeds From Broker and Barter Exchange Transactions (2009 consolidated statement)",
+    "pdf": "docs/short/593338187_200912_990PF-p0031.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/593338187_200912_990PF-p0031.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/593338187_200912_990PF-p0032",
+    "title": "Form 1099-B Proceeds From Broker and Barter Exchange Transactions (2009 consolidated statement)",
+    "pdf": "docs/short/593338187_200912_990PF-p0032.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/593338187_200912_990PF-p0032.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/593338187_200912_990PF-p0033",
+    "title": "Form 1099-B Proceeds From Broker and Barter Exchange Transactions (2009 consolidated statement)",
+    "pdf": "docs/short/593338187_200912_990PF-p0033.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/593338187_200912_990PF-p0033.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/593338187_200912_990PF-p0034",
+    "title": "Form 1099-B Proceeds From Broker and Barter Exchange Transactions (2009 consolidated statement)",
+    "pdf": "docs/short/593338187_200912_990PF-p0034.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/593338187_200912_990PF-p0034.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/593338187_200912_990PF-p0035",
+    "title": "Form 1099-B Proceeds From Broker and Barter Exchange Transactions (2009 consolidated statement)",
+    "pdf": "docs/short/593338187_200912_990PF-p0035.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/593338187_200912_990PF-p0035.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/593338187_200912_990PF-p0036",
+    "title": "Form 1099-B Proceeds From Broker and Barter Exchange Transactions (2009 consolidated statement)",
+    "pdf": "docs/short/593338187_200912_990PF-p0036.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/593338187_200912_990PF-p0036.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/593338187_200912_990PF-p0037",
+    "title": "Form 1099-B Proceeds From Broker and Barter Exchange Transactions (2009 consolidated statement)",
+    "pdf": "docs/short/593338187_200912_990PF-p0037.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/593338187_200912_990PF-p0037.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/593338187_200912_990PF-p0038",
+    "title": "Form 1099-B Proceeds From Broker and Barter Exchange Transactions (2009 consolidated statement)",
+    "pdf": "docs/short/593338187_200912_990PF-p0038.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/593338187_200912_990PF-p0038.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/ROGER-WINFIELD-SCOTT-FOUNDATION-INC-2009-580655183-p0023",
+    "title": "Form 1099-B Proceeds From Broker and Barter Exchange Transactions (2009 consolidated statement)",
+    "pdf": "docs/short/ROGER-WINFIELD-SCOTT-FOUNDATION-INC-2009-580655183-p0023.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/ROGER-WINFIELD-SCOTT-FOUNDATION-INC-2009-580655183-p0023.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/ROGER-WINFIELD-SCOTT-FOUNDATION-INC-2009-580655183-p0024",
+    "title": "Form 1099-B Proceeds From Broker and Barter Exchange Transactions (2009 consolidated statement)",
+    "pdf": "docs/short/ROGER-WINFIELD-SCOTT-FOUNDATION-INC-2009-580655183-p0024.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/ROGER-WINFIELD-SCOTT-FOUNDATION-INC-2009-580655183-p0024.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/ROGER-WINFIELD-SCOTT-FOUNDATION-INC-2009-580655183-p0025",
+    "title": "Form 1099-B Proceeds From Broker and Barter Exchange Transactions (2009 consolidated statement)",
+    "pdf": "docs/short/ROGER-WINFIELD-SCOTT-FOUNDATION-INC-2009-580655183-p0025.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/ROGER-WINFIELD-SCOTT-FOUNDATION-INC-2009-580655183-p0025.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/arif-2021",
+    "title": "Form 1040 (2021) U.S. Individual Income Tax Return with Schedules 1, 2, 3",
+    "pdf": "docs/short/arif-2021.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/arif-2021.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "challenge:T3.e",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/arif-2022",
+    "title": "Form 1040 (2022) U.S. Individual Income Tax Return with Schedules 1, 2, 3",
+    "pdf": "docs/short/arif-2022.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/arif-2022.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "challenge:T3.e",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/arif-2024",
+    "title": "Form 1040 (2024) U.S. Individual Income Tax Return with Schedules 1, 2, 3",
+    "pdf": "docs/short/arif-2024.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/arif-2024.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "challenge:T3.e",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/bianco-2024",
+    "title": "Form 1040 (2024) U.S. Individual Income Tax Return with Schedules 1, 2, 3",
+    "pdf": "docs/short/bianco-2024.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/bianco-2024.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "challenge:T3.e",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/fidelity_0002_sample",
+    "title": "BrokerageConsolidated1099",
+    "pdf": "docs/short/fidelity_0002_sample.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/fidelity_0002_sample.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T1.a",
+      "challenge:T3.c",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0002-r1",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0002-r1.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0002-r1.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0002-r2",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0002-r2.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0002-r2.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0002-r3",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0002-r3.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0002-r3.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0002-r4",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0002-r4.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0002-r4.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0003-r1",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0003-r1.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0003-r1.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0003-r2",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0003-r2.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0003-r2.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0003-r3",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0003-r3.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0003-r3.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0003-r4",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0003-r4.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0003-r4.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0004-r1",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0004-r1.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0004-r1.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0004-r2",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0004-r2.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0004-r2.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0004-r3",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0004-r3.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0004-r3.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0004-r4",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0004-r4.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0004-r4.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0005-r1",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0005-r1.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0005-r1.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0005-r2",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0005-r2.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0005-r2.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0005-r3",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0005-r3.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0005-r3.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0005-r4",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0005-r4.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0005-r4.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0006-r1",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0006-r1.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0006-r1.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0006-r2",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0006-r2.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0006-r2.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0006-r3",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0006-r3.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0006-r3.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/passcoag-2020-w2-p0006-r4",
+    "title": "Form W-2 Wage and Tax Statement (2020)",
+    "pdf": "docs/short/passcoag-2020-w2-p0006-r4.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/passcoag-2020-w2-p0006-r4.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "short/pershing_0001",
+    "title": "BrokerageConsolidated1099",
+    "pdf": "docs/short/pershing_0001.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/short/pershing_0001.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T1.a",
+      "challenge:T3.c",
+      "challenge:T1.b",
+      "structure:S1",
+      "structure:S3",
+      "length:short",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "medium/arif-2023",
+    "title": "Form 1040 (2023) U.S. Individual Income Tax Return with Schedules 1, 2, 3",
+    "pdf": "docs/medium/arif-2023.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/medium/arif-2023.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "challenge:T3.e",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:medium",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "medium/bar-lev-2021",
+    "title": "Form 1040 (2021) U.S. Individual Income Tax Return with Schedules 1, 2, 3",
+    "pdf": "docs/medium/bar-lev-2021.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/medium/bar-lev-2021.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "challenge:T3.e",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:medium",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "medium/bar-lev-2022",
+    "title": "Form 1040 (2022) U.S. Individual Income Tax Return with Schedules 1, 2, 3",
+    "pdf": "docs/medium/bar-lev-2022.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/medium/bar-lev-2022.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "challenge:T3.e",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:medium",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "medium/bar-lev-2023",
+    "title": "Form 1040 (2023) U.S. Individual Income Tax Return with Schedules 1, 2, 3",
+    "pdf": "docs/medium/bar-lev-2023.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/medium/bar-lev-2023.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "challenge:T3.e",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:medium",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "medium/bar-lev-2024",
+    "title": "Form 1040 (2024) U.S. Individual Income Tax Return with Schedules 1, 2, 3",
+    "pdf": "docs/medium/bar-lev-2024.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/medium/bar-lev-2024.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "challenge:T3.e",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:medium",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "medium/becerra-2021",
+    "title": "Form 1040 (2021) U.S. Individual Income Tax Return with Schedules 1, 2, 3",
+    "pdf": "docs/medium/becerra-2021.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/medium/becerra-2021.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "challenge:T3.e",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:medium",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "medium/becerra-2022",
+    "title": "Form 1040 (2022) U.S. Individual Income Tax Return with Schedules 1, 2, 3",
+    "pdf": "docs/medium/becerra-2022.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/medium/becerra-2022.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "challenge:T3.e",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:medium",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "medium/becerra-2023",
+    "title": "Form 1040 (2023) U.S. Individual Income Tax Return with Schedules 1, 2, 3",
+    "pdf": "docs/medium/becerra-2023.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/medium/becerra-2023.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "challenge:T3.e",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:medium",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "medium/becerra-2024",
+    "title": "Form 1040 (2024) U.S. Individual Income Tax Return with Schedules 1, 2, 3",
+    "pdf": "docs/medium/becerra-2024.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/medium/becerra-2024.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "challenge:T3.e",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:medium",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "medium/bianco-2021",
+    "title": "Form 1040 (2021) U.S. Individual Income Tax Return with Schedules 1, 2, 3",
+    "pdf": "docs/medium/bianco-2021.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/medium/bianco-2021.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "challenge:T3.e",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:medium",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "medium/bianco-2022",
+    "title": "Form 1040 (2022) U.S. Individual Income Tax Return with Schedules 1, 2, 3",
+    "pdf": "docs/medium/bianco-2022.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/medium/bianco-2022.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "challenge:T3.e",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:medium",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "medium/cabrera-2021",
+    "title": "Form 1040 (2021) U.S. Individual Income Tax Return with Schedules 1, 2, 3",
+    "pdf": "docs/medium/cabrera-2021.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/medium/cabrera-2021.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "challenge:T3.e",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:medium",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "medium/cabrera-2022",
+    "title": "Form 1040 (2022) U.S. Individual Income Tax Return with Schedules 1, 2, 3",
+    "pdf": "docs/medium/cabrera-2022.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/medium/cabrera-2022.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "challenge:T3.e",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:medium",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "medium/cabrera-2023",
+    "title": "Form 1040 (2023) U.S. Individual Income Tax Return with Schedules 1, 2, 3",
+    "pdf": "docs/medium/cabrera-2023.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/medium/cabrera-2023.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T3.a",
+      "challenge:T3.e",
+      "perception:P2",
+      "delivery:G1",
+      "delivery:G4",
+      "length:medium",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  },
+  {
+    "id": "medium/schwab_dana_jones_2012",
+    "title": "BrokerageConsolidated1099",
+    "pdf": "docs/medium/schwab_dana_jones_2012.pdf",
+    "pdf_url": "https://huggingface.co/datasets/llamaindex/ExtractBench/resolve/f6180e917a050a84582e6366cff85b7dc1e84e58/docs/medium/schwab_dana_jones_2012.pdf",
+    "tags": [
+      "source:real",
+      "challenge:T1.a",
+      "challenge:T3.c",
+      "length:medium",
+      "domain:D1"
+    ],
+    "target_tax_family": true
+  }
+]

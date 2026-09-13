@@ -1,0 +1,44 @@
+{
+  "model": "gpt-5.6-sol",
+  "thinking": "medium",
+  "tasks": [
+    {
+      "task_id": "extract_taxcalc_ty25_ca_001_w2_1",
+      "exit_code": 0,
+      "run_ids": [
+        "20260913T172846Z-1ba05d55b04d",
+        "20260913T172903Z-31a43b8dcb6a",
+        "20260913T172919Z-96dac4cc47a4"
+      ]
+    },
+    {
+      "task_id": "extract_fake_w2_test_000",
+      "exit_code": 0,
+      "run_ids": [
+        "20260913T172941Z-fab8a7fd6854",
+        "20260913T173013Z-9165c44ff83c",
+        "20260913T173050Z-ae8afb9b8dc7"
+      ]
+    },
+    {
+      "task_id": "extract_taxcalc_ty25_va_004_remaining_data",
+      "exit_code": 0,
+      "run_ids": [
+        "20260913T173135Z-b47451d52ceb",
+        "20260913T173206Z-7d47d945d12e",
+        "20260913T173237Z-0d6e79705e42"
+      ]
+    },
+    {
+      "task_id": "reconcile_ty25_ca_007",
+      "exit_code": 0,
+      "run_ids": [
+        "20260913T173337Z-5fd515138300",
+        "20260913T173406Z-050377ceb512",
+        "20260913T173436Z-5268576f4e69"
+      ]
+    }
+  ],
+  "elapsed_seconds": 395.5248749256134,
+  "complete": true
+}

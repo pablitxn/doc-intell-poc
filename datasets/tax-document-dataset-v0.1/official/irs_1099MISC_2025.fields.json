@@ -1,0 +1,762 @@
+{
+  "topmostSubform[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].CopyHeader[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].CopyHeader[0].CalendarYear[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].CopyHeader[0].CalendarYear[0].f1_1[0]": {
+    "type": "/Tx",
+    "label": "Page 1. Read only copy. Copy A. For calendar year. 4 digit year. ",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].CopyHeader[0].c1_1[0]": {
+    "type": "/Btn",
+    "label": "VOID. ",
+    "value": "/Off"
+  },
+  "topmostSubform[0].CopyA[0].CopyHeader[0].c1_1[1]": {
+    "type": "/Btn",
+    "label": "CORRECTED. ",
+    "value": "/Off"
+  },
+  "topmostSubform[0].CopyA[0].LeftColumn[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].LeftColumn[0].f1_2[0]": {
+    "type": "/Tx",
+    "label": "PAYER\u2019S name, street address, city or town, state or province, country, Z I P or foreign postal code, and telephone no. ",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].LeftColumn[0].f1_3[0]": {
+    "type": "/Tx",
+    "label": "PAYER\u2019S T I N.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].LeftColumn[0].f1_4[0]": {
+    "type": "/Tx",
+    "label": "RECIPIENT\u2019S T I N. ",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].LeftColumn[0].f1_5[0]": {
+    "type": "/Tx",
+    "label": "RECIPIENT\u2019S name. ",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].LeftColumn[0].f1_6[0]": {
+    "type": "/Tx",
+    "label": "Street address (including apt. no.). ",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].LeftColumn[0].f1_7[0]": {
+    "type": "/Tx",
+    "label": "City or town, state or province, country, and Z I P or foreign postal code. ",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].LeftColumn[0].f1_8[0]": {
+    "type": "/Tx",
+    "label": "Account number (see instructions). ",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].LeftColumn[0].c1_2[0]": {
+    "type": "/Btn",
+    "label": "2nd T I N not. ",
+    "value": "/Off"
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].f1_9[0]": {
+    "type": "/Tx",
+    "label": "1. Rents. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].f1_10[0]": {
+    "type": "/Tx",
+    "label": "2. Royalties. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].f1_11[0]": {
+    "type": "/Tx",
+    "label": "3. Other income. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].f1_12[0]": {
+    "type": "/Tx",
+    "label": "4. Federal income tax withheld. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].f1_13[0]": {
+    "type": "/Tx",
+    "label": "5. Fishing boat proceeds. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].f1_14[0]": {
+    "type": "/Tx",
+    "label": "6. Medical and health care payments. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].c1_4[0]": {
+    "type": "/Btn",
+    "label": "7. Payer made direct sales totaling $5,000 or more of consumer products to recipient for resale.",
+    "value": "/Off"
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].f1_15[0]": {
+    "type": "/Tx",
+    "label": "8. Substitute payments in lieu of dividends or interest. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].f1_16[0]": {
+    "type": "/Tx",
+    "label": "9. Crop insurance proceeds. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].f1_17[0]": {
+    "type": "/Tx",
+    "label": "10. Gross proceeds paid to an attorney. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].f1_19[0]": {
+    "type": "/Tx",
+    "label": "12. Section 409A deferrals. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].TagCorrectingSubform[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].TagCorrectingSubform[0].c1_3[0]": {
+    "type": "/Btn",
+    "label": "13. F A T C A filing requirement. ",
+    "value": "/Off"
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].f1_21[0]": {
+    "type": "/Tx",
+    "label": "15. Nonqualified deferred compensation. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].f1_18[0]": {
+    "type": "/Tx",
+    "label": "11. Fish purchased for resale. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].Box16_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].Box16_ReadOrder[0].f1_22[0]": {
+    "type": "/Tx",
+    "label": "16. 1. State tax withheld. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].Box16_ReadOrder[0].f1_23[0]": {
+    "type": "/Tx",
+    "label": "16. 2. State tax withheld. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].Box17_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].Box17_ReadOrder[0].f1_24[0]": {
+    "type": "/Tx",
+    "label": "17. 1. State/Payer\u2019s state no. ",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].Box17_ReadOrder[0].f1_25[0]": {
+    "type": "/Tx",
+    "label": "17. 2. State/Payer\u2019s state no. ",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].f1_26[0]": {
+    "type": "/Tx",
+    "label": "18. 1. State income. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].f1_27[0]": {
+    "type": "/Tx",
+    "label": "18. 2. State income. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].CopyHeader[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].CopyHeader[0].CalendarYear[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].CopyHeader[0].CalendarYear[0].f2_1[0]": {
+    "type": "/Tx",
+    "label": "Page 2. Copy 1. For calendar year. 4 digit year. ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].CopyHeader[0].c2_1[0]": {
+    "type": "/Btn",
+    "label": "VOID. ",
+    "value": "/Off"
+  },
+  "topmostSubform[0].Copy1[0].CopyHeader[0].c2_1[1]": {
+    "type": "/Btn",
+    "label": "CORRECTED. ",
+    "value": "/Off"
+  },
+  "topmostSubform[0].Copy1[0].LeftColumn[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].LeftColumn[0].f2_2[0]": {
+    "type": "/Tx",
+    "label": "PAYER\u2019S name, street address, city or town, state or province, country, Z I P or foreign postal code, and telephone no. ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].LeftColumn[0].f2_3[0]": {
+    "type": "/Tx",
+    "label": "PAYER\u2019S T I N. ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].LeftColumn[0].f2_4[0]": {
+    "type": "/Tx",
+    "label": "RECIPIENT\u2019S T I N. ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].LeftColumn[0].f2_5[0]": {
+    "type": "/Tx",
+    "label": "RECIPIENT\u2019S name. ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].LeftColumn[0].f2_6[0]": {
+    "type": "/Tx",
+    "label": "Street address (including apt. no.). ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].LeftColumn[0].f2_7[0]": {
+    "type": "/Tx",
+    "label": "City or town, state or province, country, and Z I P or foreign postal code. ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].LeftColumn[0].f2_8[0]": {
+    "type": "/Tx",
+    "label": "Account number (see instructions). ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].f2_9[0]": {
+    "type": "/Tx",
+    "label": "1. Rents. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].f2_10[0]": {
+    "type": "/Tx",
+    "label": "2. Royalties. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].f2_11[0]": {
+    "type": "/Tx",
+    "label": "3. Other income. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].f2_12[0]": {
+    "type": "/Tx",
+    "label": "4. Federal income tax withheld. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].f2_13[0]": {
+    "type": "/Tx",
+    "label": "5. Fishing boat proceeds. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].f2_14[0]": {
+    "type": "/Tx",
+    "label": "6. Medical and health care payments. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].c2_4[0]": {
+    "type": "/Btn",
+    "label": "7. Payer made direct sales totaling $5,000 or more of consumer products to recipient for resale.",
+    "value": "/Off"
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].f2_15[0]": {
+    "type": "/Tx",
+    "label": "8. Substitute payments in lieu of dividends or interest. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].f2_16[0]": {
+    "type": "/Tx",
+    "label": "9. Crop insurance proceeds. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].f2_17[0]": {
+    "type": "/Tx",
+    "label": "10. Gross proceeds paid to an attorney. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].f2_18[0]": {
+    "type": "/Tx",
+    "label": "11. Fish purchased for resale. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].f2_19[0]": {
+    "type": "/Tx",
+    "label": "12. Section 409A deferrals. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].TagCorrectingSubform[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].TagCorrectingSubform[0].c2_3[0]": {
+    "type": "/Btn",
+    "label": "13. F A T C A filing requirement. ",
+    "value": "/Off"
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].f2_21[0]": {
+    "type": "/Tx",
+    "label": "15. Nonqualified deferred compensation. $. ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].Box16_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].Box16_ReadOrder[0].f2_22[0]": {
+    "type": "/Tx",
+    "label": "16. 1. State tax withheld. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].Box16_ReadOrder[0].f2_23[0]": {
+    "type": "/Tx",
+    "label": "16. 2. State tax withheld. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].Box17_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].Box17_ReadOrder[0].f2_24[0]": {
+    "type": "/Tx",
+    "label": "17. 1. State/Payer\u2019s state no. ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].Box17_ReadOrder[0].f2_25[0]": {
+    "type": "/Tx",
+    "label": "17. 2. State/Payer\u2019s state no. ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].f2_26[0]": {
+    "type": "/Tx",
+    "label": "18. 1. State income. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].f2_27[0]": {
+    "type": "/Tx",
+    "label": "18. 2. State income. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].CopyHeader[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].CopyHeader[0].CalendarYear[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].CopyHeader[0].CalendarYear[0].f2_1[0]": {
+    "type": "/Tx",
+    "label": "Page 3. Copy B. For calendar year. 4 digit year. ",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].CopyHeader[0].c2_1[0]": {
+    "type": "/Btn",
+    "label": "CORRECTED (if checked). ",
+    "value": "/Off"
+  },
+  "topmostSubform[0].CopyB[0].LeftColumn[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].LeftColumn[0].f2_2[0]": {
+    "type": "/Tx",
+    "label": "PAYER\u2019S name, street address, city or town, state or province, country, Z I P or foreign postal code, and telephone no. ",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].LeftColumn[0].f2_3[0]": {
+    "type": "/Tx",
+    "label": "PAYER\u2019S T I N. ",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].LeftColumn[0].f2_4[0]": {
+    "type": "/Tx",
+    "label": "RECIPIENT\u2019S T I N. ",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].LeftColumn[0].f2_5[0]": {
+    "type": "/Tx",
+    "label": "RECIPIENT\u2019S name. ",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].LeftColumn[0].f2_6[0]": {
+    "type": "/Tx",
+    "label": "Street address (including apt. no.). ",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].LeftColumn[0].f2_7[0]": {
+    "type": "/Tx",
+    "label": "City or town, state or province, country, and Z I P or foreign postal code. ",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].LeftColumn[0].f2_8[0]": {
+    "type": "/Tx",
+    "label": "Account number (see instructions). ",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].f2_9[0]": {
+    "type": "/Tx",
+    "label": "1. Rents. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].f2_10[0]": {
+    "type": "/Tx",
+    "label": "2. Royalties. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].f2_11[0]": {
+    "type": "/Tx",
+    "label": "3. Other income. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].f2_12[0]": {
+    "type": "/Tx",
+    "label": "4. Federal income tax withheld. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].f2_13[0]": {
+    "type": "/Tx",
+    "label": "5. Fishing boat proceeds. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].f2_14[0]": {
+    "type": "/Tx",
+    "label": "6. Medical and health care payments. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].c2_4[0]": {
+    "type": "/Btn",
+    "label": "7. Payer made direct sales totaling $5,000 or more of consumer products to recipient for resale.",
+    "value": "/Off"
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].f2_15[0]": {
+    "type": "/Tx",
+    "label": "8. Substitute payments in lieu of dividends or interest. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].f2_16[0]": {
+    "type": "/Tx",
+    "label": "9. Crop insurance proceeds. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].f2_17[0]": {
+    "type": "/Tx",
+    "label": "10. Gross proceeds paid to an attorney. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].f2_18[0]": {
+    "type": "/Tx",
+    "label": "11. Fish purchased for resale. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].f2_19[0]": {
+    "type": "/Tx",
+    "label": "12. Section 409A deferrals. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].TagCorrectingSubform[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].TagCorrectingSubform[0].c2_3[0]": {
+    "type": "/Btn",
+    "label": "13. F A T C A filing requirement. ",
+    "value": "/Off"
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].f2_21[0]": {
+    "type": "/Tx",
+    "label": "15. Nonqualified deferred compensation. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].Box16_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].Box16_ReadOrder[0].f2_22[0]": {
+    "type": "/Tx",
+    "label": "16. 1. State tax withheld. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].Box16_ReadOrder[0].f2_23[0]": {
+    "type": "/Tx",
+    "label": "16. 2. State tax withheld. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].Box17_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].Box17_ReadOrder[0].f2_24[0]": {
+    "type": "/Tx",
+    "label": "17. 1. State/Payer\u2019s state no. ",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].Box17_ReadOrder[0].f2_25[0]": {
+    "type": "/Tx",
+    "label": "17. 2. State/Payer\u2019s state no. ",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].f2_26[0]": {
+    "type": "/Tx",
+    "label": "18. 1. State income. $.",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].f2_27[0]": {
+    "type": "/Tx",
+    "label": "18. 2. State income. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].CopyHeader[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].CopyHeader[0].CalendarYear[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].CopyHeader[0].CalendarYear[0].f2_1[0]": {
+    "type": "/Tx",
+    "label": "Page 5. Copy 2. For calendar year. 4 digit year. ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].CopyHeader[0].c2_1[0]": {
+    "type": "/Btn",
+    "label": "CORRECTED (if checked). ",
+    "value": "/Off"
+  },
+  "topmostSubform[0].Copy2[0].LeftColumn[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].LeftColumn[0].f2_2[0]": {
+    "type": "/Tx",
+    "label": "PAYER\u2019S name, street address, city or town, state or province, country, Z I P or foreign postal code, and telephone no. ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].LeftColumn[0].f2_3[0]": {
+    "type": "/Tx",
+    "label": "PAYER\u2019S T I N. ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].LeftColumn[0].f2_4[0]": {
+    "type": "/Tx",
+    "label": "RECIPIENT\u2019S T I N. ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].LeftColumn[0].f2_5[0]": {
+    "type": "/Tx",
+    "label": "RECIPIENT\u2019S name. ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].LeftColumn[0].f2_6[0]": {
+    "type": "/Tx",
+    "label": "Street address (including apt. no.). ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].LeftColumn[0].f2_7[0]": {
+    "type": "/Tx",
+    "label": "City or town, state or province, country, and Z I P or foreign postal code. ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].LeftColumn[0].f2_8[0]": {
+    "type": "/Tx",
+    "label": "Account number (see instructions). ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].f2_9[0]": {
+    "type": "/Tx",
+    "label": "1. Rents. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].f2_10[0]": {
+    "type": "/Tx",
+    "label": "2. Royalties. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].f2_11[0]": {
+    "type": "/Tx",
+    "label": "3. Other income. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].f2_12[0]": {
+    "type": "/Tx",
+    "label": "4. Federal income tax withheld. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].f2_13[0]": {
+    "type": "/Tx",
+    "label": "5. Fishing boat proceeds. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].f2_14[0]": {
+    "type": "/Tx",
+    "label": "6. Medical and health care payments. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].c2_4[0]": {
+    "type": "/Btn",
+    "label": "7. Payer made direct sales totaling $5,000 or more of consumer products to recipient for resale.",
+    "value": "/Off"
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].f2_15[0]": {
+    "type": "/Tx",
+    "label": "8. Substitute payments in lieu of dividends or interest. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].f2_16[0]": {
+    "type": "/Tx",
+    "label": "9. Crop insurance proceeds. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].f2_17[0]": {
+    "type": "/Tx",
+    "label": "10. Gross proceeds to an attorney. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].f2_18[0]": {
+    "type": "/Tx",
+    "label": "11. Fish purchased for resale. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].f2_19[0]": {
+    "type": "/Tx",
+    "label": "12. Section 409A deferrals. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].TagCorrectingSubform[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].TagCorrectingSubform[0].c2_3[0]": {
+    "type": "/Btn",
+    "label": "13. F A T C A filing requirement. ",
+    "value": "/Off"
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].f2_21[0]": {
+    "type": "/Tx",
+    "label": "15. Nonqualified deferred compensation. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].Box16_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].Box16_ReadOrder[0].f2_22[0]": {
+    "type": "/Tx",
+    "label": "16. 1. State tax withheld. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].Box16_ReadOrder[0].f2_23[0]": {
+    "type": "/Tx",
+    "label": "16. 2. State tax withheld. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].Box17_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].Box17_ReadOrder[0].f2_24[0]": {
+    "type": "/Tx",
+    "label": "17. 1. State/Payer\u2019s state no. ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].Box17_ReadOrder[0].f2_25[0]": {
+    "type": "/Tx",
+    "label": "17. 2. State/Payer\u2019s state no. ",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].f2_26[0]": {
+    "type": "/Tx",
+    "label": "18. 1. State income. $.",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].f2_27[0]": {
+    "type": "/Tx",
+    "label": "18. 2. State income. $.",
+    "value": ""
+  }
+}

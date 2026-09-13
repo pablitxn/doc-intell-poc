@@ -1,8 +1,16 @@
-# Pruebas de harnesses: definición e implementación v1
+# Pruebas de harnesses: definición e implementación
 
-Estado: integración nativa implementada, auditoría completada y matriz Luna/Sol/Terra ejecutada: 54/54 tareas aprobadas y publicación en Phoenix verificada. La preparación para el corporativo agrega diagnóstico, conformance OTel con SDK real, fingerprints separados e importación a otra instancia: **225 tests aprobados**, sin nuevas inferencias. Ver [validación de esta etapa](VALIDATION_PRE_CORPORATE.md), [guía de traslado](CORPORATE_READINESS.md), [auditoría](DATASET_AUDIT.md), [matriz GPT-5.6](VALIDATION_GPT56.md) y [resultados históricos](VALIDATION.md). Los artefactos originales se conservan en `runs/` y en el [respaldo versionado](../artifacts/2026-09-13/README.md).
+La integración original con el minimal quedó implementada y auditada: matriz Luna/Sol/Terra con 54/54 tareas aprobadas y publicación en Phoenix verificada. Su preparación para el corporativo agregó diagnóstico, conformance OTel con SDK real, fingerprints separados e importación a otra instancia: **225 tests aprobados en aquella etapa**, sin nuevas inferencias. Ver [validación de esa etapa](VALIDATION_PRE_CORPORATE.md), [guía de traslado](CORPORATE_READINESS.md), [auditoría](DATASET_AUDIT.md), [matriz GPT-5.6](VALIDATION_GPT56.md) y [resultados históricos](VALIDATION.md). Los artefactos originales se conservan en `runs/` y en el [respaldo versionado](../artifacts/2026-09-13/README.md).
 
-## Alcance acordado
+## Ampliación con las fuentes completas
+
+El kit adquirido se conserva en `datasets/tax-document-dataset-v0.1`. El dataset ejecutable `datasets/tax-document-eval-v1` incluye 319 documentos, 55 expedientes, 366 tareas y 1.465 campos verificados dentro del alcance de extracción y sumas explícitas. Son 319 extracciones y 47 conciliaciones; no se fabrican ceros para los tres casos sin importes conciliables.
+
+El prompt vigente es `tax-fields-text-v5`, con referencias explícitas de filas, encabezado y JSON pointers, y expediente/año por tarea. El minimal sigue disponible; sus resultados históricos v4 conservan su propio contrato. Todo el conjunto nuevo se considera development, con duplicados agrupados por fuente. Ver [auditoría completa](FULL_DATASET_AUDIT.md) y [ejecución](FULL_DATASET_READINESS.md).
+
+La ampliación pasó 12/12 ejecuciones reales con Sol medium: cuatro tareas representativas en cada uno de los tres harnesses, con 147 campos, 60 scores y 77 spans recuperados de Phoenix. La matriz completa de 3.294 invocaciones todavía no se ejecutó.
+
+## Alcance de la integración original
 
 - Mantener los cinco PDF sintéticos, seis tareas y 54 valores del dataset actual.
 - Primera ruta: lectura de PDF con las herramientas nativas de Pi, Tau y Codex. Las herramientas disponibles incluyen shell, Poppler y librerías Python de PDF. No preextraemos respuestas ni texto desde el runner.
@@ -20,7 +28,7 @@ El proceso recibe un único texto UTF-8 por stdin y devuelve una respuesta final
 
 Cada invocación interna recibe documentos públicos, IDs y contexto técnico. El ground truth sólo pertenece al runner/evaluador. Las rutas visibles dentro del contenedor son `/workspace/inputs/...`, independientes del host.
 
-La imagen contiene únicamente herramientas y harnesses. Cada worker monta sólo sus PDF asignados y una credencial temporal de acceso. Una red interna y proxy con destinos permitidos evitan consultas a los evaluadores del host. El proxy ofrece POST `/v1/traces` para ingestión de telemetría nativa, sin consultas a Phoenix. La configuración explícita de `allowed_hosts` de un perfil reemplaza la lista de destinos de proveedor por defecto.
+La imagen contiene únicamente herramientas y harnesses. Cada worker monta sólo sus documentos asignados y una credencial temporal de acceso. Una red interna y proxy con destinos permitidos evitan consultas a los evaluadores del host. El proxy ofrece POST `/v1/traces` para ingestión de telemetría nativa, sin consultas a Phoenix. La configuración explícita de `allowed_hosts` de un perfil reemplaza la lista de destinos de proveedor por defecto.
 
 ## Tracing y corporativo
 

@@ -18,7 +18,7 @@ def main() -> None:
     source = parser.add_mutually_exclusive_group(required=True)
     add_execution_options(parser, source)
     parser.add_argument('--dataset', type=Path, default=Path(__file__).resolve().parents[1] / 'datasets/tax-mini-poc')
-    parser.add_argument('--task', help='One task_id; defaults to all six')
+    parser.add_argument('--task', help='One task_id; defaults to all tasks in the selected dataset')
     parser.add_argument('--timeout', type=float, default=120.0, help='Seconds per harness invocation (default: 120)')
     parser.add_argument('--output-dir', type=Path, default=Path('runs'))
     parser.add_argument('--phoenix-url', default=os.environ.get('PHOENIX_ENDPOINT', 'http://127.0.0.1:6006'),

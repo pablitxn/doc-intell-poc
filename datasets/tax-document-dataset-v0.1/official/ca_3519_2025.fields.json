@@ -1,0 +1,112 @@
+{
+  "3519 Form 1001": {
+    "type": "/Tx",
+    "label": "For calendar year 2025 or fiscal year beginning. Enter date in mm/dd/yyyy format",
+    "value": ""
+  },
+  "3519 Form 1002": {
+    "type": "/Tx",
+    "label": "and ending. Enter date in mm/dd/yyyy format",
+    "value": ""
+  },
+  "3519 Form 1003": {
+    "type": "/Tx",
+    "label": "Your first name.",
+    "value": ""
+  },
+  "3519 Form 1004": {
+    "type": "/Tx",
+    "label": "Middle Initial.",
+    "value": ""
+  },
+  "3519 Form 1005": {
+    "type": "/Tx",
+    "label": "Last name.",
+    "value": ""
+  },
+  "3519 Form 1006": {
+    "type": "/Tx",
+    "label": "Your social security number or Individual Taxpayer Identification Number. ",
+    "value": ""
+  },
+  "3519 Form 1007": {
+    "type": "/Tx",
+    "label": "If joint payment, enter spouse's or Registered Domestic Partner's first name.",
+    "value": ""
+  },
+  "3519 Form 1008": {
+    "type": "/Tx",
+    "label": "Spouse's or Registered domestic partner's middle initial.",
+    "value": ""
+  },
+  "3519 Form 1009": {
+    "type": "/Tx",
+    "label": "Spouse's or Registered domestic partner's last name.",
+    "value": ""
+  },
+  "3519 Form 1010": {
+    "type": "/Tx",
+    "label": "Spouse's or Registered Domestic Partner's social security number or Individual Taxpayer Identification Number. ",
+    "value": ""
+  },
+  "3519 Form 1011": {
+    "type": "/Tx",
+    "label": "Address, number and street, Post Office box or Private Mail Box number.\r",
+    "value": ""
+  },
+  "3519 Form 1012": {
+    "type": "/Tx",
+    "label": "Apartment number or Suite number.",
+    "value": ""
+  },
+  "3519 Form 1013": {
+    "type": "/Tx",
+    "label": "City.",
+    "value": ""
+  },
+  "3519 Form 1014": {
+    "type": "/Tx",
+    "label": "State. Enter two letter abbreviation.",
+    "value": ""
+  },
+  "3519 Form 1015": {
+    "type": "/Tx",
+    "label": "Zip code. ",
+    "value": ""
+  },
+  "3519 Form 1016": {
+    "type": "/Tx",
+    "label": "Amount of payment.",
+    "value": ""
+  },
+  "3519 Form 2004": {
+    "type": "/Tx",
+    "label": "Line 2 c. Other payments and credits (including any tax payments made with any previous form F T B 3519).",
+    "value": ""
+  },
+  "3519 Form 2006": {
+    "type": "/Tx",
+    "label": "Line 4 . Tax due. Is line 1 more than line 3?",
+    "value": ""
+  },
+  "3519 Form 2005": {
+    "type": "/Tx",
+    "label": "Line 3 . Total tax payments and credits. Add line 2 a, line 2 b, and line 2 c.",
+    "value": ""
+  },
+  "3519 Form 2001": {
+    "type": "/Tx",
+    "label": "Page 2 . TAX PAYMENT WORKSHEET (KEEP FOR YOUR RECORDS). Line 1 . Total tax you expect to owe. This is the amount you expect to enter on Form 540, line 64; or Form 540 N R, line 74",
+    "value": ""
+  },
+  "3519 Form 2003": {
+    "type": "/Tx",
+    "label": "Line 2 b. California estimated tax payments and amount applied from your 2024 tax return. (To check your estimated tax payments go to ftb.ca.gov and login or register for My F T B.)",
+    "value": ""
+  },
+  "3519 Form 2002": {
+    "type": "/Tx",
+    "label": "Line 2 . Payments and credits: Line 2 a. California income tax withheld (including real estate and nonresident withholding).",
+    "value": ""
+  }
+}

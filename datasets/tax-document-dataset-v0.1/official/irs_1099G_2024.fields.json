@@ -1,0 +1,707 @@
+{
+  "topmostSubform[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].CopyHeader[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].CopyHeader[0].CalendarYear[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].CopyHeader[0].CalendarYear[0].f1_1[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].CopyHeader[0].c1_1[0]": {
+    "type": "/Btn",
+    "label": "",
+    "value": "/Off"
+  },
+  "topmostSubform[0].CopyA[0].CopyHeader[0].c1_1[1]": {
+    "type": "/Btn",
+    "label": "",
+    "value": "/Off"
+  },
+  "topmostSubform[0].CopyA[0].LeftColumn[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].LeftColumn[0].f1_2[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].LeftColumn[0].f1_3[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].LeftColumn[0].f1_4[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].LeftColumn[0].f1_5[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].LeftColumn[0].f1_6[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].LeftColumn[0].f1_7[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].LeftColumn[0].f1_8[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].LeftColumn[0].c1_2[0]": {
+    "type": "/Btn",
+    "label": "",
+    "value": "/Off"
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].f1_9[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].f1_10[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].Box3_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].Box3_ReadOrder[0].f1_11[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].f1_12[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].Box5_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].Box5_ReadOrder[0].f1_13[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].f1_14[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].Box7_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].Box7_ReadOrder[0].f1_15[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].c1_3[0]": {
+    "type": "/Btn",
+    "label": "",
+    "value": "/Off"
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].f1_16[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].Box10a_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].Box10a_ReadOrder[0].f1_17[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].Box10a_ReadOrder[0].f1_18[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].Box10b_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].Box10b_ReadOrder[0].f1_19[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].Box10b_ReadOrder[0].f1_20[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].f1_21[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyA[0].RightColumn[0].f1_22[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].CopyHeader[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].CopyHeader[0].CalendarYear[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].CopyHeader[0].CalendarYear[0].f2_1[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].CopyHeader[0].c2_1[0]": {
+    "type": "/Btn",
+    "label": "",
+    "value": "/Off"
+  },
+  "topmostSubform[0].Copy1[0].CopyHeader[0].c2_1[1]": {
+    "type": "/Btn",
+    "label": "",
+    "value": "/Off"
+  },
+  "topmostSubform[0].Copy1[0].LeftColumn[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].LeftColumn[0].f2_2[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].LeftColumn[0].f2_3[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].LeftColumn[0].f2_4[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].LeftColumn[0].f2_5[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].LeftColumn[0].f2_6[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].LeftColumn[0].f2_7[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].LeftColumn[0].f2_8[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].f2_9[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].f2_10[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].Box3_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].Box3_ReadOrder[0].f2_11[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].f2_12[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].Box5_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].Box5_ReadOrder[0].f2_13[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].f2_14[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].Box7_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].Box7_ReadOrder[0].f2_15[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].c2_3[0]": {
+    "type": "/Btn",
+    "label": "",
+    "value": "/Off"
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].f2_16[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].Box10a_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].Box10a_ReadOrder[0].f2_17[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].Box10a_ReadOrder[0].f2_18[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].Box10b_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].Box10b_ReadOrder[0].f2_19[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].Box10b_ReadOrder[0].f2_20[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].f2_21[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy1[0].RightColumn[0].f2_22[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].CopyHeader[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].CopyHeader[0].CalendarYear[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].CopyHeader[0].CalendarYear[0].f2_1[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].CopyHeader[0].c2_1[0]": {
+    "type": "/Btn",
+    "label": "",
+    "value": "/Off"
+  },
+  "topmostSubform[0].CopyB[0].LeftColumn[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].LeftColumn[0].f2_2[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].LeftColumn[0].f2_3[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].LeftColumn[0].f2_4[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].LeftColumn[0].f2_5[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].LeftColumn[0].f2_6[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].LeftColumn[0].f2_7[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].LeftColumn[0].f2_8[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].f2_9[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].f2_10[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].Box3_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].Box3_ReadOrder[0].f2_11[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].f2_12[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].Box5_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].Box5_ReadOrder[0].f2_13[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].f2_14[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].Box7_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].Box7_ReadOrder[0].f2_15[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].c2_3[0]": {
+    "type": "/Btn",
+    "label": "",
+    "value": "/Off"
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].f2_16[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].Box10a_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].Box10a_ReadOrder[0].f2_17[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].Box10a_ReadOrder[0].f2_18[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].Box10b_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].Box10b_ReadOrder[0].f2_19[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].Box10b_ReadOrder[0].f2_20[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].f2_21[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].CopyB[0].RightColumn[0].f2_22[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].CopyHeader[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].CopyHeader[0].CalendarYear[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].CopyHeader[0].CalendarYear[0].f2_1[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].CopyHeader[0].c2_1[0]": {
+    "type": "/Btn",
+    "label": "",
+    "value": "/Off"
+  },
+  "topmostSubform[0].Copy2[0].CopyHeader[0].c2_1[1]": {
+    "type": "/Btn",
+    "label": "",
+    "value": "/Off"
+  },
+  "topmostSubform[0].Copy2[0].LeftColumn[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].LeftColumn[0].f2_2[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].LeftColumn[0].f2_3[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].LeftColumn[0].f2_4[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].LeftColumn[0].f2_5[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].LeftColumn[0].f2_6[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].LeftColumn[0].f2_7[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].LeftColumn[0].f2_8[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].f2_9[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].f2_10[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].Box3_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].Box3_ReadOrder[0].f2_11[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].f2_12[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].Box5_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].Box5_ReadOrder[0].f2_13[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].f2_14[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].Box7_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].Box7_ReadOrder[0].f2_15[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].c2_3[0]": {
+    "type": "/Btn",
+    "label": "",
+    "value": "/Off"
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].f2_16[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].Box10a_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].Box10a_ReadOrder[0].f2_17[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].Box10a_ReadOrder[0].f2_18[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].Box10b_ReadOrder[0]": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].Box10b_ReadOrder[0].f2_19[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].Box10b_ReadOrder[0].f2_20[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].f2_21[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "topmostSubform[0].Copy2[0].RightColumn[0].f2_22[0]": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  }
+}

@@ -2,16 +2,18 @@
 
 from contextlib import contextmanager, redirect_stdout
 from io import StringIO
+import hashlib
 import json
 from pathlib import Path
 import subprocess
 import threading
 from http.server import BaseHTTPRequestHandler, ThreadingHTTPServer
 from types import SimpleNamespace
+from tempfile import TemporaryDirectory
 import unittest
 from unittest.mock import patch
 
-from evals import diagnostics
+from evals import diagnostics, diagnostic_worker
 from evals.adapters.runtime import load_profile
 from evals.contracts import ProcessSpec
 import run
@@ -63,6 +65,39 @@ class DiagnosticTests(unittest.TestCase):
         self.assertFalse(result['ready'])
         for call in (preflight, worker, ready, invoke):
             call.assert_not_called()
+
+    def test_acquisition_kit_requires_derived_tasks_before_any_runtime_access(self):
+        with TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / 'coverage.json').write_text('{"status":"acquired_sources"}')
+            with self.probes() as calls:
+                result = diagnostics.diagnose(arguments(dataset=root))
+        self.assertFalse(result['ready'])
+        self.assertIn('prepare a derived dataset', result['issues'][0])
+        for call in calls:
+            call.assert_not_called()
+
+    def test_formats_are_reported_without_claiming_content_or_model_validation(self):
+        with TemporaryDirectory() as temporary:
+            workspace = Path(temporary)
+            (workspace / 'inputs').mkdir()
+            documents = []
+            for name in ('image.jpg', 'input.json'):
+                content = b'not-a-valid-image-or-json-but-readable'
+                (workspace / 'inputs' / name).write_bytes(content)
+                documents.append({'path': 'inputs/' + name, 'sha256': hashlib.sha256(content).hexdigest()})
+            def local_path(value):
+                return workspace / value.removeprefix('/workspace/') if value.startswith('/workspace/') else Path(value)
+            with patch.object(diagnostic_worker, 'Path', side_effect=local_path), \
+                 patch.object(diagnostic_worker.shutil, 'which', return_value=None), \
+                 patch.object(diagnostic_worker.importlib.util, 'find_spec', return_value=None):
+                result = diagnostic_worker.probe({'documents': documents, 'network': False})
+        self.assertTrue(result['checks']['documents_readable'])
+        self.assertTrue(result['checks']['references_hidden'])
+        self.assertNotIn('pdf_tools', result['checks'])
+        self.assertEqual(result['document_formats'], {'.jpg': 1, '.json': 1})
+        self.assertEqual(result['document_content_validation'], 'not_performed')
+        self.assertEqual(result['model_document_reading'], 'not_tested')
 
     def test_unfilled_corporate_profile_does_not_appear_ready(self):
         with self.probes() as (preflight, worker, _, invoke):

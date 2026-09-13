@@ -1,0 +1,1187 @@
+{
+  "Sch K-1 (565) Form 1001": {
+    "type": "/Tx",
+    "label": "For calendar year 2025, or fiscal year beginning. Enter MM/DD/YYYY.",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1002": {
+    "type": "/Tx",
+    "label": "and ending. Enter MM/DD/YYYY.",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1005": {
+    "type": "/Tx",
+    "label": "Partner's Address",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1012": {
+    "type": "/Tx",
+    "label": "Partnership's Address",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1011": {
+    "type": "/Tx",
+    "label": "Partnership's name",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1006": {
+    "type": "/Tx",
+    "label": "Partner's City",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1013": {
+    "type": "/Tx",
+    "label": "Partnership's City",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1007": {
+    "type": "/Tx",
+    "label": "Partner's two-letter state abbreviation",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1014": {
+    "type": "/Tx",
+    "label": "Partnership's two-letter state abbreviation",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1017 RB": {
+    "type": "/Btn",
+    "label": "Line B. What type of entity is this partner?  See instructions",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1020 RB": {
+    "type": "/Btn",
+    "label": "Line C.  Is this partner a foreign partner? ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1008": {
+    "type": "/Tx",
+    "label": "Partner's ZIP code",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1021": {
+    "type": "/Tx",
+    "label": "Line D. Enter partner\u2019s percentage (without regard to special allocations) of: Profit.  (i) Beginning. 3 digits before decimal",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1022": {
+    "type": "/Tx",
+    "label": "Line D. Enter partner\u2019s percentage (without regard to special allocations) of: Profit.  (i) Beginning. 4 digits after decimal",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1026": {
+    "type": "/Tx",
+    "label": "Line D. Enter partner\u2019s percentage (without regard to special allocations) of: Loss.  (i) Beginning. 4 digits after decimal",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1030": {
+    "type": "/Tx",
+    "label": "Line D. Enter partner\u2019s percentage (without regard to special allocations) of: Capital (i) Beginning 4 digits after decimal",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1024": {
+    "type": "/Tx",
+    "label": "Line D. Enter partner\u2019s percentage (without regard to special allocations) of: Profit.  (ii) Ending 4 digits after decimal",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1028": {
+    "type": "/Tx",
+    "label": "Line D. Enter partner\u2019s percentage (without regard to special allocations) of: Loss. (ii)  Ending 4 digits after decimal",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1032": {
+    "type": "/Tx",
+    "label": "Line D. Enter partner\u2019s percentage (without regard to special allocations) of: Capital. (ii) Ending 4 digits after decimal",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1025": {
+    "type": "/Tx",
+    "label": "Line D. Enter partner\u2019s percentage (without regard to special allocations) of: Loss.  (i) Beginning. 3 digits before decimal",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1029": {
+    "type": "/Tx",
+    "label": "Line D. Enter partner\u2019s percentage (without regard to special allocations) of: Capital. (i) Beginning. 3 digits before decimal",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1023": {
+    "type": "/Tx",
+    "label": "Line D. Enter partner\u2019s percentage (without regard to special allocations) of:  Profit. (ii) Ending. 3 digits before decimal",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1027": {
+    "type": "/Tx",
+    "label": "Line D. Enter partner\u2019s percentage (without regard to special allocations) of: Loss. (ii)  Ending. 3 digits before decimal",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1031": {
+    "type": "/Tx",
+    "label": "Line D. Enter partner\u2019s percentage (without regard to special allocations) of: capital. (ii)  Ending. 3 digits before decimal",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1035": {
+    "type": "/Tx",
+    "label": "Line E. Partner's share of liabilities: Nonrecourse. (ii) Ending.",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1037": {
+    "type": "/Tx",
+    "label": "Line E. Partner's share of liabilities: Qualified nonrecourse financing. (ii) Ending.",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1039": {
+    "type": "/Tx",
+    "label": "Line E. Partner's share of liabilities: Recourse. (ii) Ending.",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1042": {
+    "type": "/Tx",
+    "label": "Line F. Reportable transaction or tax shelter registration  number(s)\r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1009": {
+    "type": "/Tx",
+    "label": "Partnership's Federal Employer Identification Number",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1010": {
+    "type": "/Tx",
+    "label": "California Secretary of State file number",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1034": {
+    "type": "/Tx",
+    "label": "Line E. Partner's share of liabilities: Nonrecourse. (i) Beginning.",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1036": {
+    "type": "/Tx",
+    "label": "Line E. Partner's share of liabilities: Qualified nonrecourse financing. (i) Beginning.",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1038": {
+    "type": "/Tx",
+    "label": "Line E. Partner's share of liabilities: Recourse. (i) Beginning",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1018": {
+    "type": "/Tx",
+    "label": "Line B. 11b. Disregarded Entity Owners Name",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1019": {
+    "type": "/Tx",
+    "label": "Line B. 11c. Disregarded Entity Owners Tax Identification Number. Enter 9 digits.",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1033 RB": {
+    "type": "/Btn",
+    "label": "Line D. Check the box if decrease is due to",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1016 RB": {
+    "type": "/Btn",
+    "label": "Line A. Is this partner a",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1040 CB": {
+    "type": "/Btn",
+    "label": "Line E. Check the box if Item E includes liability amounts from lower tier partnerships",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1041 CB": {
+    "type": "/Btn",
+    "label": "Line E. Check if any of the above liability is subject to guarantees or other payment obligations by the partner.",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1015": {
+    "type": "/Tx",
+    "label": "Partnership's Zip code",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1003": {
+    "type": "/Tx",
+    "label": "Partner's name",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 1004": {
+    "type": "/Tx",
+    "label": "Partner's identifying number",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2007": {
+    "type": "/Tx",
+    "label": "Line L. Analysis of partner's tax basis capital account. (a) Capital account at beginning of year\r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2011": {
+    "type": "/Tx",
+    "label": "(f) Capital account at end of year, combine column (a) through column (e)",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2012": {
+    "type": "/Tx",
+    "label": "Income (Loss) Column (a) Distributive share items.  Line 1. Ordinary income (loss) from trade or business activities. Column (b).  Amounts from federal Schedule K-1 (Form 1065).",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2016": {
+    "type": "/Tx",
+    "label": "Line 2. Net income (loss) from rental real estate activities. Column (b).  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2020": {
+    "type": "/Tx",
+    "label": "Line 3. Net income (loss) from other rental activities. Column (b)  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2024": {
+    "type": "/Tx",
+    "label": "Line 4a. Guaranteed payments for services. Column (b)  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2028": {
+    "type": "/Tx",
+    "label": "Line  5. Interest income. Column (b) Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2032": {
+    "type": "/Tx",
+    "label": "Line 6.  Dividends. Column (b)  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2036": {
+    "type": "/Tx",
+    "label": "Line 7.  Royalties.  Column (b)  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2040": {
+    "type": "/Tx",
+    "label": " Line 8. Net short-term capital gain (loss).  Column (b)  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2048": {
+    "type": "/Tx",
+    "label": "Line 10 a. Total gain under IRC Section 1231 (other than due to casualty or theft).  Column (b)  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2052": {
+    "type": "/Tx",
+    "label": "Line 10 b . Total loss under IRC Section 1231 (other than due to casualty or theft).  Column (b)  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2056": {
+    "type": "/Tx",
+    "label": "Line 11 a . Other portfolio income (loss). Attach schedule.  Column (b)  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2060": {
+    "type": "/Tx",
+    "label": "Line 11 b . Total other income. Attach schedule.  Column (b)  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2064": {
+    "type": "/Tx",
+    "label": "Line 11 c . Total other loss. Attach schedule.  Column (b)  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2013": {
+    "type": "/Tx",
+    "label": "Line 1. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2017": {
+    "type": "/Tx",
+    "label": "Line 2. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2021": {
+    "type": "/Tx",
+    "label": "Line 3. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2025": {
+    "type": "/Tx",
+    "label": "Line 4a. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2029": {
+    "type": "/Tx",
+    "label": "Line  5. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2033": {
+    "type": "/Tx",
+    "label": "Line 6. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2037": {
+    "type": "/Tx",
+    "label": "Line 7. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2041": {
+    "type": "/Tx",
+    "label": "Line 8. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2049": {
+    "type": "/Tx",
+    "label": "Line 10 a. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2053": {
+    "type": "/Tx",
+    "label": "Line 10 b . Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2057": {
+    "type": "/Tx",
+    "label": "Line 11 a . Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2061": {
+    "type": "/Tx",
+    "label": "Line 11 b .  Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2065": {
+    "type": "/Tx",
+    "label": "Line 11 c .  Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2014": {
+    "type": "/Tx",
+    "label": "Line 1. Column (d). Total amounts using California law. Combine column. (b) and column. ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2018": {
+    "type": "/Tx",
+    "label": "Line 2. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2022": {
+    "type": "/Tx",
+    "label": "Line 3. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2026": {
+    "type": "/Tx",
+    "label": "Line 4a. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2030": {
+    "type": "/Tx",
+    "label": "Line  5. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2034": {
+    "type": "/Tx",
+    "label": "Line 6. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2038": {
+    "type": "/Tx",
+    "label": "Line 7. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2042": {
+    "type": "/Tx",
+    "label": "Line 8. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2050": {
+    "type": "/Tx",
+    "label": "Line 10 a. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2054": {
+    "type": "/Tx",
+    "label": "Line 10 b. Column (d) Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2058": {
+    "type": "/Tx",
+    "label": "Line 11 a. Column (d) Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2062": {
+    "type": "/Tx",
+    "label": "Line 11 b.  Column (d) Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2066": {
+    "type": "/Tx",
+    "label": "Line 11 c .   Column (d) Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2015": {
+    "type": "/Tx",
+    "label": "Line 1. Column (e). California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2019": {
+    "type": "/Tx",
+    "label": "Line 2. Column (e) California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2023": {
+    "type": "/Tx",
+    "label": "Line 3. Column (e)  California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2027": {
+    "type": "/Tx",
+    "label": "Line 4a. Column (e)  California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2031": {
+    "type": "/Tx",
+    "label": "Line  5. Column (e)  California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2035": {
+    "type": "/Tx",
+    "label": "Line 6. Column (e)  California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2039": {
+    "type": "/Tx",
+    "label": "Line 7.  Column (e)  California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2051": {
+    "type": "/Tx",
+    "label": "Line 10 a. Column (e)  California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2055": {
+    "type": "/Tx",
+    "label": "Line 10 b . Column (e) California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2059": {
+    "type": "/Tx",
+    "label": "Line 11 a . Column (e) California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2063": {
+    "type": "/Tx",
+    "label": "Line 11 b . Column (e) California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2067": {
+    "type": "/Tx",
+    "label": "Line 11 c . Column (e) California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2003 RB": {
+    "type": "/Btn",
+    "label": "Line H.  Check here if this is",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2004 RB": {
+    "type": "/Btn",
+    "label": "Line I. Is this partner a resident of California",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2027A": {
+    "type": "/Tx",
+    "label": "Line 4b. Guaranteed payments for capital. Column (b)  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2027B": {
+    "type": "/Tx",
+    "label": "Line 4b. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2027C": {
+    "type": "/Tx",
+    "label": "Line 4b. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2027D": {
+    "type": "/Tx",
+    "label": "Line 4b. Column (e)  California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2027E": {
+    "type": "/Tx",
+    "label": "Line 4c. Total guaranteed payments. Column (b)  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2027F": {
+    "type": "/Tx",
+    "label": "Line 4c. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2027G": {
+    "type": "/Tx",
+    "label": "Line 4c. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2027H": {
+    "type": "/Tx",
+    "label": "Line 4c. Column (e)  California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2005 RB": {
+    "type": "/Btn",
+    "label": "Line J. Did this partner contribute property with a built-in gain or loss? If \u201cYes\u201d attach statement. See instructions",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2006": {
+    "type": "/Tx",
+    "label": "Line K. Partner\u2019s share of net unrecognized IRC Section 704(c) gain or (loss)  (i) Beginning",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2006A": {
+    "type": "/Tx",
+    "label": "Line K. Partner\u2019s share of net unrecognized IRC Section 704(c) gain or (loss)  (ii) Ending",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2001 CB": {
+    "type": "/Btn",
+    "label": "Line G 1. Check here if this is a publicly traded partnership as defined in IRC Section 469(k)(2)\r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2002 CB": {
+    "type": "/Btn",
+    "label": "G 2. Check here if this is an investment partnership (R&TC Sections 17955 and 23040.1)\r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2008": {
+    "type": "/Tx",
+    "label": "(b) Capital contributed during year\r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2009": {
+    "type": "/Tx",
+    "label": "(c) Current year net income (loss)",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2009A": {
+    "type": "/Tx",
+    "label": "(d) Other increase (decrease) (attach explanation)",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2010": {
+    "type": "/Tx",
+    "label": "(e) Withdrawals and distributions\r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2043": {
+    "type": "/Tx",
+    "label": "Line 8. Column (e)  California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2044": {
+    "type": "/Tx",
+    "label": "Line 9. Net long-term capital gain (loss).  Column (b)  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2045": {
+    "type": "/Tx",
+    "label": "Line 9. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2046": {
+    "type": "/Tx",
+    "label": "Line 9. Column (d)  Total amounts using California law. Combine column (b) and column (c) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 2047": {
+    "type": "/Tx",
+    "label": "Line 9. Column (e)  California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3064": {
+    "type": "/Tx",
+    "label": "Tax-Exempt Income and Nondeductible Expenses. Column (a) Distributive share items.  Line 18 a. Tax-exempt interest income. Column (b) Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3082": {
+    "type": "/Tx",
+    "label": "Other Information. Column (a) Distributive share items. Line 20 a. Investment income. Column (b) Amounts from federal Schedule K-1 (Form 1065). \r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3076": {
+    "type": "/Tx",
+    "label": "Distributions. Column (a) Distributive share items.  Line 19 a. Distributions of money (cash and marketable securities) Column (b) Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3079": {
+    "type": "/Tx",
+    "label": "Line 19 b. Distributions of property other than money. Column (b) Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3068": {
+    "type": "/Tx",
+    "label": "Line 18 b. Other tax-exempt income. Column (b) Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3086": {
+    "type": "/Tx",
+    "label": "Line 20 b. Investment expenses. Column (b) Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3072": {
+    "type": "/Tx",
+    "label": "Line 18 c. Nondeductible expenses. Column (b) Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3044": {
+    "type": "/Tx",
+    "label": "Line 17 b. Adjusted gain or loss. Column (b). Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3048": {
+    "type": "/Tx",
+    "label": "Line 17 c. Depletion (other than oil & gas). Column (b) Amounts from federal Schedule K-1 (Form 1065).",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3052": {
+    "type": "/Tx",
+    "label": "Line 17 d. Gross income from oil, gas, and geothermal properties Column (b) Amounts from federal Schedule K-1 (Form 1065).",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3056": {
+    "type": "/Tx",
+    "label": "Line 17 e. Deductions allocable to oil, gas, and geothermal properties. Column (b) Amounts from federal Schedule K-1 (Form 1065).",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3060": {
+    "type": "/Tx",
+    "label": "Line 17 f. Other alternative minimum tax items. Column (b) Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3001": {
+    "type": "/Tx",
+    "label": "Deductions. Column (a) Distributive share items.  Line 12. Expense deduction for recovery property (IRC Section 179). Column b.  Amounts from federal Schedule K-1 (Form 1065).",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3011": {
+    "type": "/Tx",
+    "label": "Line 13 c. Investment interest expense.  Column (b)  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3015": {
+    "type": "/Tx",
+    "label": "Line 13 d 1. Total expenditures to which an IRC Section 59(e) election may apply.  Column (b)  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3019": {
+    "type": "/Tx",
+    "label": "Line 13 d 2. Type of expenditures ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3020": {
+    "type": "/Tx",
+    "label": "Line 13 e. Deductions related to portfolio income.  Column (b)  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3024": {
+    "type": "/Tx",
+    "label": "Line 13 f. Other deductions. Attach schedule.  Column (b)  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3005": {
+    "type": "/Tx",
+    "label": "Line 13 a. Cash contributions.  Column (b)  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3041": {
+    "type": "/Tx",
+    "label": "Line 17 a. Column (c) California adjustments.",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3065": {
+    "type": "/Tx",
+    "label": "Line 18 a. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3083": {
+    "type": "/Tx",
+    "label": "Line 20 a. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3077": {
+    "type": "/Tx",
+    "label": "Line 19 a. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3080": {
+    "type": "/Tx",
+    "label": "Line 19 b. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3069": {
+    "type": "/Tx",
+    "label": "Line 18 b. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3087": {
+    "type": "/Tx",
+    "label": "Line 20 b. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3073": {
+    "type": "/Tx",
+    "label": "Line 18 c. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3045": {
+    "type": "/Tx",
+    "label": "Line 17 b. Column (c) California adjustments.",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3049": {
+    "type": "/Tx",
+    "label": "Line 17 c. Column (c) California adjustments.",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3053": {
+    "type": "/Tx",
+    "label": "Line 17 d. Column (c) California adjustments.",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3057": {
+    "type": "/Tx",
+    "label": "Line 17 e. Column (c) California adjustments.",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3061": {
+    "type": "/Tx",
+    "label": "Line 17 f. Column (c) California adjustments.",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3002": {
+    "type": "/Tx",
+    "label": "Line 12. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3012": {
+    "type": "/Tx",
+    "label": "Line 13 c. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3016": {
+    "type": "/Tx",
+    "label": "Line 13 d1. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3021": {
+    "type": "/Tx",
+    "label": "Line 13 e. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3025": {
+    "type": "/Tx",
+    "label": "Line 13 f. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3006": {
+    "type": "/Tx",
+    "label": "Line 13 a. Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3028": {
+    "type": "/Tx",
+    "label": "Credits. Column (a) Distributive share items.  Line 15 a. Total withholding (equals amount on Form 592-B if calendar year partnership).  Column (d) Total amounts using California law. Combine col. (b) and column ( c ). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3030": {
+    "type": "/Tx",
+    "label": "Line 15 b. Low-income housing credit.  Column (d) Total amounts using California law. Combine column (b) and column  ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3032": {
+    "type": "/Tx",
+    "label": "Line 15 c. Credits other than line 15b related to rental real estate activities.  Column (d) Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3034": {
+    "type": "/Tx",
+    "label": "Line 15 d. Credits related to other rental activities.  Column (d) Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3036": {
+    "type": "/Tx",
+    "label": "Line 15 e. Nonconsenting nonresident members' tax allocated to partner.  Column (d) Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3038": {
+    "type": "/Tx",
+    "label": "Line 15 f. Other credits \u2013 Attach required schedules or statements.  Column (d) Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3042": {
+    "type": "/Tx",
+    "label": "Line 17 a. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3066": {
+    "type": "/Tx",
+    "label": "Line 18 a. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3084": {
+    "type": "/Tx",
+    "label": "Line 20 a. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3078": {
+    "type": "/Tx",
+    "label": "Line 19 a. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3081": {
+    "type": "/Tx",
+    "label": "Line 19 b. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3070": {
+    "type": "/Tx",
+    "label": "Line 18 b. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3088": {
+    "type": "/Tx",
+    "label": "Line 20 b. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3090": {
+    "type": "/Tx",
+    "label": "Line 20 c. Other information. See instructions. Column (b) Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3091": {
+    "type": "/Tx",
+    "label": "Line 20 c. Column (d) Total amounts using California law. Combine column (b) and column (c).",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3074": {
+    "type": "/Tx",
+    "label": "Line 18 c. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3046": {
+    "type": "/Tx",
+    "label": "Line 17 b. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3050": {
+    "type": "/Tx",
+    "label": "Line 17 c.  Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3054": {
+    "type": "/Tx",
+    "label": "Line 17 d. Column (d) Total amounts using California law. Combine column (b) and column (c) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3058": {
+    "type": "/Tx",
+    "label": "Line 17 e. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3062": {
+    "type": "/Tx",
+    "label": "Line 17 f. Column (d)  Total amounts using California law. Combine column (b) and column (c) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3003": {
+    "type": "/Tx",
+    "label": "Line 12. Column (d) Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3013": {
+    "type": "/Tx",
+    "label": "Line 13 c. Column (d) Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3017": {
+    "type": "/Tx",
+    "label": "Line 13 d 1. Column (d)  Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3022": {
+    "type": "/Tx",
+    "label": "Line 13 e. Column (d) Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3026": {
+    "type": "/Tx",
+    "label": "Line 13 f. Column (d) Total amounts using California law. Combine column (b) and column (c) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3007": {
+    "type": "/Tx",
+    "label": "Line 13 a. Column (d) Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3029": {
+    "type": "/Tx",
+    "label": "Line 15 a. Column (e) California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3031": {
+    "type": "/Tx",
+    "label": "Line 15 b. Column (e) California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3033": {
+    "type": "/Tx",
+    "label": "Line 15 c. Column (e) California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3035": {
+    "type": "/Tx",
+    "label": "Line 15 d. Column (e) California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3037": {
+    "type": "/Tx",
+    "label": "Line 15 e. Column (e) California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3039": {
+    "type": "/Tx",
+    "label": "Line 15 f. Column (e) California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3043": {
+    "type": "/Tx",
+    "label": "Line 17 a. Column (e)  California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3067": {
+    "type": "/Tx",
+    "label": "Line 18 a. Column (e)  California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3085": {
+    "type": "/Tx",
+    "label": "Line 20 a. Column (e)  California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3071": {
+    "type": "/Tx",
+    "label": "Line 18 b. Column (e)  California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3089": {
+    "type": "/Tx",
+    "label": "Line 20 b. Column (e)  California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3075": {
+    "type": "/Tx",
+    "label": "Line 18 c. Column (e)  California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3047": {
+    "type": "/Tx",
+    "label": "Line 17 b. Column (e)  California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3051": {
+    "type": "/Tx",
+    "label": "Line 17 c. Column (e)  California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3055": {
+    "type": "/Tx",
+    "label": "Line 17 d. Column (e)  California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3059": {
+    "type": "/Tx",
+    "label": "Line 17 e. Column (e) California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3063": {
+    "type": "/Tx",
+    "label": "Line 17 f. Column (e) California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3004": {
+    "type": "/Tx",
+    "label": "Line 12. Column (e) California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3014": {
+    "type": "/Tx",
+    "label": "Line 13 c. Column (e) California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3018": {
+    "type": "/Tx",
+    "label": "Line 13 d 1. Column (e) California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3023": {
+    "type": "/Tx",
+    "label": "Line 13 e. Column (e) California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3027": {
+    "type": "/Tx",
+    "label": "Line 13 f. Column (e) California source amounts and credits",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3008": {
+    "type": "/Tx",
+    "label": "Line 13 b. Noncash contributions.  Column (b)  Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3009": {
+    "type": "/Tx",
+    "label": "Line 13 b.Column (c) California adjustments",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3010": {
+    "type": "/Tx",
+    "label": "Line 13 b. Column (d) Total amounts using California law. Combine column (b) and column ( c ) ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3040": {
+    "type": "/Tx",
+    "label": "Alternative Minimum Tax (AMT) Items. Column (a) Distributive share items.  Line 17 a. Depreciation adjustment on property placed in service after 1986. Column (b). Amounts from federal Schedule K-1 (Form 1065). ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3092 CB": {
+    "type": "/Btn",
+    "label": "Line 21. More than one activity for at-risk purposes. See instructions.",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 3093 CB": {
+    "type": "/Btn",
+    "label": "Line 22. More than one activity for passive activity purposes. See instructions.",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4002": {
+    "type": "/Tx",
+    "label": "Other Partner Information. Table 1. Interest. \r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4005": {
+    "type": "/Tx",
+    "label": "Dividends",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4003": {
+    "type": "/Tx",
+    "label": "Section 1231 Gains/Losses",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4006": {
+    "type": "/Tx",
+    "label": "Royalties",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4004": {
+    "type": "/Tx",
+    "label": "Capital Gains/Losses",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4007": {
+    "type": "/Tx",
+    "label": "Other",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4008": {
+    "type": "/Tx",
+    "label": " Table 2 \u2014 Line A. Partner's share of the partnership's business income. See instructions.\r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4009": {
+    "type": "/Tx",
+    "label": "Line B. Partner's share of nonbusiness income from real and tangible personal property sourced or allocable to California. Capital Gains/Losses ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4011": {
+    "type": "/Tx",
+    "label": "Line B. Section 1231 Gains/Losses\r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4010": {
+    "type": "/Tx",
+    "label": "Line B. Rents/Royalties\r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4012": {
+    "type": "/Tx",
+    "label": "Line B. Other\r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4013": {
+    "type": "/Tx",
+    "label": "Line C. Partner's distributive share of the partnership's property, payroll, and sales: Factors. Property: Beginning Total within and outside California ",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4015": {
+    "type": "/Tx",
+    "label": "Line C. Factors.  Property: Ending Total within and outside California \r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4017": {
+    "type": "/Tx",
+    "label": "Line C. Factors. Property: Annual rent expense Total within and outside California \r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4019": {
+    "type": "/Tx",
+    "label": "Line C. Factors Payroll Total within and outside California \r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4021": {
+    "type": "/Tx",
+    "label": "Line C. Factors  Sales  Total within and outside California \r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4014": {
+    "type": "/Tx",
+    "label": "Line C. Factors.  Property: Beginning Total within California\r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4016": {
+    "type": "/Tx",
+    "label": "Line C. Factors. Property: Ending Total within California",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4018": {
+    "type": "/Tx",
+    "label": "Line C. Factors Property: Annual rent expense Total within California\r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4020": {
+    "type": "/Tx",
+    "label": "Line C. Factors Payroll Total within California\r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4022": {
+    "type": "/Tx",
+    "label": "Line C.  Factors  Sales  Total within California\r",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4023": {
+    "type": "/Tx",
+    "label": "Table 3 \u2014 Line 1. Schedule K, line 1, column (d), Ordinary income (loss) from trade or business activities: Line 1a. Enter as a positive amount the cost of goods sold used to determine the amount on Schedule K, line 1, column (d), plus the total amounts on line 1a of Table 3 from all Schedule K-1s (565) this partnership received.",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4024": {
+    "type": "/Tx",
+    "label": "Line 1 b. Enter as a positive amount the total deductions used to determine the amount on Schedule K, line 1, column (d), plus the total amounts on line 1b of Table 3 from all Schedule K-1s (565) this partnership received",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4025": {
+    "type": "/Tx",
+    "label": "Line 2. Enter the total rental real estate income from line 20a of federal Form 8825 as adjusted for California law differences, plus the total amounts on line 2 of Table 3 from all Schedule K-1s (565) this partnership received",
+    "value": ""
+  },
+  "Sch K-1 (565) Form 4026": {
+    "type": "/Tx",
+    "label": "Line 3. Enter the gross income (loss) from other rental activities from Schedule K, line 3a, column (d), plus the total amounts on line 3 of Table 3 from all Schedule K-1s (565) this partnership received",
+    "value": ""
+  }
+}

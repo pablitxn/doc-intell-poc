@@ -1,0 +1,302 @@
+{
+  "540-ES form - 1001": {
+    "type": "/Tx",
+    "label": "Fiscal year filers, enter year ending month for year 2026. Enter as 2 digits.",
+    "value": ""
+  },
+  "540-ES form - 1002": {
+    "type": "/Tx",
+    "label": "Your first name.",
+    "value": ""
+  },
+  "540-ES form - 1003": {
+    "type": "/Tx",
+    "label": "Middle Initial.",
+    "value": ""
+  },
+  "540-ES form - 1004": {
+    "type": "/Tx",
+    "label": "Last name.",
+    "value": ""
+  },
+  "540-ES form - 1005": {
+    "type": "/Tx",
+    "label": "Your social security number or Individual Taxpayer Identification Number. Enter 9 digits.",
+    "value": ""
+  },
+  "540-ES form - 1006": {
+    "type": "/Tx",
+    "label": "If joint payment, spouse\u2019s or Registered Domestic Partner\u2019s first name.",
+    "value": ""
+  },
+  "540-ES form - 1007": {
+    "type": "/Tx",
+    "label": "Middle initial.",
+    "value": ""
+  },
+  "540-ES form - 1008": {
+    "type": "/Tx",
+    "label": "Last name.",
+    "value": ""
+  },
+  "540-ES form - 1009": {
+    "type": "/Tx",
+    "label": "Spouse\u2019s or Registered Domestic Partner\u2019s social security number or Individual Taxpayer Identification Number. Enter 9 digits.",
+    "value": ""
+  },
+  "540-ES form - 1010": {
+    "type": "/Tx",
+    "label": "Address (number and street) Post Office box or Private mailbox number.",
+    "value": ""
+  },
+  "540-ES form - 1011": {
+    "type": "/Tx",
+    "label": "Apartment number or suite number.",
+    "value": ""
+  },
+  "540-ES form - 1012": {
+    "type": "/Tx",
+    "label": "City (If you have a foreign address, see instructions).",
+    "value": ""
+  },
+  "540-ES form - 1013": {
+    "type": "/Tx",
+    "label": "State. Enter 2 letter abbreviation.",
+    "value": ""
+  },
+  "540-ES form - 1014": {
+    "type": "/Tx",
+    "label": "Zip code. Enter first 5 digits - last 4 digits.",
+    "value": ""
+  },
+  "540-ES form - 1015": {
+    "type": "/Tx",
+    "label": "Amount of payment.",
+    "value": ""
+  },
+  "540-ES form - 2001": {
+    "type": "/Tx",
+    "label": "Fiscal year filers, enter year ending month for year 2026. Enter as 2 digits.",
+    "value": ""
+  },
+  "540-ES form - 2002": {
+    "type": "/Tx",
+    "label": "Your first name.",
+    "value": ""
+  },
+  "540-ES form - 2003": {
+    "type": "/Tx",
+    "label": "Middle Initial.",
+    "value": ""
+  },
+  "540-ES form - 2004": {
+    "type": "/Tx",
+    "label": "Last name.",
+    "value": ""
+  },
+  "540-ES form - 2005": {
+    "type": "/Tx",
+    "label": "Your social security number or Individual Taxpayer Identification Number. Enter 9 digits.",
+    "value": ""
+  },
+  "540-ES form - 2006": {
+    "type": "/Tx",
+    "label": "If joint payment, spouse\u2019s or Registered Domestic Partner\u2019s first name.",
+    "value": ""
+  },
+  "540-ES form - 2007": {
+    "type": "/Tx",
+    "label": "Middle initial.",
+    "value": ""
+  },
+  "540-ES form - 2008": {
+    "type": "/Tx",
+    "label": "Last name.",
+    "value": ""
+  },
+  "540-ES form - 2009": {
+    "type": "/Tx",
+    "label": "Spouse\u2019s or Registered Domestic Partner\u2019s social security number or Individual Taxpayer Identification Number. Enter 9 digits.",
+    "value": ""
+  },
+  "540-ES form - 2010": {
+    "type": "/Tx",
+    "label": "Address (number and street) Post Office box or Private mailbox number.",
+    "value": ""
+  },
+  "540-ES form - 2011": {
+    "type": "/Tx",
+    "label": "Apartment number or suite number.",
+    "value": ""
+  },
+  "540-ES form - 2012": {
+    "type": "/Tx",
+    "label": "City (If you have a foreign address, see instructions).",
+    "value": ""
+  },
+  "540-ES form - 2013": {
+    "type": "/Tx",
+    "label": "State. Enter 2 letter abbreviation.",
+    "value": ""
+  },
+  "540-ES form - 2014": {
+    "type": "/Tx",
+    "label": "Zip code. Enter first 5 digits - last 4 digits.",
+    "value": ""
+  },
+  "540-ES form - 2015": {
+    "type": "/Tx",
+    "label": "Amount of payment.",
+    "value": ""
+  },
+  "540-ES form - 3001": {
+    "type": "/Tx",
+    "label": "Fiscal year filers, enter year ending month for year 2026. Enter as 2 digits.",
+    "value": ""
+  },
+  "540-ES form - 3002": {
+    "type": "/Tx",
+    "label": "Your first name.",
+    "value": ""
+  },
+  "540-ES form - 3003": {
+    "type": "/Tx",
+    "label": "Middle Initial.",
+    "value": ""
+  },
+  "540-ES form - 3004": {
+    "type": "/Tx",
+    "label": "Last name.",
+    "value": ""
+  },
+  "540-ES form - 3005": {
+    "type": "/Tx",
+    "label": "Your social security number or Individual Taxpayer Identification Number. Enter 9 digits.",
+    "value": ""
+  },
+  "540-ES form - 3006": {
+    "type": "/Tx",
+    "label": "If joint payment, spouse\u2019s/Registered Domestic Partner\u2019s first name.",
+    "value": ""
+  },
+  "540-ES form - 3007": {
+    "type": "/Tx",
+    "label": "Middle initial.",
+    "value": ""
+  },
+  "540-ES form - 3008": {
+    "type": "/Tx",
+    "label": "Last name.",
+    "value": ""
+  },
+  "540-ES form - 3009": {
+    "type": "/Tx",
+    "label": "Spouse\u2019s or Registered Domestic Partner\u2019s social security number or Individual Taxpayer Identification Number. Enter 9 digits.",
+    "value": ""
+  },
+  "540-ES form - 3010": {
+    "type": "/Tx",
+    "label": "Address (number and street) Post Office box or Private mailbox number.",
+    "value": ""
+  },
+  "540-ES form - 3011": {
+    "type": "/Tx",
+    "label": "Apartment number/suite number.",
+    "value": ""
+  },
+  "540-ES form - 3012": {
+    "type": "/Tx",
+    "label": "City (If you have a foreign address, see instructions).",
+    "value": ""
+  },
+  "540-ES form - 3013": {
+    "type": "/Tx",
+    "label": "State. Enter 2 letter abbreviation.",
+    "value": ""
+  },
+  "540-ES form - 3014": {
+    "type": "/Tx",
+    "label": "Zip code. Enter first 5 digits - last 4 digits.",
+    "value": ""
+  },
+  "540-ES form - 3015": {
+    "type": "/Tx",
+    "label": "Amount of payment.",
+    "value": ""
+  },
+  "540-ES form - 4001": {
+    "type": "/Tx",
+    "label": "Fiscal year filers, enter year ending month for year 2026. Enter as 2 digits.",
+    "value": ""
+  },
+  "540-ES form - 4002": {
+    "type": "/Tx",
+    "label": "Your first name.",
+    "value": ""
+  },
+  "540-ES form - 4003": {
+    "type": "/Tx",
+    "label": "Middle Initial.",
+    "value": ""
+  },
+  "540-ES form - 4004": {
+    "type": "/Tx",
+    "label": "Last name.",
+    "value": ""
+  },
+  "540-ES form - 4005": {
+    "type": "/Tx",
+    "label": "Your social security number or Individual Taxpayer Identification Number. Enter 9 digits.",
+    "value": ""
+  },
+  "540-ES form - 4006": {
+    "type": "/Tx",
+    "label": "If joint payment, spouse\u2019s or Registered Domestic Partner\u2019s first name.",
+    "value": ""
+  },
+  "540-ES form - 4007": {
+    "type": "/Tx",
+    "label": "Middle initial.",
+    "value": ""
+  },
+  "540-ES form - 4008": {
+    "type": "/Tx",
+    "label": "Last name.",
+    "value": ""
+  },
+  "540-ES form - 4009": {
+    "type": "/Tx",
+    "label": "Spouse\u2019s or Registered Domestic Partner\u2019s social security number or Individual Taxpayer Identification Number. Enter 9 digits.",
+    "value": ""
+  },
+  "540-ES form - 4010": {
+    "type": "/Tx",
+    "label": "Address (number and street) Post Office box or Private mailbox number.",
+    "value": ""
+  },
+  "540-ES form - 4011": {
+    "type": "/Tx",
+    "label": "Apartment number/suite number.",
+    "value": ""
+  },
+  "540-ES form - 4012": {
+    "type": "/Tx",
+    "label": "City (If you have a foreign address, see instructions).",
+    "value": ""
+  },
+  "540-ES form - 4013": {
+    "type": "/Tx",
+    "label": "State. Enter 2 letter abbreviation.",
+    "value": ""
+  },
+  "540-ES form - 4014": {
+    "type": "/Tx",
+    "label": "Zip code. Enter first 5 digits - last 4 digits.",
+    "value": ""
+  },
+  "540-ES form - 4015": {
+    "type": "/Tx",
+    "label": "Amount of payment.",
+    "value": ""
+  }
+}

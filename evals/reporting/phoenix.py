@@ -43,7 +43,9 @@ def prepare_dataset(client, root: Path, *, prompt_root: Path | None = None):
         dataset = client.datasets.create_dataset(
             name=name,
             examples=rows,
-            dataset_description=f"Synthetic fiscal document tasks; one case. Content SHA256: {fingerprint}",
+            dataset_description=(f"Document field evaluation; {len(examples)} tasks across "
+                                 f"{len({example.input.case_id for example in examples})} cases. "
+                                 f"Content SHA256: {fingerprint}"),
         )
     # Never silently reuse edited reference answers or a partial dataset.
     actual = {row["metadata"]["task_id"]: row for row in dataset.examples}

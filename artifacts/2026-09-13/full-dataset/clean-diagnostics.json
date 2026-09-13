@@ -1,0 +1,158 @@
+{
+  "diagnostics_version": "runtime-check-v1",
+  "ready": true,
+  "model_calls": 0,
+  "model_access": "not_tested",
+  "readiness_scope": "Runtime and selected transport checks; effective model settings/access require a real run",
+  "network_requested": false,
+  "host": {
+    "os": "Darwin",
+    "architecture": "arm64",
+    "python": "3.14.6"
+  },
+  "checks": {
+    "dataset": true
+  },
+  "harnesses": [
+    {
+      "harness": "pi",
+      "model": "gpt-5.6-sol",
+      "thinking": "medium",
+      "ready": true,
+      "checks": {
+        "runtime_and_credential_presence": true,
+        "documents_readable": true,
+        "references_hidden": true,
+        "pdf_tools": true
+      },
+      "warnings": [
+        "Document hashes/readability and installed PDF tools do not validate labels, page counts or model reading"
+      ],
+      "runtime": {
+        "image": "doc-intell-harnesses:pi-0.85.1_tau-0.4.3_codex-0.145.0",
+        "image_id": "sha256:4ef9c523c9e83460597c0cc1e344fa1efea392e8272949821b882c6f1c674962",
+        "name": "pi",
+        "version": "0.85.1",
+        "model": "gpt-5.6-sol",
+        "provider": "openai-codex",
+        "thinking": "medium",
+        "output_mode": "pi-jsonl",
+        "telemetry": "events",
+        "execution": "docker",
+        "filesystem_isolated": true,
+        "evaluator_network_isolated": true,
+        "model_access": "not_tested",
+        "auth": "codex-account",
+        "auth_refresh_exported": false
+      },
+      "image": {
+        "os": "linux",
+        "architecture": "arm64",
+        "version_verified_by_label": true
+      },
+      "network": [],
+      "worker_python": "3.12.12",
+      "document_content_validation": "not_performed",
+      "model_document_reading": "not_tested"
+    },
+    {
+      "harness": "tau",
+      "model": "gpt-5.6-sol",
+      "thinking": "medium",
+      "ready": true,
+      "checks": {
+        "runtime_and_credential_presence": true,
+        "documents_readable": true,
+        "references_hidden": true,
+        "pdf_tools": true
+      },
+      "warnings": [
+        "Document hashes/readability and installed PDF tools do not validate labels, page counts or model reading"
+      ],
+      "runtime": {
+        "image": "doc-intell-harnesses:pi-0.85.1_tau-0.4.3_codex-0.145.0",
+        "image_id": "sha256:4ef9c523c9e83460597c0cc1e344fa1efea392e8272949821b882c6f1c674962",
+        "name": "tau",
+        "version": "0.4.3",
+        "model": "gpt-5.6-sol",
+        "provider": "openai-codex",
+        "thinking": "medium",
+        "output_mode": "tau-jsonl",
+        "telemetry": "events",
+        "execution": "docker",
+        "filesystem_isolated": true,
+        "evaluator_network_isolated": true,
+        "model_access": "not_tested",
+        "auth": "codex-account",
+        "auth_refresh_exported": false
+      },
+      "image": {
+        "os": "linux",
+        "architecture": "arm64",
+        "version_verified_by_label": true
+      },
+      "network": [],
+      "worker_python": "3.12.12",
+      "document_content_validation": "not_performed",
+      "model_document_reading": "not_tested"
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5.6-sol",
+      "thinking": "medium",
+      "ready": true,
+      "checks": {
+        "runtime_and_credential_presence": true,
+        "documents_readable": true,
+        "references_hidden": true,
+        "pdf_tools": true
+      },
+      "warnings": [
+        "Document hashes/readability and installed PDF tools do not validate labels, page counts or model reading"
+      ],
+      "runtime": {
+        "image": "doc-intell-harnesses:pi-0.85.1_tau-0.4.3_codex-0.145.0",
+        "image_id": "sha256:4ef9c523c9e83460597c0cc1e344fa1efea392e8272949821b882c6f1c674962",
+        "name": "codex",
+        "version": "0.145.0",
+        "model": "gpt-5.6-sol",
+        "provider": "openai-codex",
+        "thinking": "medium",
+        "output_mode": "codex-jsonl",
+        "telemetry": "events",
+        "execution": "docker",
+        "filesystem_isolated": true,
+        "evaluator_network_isolated": true,
+        "model_access": "not_tested",
+        "auth": "codex-account",
+        "auth_refresh_exported": false
+      },
+      "image": {
+        "os": "linux",
+        "architecture": "arm64",
+        "version_verified_by_label": true
+      },
+      "network": [],
+      "worker_python": "3.12.12",
+      "document_content_validation": "not_performed",
+      "model_document_reading": "not_tested"
+    }
+  ],
+  "issues": [],
+  "dataset": {
+    "version": "8caee9331e585177a1c26645d29932cf37866d357e657e64b7646fa3c4c60b0c",
+    "tasks": 366,
+    "fields": 1465,
+    "document_formats": {
+      ".pdf": 264,
+      ".json": 50,
+      ".jpg": 5
+    },
+    "cases": 55,
+    "tax_years": [
+      2010,
+      2024,
+      2025
+    ]
+  }
+}

@@ -1,0 +1,93 @@
+{
+  "version": "0.1",
+  "audited_at": "2026-09-12",
+  "status": "acquired_sources_not_complete_leadsheet_gold",
+  "target_scope_proposal": {
+    "tax_year": 2025,
+    "prior_year": 2024,
+    "new_state_templates": [
+      "CA",
+      "NJ"
+    ]
+  },
+  "families": [
+    {
+      "family": "W2",
+      "acquired_taxcalc_pdfs": 56,
+      "external_labelled_tasks": 20,
+      "status": "partial_task_labels"
+    },
+    {
+      "family": "1099",
+      "acquired_taxcalc_by_subtype": {
+        "INT": 24,
+        "B": 21,
+        "DIV": 20,
+        "R": 18,
+        "MISC": 14,
+        "G": 13,
+        "NEC": 11,
+        "K": 6,
+        "SA": 3
+      },
+      "status": "partial_task_labels"
+    },
+    {
+      "family": "W2c",
+      "status": "blank_template_acquired_cases_to_generate"
+    },
+    {
+      "family": "K1_1065",
+      "external_labelled_tasks": 10,
+      "distinct_external_gt_objects": 7,
+      "status": "external_examples_and_blank_template"
+    },
+    {
+      "family": "K1_1120S",
+      "external_labelled_tasks": 9,
+      "status": "external_examples_and_blank_template"
+    },
+    {
+      "family": "K1_1041",
+      "status": "blank_template_acquired_cases_to_generate"
+    },
+    {
+      "family": "8959",
+      "taxcalc_output_xmls": 6,
+      "taxcalc_input_pdfs": 0,
+      "status": "blank_templates_and_candidate_computation_labels"
+    },
+    {
+      "family": "state_K1_PTET_composite",
+      "status": "selected_CA_NJ_templates_acquired_cases_and_other_support_to_generate"
+    },
+    {
+      "family": "SUI_DI_SDI",
+      "taxcalc_w2_pdfs_with_SDI": 5,
+      "status": "partial_extraction_examples_jurisdiction_rules_pending",
+      "DUI_expansion": null
+    },
+    {
+      "family": "payments_extensions_assessments",
+      "status": "structured_facts_and_vouchers_only_receipt_workflows_to_generate"
+    },
+    {
+      "family": "refunds_credits_applied",
+      "status": "partial_forms_event_workflows_to_generate"
+    },
+    {
+      "family": "ScheduleA_AMT_FTC_tax_benefit",
+      "status": "blank_templates_and_partial_outputs_oracle_pending"
+    }
+  ],
+  "not_acquired": [
+    "NY IT-204-IP",
+    "NY IT-653",
+    "NY IT-2658",
+    "NJ-1080-C",
+    "NJ PTE-K-1"
+  ],
+  "external_extractbench_pdfs_in_kit": 0,
+  "new_generated_cases_in_kit": 0,
+  "harness_evaluations_run": 0
+}

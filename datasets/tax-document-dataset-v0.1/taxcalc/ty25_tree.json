@@ -1,0 +1,3619 @@
+{
+  "sha": "521d2767436e9a6c9ce4ad9ce71443694afa3838",
+  "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/521d2767436e9a6c9ce4ad9ce71443694afa3838",
+  "tree": [
+    {
+      "path": "ty25-ca-001",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8d2fa21ae410c52892097f32b111b55b9933828e",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/8d2fa21ae410c52892097f32b111b55b9933828e"
+    },
+    {
+      "path": "ty25-ca-001/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5f36c5cd48b41058771bb1489370d09b502ace31",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/5f36c5cd48b41058771bb1489370d09b502ace31"
+    },
+    {
+      "path": "ty25-ca-001/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a5a6abf5f04dde713f3f35731fec9a677b466ed",
+      "size": 266558,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/0a5a6abf5f04dde713f3f35731fec9a677b466ed"
+    },
+    {
+      "path": "ty25-ca-001/input/1099g_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c4ab0c50175db166951f85f4fc7bbcd54b7bc296",
+      "size": 35969,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/c4ab0c50175db166951f85f4fc7bbcd54b7bc296"
+    },
+    {
+      "path": "ty25-ca-001/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1abb52615e2a7800d25e4759f84ffae15dea569",
+      "size": 21593,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b1abb52615e2a7800d25e4759f84ffae15dea569"
+    },
+    {
+      "path": "ty25-ca-001/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "487fc22ac55888f70280a713c1006f8b2002ad06",
+      "size": 146609,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/487fc22ac55888f70280a713c1006f8b2002ad06"
+    },
+    {
+      "path": "ty25-ca-001/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "519dbd8dfec996d47845865669f87fe919e82b96",
+      "size": 11386,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/519dbd8dfec996d47845865669f87fe919e82b96"
+    },
+    {
+      "path": "ty25-ca-002",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "24b92aec052fe791d26fd622489870fb2150914a",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/24b92aec052fe791d26fd622489870fb2150914a"
+    },
+    {
+      "path": "ty25-ca-002/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9b97dbf4bbdb6650ec203e4c5024fcfd2a6afa6e",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/9b97dbf4bbdb6650ec203e4c5024fcfd2a6afa6e"
+    },
+    {
+      "path": "ty25-ca-002/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d90ba79f49083b307704ef966569b95d13686897",
+      "size": 266112,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/d90ba79f49083b307704ef966569b95d13686897"
+    },
+    {
+      "path": "ty25-ca-002/input/1098t_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97dc1ed5975805bbd20711ae8bbc9e14ffca0f94",
+      "size": 36958,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/97dc1ed5975805bbd20711ae8bbc9e14ffca0f94"
+    },
+    {
+      "path": "ty25-ca-002/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a8966bb0464d2e2bbd2d779d5f264fba2c51c221",
+      "size": 40609,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/a8966bb0464d2e2bbd2d779d5f264fba2c51c221"
+    },
+    {
+      "path": "ty25-ca-002/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e488deb146fc1e085010cc65fb980cd97a96b70",
+      "size": 25019,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/6e488deb146fc1e085010cc65fb980cd97a96b70"
+    },
+    {
+      "path": "ty25-ca-002/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35653a3ae781943c794e621fda40a30a1c5e93d5",
+      "size": 146536,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/35653a3ae781943c794e621fda40a30a1c5e93d5"
+    },
+    {
+      "path": "ty25-ca-002/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "155b8e526f5b25b9159e31cc7539a401ce9d5ab8",
+      "size": 9626,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/155b8e526f5b25b9159e31cc7539a401ce9d5ab8"
+    },
+    {
+      "path": "ty25-ca-003",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "611f238a169a904078b4997bdba395c6f89c190f",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/611f238a169a904078b4997bdba395c6f89c190f"
+    },
+    {
+      "path": "ty25-ca-003/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7777a80ae93b834b9059f444823a2bd74a1194a8",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/7777a80ae93b834b9059f444823a2bd74a1194a8"
+    },
+    {
+      "path": "ty25-ca-003/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34d74cd8436cf02da190b19fd4a04684de6a4f1f",
+      "size": 266309,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/34d74cd8436cf02da190b19fd4a04684de6a4f1f"
+    },
+    {
+      "path": "ty25-ca-003/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e793287a76dd79d0c3c514ec784e080dd5e95c27",
+      "size": 21107,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/e793287a76dd79d0c3c514ec784e080dd5e95c27"
+    },
+    {
+      "path": "ty25-ca-003/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f2bba9e4c4764e4d1b35c6596a6bb224da66941",
+      "size": 146275,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/4f2bba9e4c4764e4d1b35c6596a6bb224da66941"
+    },
+    {
+      "path": "ty25-ca-003/input/w2_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4626562d9b2b5b012e239bc9907256a73edb33af",
+      "size": 146271,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/4626562d9b2b5b012e239bc9907256a73edb33af"
+    },
+    {
+      "path": "ty25-ca-003/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "73011b41c25a464b2f7a8be5b9d92f6a6c85c799",
+      "size": 9747,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/73011b41c25a464b2f7a8be5b9d92f6a6c85c799"
+    },
+    {
+      "path": "ty25-ca-004",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "322e281ac7bebe8c2f28457bbd97f5bcd9f213a2",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/322e281ac7bebe8c2f28457bbd97f5bcd9f213a2"
+    },
+    {
+      "path": "ty25-ca-004/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "07ba1548be05d5dea10f936221323bf3cd2cc981",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/07ba1548be05d5dea10f936221323bf3cd2cc981"
+    },
+    {
+      "path": "ty25-ca-004/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1778eb3516736b62e1f28d4313c8eeb7eb495006",
+      "size": 266464,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/1778eb3516736b62e1f28d4313c8eeb7eb495006"
+    },
+    {
+      "path": "ty25-ca-004/input/1098e_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "728c9790737adc877845892079906743e5fee763",
+      "size": 25249,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/728c9790737adc877845892079906743e5fee763"
+    },
+    {
+      "path": "ty25-ca-004/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eb88ae2b355ac80005eed28d0c396e900a3fa730",
+      "size": 40605,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/eb88ae2b355ac80005eed28d0c396e900a3fa730"
+    },
+    {
+      "path": "ty25-ca-004/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1126a049b4d7425b4d7b2745b4c9e876c24e3e58",
+      "size": 16827,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/1126a049b4d7425b4d7b2745b4c9e876c24e3e58"
+    },
+    {
+      "path": "ty25-ca-004/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "963262e1f5dcbcd706182f2b249273fa6d2e53c6",
+      "size": 146541,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/963262e1f5dcbcd706182f2b249273fa6d2e53c6"
+    },
+    {
+      "path": "ty25-ca-004/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b021c46b332fc7e23ed3e22e845bba8d6c213453",
+      "size": 10151,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b021c46b332fc7e23ed3e22e845bba8d6c213453"
+    },
+    {
+      "path": "ty25-ca-005",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b3d5a61e07596a53c158ee09cfa41dcc2705d7e0",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/b3d5a61e07596a53c158ee09cfa41dcc2705d7e0"
+    },
+    {
+      "path": "ty25-ca-005/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "19064fd5e7c3501c6e5c1c706bae8a1a17cc0d99",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/19064fd5e7c3501c6e5c1c706bae8a1a17cc0d99"
+    },
+    {
+      "path": "ty25-ca-005/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93ecd1494df8b3cee7ae5c3908e184dd2b821710",
+      "size": 227646,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/93ecd1494df8b3cee7ae5c3908e184dd2b821710"
+    },
+    {
+      "path": "ty25-ca-005/input/1098_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b65145733fab714cf386ffc91543c039dc9a3ef4",
+      "size": 39658,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b65145733fab714cf386ffc91543c039dc9a3ef4"
+    },
+    {
+      "path": "ty25-ca-005/input/1099b_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "971ccf6d38a131faad230d45d461a3c3268c934c",
+      "size": 70039,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/971ccf6d38a131faad230d45d461a3c3268c934c"
+    },
+    {
+      "path": "ty25-ca-005/input/1099div_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dbba8699c1472864193da23feb11848c1bf240f4",
+      "size": 43994,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/dbba8699c1472864193da23feb11848c1bf240f4"
+    },
+    {
+      "path": "ty25-ca-005/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa41d088c08f8b67f4b246db49889b8ea2d773e2",
+      "size": 39969,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/aa41d088c08f8b67f4b246db49889b8ea2d773e2"
+    },
+    {
+      "path": "ty25-ca-005/input/1099r_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7bc5bde0b3abe7fc4190adf59cfb597e8c907c7c",
+      "size": 60196,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/7bc5bde0b3abe7fc4190adf59cfb597e8c907c7c"
+    },
+    {
+      "path": "ty25-ca-005/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91e2557ae0b6caa10ecfecd057a4b62c72d4c6f5",
+      "size": 37640,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/91e2557ae0b6caa10ecfecd057a4b62c72d4c6f5"
+    },
+    {
+      "path": "ty25-ca-005/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6836420911e0ea35468d5976765f7af18d776528",
+      "size": 146390,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/6836420911e0ea35468d5976765f7af18d776528"
+    },
+    {
+      "path": "ty25-ca-005/input/w2_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f144a4e08aee75f158160c1faddd4d16796ae75c",
+      "size": 146214,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/f144a4e08aee75f158160c1faddd4d16796ae75c"
+    },
+    {
+      "path": "ty25-ca-005/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "de2920384af82c68a66fd60359c4054c27695ccb",
+      "size": 13120,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/de2920384af82c68a66fd60359c4054c27695ccb"
+    },
+    {
+      "path": "ty25-ca-006",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "79f6ccb2cb0ec20a458d06277f8d6d59805dfd06",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/79f6ccb2cb0ec20a458d06277f8d6d59805dfd06"
+    },
+    {
+      "path": "ty25-ca-006/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6604efa027505eb39833667fb5017462f496507f",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/6604efa027505eb39833667fb5017462f496507f"
+    },
+    {
+      "path": "ty25-ca-006/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85a0e893605c144cb3944df68b8870b307c76edc",
+      "size": 266204,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/85a0e893605c144cb3944df68b8870b307c76edc"
+    },
+    {
+      "path": "ty25-ca-006/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "12abe63afa5c637595436efb9831b275dd237c0c",
+      "size": 5138,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/12abe63afa5c637595436efb9831b275dd237c0c"
+    },
+    {
+      "path": "ty25-ca-006/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d8eb140dee18005e5779d20df34f0fc2bb51168",
+      "size": 146337,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/3d8eb140dee18005e5779d20df34f0fc2bb51168"
+    },
+    {
+      "path": "ty25-ca-006/input/w2_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5efae50a764bb83ccb553da416821c65cdd2b0d3",
+      "size": 146395,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/5efae50a764bb83ccb553da416821c65cdd2b0d3"
+    },
+    {
+      "path": "ty25-ca-006/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0c5733b6d2a4859d5e1a6ba5aa607a2343ac8846",
+      "size": 7924,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/0c5733b6d2a4859d5e1a6ba5aa607a2343ac8846"
+    },
+    {
+      "path": "ty25-ca-007",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c68e01e00a3fc4a74378940b03e67d521b2307b",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/7c68e01e00a3fc4a74378940b03e67d521b2307b"
+    },
+    {
+      "path": "ty25-ca-007/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b923f469275603e8a017c3044b6a266029e65c1e",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/b923f469275603e8a017c3044b6a266029e65c1e"
+    },
+    {
+      "path": "ty25-ca-007/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b5fce28bd55bcfddde04e156af8c18caba33a4f",
+      "size": 228016,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/0b5fce28bd55bcfddde04e156af8c18caba33a4f"
+    },
+    {
+      "path": "ty25-ca-007/input/1098_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a78ebf69cdf9c7bccda0ef34a839be43a3f0ad4",
+      "size": 39581,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/2a78ebf69cdf9c7bccda0ef34a839be43a3f0ad4"
+    },
+    {
+      "path": "ty25-ca-007/input/1098t_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35c788a25905a201da7b71d494257d3ff99ab078",
+      "size": 36973,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/35c788a25905a201da7b71d494257d3ff99ab078"
+    },
+    {
+      "path": "ty25-ca-007/input/1099div_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b69387b3659f0465517ae2c90738987035123fda",
+      "size": 44046,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b69387b3659f0465517ae2c90738987035123fda"
+    },
+    {
+      "path": "ty25-ca-007/input/1099misc_1_schedule-c-2-accounting.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "544ceec41760f3997fe1ebf9d7466ed20b2f31ae",
+      "size": 44299,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/544ceec41760f3997fe1ebf9d7466ed20b2f31ae"
+    },
+    {
+      "path": "ty25-ca-007/input/1099misc_2_schedule-c-2-accounting.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3abebce122acf9bdd5890267304f944511519e53",
+      "size": 44299,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/3abebce122acf9bdd5890267304f944511519e53"
+    },
+    {
+      "path": "ty25-ca-007/input/1099misc_3_schedule-c-3-spoetzel-brew-distribution.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9be3dfb00c8d3e1aaa2b4fb21d1926ef04d12eb0",
+      "size": 44299,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/9be3dfb00c8d3e1aaa2b4fb21d1926ef04d12eb0"
+    },
+    {
+      "path": "ty25-ca-007/input/1099r_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d03f2e79cabb4f09df560149fc1b0f0daa65df7b",
+      "size": 60274,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/d03f2e79cabb4f09df560149fc1b0f0daa65df7b"
+    },
+    {
+      "path": "ty25-ca-007/input/1099r_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4c33f89e010df2887a65612fc4523b541da5086",
+      "size": 60257,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/f4c33f89e010df2887a65612fc4523b541da5086"
+    },
+    {
+      "path": "ty25-ca-007/input/1099r_3.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06dfe15f3bb1a3fb7b7585253c9317312932915e",
+      "size": 60255,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/06dfe15f3bb1a3fb7b7585253c9317312932915e"
+    },
+    {
+      "path": "ty25-ca-007/input/1099r_4.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc23bf57fb2bc97c9d599531ede40b1689d66591",
+      "size": 60069,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/cc23bf57fb2bc97c9d599531ede40b1689d66591"
+    },
+    {
+      "path": "ty25-ca-007/input/1099r_5.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffa7237324b8067482b1dace115e45665ffebc92",
+      "size": 60109,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/ffa7237324b8067482b1dace115e45665ffebc92"
+    },
+    {
+      "path": "ty25-ca-007/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b69325dcf46ab9fb36a7306b1bea38ea6436cf6",
+      "size": 59534,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/9b69325dcf46ab9fb36a7306b1bea38ea6436cf6"
+    },
+    {
+      "path": "ty25-ca-007/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2aff9aa4b7e7809783c59b5efc40a7edf09865ff",
+      "size": 146242,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/2aff9aa4b7e7809783c59b5efc40a7edf09865ff"
+    },
+    {
+      "path": "ty25-ca-007/input/w2g_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "285b57fce1b6f810e0cfb1584fd37d87be1b0a5e",
+      "size": 45172,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/285b57fce1b6f810e0cfb1584fd37d87be1b0a5e"
+    },
+    {
+      "path": "ty25-ca-007/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e73768e3741de043fa847e7cb4cbc688de2e6d5b",
+      "size": 19621,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/e73768e3741de043fa847e7cb4cbc688de2e6d5b"
+    },
+    {
+      "path": "ty25-ca-008",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "548d978328e3ab083a83e5df95f8e343b1b8c130",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/548d978328e3ab083a83e5df95f8e343b1b8c130"
+    },
+    {
+      "path": "ty25-ca-008/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c4dd3030221d1133f75f50d87d82644c4f29e588",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/c4dd3030221d1133f75f50d87d82644c4f29e588"
+    },
+    {
+      "path": "ty25-ca-008/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cec3928c4577d240d14c1a9334269218c1997a37",
+      "size": 228066,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/cec3928c4577d240d14c1a9334269218c1997a37"
+    },
+    {
+      "path": "ty25-ca-008/input/1098_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a78ebf69cdf9c7bccda0ef34a839be43a3f0ad4",
+      "size": 39581,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/2a78ebf69cdf9c7bccda0ef34a839be43a3f0ad4"
+    },
+    {
+      "path": "ty25-ca-008/input/1098t_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35c788a25905a201da7b71d494257d3ff99ab078",
+      "size": 36973,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/35c788a25905a201da7b71d494257d3ff99ab078"
+    },
+    {
+      "path": "ty25-ca-008/input/1099div_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b69387b3659f0465517ae2c90738987035123fda",
+      "size": 44046,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b69387b3659f0465517ae2c90738987035123fda"
+    },
+    {
+      "path": "ty25-ca-008/input/1099misc_1_schedule-c-1-abc.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "062497bfbb4bf3cd0a0ee76286eb9b7aced906dc",
+      "size": 44304,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/062497bfbb4bf3cd0a0ee76286eb9b7aced906dc"
+    },
+    {
+      "path": "ty25-ca-008/input/1099misc_2_schedule-c-1-abc.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c0a8c039609b93b1a1bee623067e540f18a6c02",
+      "size": 44304,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/3c0a8c039609b93b1a1bee623067e540f18a6c02"
+    },
+    {
+      "path": "ty25-ca-008/input/1099misc_3_schedule-c-2-accounting.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "544ceec41760f3997fe1ebf9d7466ed20b2f31ae",
+      "size": 44299,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/544ceec41760f3997fe1ebf9d7466ed20b2f31ae"
+    },
+    {
+      "path": "ty25-ca-008/input/1099misc_4_schedule-c-2-accounting.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3abebce122acf9bdd5890267304f944511519e53",
+      "size": 44299,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/3abebce122acf9bdd5890267304f944511519e53"
+    },
+    {
+      "path": "ty25-ca-008/input/1099misc_5_schedule-c-3-spoetzel-brew-distribution.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9be3dfb00c8d3e1aaa2b4fb21d1926ef04d12eb0",
+      "size": 44299,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/9be3dfb00c8d3e1aaa2b4fb21d1926ef04d12eb0"
+    },
+    {
+      "path": "ty25-ca-008/input/1099r_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d03f2e79cabb4f09df560149fc1b0f0daa65df7b",
+      "size": 60274,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/d03f2e79cabb4f09df560149fc1b0f0daa65df7b"
+    },
+    {
+      "path": "ty25-ca-008/input/1099r_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f4c33f89e010df2887a65612fc4523b541da5086",
+      "size": 60257,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/f4c33f89e010df2887a65612fc4523b541da5086"
+    },
+    {
+      "path": "ty25-ca-008/input/1099r_3.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "06dfe15f3bb1a3fb7b7585253c9317312932915e",
+      "size": 60255,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/06dfe15f3bb1a3fb7b7585253c9317312932915e"
+    },
+    {
+      "path": "ty25-ca-008/input/1099r_4.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cc23bf57fb2bc97c9d599531ede40b1689d66591",
+      "size": 60069,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/cc23bf57fb2bc97c9d599531ede40b1689d66591"
+    },
+    {
+      "path": "ty25-ca-008/input/1099r_5.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e98c9a49c37b0a07bc52c1d3dd9358cf6773af9",
+      "size": 60102,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/3e98c9a49c37b0a07bc52c1d3dd9358cf6773af9"
+    },
+    {
+      "path": "ty25-ca-008/input/1099sa_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88d173e8752327b25011313b45e545c395e6665c",
+      "size": 31185,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/88d173e8752327b25011313b45e545c395e6665c"
+    },
+    {
+      "path": "ty25-ca-008/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58f40e69a3145ff0dc70e23f468e6238e912c256",
+      "size": 74815,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/58f40e69a3145ff0dc70e23f468e6238e912c256"
+    },
+    {
+      "path": "ty25-ca-008/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2aff9aa4b7e7809783c59b5efc40a7edf09865ff",
+      "size": 146242,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/2aff9aa4b7e7809783c59b5efc40a7edf09865ff"
+    },
+    {
+      "path": "ty25-ca-008/input/w2g_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "285b57fce1b6f810e0cfb1584fd37d87be1b0a5e",
+      "size": 45172,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/285b57fce1b6f810e0cfb1584fd37d87be1b0a5e"
+    },
+    {
+      "path": "ty25-ca-008/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "37689d4597d721de634300b27a4abb90fd6f3208",
+      "size": 23170,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/37689d4597d721de634300b27a4abb90fd6f3208"
+    },
+    {
+      "path": "ty25-ca-009",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c96607f6f3f641627004cbd95069a965bfc2341d",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/c96607f6f3f641627004cbd95069a965bfc2341d"
+    },
+    {
+      "path": "ty25-ca-009/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2597eb7fb7334766f5a015da0e0cb7fa60c02fb5",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/2597eb7fb7334766f5a015da0e0cb7fa60c02fb5"
+    },
+    {
+      "path": "ty25-ca-009/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ac41a67d5272980eb5a0730b5ab216aad28e62bb",
+      "size": 265957,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/ac41a67d5272980eb5a0730b5ab216aad28e62bb"
+    },
+    {
+      "path": "ty25-ca-009/input/1099b_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c259c050b8eb48e399401a300f7eaec39d16c90",
+      "size": 70042,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/9c259c050b8eb48e399401a300f7eaec39d16c90"
+    },
+    {
+      "path": "ty25-ca-009/input/1099div_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f3b14c394a81cb3dc6de8719e249ae513445392",
+      "size": 44007,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/5f3b14c394a81cb3dc6de8719e249ae513445392"
+    },
+    {
+      "path": "ty25-ca-009/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b309704da4516c096bd1ffa09a188a2cc2790ffe",
+      "size": 39965,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b309704da4516c096bd1ffa09a188a2cc2790ffe"
+    },
+    {
+      "path": "ty25-ca-009/input/1099r_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e49f07821a7e8e867fb047d85cf2345654949134",
+      "size": 60145,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/e49f07821a7e8e867fb047d85cf2345654949134"
+    },
+    {
+      "path": "ty25-ca-009/input/1099sa_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5111ea3cb40df178362865735c37f6f7269cb635",
+      "size": 31255,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/5111ea3cb40df178362865735c37f6f7269cb635"
+    },
+    {
+      "path": "ty25-ca-009/input/1099sa_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "577b3231b52394f9c32a459ce7aaa2c5aa51d2a0",
+      "size": 31252,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/577b3231b52394f9c32a459ce7aaa2c5aa51d2a0"
+    },
+    {
+      "path": "ty25-ca-009/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8216c9101e2f28378775d31d32276236f7599a15",
+      "size": 19631,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/8216c9101e2f28378775d31d32276236f7599a15"
+    },
+    {
+      "path": "ty25-ca-009/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c9008bbf71b82dbce0471e9996471db6c444dc9",
+      "size": 145943,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/8c9008bbf71b82dbce0471e9996471db6c444dc9"
+    },
+    {
+      "path": "ty25-ca-009/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d557697ca7547067b73f09e94c92c349743808c",
+      "size": 9143,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/9d557697ca7547067b73f09e94c92c349743808c"
+    },
+    {
+      "path": "ty25-ca-010",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "514f2d53eb80fb666478d5b6886eae45680f7960",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/514f2d53eb80fb666478d5b6886eae45680f7960"
+    },
+    {
+      "path": "ty25-ca-010/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a82c3423de089a01a7178326db9ae105f3082613",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/a82c3423de089a01a7178326db9ae105f3082613"
+    },
+    {
+      "path": "ty25-ca-010/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "45eca62ef3f0fbab6ca40d1653ac436ab78c14e0",
+      "size": 265599,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/45eca62ef3f0fbab6ca40d1653ac436ab78c14e0"
+    },
+    {
+      "path": "ty25-ca-010/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bbd57fedd6b2054c6619b9ebd8f19b9a9c0ed992",
+      "size": 9547,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/bbd57fedd6b2054c6619b9ebd8f19b9a9c0ed992"
+    },
+    {
+      "path": "ty25-ca-010/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dcf350b61437f53737541fe7d06909733ffefde2",
+      "size": 146384,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/dcf350b61437f53737541fe7d06909733ffefde2"
+    },
+    {
+      "path": "ty25-ca-010/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "516751d3e4dae50b2a3872f67ded4632da5bcb46",
+      "size": 5398,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/516751d3e4dae50b2a3872f67ded4632da5bcb46"
+    },
+    {
+      "path": "ty25-il-001",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5d4f3f90b8a9c109baa1da2185b868cff7736c21",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/5d4f3f90b8a9c109baa1da2185b868cff7736c21"
+    },
+    {
+      "path": "ty25-il-001/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c2276a93dd57b02a6841327e40cad59b5a236b26",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/c2276a93dd57b02a6841327e40cad59b5a236b26"
+    },
+    {
+      "path": "ty25-il-001/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b9de933281cf2c45ada80f4103acfe0e64adaae0",
+      "size": 266346,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b9de933281cf2c45ada80f4103acfe0e64adaae0"
+    },
+    {
+      "path": "ty25-il-001/input/1099g_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb87a61fcb6c6014bfd0fdc26cede792f2869c24",
+      "size": 36153,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/cb87a61fcb6c6014bfd0fdc26cede792f2869c24"
+    },
+    {
+      "path": "ty25-il-001/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a97c91885969f57237996380ee3b193ebb22bb6",
+      "size": 24019,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/1a97c91885969f57237996380ee3b193ebb22bb6"
+    },
+    {
+      "path": "ty25-il-001/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49130edd1b5936badf7d1e893e4b580e23f28dd4",
+      "size": 146557,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/49130edd1b5936badf7d1e893e4b580e23f28dd4"
+    },
+    {
+      "path": "ty25-il-001/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "304406cfe3ffd04990c77b58ed49727e8b91573e",
+      "size": 11574,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/304406cfe3ffd04990c77b58ed49727e8b91573e"
+    },
+    {
+      "path": "ty25-il-002",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "89c0e5a0b3fab8e592a07d41a8101f5981036561",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/89c0e5a0b3fab8e592a07d41a8101f5981036561"
+    },
+    {
+      "path": "ty25-il-002/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6767b07595bc9f37649b871a1a5bc6ae7137b1a1",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/6767b07595bc9f37649b871a1a5bc6ae7137b1a1"
+    },
+    {
+      "path": "ty25-il-002/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fa655c5f62ebf4f5b9705da6c95a32d8a2986e3",
+      "size": 265822,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/4fa655c5f62ebf4f5b9705da6c95a32d8a2986e3"
+    },
+    {
+      "path": "ty25-il-002/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9be44764c27301b4d653ec6612a34282c1909d96",
+      "size": 10282,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/9be44764c27301b4d653ec6612a34282c1909d96"
+    },
+    {
+      "path": "ty25-il-002/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b32355db8de3e468d8165209f1a27b092a0afc0d",
+      "size": 4033,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b32355db8de3e468d8165209f1a27b092a0afc0d"
+    },
+    {
+      "path": "ty25-il-003",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4e67acc43eed71e8688096c55feefdd0f467b9da",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/4e67acc43eed71e8688096c55feefdd0f467b9da"
+    },
+    {
+      "path": "ty25-il-003/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "675775bb1aff16b6bc85441436ef7d6b9abd112e",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/675775bb1aff16b6bc85441436ef7d6b9abd112e"
+    },
+    {
+      "path": "ty25-il-003/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43062ed3f5db1b61299dd40640d076bb160fd482",
+      "size": 267008,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/43062ed3f5db1b61299dd40640d076bb160fd482"
+    },
+    {
+      "path": "ty25-il-003/input/1099g_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cf0e1f3604f80fbb97acb1ab0288c60182a8a3d",
+      "size": 36017,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/2cf0e1f3604f80fbb97acb1ab0288c60182a8a3d"
+    },
+    {
+      "path": "ty25-il-003/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "816fe81725bd238b98cb15ee9c3863593739c585",
+      "size": 40868,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/816fe81725bd238b98cb15ee9c3863593739c585"
+    },
+    {
+      "path": "ty25-il-003/input/1099int_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d72702ef8249a804693c22f5feca996cf8472304",
+      "size": 40866,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/d72702ef8249a804693c22f5feca996cf8472304"
+    },
+    {
+      "path": "ty25-il-003/input/1099k_1_schedule-c-1-abc.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1ead7b834ee5744f372f6ae9cab762ba7542b23",
+      "size": 47715,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b1ead7b834ee5744f372f6ae9cab762ba7542b23"
+    },
+    {
+      "path": "ty25-il-003/input/1099k_2_schedule-c-1-abc.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a0d77de0699d6d8b228fa25bb8d8b0b31fd0d19b",
+      "size": 47528,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/a0d77de0699d6d8b228fa25bb8d8b0b31fd0d19b"
+    },
+    {
+      "path": "ty25-il-003/input/1099misc_1_schedule-c-1-abc.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1862243de7c0fcaf5a41e8e40e197618a62c9256",
+      "size": 43872,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/1862243de7c0fcaf5a41e8e40e197618a62c9256"
+    },
+    {
+      "path": "ty25-il-003/input/1099misc_2_schedule-c-1-abc.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd468321379f0b540e5b3e2431b762e3685a261d",
+      "size": 43677,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/dd468321379f0b540e5b3e2431b762e3685a261d"
+    },
+    {
+      "path": "ty25-il-003/input/1099nec_1_schedule-c-1-abc.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d29f809f1e5f04475da3a09548101c7deccefd0d",
+      "size": 31709,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/d29f809f1e5f04475da3a09548101c7deccefd0d"
+    },
+    {
+      "path": "ty25-il-003/input/1099nec_2_schedule-c-1-abc.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "079215130f4d260aa9fd41de6425c6e73e28be58",
+      "size": 31526,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/079215130f4d260aa9fd41de6425c6e73e28be58"
+    },
+    {
+      "path": "ty25-il-003/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec0253447ddc9216264cc9fd31ca7e600f8453f5",
+      "size": 34553,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/ec0253447ddc9216264cc9fd31ca7e600f8453f5"
+    },
+    {
+      "path": "ty25-il-003/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "007f94fc9a3ae4e006881b142f07fc9c927f4ae2",
+      "size": 146164,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/007f94fc9a3ae4e006881b142f07fc9c927f4ae2"
+    },
+    {
+      "path": "ty25-il-003/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6d99b4f111156c0a628464195b228be4c2f5f4a7",
+      "size": 21267,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/6d99b4f111156c0a628464195b228be4c2f5f4a7"
+    },
+    {
+      "path": "ty25-il-004",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f9f2b422ba7bdb2dec6908c7b09086fccd72dd1f",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/f9f2b422ba7bdb2dec6908c7b09086fccd72dd1f"
+    },
+    {
+      "path": "ty25-il-004/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6e844870f39e89053416e49ba00a84ad014d5208",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/6e844870f39e89053416e49ba00a84ad014d5208"
+    },
+    {
+      "path": "ty25-il-004/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "140dfaefa5c287f641abd74d275456267a2ca5ca",
+      "size": 266850,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/140dfaefa5c287f641abd74d275456267a2ca5ca"
+    },
+    {
+      "path": "ty25-il-004/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c932a0ab386a885aa241121bc0ac046cd76c283",
+      "size": 24004,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/6c932a0ab386a885aa241121bc0ac046cd76c283"
+    },
+    {
+      "path": "ty25-il-004/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d2123e4bbcae9a9e6e5ebbe9fcd56d3ed1177687",
+      "size": 146134,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/d2123e4bbcae9a9e6e5ebbe9fcd56d3ed1177687"
+    },
+    {
+      "path": "ty25-il-004/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "327dd80ea72c589fdf1609538dd5d23f78e3fc62",
+      "size": 12026,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/327dd80ea72c589fdf1609538dd5d23f78e3fc62"
+    },
+    {
+      "path": "ty25-il-005",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dd0b4eaea658f625915af91107badb74484bb0b6",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/dd0b4eaea658f625915af91107badb74484bb0b6"
+    },
+    {
+      "path": "ty25-il-005/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6137fe5a68451698ce6c18dad8156d9c73c953e0",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/6137fe5a68451698ce6c18dad8156d9c73c953e0"
+    },
+    {
+      "path": "ty25-il-005/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d4a720d3192119656540b4b344ab8c04fe39d7b5",
+      "size": 266378,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/d4a720d3192119656540b4b344ab8c04fe39d7b5"
+    },
+    {
+      "path": "ty25-il-005/input/1099b_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88d88134131ebdafeace25ba0552366f7dcbf640",
+      "size": 70028,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/88d88134131ebdafeace25ba0552366f7dcbf640"
+    },
+    {
+      "path": "ty25-il-005/input/1099b_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "581189e9a9057560b1393419b61264d33b8881f6",
+      "size": 69962,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/581189e9a9057560b1393419b61264d33b8881f6"
+    },
+    {
+      "path": "ty25-il-005/input/1099b_3.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "540e40670ac3a712f3bff0344359f6d217160446",
+      "size": 70026,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/540e40670ac3a712f3bff0344359f6d217160446"
+    },
+    {
+      "path": "ty25-il-005/input/1099b_4.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c558fc936a9e9466994e14c06e7b0e0b8fc6f859",
+      "size": 70027,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/c558fc936a9e9466994e14c06e7b0e0b8fc6f859"
+    },
+    {
+      "path": "ty25-il-005/input/1099div_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18f5cad3ac7cfae3d99a592383a4a107e4280bc3",
+      "size": 44814,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/18f5cad3ac7cfae3d99a592383a4a107e4280bc3"
+    },
+    {
+      "path": "ty25-il-005/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a641d067281ef5a8f1bc75e867d16211711870fc",
+      "size": 19328,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/a641d067281ef5a8f1bc75e867d16211711870fc"
+    },
+    {
+      "path": "ty25-il-005/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56b5a3b6617c4a1d96746adf92fd9fff58bb1671",
+      "size": 146147,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/56b5a3b6617c4a1d96746adf92fd9fff58bb1671"
+    },
+    {
+      "path": "ty25-il-005/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d980b29cbafaaac65059325793cd784b2338210a",
+      "size": 7520,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/d980b29cbafaaac65059325793cd784b2338210a"
+    },
+    {
+      "path": "ty25-il-006",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8a8339ae9aeafcc340ac313e65d89fda758d7749",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/8a8339ae9aeafcc340ac313e65d89fda758d7749"
+    },
+    {
+      "path": "ty25-il-006/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0d005e2c3efbadb8190124984ce332a26a9a40cd",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/0d005e2c3efbadb8190124984ce332a26a9a40cd"
+    },
+    {
+      "path": "ty25-il-006/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5cc442a40ae0f2d3be1f86b533cc9c0a06d1f9e1",
+      "size": 265872,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/5cc442a40ae0f2d3be1f86b533cc9c0a06d1f9e1"
+    },
+    {
+      "path": "ty25-il-006/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "567a72f4fff7b41b5fb596d86e0a44a37042923e",
+      "size": 9824,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/567a72f4fff7b41b5fb596d86e0a44a37042923e"
+    },
+    {
+      "path": "ty25-il-006/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb0792140813e959436b9452d34090b9628b2bbc",
+      "size": 146192,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/cb0792140813e959436b9452d34090b9628b2bbc"
+    },
+    {
+      "path": "ty25-il-006/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a1369233a5180526149b0f7e04809e5dfcf41b4",
+      "size": 7601,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/6a1369233a5180526149b0f7e04809e5dfcf41b4"
+    },
+    {
+      "path": "ty25-il-007",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7ce56c7005df5f1ccd107d7822a5e11e69310f43",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/7ce56c7005df5f1ccd107d7822a5e11e69310f43"
+    },
+    {
+      "path": "ty25-il-007/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ee083975eb82349aa5ac263750f0eccea910cdc3",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/ee083975eb82349aa5ac263750f0eccea910cdc3"
+    },
+    {
+      "path": "ty25-il-007/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dab62428abae1b8734581e34715e54aa7af50c5f",
+      "size": 266471,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/dab62428abae1b8734581e34715e54aa7af50c5f"
+    },
+    {
+      "path": "ty25-il-007/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edf1cd64bf74a90401857cf824c1f8dc3d6d969b",
+      "size": 24875,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/edf1cd64bf74a90401857cf824c1f8dc3d6d969b"
+    },
+    {
+      "path": "ty25-il-007/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c05a5fdc58a1e5e0749bdc27750a310c2865a71",
+      "size": 146175,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/4c05a5fdc58a1e5e0749bdc27750a310c2865a71"
+    },
+    {
+      "path": "ty25-il-007/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd19802ce280b416fca2760f36d82ca6930b73f8",
+      "size": 11008,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/dd19802ce280b416fca2760f36d82ca6930b73f8"
+    },
+    {
+      "path": "ty25-il-008",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1db89f4edb673c74df6043d718ade6a8b224586d",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/1db89f4edb673c74df6043d718ade6a8b224586d"
+    },
+    {
+      "path": "ty25-il-008/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "748929f16802020a228075d4ff9ba135a251c525",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/748929f16802020a228075d4ff9ba135a251c525"
+    },
+    {
+      "path": "ty25-il-008/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ab30cd97d700ef4f79ec26c44c8c7a340fefb88",
+      "size": 265968,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/9ab30cd97d700ef4f79ec26c44c8c7a340fefb88"
+    },
+    {
+      "path": "ty25-il-008/input/1099div_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a34a2fb587fec69640ed3c1cb2473272e8292cf3",
+      "size": 44227,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/a34a2fb587fec69640ed3c1cb2473272e8292cf3"
+    },
+    {
+      "path": "ty25-il-008/input/1099g_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d395a95bfd781df03b988a7c0f4d254d8d8adc26",
+      "size": 36149,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/d395a95bfd781df03b988a7c0f4d254d8d8adc26"
+    },
+    {
+      "path": "ty25-il-008/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "050b168767d5a84cda77394ef39a3a3c8b5a3346",
+      "size": 40319,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/050b168767d5a84cda77394ef39a3a3c8b5a3346"
+    },
+    {
+      "path": "ty25-il-008/input/1099k_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e1ec6679cf8117d8d1bc2cf0070198d345ec6d3",
+      "size": 47689,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/8e1ec6679cf8117d8d1bc2cf0070198d345ec6d3"
+    },
+    {
+      "path": "ty25-il-008/input/1099misc_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55538ffe2d95299775c9424398ac894e8bb6db41",
+      "size": 43922,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/55538ffe2d95299775c9424398ac894e8bb6db41"
+    },
+    {
+      "path": "ty25-il-008/input/1099nec_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88b8a6d99fd2f12c20d6f440573afa95051fc63b",
+      "size": 31716,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/88b8a6d99fd2f12c20d6f440573afa95051fc63b"
+    },
+    {
+      "path": "ty25-il-008/input/1099r_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ade48e47d1a72446774738768e0ed9eab5698c8c",
+      "size": 60307,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/ade48e47d1a72446774738768e0ed9eab5698c8c"
+    },
+    {
+      "path": "ty25-il-008/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "caa5717a4fc0814b2249ab3ccea5811a8c6ff4c7",
+      "size": 16967,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/caa5717a4fc0814b2249ab3ccea5811a8c6ff4c7"
+    },
+    {
+      "path": "ty25-il-008/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4a7e4a81641430b5ab544ea6eb008a593580888",
+      "size": 146441,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b4a7e4a81641430b5ab544ea6eb008a593580888"
+    },
+    {
+      "path": "ty25-il-008/input/w2g_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "14fd21da2f990320af3ec037fb6f3bf3f5381697",
+      "size": 45094,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/14fd21da2f990320af3ec037fb6f3bf3f5381697"
+    },
+    {
+      "path": "ty25-il-008/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2e6ae8ff5e765c7e831449603fef34c4edbc0143",
+      "size": 16745,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/2e6ae8ff5e765c7e831449603fef34c4edbc0143"
+    },
+    {
+      "path": "ty25-il-009",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d3c989ec93ef8533cd8a19d8d19a7320a9b6681e",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/d3c989ec93ef8533cd8a19d8d19a7320a9b6681e"
+    },
+    {
+      "path": "ty25-il-009/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "343ebe3a38cbe780fe39e987bf25451beb698613",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/343ebe3a38cbe780fe39e987bf25451beb698613"
+    },
+    {
+      "path": "ty25-il-009/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dcc9a0b734dd446b1058df01ae9a204f41a8c32",
+      "size": 265673,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/3dcc9a0b734dd446b1058df01ae9a204f41a8c32"
+    },
+    {
+      "path": "ty25-il-009/input/1099k_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e8ad6e4b697a90ce2be9c4bb421aa7641eeef3b",
+      "size": 47320,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/7e8ad6e4b697a90ce2be9c4bb421aa7641eeef3b"
+    },
+    {
+      "path": "ty25-il-009/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92ec209fb53814800b8a1d2daf7a467547f75386",
+      "size": 13088,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/92ec209fb53814800b8a1d2daf7a467547f75386"
+    },
+    {
+      "path": "ty25-il-009/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9cd48ece8f09762336734e890f52634a81fcf955",
+      "size": 146515,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/9cd48ece8f09762336734e890f52634a81fcf955"
+    },
+    {
+      "path": "ty25-il-009/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7a1c14de73431744d2474b7dc16292c356398c9",
+      "size": 6214,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/a7a1c14de73431744d2474b7dc16292c356398c9"
+    },
+    {
+      "path": "ty25-il-010",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9a277eaa01077399e5dc72ded685a71dd087fc94",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/9a277eaa01077399e5dc72ded685a71dd087fc94"
+    },
+    {
+      "path": "ty25-il-010/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2d1096a8f1a7ef22e32f61273ac883737a1a207f",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/2d1096a8f1a7ef22e32f61273ac883737a1a207f"
+    },
+    {
+      "path": "ty25-il-010/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dcc9a0b734dd446b1058df01ae9a204f41a8c32",
+      "size": 265673,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/3dcc9a0b734dd446b1058df01ae9a204f41a8c32"
+    },
+    {
+      "path": "ty25-il-010/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fe0a995c6b5c8946c41461b8ec9b02e54539b31",
+      "size": 39957,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/0fe0a995c6b5c8946c41461b8ec9b02e54539b31"
+    },
+    {
+      "path": "ty25-il-010/input/1099nec_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53cf76558b712e5239ad4aaeca30696c59add037",
+      "size": 31446,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/53cf76558b712e5239ad4aaeca30696c59add037"
+    },
+    {
+      "path": "ty25-il-010/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d353342188b49bb4dbc88f1ac8b9ff01050c889",
+      "size": 13952,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/1d353342188b49bb4dbc88f1ac8b9ff01050c889"
+    },
+    {
+      "path": "ty25-il-010/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4dfd6f22400a3c1265f2bfa7a774c7e1468f3088",
+      "size": 146539,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/4dfd6f22400a3c1265f2bfa7a774c7e1468f3088"
+    },
+    {
+      "path": "ty25-il-010/input/w2_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "92d5ae599272c19b1789d1a96305e58ade1eca82",
+      "size": 146171,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/92d5ae599272c19b1789d1a96305e58ade1eca82"
+    },
+    {
+      "path": "ty25-il-010/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db0148c1afc359e0dd4db91f2fc3f633ce01993e",
+      "size": 8335,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/db0148c1afc359e0dd4db91f2fc3f633ce01993e"
+    },
+    {
+      "path": "ty25-ny-001",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8d0f104fde6548031ad10a92ac05d814fe15d023",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/8d0f104fde6548031ad10a92ac05d814fe15d023"
+    },
+    {
+      "path": "ty25-ny-001/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "232d42c06d9fb22ade381ab0c9215b8226360189",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/232d42c06d9fb22ade381ab0c9215b8226360189"
+    },
+    {
+      "path": "ty25-ny-001/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63f97b7e811b95bec1b98e9d699601a39991a2f3",
+      "size": 266518,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/63f97b7e811b95bec1b98e9d699601a39991a2f3"
+    },
+    {
+      "path": "ty25-ny-001/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a5e2fbf03ed5e8e9cd1d978cfafd32a7a1b84b38",
+      "size": 33300,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/a5e2fbf03ed5e8e9cd1d978cfafd32a7a1b84b38"
+    },
+    {
+      "path": "ty25-ny-001/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab76c002cb5e566349f6949025c0f50cdbee6dc0",
+      "size": 146752,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/ab76c002cb5e566349f6949025c0f50cdbee6dc0"
+    },
+    {
+      "path": "ty25-ny-001/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c9327634f278c0647f3e835b63a6305e2f1ac058",
+      "size": 18764,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/c9327634f278c0647f3e835b63a6305e2f1ac058"
+    },
+    {
+      "path": "ty25-ny-002",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f67fc46f91f5c3ab2f2b65095443e58a34c3140c",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/f67fc46f91f5c3ab2f2b65095443e58a34c3140c"
+    },
+    {
+      "path": "ty25-ny-002/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b1c51df1eea0564795479b97cb2f807ec2341581",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/b1c51df1eea0564795479b97cb2f807ec2341581"
+    },
+    {
+      "path": "ty25-ny-002/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ecb2f6fb894a6ea943a4ddc91591311abd86cb6d",
+      "size": 266342,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/ecb2f6fb894a6ea943a4ddc91591311abd86cb6d"
+    },
+    {
+      "path": "ty25-ny-002/input/1098e_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5d9accf95a83b041a3abd903a378ad6bbc590fc",
+      "size": 25242,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/e5d9accf95a83b041a3abd903a378ad6bbc590fc"
+    },
+    {
+      "path": "ty25-ny-002/input/1098t_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "02894adb3d1ea0d766a3199a303f6a4f5c02c02f",
+      "size": 36956,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/02894adb3d1ea0d766a3199a303f6a4f5c02c02f"
+    },
+    {
+      "path": "ty25-ny-002/input/1099g_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79f05fb3400d82700274aedf3d5456f7d9d36c86",
+      "size": 36106,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/79f05fb3400d82700274aedf3d5456f7d9d36c86"
+    },
+    {
+      "path": "ty25-ny-002/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34c2b673c47dac0b8c6a0ba3bcce8aa95a620002",
+      "size": 25191,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/34c2b673c47dac0b8c6a0ba3bcce8aa95a620002"
+    },
+    {
+      "path": "ty25-ny-002/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1cc1a12d4390dc2aed0452cd3c85c3179e6207c",
+      "size": 146615,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b1cc1a12d4390dc2aed0452cd3c85c3179e6207c"
+    },
+    {
+      "path": "ty25-ny-002/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0cc779f8a7f76c937c5b08dfd865f6a12c2e190f",
+      "size": 11753,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/0cc779f8a7f76c937c5b08dfd865f6a12c2e190f"
+    },
+    {
+      "path": "ty25-ny-003",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "880c80a2b9d72eada76e548c6f8a85bac555e164",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/880c80a2b9d72eada76e548c6f8a85bac555e164"
+    },
+    {
+      "path": "ty25-ny-003/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "71f315817155aac9e48506017002573669ecb844",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/71f315817155aac9e48506017002573669ecb844"
+    },
+    {
+      "path": "ty25-ny-003/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b83260dbda1070aab43f41f2d1bfd8737b2cfa2e",
+      "size": 266308,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b83260dbda1070aab43f41f2d1bfd8737b2cfa2e"
+    },
+    {
+      "path": "ty25-ny-003/input/1098t_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f3dc628a69b5574daa47ec01de6e6fbaf10034b",
+      "size": 36941,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/9f3dc628a69b5574daa47ec01de6e6fbaf10034b"
+    },
+    {
+      "path": "ty25-ny-003/input/1099b_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f9fb491f4c7ab1b771a04e6b8212b97c43054dd",
+      "size": 70496,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/4f9fb491f4c7ab1b771a04e6b8212b97c43054dd"
+    },
+    {
+      "path": "ty25-ny-003/input/1099b_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6c8042612f096447d10874a7fdb352d2140c285",
+      "size": 70498,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/c6c8042612f096447d10874a7fdb352d2140c285"
+    },
+    {
+      "path": "ty25-ny-003/input/1099div_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f7f4f9c3beb62e45b82cc7dd561690098a5ab34",
+      "size": 44927,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/4f7f4f9c3beb62e45b82cc7dd561690098a5ab34"
+    },
+    {
+      "path": "ty25-ny-003/input/1099g_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17919b67543e99e4304d7a277c7e2eb1ea65accf",
+      "size": 36026,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/17919b67543e99e4304d7a277c7e2eb1ea65accf"
+    },
+    {
+      "path": "ty25-ny-003/input/1099g_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85f881b0ae36be970712b916107d4530aa598530",
+      "size": 35896,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/85f881b0ae36be970712b916107d4530aa598530"
+    },
+    {
+      "path": "ty25-ny-003/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "063d47b82abb6d0b093fbc3fd2bd05d3fa65edd6",
+      "size": 40724,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/063d47b82abb6d0b093fbc3fd2bd05d3fa65edd6"
+    },
+    {
+      "path": "ty25-ny-003/input/1099misc_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "70521c75631d3dcc9b0b9a1fd67c016f74bee055",
+      "size": 44431,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/70521c75631d3dcc9b0b9a1fd67c016f74bee055"
+    },
+    {
+      "path": "ty25-ny-003/input/1099nec_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc326bb1659a2ec12a35466651701069a1e982f2",
+      "size": 31689,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/bc326bb1659a2ec12a35466651701069a1e982f2"
+    },
+    {
+      "path": "ty25-ny-003/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ec5f8bbb5b77860a8b4b9a25ee0a466712b6d37e",
+      "size": 31690,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/ec5f8bbb5b77860a8b4b9a25ee0a466712b6d37e"
+    },
+    {
+      "path": "ty25-ny-003/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7179602a32c89e57e7bfedc06646a9515eb207d1",
+      "size": 146793,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/7179602a32c89e57e7bfedc06646a9515eb207d1"
+    },
+    {
+      "path": "ty25-ny-003/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf23931b9bcaac05f29f0eb76548dfc2e431e9e8",
+      "size": 22682,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/bf23931b9bcaac05f29f0eb76548dfc2e431e9e8"
+    },
+    {
+      "path": "ty25-ny-004",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0e78b3955ba08182f9cc0e6140a058595da92d71",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/0e78b3955ba08182f9cc0e6140a058595da92d71"
+    },
+    {
+      "path": "ty25-ny-004/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "98c756c89f6bf755fcb9217ae030173d78fa0b41",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/98c756c89f6bf755fcb9217ae030173d78fa0b41"
+    },
+    {
+      "path": "ty25-ny-004/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1cff3231e187c61c7798b196e8b3b1c9af3c6748",
+      "size": 267081,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/1cff3231e187c61c7798b196e8b3b1c9af3c6748"
+    },
+    {
+      "path": "ty25-ny-004/input/1098e_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0faaf8ba4adca61d4dbc498691871d288323720",
+      "size": 25245,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/f0faaf8ba4adca61d4dbc498691871d288323720"
+    },
+    {
+      "path": "ty25-ny-004/input/1099div_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34ab91eff307c0be9651551f666365141aa7dcd2",
+      "size": 44799,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/34ab91eff307c0be9651551f666365141aa7dcd2"
+    },
+    {
+      "path": "ty25-ny-004/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fc8d5b4eb3ae0bf2080fd3c047841deabb414f99",
+      "size": 40601,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/fc8d5b4eb3ae0bf2080fd3c047841deabb414f99"
+    },
+    {
+      "path": "ty25-ny-004/input/1099nec_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a4ffbef7007b285a48d8517c75bdc0910a10c67e",
+      "size": 31396,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/a4ffbef7007b285a48d8517c75bdc0910a10c67e"
+    },
+    {
+      "path": "ty25-ny-004/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b7801e161f19f1917028b3223c05b8aebeab54e1",
+      "size": 31150,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b7801e161f19f1917028b3223c05b8aebeab54e1"
+    },
+    {
+      "path": "ty25-ny-004/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d6d210cdac65b530b9858d8830e6801927f6cbf",
+      "size": 146907,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/2d6d210cdac65b530b9858d8830e6801927f6cbf"
+    },
+    {
+      "path": "ty25-ny-004/input/w2_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26ecaee4cb1bebf4f740178935ad9c9039d1c0be",
+      "size": 146531,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/26ecaee4cb1bebf4f740178935ad9c9039d1c0be"
+    },
+    {
+      "path": "ty25-ny-004/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59f31da95063e6728e61f5e0672669fe059b4d02",
+      "size": 18647,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/59f31da95063e6728e61f5e0672669fe059b4d02"
+    },
+    {
+      "path": "ty25-ny-005",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "91282dde05a0a35357fec7ddc8405e1958f2fae5",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/91282dde05a0a35357fec7ddc8405e1958f2fae5"
+    },
+    {
+      "path": "ty25-ny-005/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7b4f2bd2edd9e2de1706b4dad203921df8ab7b6a",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/7b4f2bd2edd9e2de1706b4dad203921df8ab7b6a"
+    },
+    {
+      "path": "ty25-ny-005/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a17ed859fc483bc99c7083a00cd0fab8b24d3162",
+      "size": 266947,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/a17ed859fc483bc99c7083a00cd0fab8b24d3162"
+    },
+    {
+      "path": "ty25-ny-005/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3220ee1ae3c83c508c629e0820d000e7f3b5ce1e",
+      "size": 25037,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/3220ee1ae3c83c508c629e0820d000e7f3b5ce1e"
+    },
+    {
+      "path": "ty25-ny-005/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3cf5f43931819e2e344f0f79274a5c3742d4e7d5",
+      "size": 146712,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/3cf5f43931819e2e344f0f79274a5c3742d4e7d5"
+    },
+    {
+      "path": "ty25-ny-005/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "754e711f1fe6030ff760984b2384aaec65d11a3d",
+      "size": 14757,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/754e711f1fe6030ff760984b2384aaec65d11a3d"
+    },
+    {
+      "path": "ty25-ny-006",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c54d56d47ab84cc1e752c626400cbe78d867b428",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/c54d56d47ab84cc1e752c626400cbe78d867b428"
+    },
+    {
+      "path": "ty25-ny-006/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "17d61d2c1c402ac721824e91de92eefb510d4ef3",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/17d61d2c1c402ac721824e91de92eefb510d4ef3"
+    },
+    {
+      "path": "ty25-ny-006/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91e143676138614f3ee2a0f33266345758add4b7",
+      "size": 266486,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/91e143676138614f3ee2a0f33266345758add4b7"
+    },
+    {
+      "path": "ty25-ny-006/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b905fcfde4083799813002d8295eba99bbc02a7",
+      "size": 22988,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/3b905fcfde4083799813002d8295eba99bbc02a7"
+    },
+    {
+      "path": "ty25-ny-006/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d85f835fb96393c82d3adf046c8992cfe9b2323c",
+      "size": 146678,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/d85f835fb96393c82d3adf046c8992cfe9b2323c"
+    },
+    {
+      "path": "ty25-ny-006/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "390b44620b4ef0bc61ea8c3a68a69d53650cb536",
+      "size": 13343,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/390b44620b4ef0bc61ea8c3a68a69d53650cb536"
+    },
+    {
+      "path": "ty25-ny-007",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f0cff78d93e7801c472c799220b08e0e1f9daf53",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/f0cff78d93e7801c472c799220b08e0e1f9daf53"
+    },
+    {
+      "path": "ty25-ny-007/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a00627d6af8d03ee62afe36a7615c729e23dcff4",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/a00627d6af8d03ee62afe36a7615c729e23dcff4"
+    },
+    {
+      "path": "ty25-ny-007/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7718f5adec72b9e02933b5a1387a8e1af186944e",
+      "size": 266512,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/7718f5adec72b9e02933b5a1387a8e1af186944e"
+    },
+    {
+      "path": "ty25-ny-007/input/1098t_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c8aaa622f111a89bea60a9c9e5694141d43b0e6",
+      "size": 36966,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/3c8aaa622f111a89bea60a9c9e5694141d43b0e6"
+    },
+    {
+      "path": "ty25-ny-007/input/1098t_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e44e8fb464eab89b97aaac96f0029f2117c50ad",
+      "size": 36967,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/8e44e8fb464eab89b97aaac96f0029f2117c50ad"
+    },
+    {
+      "path": "ty25-ny-007/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b39d3059e66df1a9c1221b30f7c16f597f54c9fb",
+      "size": 26925,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b39d3059e66df1a9c1221b30f7c16f597f54c9fb"
+    },
+    {
+      "path": "ty25-ny-007/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7126769059c86b3f65b79b0fdf832d4e659ec80a",
+      "size": 146995,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/7126769059c86b3f65b79b0fdf832d4e659ec80a"
+    },
+    {
+      "path": "ty25-ny-007/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "daa9d18f3630fcd7bf2b35aed499ff4a0aa58aa2",
+      "size": 13348,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/daa9d18f3630fcd7bf2b35aed499ff4a0aa58aa2"
+    },
+    {
+      "path": "ty25-ny-008",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "12901a1c8c69e7143c320aa43459710be9c46053",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/12901a1c8c69e7143c320aa43459710be9c46053"
+    },
+    {
+      "path": "ty25-ny-008/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "01e022830c2990ee15acefb35e9e6a23689eaa89",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/01e022830c2990ee15acefb35e9e6a23689eaa89"
+    },
+    {
+      "path": "ty25-ny-008/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a9206d08c17dbd69d1aaf2ffd45f85346ea23189",
+      "size": 266290,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/a9206d08c17dbd69d1aaf2ffd45f85346ea23189"
+    },
+    {
+      "path": "ty25-ny-008/input/1098e_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c2be956270c808cc3fdf364eb3ace0d7c219a4f",
+      "size": 25249,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/5c2be956270c808cc3fdf364eb3ace0d7c219a4f"
+    },
+    {
+      "path": "ty25-ny-008/input/1099div_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63506d681e7a2f8a0681a17139270feb70be72d3",
+      "size": 44803,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/63506d681e7a2f8a0681a17139270feb70be72d3"
+    },
+    {
+      "path": "ty25-ny-008/input/1099g_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f56eaf1ce4463866661b6db879b6aa843309800",
+      "size": 36164,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/5f56eaf1ce4463866661b6db879b6aa843309800"
+    },
+    {
+      "path": "ty25-ny-008/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2cfc039e3a487746634a004b8074131b7b493ada",
+      "size": 40605,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/2cfc039e3a487746634a004b8074131b7b493ada"
+    },
+    {
+      "path": "ty25-ny-008/input/1099nec_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ab9e4382500709ede102cd7c3872a817b6f23ef1",
+      "size": 31527,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/ab9e4382500709ede102cd7c3872a817b6f23ef1"
+    },
+    {
+      "path": "ty25-ny-008/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d8bbf6070f773cb60db53f1df7f0ef8b9d394a7",
+      "size": 24172,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/4d8bbf6070f773cb60db53f1df7f0ef8b9d394a7"
+    },
+    {
+      "path": "ty25-ny-008/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a5f41c52d13057238eba10f9b860d1e42e02f6e",
+      "size": 146637,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/9a5f41c52d13057238eba10f9b860d1e42e02f6e"
+    },
+    {
+      "path": "ty25-ny-008/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8b1a2806522705fbbe435ab8ebf94e76a356bd8d",
+      "size": 13492,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/8b1a2806522705fbbe435ab8ebf94e76a356bd8d"
+    },
+    {
+      "path": "ty25-ny-009",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3e00eb895fa26598c6d480d064d194d7528cdbbb",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/3e00eb895fa26598c6d480d064d194d7528cdbbb"
+    },
+    {
+      "path": "ty25-ny-009/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "789d746095dcb3bd8a87531926c82570ac723994",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/789d746095dcb3bd8a87531926c82570ac723994"
+    },
+    {
+      "path": "ty25-ny-009/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9393387e3aabf7df1715c3d631d830960c7ace98",
+      "size": 265880,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/9393387e3aabf7df1715c3d631d830960c7ace98"
+    },
+    {
+      "path": "ty25-ny-009/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adfd06407806738af5d17c70e9627f2a7d3f2c0d",
+      "size": 14450,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/adfd06407806738af5d17c70e9627f2a7d3f2c0d"
+    },
+    {
+      "path": "ty25-ny-009/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cfdffb5a1ca6ba4cfa22b312ce16cacdeac447a1",
+      "size": 146546,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/cfdffb5a1ca6ba4cfa22b312ce16cacdeac447a1"
+    },
+    {
+      "path": "ty25-ny-009/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50fdf5ec1a2a1fef11ec96c6afb387fa1a98c8d7",
+      "size": 7534,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/50fdf5ec1a2a1fef11ec96c6afb387fa1a98c8d7"
+    },
+    {
+      "path": "ty25-ny-010",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "51193ae3e3e06d5cc009d6cae86af653220190a4",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/51193ae3e3e06d5cc009d6cae86af653220190a4"
+    },
+    {
+      "path": "ty25-ny-010/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "43ae9d0929454b51017ac5e9a5da29e7d464fa14",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/43ae9d0929454b51017ac5e9a5da29e7d464fa14"
+    },
+    {
+      "path": "ty25-ny-010/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "84d823a9fda1c0fc7a938770c6334af829b9af4d",
+      "size": 265684,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/84d823a9fda1c0fc7a938770c6334af829b9af4d"
+    },
+    {
+      "path": "ty25-ny-010/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6bce85d9a90740a39a3e8f68f1521a2f494ddd50",
+      "size": 8596,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/6bce85d9a90740a39a3e8f68f1521a2f494ddd50"
+    },
+    {
+      "path": "ty25-ny-010/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c04afc2ceaf65ab0cf38d2a0436b34a403c4db25",
+      "size": 5873,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/c04afc2ceaf65ab0cf38d2a0436b34a403c4db25"
+    },
+    {
+      "path": "ty25-us-001",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8081b6eff49a717a0020e34744a89d727070707f",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/8081b6eff49a717a0020e34744a89d727070707f"
+    },
+    {
+      "path": "ty25-us-001/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6adc5193d54bb32d48b52ddc0c2b7c42be9a013b",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/6adc5193d54bb32d48b52ddc0c2b7c42be9a013b"
+    },
+    {
+      "path": "ty25-us-001/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba359e6a99d4e8a2970d51e155e5ea5fc96c1f52",
+      "size": 227297,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/ba359e6a99d4e8a2970d51e155e5ea5fc96c1f52"
+    },
+    {
+      "path": "ty25-us-001/input/1098_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0a71763e6e2e9efab216ff6a476d39bb61602fdb",
+      "size": 39487,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/0a71763e6e2e9efab216ff6a476d39bb61602fdb"
+    },
+    {
+      "path": "ty25-us-001/input/1099b_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5985c4ab8f4fcb214a5b71fb8d417d838620db0b",
+      "size": 70084,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/5985c4ab8f4fcb214a5b71fb8d417d838620db0b"
+    },
+    {
+      "path": "ty25-us-001/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eca04df3d80b7b52651d62419f550808469db89f",
+      "size": 7574,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/eca04df3d80b7b52651d62419f550808469db89f"
+    },
+    {
+      "path": "ty25-us-001/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c3f88596b0f354cd82d3f3a3d0bdf7fde6c6a29",
+      "size": 145930,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/6c3f88596b0f354cd82d3f3a3d0bdf7fde6c6a29"
+    },
+    {
+      "path": "ty25-us-001/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd09e38dc8d0e92ebf7f7fc6576dba70436cedbf",
+      "size": 11736,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/cd09e38dc8d0e92ebf7f7fc6576dba70436cedbf"
+    },
+    {
+      "path": "ty25-us-002",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6329bf35bf0529b3f02bf4eeb6a1dd0c00287637",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/6329bf35bf0529b3f02bf4eeb6a1dd0c00287637"
+    },
+    {
+      "path": "ty25-us-002/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fef68bacf7d0c678ae6214325e3454d7dda51446",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/fef68bacf7d0c678ae6214325e3454d7dda51446"
+    },
+    {
+      "path": "ty25-us-002/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fd5b6bbca764ec99e1dbc9215a62c843ece8f7d",
+      "size": 265940,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/0fd5b6bbca764ec99e1dbc9215a62c843ece8f7d"
+    },
+    {
+      "path": "ty25-us-002/input/1098_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9841be3444b903fa27315b76e926caa82c399df7",
+      "size": 39633,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/9841be3444b903fa27315b76e926caa82c399df7"
+    },
+    {
+      "path": "ty25-us-002/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f578bbd5baaec33baec5b7624486e7cfe757baee",
+      "size": 13905,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/f578bbd5baaec33baec5b7624486e7cfe757baee"
+    },
+    {
+      "path": "ty25-us-002/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "03dde2ac35ba79a42b29b1f10b586ceff0166560",
+      "size": 146176,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/03dde2ac35ba79a42b29b1f10b586ceff0166560"
+    },
+    {
+      "path": "ty25-us-002/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a582e1063c77359da2f0473837b4e01555baa9a5",
+      "size": 14065,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/a582e1063c77359da2f0473837b4e01555baa9a5"
+    },
+    {
+      "path": "ty25-us-003",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b30d5084b88c55a3dd5ef20d405b8e75f31a82a3",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/b30d5084b88c55a3dd5ef20d405b8e75f31a82a3"
+    },
+    {
+      "path": "ty25-us-003/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "64488048f9c2e099d991388a4c8367e4fe5efa8b",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/64488048f9c2e099d991388a4c8367e4fe5efa8b"
+    },
+    {
+      "path": "ty25-us-003/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20fbe8c0a4a49a27e2c5c48b7e692527eabe6bde",
+      "size": 227439,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/20fbe8c0a4a49a27e2c5c48b7e692527eabe6bde"
+    },
+    {
+      "path": "ty25-us-003/input/1099r_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fdae4f0bdb724a5faa5c127e8a2731ad50e17172",
+      "size": 60412,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/fdae4f0bdb724a5faa5c127e8a2731ad50e17172"
+    },
+    {
+      "path": "ty25-us-003/input/1099r_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77bf45873a174b068cb5adc638587cd36c10af54",
+      "size": 60278,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/77bf45873a174b068cb5adc638587cd36c10af54"
+    },
+    {
+      "path": "ty25-us-003/input/1099r_3.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8677c893af3c7456182a273ec2c84d2c4d532780",
+      "size": 60299,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/8677c893af3c7456182a273ec2c84d2c4d532780"
+    },
+    {
+      "path": "ty25-us-003/input/1099r_4.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c0fe1578c6e487d85cb87a4d10da0bb5b444651",
+      "size": 60210,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/6c0fe1578c6e487d85cb87a4d10da0bb5b444651"
+    },
+    {
+      "path": "ty25-us-003/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a89f27b5c3ba3233d62edbcda33fc34589493c71",
+      "size": 15088,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/a89f27b5c3ba3233d62edbcda33fc34589493c71"
+    },
+    {
+      "path": "ty25-us-003/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "807a83f4946b9cb659f77207efb1246a58b4e12b",
+      "size": 146248,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/807a83f4946b9cb659f77207efb1246a58b4e12b"
+    },
+    {
+      "path": "ty25-us-003/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7127ffcc0ab7173221cd8a57c696f3a833d291e9",
+      "size": 14043,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/7127ffcc0ab7173221cd8a57c696f3a833d291e9"
+    },
+    {
+      "path": "ty25-us-004",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "df5182ac7b66adc6501dd6941701c54089f6a52e",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/df5182ac7b66adc6501dd6941701c54089f6a52e"
+    },
+    {
+      "path": "ty25-us-004/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e4c8de4dcdffba8ca3172e148d091feb72b57f2e",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/e4c8de4dcdffba8ca3172e148d091feb72b57f2e"
+    },
+    {
+      "path": "ty25-us-004/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b461bc5c7163503a65605105782283074b7db89",
+      "size": 227642,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/4b461bc5c7163503a65605105782283074b7db89"
+    },
+    {
+      "path": "ty25-us-004/input/1099b_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f83831f098dde4ee036120f25f800dd74f53c3c",
+      "size": 70035,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/2f83831f098dde4ee036120f25f800dd74f53c3c"
+    },
+    {
+      "path": "ty25-us-004/input/1099div_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26d8976a01a8eb26e99d3f685cbe9702adfbde24",
+      "size": 43990,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/26d8976a01a8eb26e99d3f685cbe9702adfbde24"
+    },
+    {
+      "path": "ty25-us-004/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f10cff8d37ee750618717157ec598f27219d9094",
+      "size": 39965,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/f10cff8d37ee750618717157ec598f27219d9094"
+    },
+    {
+      "path": "ty25-us-004/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fe25c6c6f4cd9c843b938c9869afb538dfc93f9d",
+      "size": 34251,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/fe25c6c6f4cd9c843b938c9869afb538dfc93f9d"
+    },
+    {
+      "path": "ty25-us-004/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55ba05aad85818a2274d0d9999311707e7b4be98",
+      "size": 146382,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/55ba05aad85818a2274d0d9999311707e7b4be98"
+    },
+    {
+      "path": "ty25-us-004/input/w2_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6618b4e8d212e637f30de82689fc86c0f1e70a96",
+      "size": 146199,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/6618b4e8d212e637f30de82689fc86c0f1e70a96"
+    },
+    {
+      "path": "ty25-us-004/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e32978619f32844dd26f6dd974cc275192bfd96b",
+      "size": 28792,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/e32978619f32844dd26f6dd974cc275192bfd96b"
+    },
+    {
+      "path": "ty25-us-005",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7940d2682e82c9f6ae2c58747261f0dbddb545e3",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/7940d2682e82c9f6ae2c58747261f0dbddb545e3"
+    },
+    {
+      "path": "ty25-us-005/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a8c3a46b2c7c9ac6a01494403cb792f790aeda3d",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/a8c3a46b2c7c9ac6a01494403cb792f790aeda3d"
+    },
+    {
+      "path": "ty25-us-005/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d08d23bed7ce9f432fb8733766b59b187af4548c",
+      "size": 227614,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/d08d23bed7ce9f432fb8733766b59b187af4548c"
+    },
+    {
+      "path": "ty25-us-005/input/1099div_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fc1f0142b6dced3bdeb1cb6bf0095e3058d8044",
+      "size": 43915,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/3fc1f0142b6dced3bdeb1cb6bf0095e3058d8044"
+    },
+    {
+      "path": "ty25-us-005/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "210fa007634112182dc5172b3cb8277d7c7c7735",
+      "size": 39873,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/210fa007634112182dc5172b3cb8277d7c7c7735"
+    },
+    {
+      "path": "ty25-us-005/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aa766ccb672dd839f7fb88ea699a7d809d03c34d",
+      "size": 12166,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/aa766ccb672dd839f7fb88ea699a7d809d03c34d"
+    },
+    {
+      "path": "ty25-us-005/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e8ec97f03c04e3e511adca6000b94e36a8ad5185",
+      "size": 145929,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/e8ec97f03c04e3e511adca6000b94e36a8ad5185"
+    },
+    {
+      "path": "ty25-us-005/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7e2a748109d252638a0af46bc2fdd5c8104e26f",
+      "size": 16819,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/c7e2a748109d252638a0af46bc2fdd5c8104e26f"
+    },
+    {
+      "path": "ty25-us-006",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "45d2e29ad8fb9d4f45e4f798cac30ec727702852",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/45d2e29ad8fb9d4f45e4f798cac30ec727702852"
+    },
+    {
+      "path": "ty25-us-006/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c79343413eec8298dcb1d7685590c6eca3b2610c",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/c79343413eec8298dcb1d7685590c6eca3b2610c"
+    },
+    {
+      "path": "ty25-us-006/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8902814d5c8ffd44ec572cbfbac4a3a16c15d5b1",
+      "size": 265894,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/8902814d5c8ffd44ec572cbfbac4a3a16c15d5b1"
+    },
+    {
+      "path": "ty25-us-006/input/1099div_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3761c2dc6d7bf8b68de7190411e659339789a9a8",
+      "size": 44051,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/3761c2dc6d7bf8b68de7190411e659339789a9a8"
+    },
+    {
+      "path": "ty25-us-006/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5333d3ac428fdde6739a66ecd0f4b9c9b295b92",
+      "size": 40018,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/e5333d3ac428fdde6739a66ecd0f4b9c9b295b92"
+    },
+    {
+      "path": "ty25-us-006/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b91221abfdf6de6fb6d69fee5c24fef7e8e6406e",
+      "size": 11152,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b91221abfdf6de6fb6d69fee5c24fef7e8e6406e"
+    },
+    {
+      "path": "ty25-us-006/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0209e4052fce3ad913fc61c5838adf88bc967fa6",
+      "size": 146059,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/0209e4052fce3ad913fc61c5838adf88bc967fa6"
+    },
+    {
+      "path": "ty25-us-006/input/w2g_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "82b9217061cba5d2f51ebccbbb3d03c8e78c9e64",
+      "size": 44853,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/82b9217061cba5d2f51ebccbbb3d03c8e78c9e64"
+    },
+    {
+      "path": "ty25-us-006/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b047e0fb81ae1352126766b807487dba7fdf4f43",
+      "size": 13829,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b047e0fb81ae1352126766b807487dba7fdf4f43"
+    },
+    {
+      "path": "ty25-us-007",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0cf6c8db6ef1eeb6a3ba21d4f711efe2236d0330",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/0cf6c8db6ef1eeb6a3ba21d4f711efe2236d0330"
+    },
+    {
+      "path": "ty25-us-007/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "11e3746936ea633f8706ab373c6648483f2bcc4e",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/11e3746936ea633f8706ab373c6648483f2bcc4e"
+    },
+    {
+      "path": "ty25-us-007/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d832e1ae0b8a53b4739d4bea601b6e0f05fdd02",
+      "size": 227444,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/2d832e1ae0b8a53b4739d4bea601b6e0f05fdd02"
+    },
+    {
+      "path": "ty25-us-007/input/1098_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2443710f47f13352d66effa663fa3b02c4b1654",
+      "size": 39654,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b2443710f47f13352d66effa663fa3b02c4b1654"
+    },
+    {
+      "path": "ty25-us-007/input/1099b_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9101163ee2a350900cf468a586f57f6ce18e3f89",
+      "size": 70032,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/9101163ee2a350900cf468a586f57f6ce18e3f89"
+    },
+    {
+      "path": "ty25-us-007/input/1099b_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "957b2f0ae105b54928ea44d5c6327656600c40c1",
+      "size": 70017,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/957b2f0ae105b54928ea44d5c6327656600c40c1"
+    },
+    {
+      "path": "ty25-us-007/input/1099div_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8cef9123957f4344360963268f03f572d5d8666b",
+      "size": 43976,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/8cef9123957f4344360963268f03f572d5d8666b"
+    },
+    {
+      "path": "ty25-us-007/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "900d886bd4adfa55f68b759c4c1557f045dd8329",
+      "size": 39965,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/900d886bd4adfa55f68b759c4c1557f045dd8329"
+    },
+    {
+      "path": "ty25-us-007/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c022fb58028947e0f0717fe862c8ca262d39a7b",
+      "size": 13365,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/6c022fb58028947e0f0717fe862c8ca262d39a7b"
+    },
+    {
+      "path": "ty25-us-007/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0054ff8d1d9c62c6b68bace95739f30a3c7be658",
+      "size": 146382,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/0054ff8d1d9c62c6b68bace95739f30a3c7be658"
+    },
+    {
+      "path": "ty25-us-007/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93dcf2ddbf0f14284a0f021e11789cd8852d5b43",
+      "size": 15317,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/93dcf2ddbf0f14284a0f021e11789cd8852d5b43"
+    },
+    {
+      "path": "ty25-us-008",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "40b5c4217bc4d758b3dbda5bd96ee43e174d22d6",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/40b5c4217bc4d758b3dbda5bd96ee43e174d22d6"
+    },
+    {
+      "path": "ty25-us-008/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8e3528394a82c888221986ab16e2040ba55334c5",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/8e3528394a82c888221986ab16e2040ba55334c5"
+    },
+    {
+      "path": "ty25-us-008/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "87e2c1ac70c1510afbb851c171ff87b10cf14413",
+      "size": 227384,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/87e2c1ac70c1510afbb851c171ff87b10cf14413"
+    },
+    {
+      "path": "ty25-us-008/input/1099nec_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55eb637a9661fd7fd2036283f0d4fdc1b831bf64",
+      "size": 31386,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/55eb637a9661fd7fd2036283f0d4fdc1b831bf64"
+    },
+    {
+      "path": "ty25-us-008/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4174dda87a83809a19e055d501bb0704d68b67fe",
+      "size": 14170,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/4174dda87a83809a19e055d501bb0704d68b67fe"
+    },
+    {
+      "path": "ty25-us-008/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "760eb2f2bb712dc6b910e895da3915c82086a3ca",
+      "size": 146388,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/760eb2f2bb712dc6b910e895da3915c82086a3ca"
+    },
+    {
+      "path": "ty25-us-008/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a5b70af34cae19b4eb3c11d86cc726e6694f790",
+      "size": 12911,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/1a5b70af34cae19b4eb3c11d86cc726e6694f790"
+    },
+    {
+      "path": "ty25-us-009",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cd1f912312ac6d245150fb8b5aa01fa22bc8f6f8",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/cd1f912312ac6d245150fb8b5aa01fa22bc8f6f8"
+    },
+    {
+      "path": "ty25-us-009/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "06fff6b0a8ce5d960ac2b098bf2b2fd1977824e3",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/06fff6b0a8ce5d960ac2b098bf2b2fd1977824e3"
+    },
+    {
+      "path": "ty25-us-009/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb7ac72cc8f362a0c3a37fbe19cc7dedd571b10f",
+      "size": 227365,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/fb7ac72cc8f362a0c3a37fbe19cc7dedd571b10f"
+    },
+    {
+      "path": "ty25-us-009/input/1099div_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ca2a6fe7e9d9f7504a5663184c75957d362009e7",
+      "size": 43910,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/ca2a6fe7e9d9f7504a5663184c75957d362009e7"
+    },
+    {
+      "path": "ty25-us-009/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f8823f4364bde85a749ad2e45ca7f61e69e3b5e",
+      "size": 39874,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/0f8823f4364bde85a749ad2e45ca7f61e69e3b5e"
+    },
+    {
+      "path": "ty25-us-009/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c8fd26a130bd0bbf46396383cc4263660048a23c",
+      "size": 12278,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/c8fd26a130bd0bbf46396383cc4263660048a23c"
+    },
+    {
+      "path": "ty25-us-009/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b4c11ef4435283836c097ad717617a8677d3f80",
+      "size": 145919,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/4b4c11ef4435283836c097ad717617a8677d3f80"
+    },
+    {
+      "path": "ty25-us-009/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9677d6b9b5dccb1b930df5b0ea752436fdd6555a",
+      "size": 12550,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/9677d6b9b5dccb1b930df5b0ea752436fdd6555a"
+    },
+    {
+      "path": "ty25-us-010",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b464482970e4e129ed25f2f50c3f1b7c33b776cd",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/b464482970e4e129ed25f2f50c3f1b7c33b776cd"
+    },
+    {
+      "path": "ty25-us-010/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "9311a7313c2a6953dc18a43dbb222f91ed7cf7b6",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/9311a7313c2a6953dc18a43dbb222f91ed7cf7b6"
+    },
+    {
+      "path": "ty25-us-010/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6513b453d8957070b6d763076520b4228f62daef",
+      "size": 131098,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/6513b453d8957070b6d763076520b4228f62daef"
+    },
+    {
+      "path": "ty25-us-010/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1366bddedd10224b2e1e8002aa596b834b25aaa6",
+      "size": 28480,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/1366bddedd10224b2e1e8002aa596b834b25aaa6"
+    },
+    {
+      "path": "ty25-us-010/input/1099r_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59453ce3eac855ed82591d23c9806dc1013dd1f0",
+      "size": 43746,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/59453ce3eac855ed82591d23c9806dc1013dd1f0"
+    },
+    {
+      "path": "ty25-us-010/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "32d2474adf252b07782214e2cb35eaa7ec730f93",
+      "size": 12862,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/32d2474adf252b07782214e2cb35eaa7ec730f93"
+    },
+    {
+      "path": "ty25-us-010/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8af729bec667616ed0b3546cc9d098faebc8c0c8",
+      "size": 129092,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/8af729bec667616ed0b3546cc9d098faebc8c0c8"
+    },
+    {
+      "path": "ty25-us-010/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "133c3f5029fc2b71027c950809544dd952f7293d",
+      "size": 12475,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/133c3f5029fc2b71027c950809544dd952f7293d"
+    },
+    {
+      "path": "ty25-va-001",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b7c3d8a5621f0282f822158e177ced908920c444",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/b7c3d8a5621f0282f822158e177ced908920c444"
+    },
+    {
+      "path": "ty25-va-001/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0f4439d011af5acaca27759daa97c768c1d51bf4",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/0f4439d011af5acaca27759daa97c768c1d51bf4"
+    },
+    {
+      "path": "ty25-va-001/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30904fd4c961a4741c57de6b7728fbdd42bbf697",
+      "size": 266475,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/30904fd4c961a4741c57de6b7728fbdd42bbf697"
+    },
+    {
+      "path": "ty25-va-001/input/1098t_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a3ad65516d9ae40ec7d53434d7bb7d7fa4e51fd9",
+      "size": 36995,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/a3ad65516d9ae40ec7d53434d7bb7d7fa4e51fd9"
+    },
+    {
+      "path": "ty25-va-001/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "09fd389a915495e51437be9c7cb19f8435f3a383",
+      "size": 15191,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/09fd389a915495e51437be9c7cb19f8435f3a383"
+    },
+    {
+      "path": "ty25-va-001/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b0bb42597a3c98a9b48ec4b7851257d4ae296e5",
+      "size": 146527,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/6b0bb42597a3c98a9b48ec4b7851257d4ae296e5"
+    },
+    {
+      "path": "ty25-va-001/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17364e0522901aa1a7c35cb86df58c04865bb538",
+      "size": 8522,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/17364e0522901aa1a7c35cb86df58c04865bb538"
+    },
+    {
+      "path": "ty25-va-002",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1a6e8f572479cffe40c1884f5bd52640894bebcd",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/1a6e8f572479cffe40c1884f5bd52640894bebcd"
+    },
+    {
+      "path": "ty25-va-002/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2cf5c3dcc35d36deb43d2a34976c1e0a73ccfc62",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/2cf5c3dcc35d36deb43d2a34976c1e0a73ccfc62"
+    },
+    {
+      "path": "ty25-va-002/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ab9f2d55e91a3b3ec4c80a2447c2141d5df132a",
+      "size": 266105,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/3ab9f2d55e91a3b3ec4c80a2447c2141d5df132a"
+    },
+    {
+      "path": "ty25-va-002/input/1099nec_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1fd9924edf2d43af63150defa11c6c274ebd3db8",
+      "size": 31650,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/1fd9924edf2d43af63150defa11c6c274ebd3db8"
+    },
+    {
+      "path": "ty25-va-002/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "80fe2f61404dfde4bb14706cc2e5360d22333eaf",
+      "size": 16488,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/80fe2f61404dfde4bb14706cc2e5360d22333eaf"
+    },
+    {
+      "path": "ty25-va-002/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ec9c47acbe12ae0016947ba7fb44c2f72d83fdd",
+      "size": 146674,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/2ec9c47acbe12ae0016947ba7fb44c2f72d83fdd"
+    },
+    {
+      "path": "ty25-va-002/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77a26cf6954c2a77109df03c404f13b1686b0d56",
+      "size": 7764,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/77a26cf6954c2a77109df03c404f13b1686b0d56"
+    },
+    {
+      "path": "ty25-va-003",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "632361b29342cc71230cd4ab7ec425ff19fb75db",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/632361b29342cc71230cd4ab7ec425ff19fb75db"
+    },
+    {
+      "path": "ty25-va-003/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29a715e2af60e69100cbe81cd4840d59976c3a4d",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/29a715e2af60e69100cbe81cd4840d59976c3a4d"
+    },
+    {
+      "path": "ty25-va-003/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "194e680518b5581163e304972df5d3651763e235",
+      "size": 227577,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/194e680518b5581163e304972df5d3651763e235"
+    },
+    {
+      "path": "ty25-va-003/input/1099div_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb023d6e9b9d15e861d92fa97edc61d31118f44d",
+      "size": 44164,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/bb023d6e9b9d15e861d92fa97edc61d31118f44d"
+    },
+    {
+      "path": "ty25-va-003/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1444502dd450e6dc836825d6bae60d4c3aa52e17",
+      "size": 11908,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/1444502dd450e6dc836825d6bae60d4c3aa52e17"
+    },
+    {
+      "path": "ty25-va-003/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee7a102946872a3235ee468bd3642132ee6d6f0c",
+      "size": 146195,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/ee7a102946872a3235ee468bd3642132ee6d6f0c"
+    },
+    {
+      "path": "ty25-va-003/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f95d73811dedae1f4d985ae2da503600562bbb2",
+      "size": 7994,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/5f95d73811dedae1f4d985ae2da503600562bbb2"
+    },
+    {
+      "path": "ty25-va-004",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c60161e9dbe5589381c67f83361e7f3f78869859",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/c60161e9dbe5589381c67f83361e7f3f78869859"
+    },
+    {
+      "path": "ty25-va-004/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4148cb65e9028c70cfadb91a868218d7f6e3f499",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/4148cb65e9028c70cfadb91a868218d7f6e3f499"
+    },
+    {
+      "path": "ty25-va-004/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7af169bc5d7a25e4fede3639b947c48d96dd3a7c",
+      "size": 266792,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/7af169bc5d7a25e4fede3639b947c48d96dd3a7c"
+    },
+    {
+      "path": "ty25-va-004/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "391e0620c8bc0ad03070ea35cf75f01e16bbd320",
+      "size": 17063,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/391e0620c8bc0ad03070ea35cf75f01e16bbd320"
+    },
+    {
+      "path": "ty25-va-004/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d839a7a0a1e2ac5358995297c87107b13f1f68d",
+      "size": 146162,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/1d839a7a0a1e2ac5358995297c87107b13f1f68d"
+    },
+    {
+      "path": "ty25-va-004/input/w2_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26eca3ff3269a1e5daecd1e6617fa35dbfeeca34",
+      "size": 146588,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/26eca3ff3269a1e5daecd1e6617fa35dbfeeca34"
+    },
+    {
+      "path": "ty25-va-004/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e11a4de95751c8bfe06ad61ab62ff31bfa4a957e",
+      "size": 10920,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/e11a4de95751c8bfe06ad61ab62ff31bfa4a957e"
+    },
+    {
+      "path": "ty25-va-005",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8c15483a35f19bd478eaf0e6bd1e3fb85a623694",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/8c15483a35f19bd478eaf0e6bd1e3fb85a623694"
+    },
+    {
+      "path": "ty25-va-005/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c89fe4b2ffb8c5bc8b3ae6a9be60c0b80b7380b",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/7c89fe4b2ffb8c5bc8b3ae6a9be60c0b80b7380b"
+    },
+    {
+      "path": "ty25-va-005/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88ca04b81df045359a99603407309d99aed5f663",
+      "size": 266091,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/88ca04b81df045359a99603407309d99aed5f663"
+    },
+    {
+      "path": "ty25-va-005/input/1099b_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a5db6a548d68b4e071880238a5d1de18e5eda5c",
+      "size": 69974,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/4a5db6a548d68b4e071880238a5d1de18e5eda5c"
+    },
+    {
+      "path": "ty25-va-005/input/1099b_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d836daac418ff817f7af1ad8bb9d9a511402483",
+      "size": 69965,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/2d836daac418ff817f7af1ad8bb9d9a511402483"
+    },
+    {
+      "path": "ty25-va-005/input/1099b_3.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5f40b267e57fc01ed5addab30d518ed0a57c8de0",
+      "size": 69977,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/5f40b267e57fc01ed5addab30d518ed0a57c8de0"
+    },
+    {
+      "path": "ty25-va-005/input/1099div_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2fedc28e593b44e9c1bed48ac786b9d918fe8ef4",
+      "size": 44174,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/2fedc28e593b44e9c1bed48ac786b9d918fe8ef4"
+    },
+    {
+      "path": "ty25-va-005/input/1099div_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2437691efda93fcf306f9f75126bc56c7d0c64fa",
+      "size": 44173,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/2437691efda93fcf306f9f75126bc56c7d0c64fa"
+    },
+    {
+      "path": "ty25-va-005/input/1099div_3.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0136ee88ebdaeb5c6329fa721b65b1b1def86743",
+      "size": 44180,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/0136ee88ebdaeb5c6329fa721b65b1b1def86743"
+    },
+    {
+      "path": "ty25-va-005/input/1099g_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1ff74be092d5c824249fde3db79101f227826ba",
+      "size": 36027,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/f1ff74be092d5c824249fde3db79101f227826ba"
+    },
+    {
+      "path": "ty25-va-005/input/1099g_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bdc49587b845fe71514a1116a3dc9e9c821f518a",
+      "size": 36021,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/bdc49587b845fe71514a1116a3dc9e9c821f518a"
+    },
+    {
+      "path": "ty25-va-005/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bcadd0ebcd16ea99d54cc2781d1158dfde8a4200",
+      "size": 40083,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/bcadd0ebcd16ea99d54cc2781d1158dfde8a4200"
+    },
+    {
+      "path": "ty25-va-005/input/1099int_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b27bd161c807ef08af25ac41b7e6cccefb8c2ce8",
+      "size": 40081,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b27bd161c807ef08af25ac41b7e6cccefb8c2ce8"
+    },
+    {
+      "path": "ty25-va-005/input/1099int_3.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78a6e046e39560b3b9260a44b45bd05302b237bb",
+      "size": 40091,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/78a6e046e39560b3b9260a44b45bd05302b237bb"
+    },
+    {
+      "path": "ty25-va-005/input/1099k_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "947c460f23644fd29a20ce236d4d0a7a9ed544d6",
+      "size": 47620,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/947c460f23644fd29a20ce236d4d0a7a9ed544d6"
+    },
+    {
+      "path": "ty25-va-005/input/1099k_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c932ce4af2aa31bbe91eba912cd844bca1a107ab",
+      "size": 47629,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/c932ce4af2aa31bbe91eba912cd844bca1a107ab"
+    },
+    {
+      "path": "ty25-va-005/input/1099misc_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "162deb6bc09713602c67b69084ca70ad18891e93",
+      "size": 43779,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/162deb6bc09713602c67b69084ca70ad18891e93"
+    },
+    {
+      "path": "ty25-va-005/input/1099misc_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85f5d499524a63b55cb913e9db228adc92eead86",
+      "size": 43790,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/85f5d499524a63b55cb913e9db228adc92eead86"
+    },
+    {
+      "path": "ty25-va-005/input/1099nec_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "762cc476534963f8cc52c05dca2105e861b69d71",
+      "size": 31577,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/762cc476534963f8cc52c05dca2105e861b69d71"
+    },
+    {
+      "path": "ty25-va-005/input/1099nec_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7575b6d990f991285614f71a24eece367993dfbd",
+      "size": 31583,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/7575b6d990f991285614f71a24eece367993dfbd"
+    },
+    {
+      "path": "ty25-va-005/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efdafbd861a97002a48df2a5bab3066bdec79de9",
+      "size": 17093,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/efdafbd861a97002a48df2a5bab3066bdec79de9"
+    },
+    {
+      "path": "ty25-va-005/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eeaf409cd435c0846233b33ef7267b759d587180",
+      "size": 145957,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/eeaf409cd435c0846233b33ef7267b759d587180"
+    },
+    {
+      "path": "ty25-va-005/input/w2_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "42ca2c125fe682fb1d45bd29f53723e79fae09dd",
+      "size": 145959,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/42ca2c125fe682fb1d45bd29f53723e79fae09dd"
+    },
+    {
+      "path": "ty25-va-005/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b783bf70df8132a1e6ffaaa68cab495970d5f2e",
+      "size": 22861,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/6b783bf70df8132a1e6ffaaa68cab495970d5f2e"
+    },
+    {
+      "path": "ty25-va-006",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1deb725b1ca1f53bd5a99a458ec54a6e368c304e",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/1deb725b1ca1f53bd5a99a458ec54a6e368c304e"
+    },
+    {
+      "path": "ty25-va-006/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dedcbb09f905e7e7c4334d6a3fe742f8c352cbc9",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/dedcbb09f905e7e7c4334d6a3fe742f8c352cbc9"
+    },
+    {
+      "path": "ty25-va-006/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2543ad6b2fbc914020877dfe25cd78b2d064932f",
+      "size": 227542,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/2543ad6b2fbc914020877dfe25cd78b2d064932f"
+    },
+    {
+      "path": "ty25-va-006/input/1098e_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf202ea23513e7db6e233d6e3385d210db1c19e5",
+      "size": 25246,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/cf202ea23513e7db6e233d6e3385d210db1c19e5"
+    },
+    {
+      "path": "ty25-va-006/input/1098t_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba804e4126f87989209c9a7bd09bd872b6a1b9e3",
+      "size": 36963,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/ba804e4126f87989209c9a7bd09bd872b6a1b9e3"
+    },
+    {
+      "path": "ty25-va-006/input/1099b_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "376ed4df7c4469e516b208a5eb1c49d549bf5e65",
+      "size": 70028,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/376ed4df7c4469e516b208a5eb1c49d549bf5e65"
+    },
+    {
+      "path": "ty25-va-006/input/1099b_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83515faab2c5ddd5e729282c1b3715c867f42beb",
+      "size": 70026,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/83515faab2c5ddd5e729282c1b3715c867f42beb"
+    },
+    {
+      "path": "ty25-va-006/input/1099b_3.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47d1f9ceda257917967bb675f64d443426402bf4",
+      "size": 70014,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/47d1f9ceda257917967bb675f64d443426402bf4"
+    },
+    {
+      "path": "ty25-va-006/input/1099div_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6af174346f1fd55592bf4b94f01079b3b681b6f0",
+      "size": 44095,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/6af174346f1fd55592bf4b94f01079b3b681b6f0"
+    },
+    {
+      "path": "ty25-va-006/input/1099g_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79cd996f70738991bd8a5e63b2f44e8ceb9a3f65",
+      "size": 35879,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/79cd996f70738991bd8a5e63b2f44e8ceb9a3f65"
+    },
+    {
+      "path": "ty25-va-006/input/1099g_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4626ef56f3fbff9c0a6f98afe61448d76cc9c1a0",
+      "size": 35878,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/4626ef56f3fbff9c0a6f98afe61448d76cc9c1a0"
+    },
+    {
+      "path": "ty25-va-006/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1b798816ed61d92a1c4e97982c34db0f8386fa1",
+      "size": 40330,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b1b798816ed61d92a1c4e97982c34db0f8386fa1"
+    },
+    {
+      "path": "ty25-va-006/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58f4ec84c2b44a6ac2d63c5cb9a66e81c7d78e93",
+      "size": 24845,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/58f4ec84c2b44a6ac2d63c5cb9a66e81c7d78e93"
+    },
+    {
+      "path": "ty25-va-006/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "424be510b561d2cb1fe4d9c3fa353fc437a2c08a",
+      "size": 146182,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/424be510b561d2cb1fe4d9c3fa353fc437a2c08a"
+    },
+    {
+      "path": "ty25-va-006/input/w2_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52badf7f05373f3d3736ee32429e17da7a580d4c",
+      "size": 146171,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/52badf7f05373f3d3736ee32429e17da7a580d4c"
+    },
+    {
+      "path": "ty25-va-006/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd1fb761e27262ebc1e3dc9f4d0d1adaff7cd838",
+      "size": 11546,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/cd1fb761e27262ebc1e3dc9f4d0d1adaff7cd838"
+    },
+    {
+      "path": "ty25-va-007",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8f2ba764f3ddfab98d3cc5216141f2e05f7886d2",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/8f2ba764f3ddfab98d3cc5216141f2e05f7886d2"
+    },
+    {
+      "path": "ty25-va-007/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "72f81672fa1135497c29f6f76f4395c472d830de",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/72f81672fa1135497c29f6f76f4395c472d830de"
+    },
+    {
+      "path": "ty25-va-007/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81db2f6349b4ee4752287b0a60d89a445bc82c5e",
+      "size": 266112,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/81db2f6349b4ee4752287b0a60d89a445bc82c5e"
+    },
+    {
+      "path": "ty25-va-007/input/1098e_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8971fcf41cb7d579a15162059c2d0d384440867f",
+      "size": 25246,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/8971fcf41cb7d579a15162059c2d0d384440867f"
+    },
+    {
+      "path": "ty25-va-007/input/1098t_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ba804e4126f87989209c9a7bd09bd872b6a1b9e3",
+      "size": 36963,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/ba804e4126f87989209c9a7bd09bd872b6a1b9e3"
+    },
+    {
+      "path": "ty25-va-007/input/1099b_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "376ed4df7c4469e516b208a5eb1c49d549bf5e65",
+      "size": 70028,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/376ed4df7c4469e516b208a5eb1c49d549bf5e65"
+    },
+    {
+      "path": "ty25-va-007/input/1099b_2.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "83515faab2c5ddd5e729282c1b3715c867f42beb",
+      "size": 70026,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/83515faab2c5ddd5e729282c1b3715c867f42beb"
+    },
+    {
+      "path": "ty25-va-007/input/1099b_3.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "47d1f9ceda257917967bb675f64d443426402bf4",
+      "size": 70014,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/47d1f9ceda257917967bb675f64d443426402bf4"
+    },
+    {
+      "path": "ty25-va-007/input/1099div_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6af174346f1fd55592bf4b94f01079b3b681b6f0",
+      "size": 44095,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/6af174346f1fd55592bf4b94f01079b3b681b6f0"
+    },
+    {
+      "path": "ty25-va-007/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b1b798816ed61d92a1c4e97982c34db0f8386fa1",
+      "size": 40330,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/b1b798816ed61d92a1c4e97982c34db0f8386fa1"
+    },
+    {
+      "path": "ty25-va-007/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89b66453b3ec518c638b522a9d7a7a1412836f23",
+      "size": 24710,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/89b66453b3ec518c638b522a9d7a7a1412836f23"
+    },
+    {
+      "path": "ty25-va-007/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52badf7f05373f3d3736ee32429e17da7a580d4c",
+      "size": 146171,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/52badf7f05373f3d3736ee32429e17da7a580d4c"
+    },
+    {
+      "path": "ty25-va-007/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eaba6c908cea8b7a16a0246864e39053364c7ca2",
+      "size": 8318,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/eaba6c908cea8b7a16a0246864e39053364c7ca2"
+    },
+    {
+      "path": "ty25-va-008",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cc757fe274db48484d32dbdc92d4d4304cff0d24",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/cc757fe274db48484d32dbdc92d4d4304cff0d24"
+    },
+    {
+      "path": "ty25-va-008/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "53066bda26519644c57cbffab1453afc93e51ac4",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/53066bda26519644c57cbffab1453afc93e51ac4"
+    },
+    {
+      "path": "ty25-va-008/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c22b0e98b1ae4b7740a6cd821ffb528e4de2621e",
+      "size": 266593,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/c22b0e98b1ae4b7740a6cd821ffb528e4de2621e"
+    },
+    {
+      "path": "ty25-va-008/input/1098_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "11ad3c0d3489bd3cf0de1bb7255a8d964111e2d9",
+      "size": 39791,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/11ad3c0d3489bd3cf0de1bb7255a8d964111e2d9"
+    },
+    {
+      "path": "ty25-va-008/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "914bc30cce52e28826a7bf51a7e118cfbe3a9661",
+      "size": 40347,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/914bc30cce52e28826a7bf51a7e118cfbe3a9661"
+    },
+    {
+      "path": "ty25-va-008/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed90ebddebcf224425bc80cf818a7377c4a4a713",
+      "size": 20121,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/ed90ebddebcf224425bc80cf818a7377c4a4a713"
+    },
+    {
+      "path": "ty25-va-008/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6fb95f97ae50e0c86dcc16b293a19520c03f159a",
+      "size": 146212,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/6fb95f97ae50e0c86dcc16b293a19520c03f159a"
+    },
+    {
+      "path": "ty25-va-008/input/w2g_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "edbe657f47cd3d06b5106ccedd55351a920d4e47",
+      "size": 45115,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/edbe657f47cd3d06b5106ccedd55351a920d4e47"
+    },
+    {
+      "path": "ty25-va-008/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "52f4552e59c1bdcd5e9532d79044d0f4fc4d231e",
+      "size": 12313,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/52f4552e59c1bdcd5e9532d79044d0f4fc4d231e"
+    },
+    {
+      "path": "ty25-va-009",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1b86d6407db4e4ec44ec132f59d28a100a3c6ded",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/1b86d6407db4e4ec44ec132f59d28a100a3c6ded"
+    },
+    {
+      "path": "ty25-va-009/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "df6b598a051349de95231b5e19ed55d719826d3d",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/df6b598a051349de95231b5e19ed55d719826d3d"
+    },
+    {
+      "path": "ty25-va-009/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a78f901fbc8d9313c10331ee22b69c679f5ef5d1",
+      "size": 227170,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/a78f901fbc8d9313c10331ee22b69c679f5ef5d1"
+    },
+    {
+      "path": "ty25-va-009/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9fc1db150eb0cd14feee60d14c28ff380d0b9629",
+      "size": 6858,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/9fc1db150eb0cd14feee60d14c28ff380d0b9629"
+    },
+    {
+      "path": "ty25-va-009/input/w2_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "937895042f0d31f414f7de5a3c1086ed19bd3ae4",
+      "size": 146186,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/937895042f0d31f414f7de5a3c1086ed19bd3ae4"
+    },
+    {
+      "path": "ty25-va-009/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9bc9021149aa0a83d9adf0da878442cc8d4b1d50",
+      "size": 6431,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/9bc9021149aa0a83d9adf0da878442cc8d4b1d50"
+    },
+    {
+      "path": "ty25-va-010",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "273c627f13b4a2ef3d4bc7be00b93cca820d75a0",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/273c627f13b4a2ef3d4bc7be00b93cca820d75a0"
+    },
+    {
+      "path": "ty25-va-010/input",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "3565bbdb20fadc73e102cc8a8de68deb39e3a8cc",
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/trees/3565bbdb20fadc73e102cc8a8de68deb39e3a8cc"
+    },
+    {
+      "path": "ty25-va-010/input/1040_2024.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "07ca99536e67161e9dbf517aff304a586be4b5d1",
+      "size": 265676,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/07ca99536e67161e9dbf517aff304a586be4b5d1"
+    },
+    {
+      "path": "ty25-va-010/input/1099g_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6742753e61a548caaee55061f3c38026d04c2385",
+      "size": 35814,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/6742753e61a548caaee55061f3c38026d04c2385"
+    },
+    {
+      "path": "ty25-va-010/input/1099int_1.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e463a271a160c16feccda65ecae40888a4a57e30",
+      "size": 40121,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/e463a271a160c16feccda65ecae40888a4a57e30"
+    },
+    {
+      "path": "ty25-va-010/input/remaining_data.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58713deb62958a2e34a632416ad8d7f67d4cf765",
+      "size": 13686,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/58713deb62958a2e34a632416ad8d7f67d4cf765"
+    },
+    {
+      "path": "ty25-va-010/output.xml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d00d3dfe280f8b7c6bcbccfeeacfcacdbf631596",
+      "size": 6141,
+      "url": "https://api.github.com/repos/column-tax/tax-calc-bench/git/blobs/d00d3dfe280f8b7c6bcbccfeeacfcacdbf631596"
+    }
+  ],
+  "truncated": false
+}

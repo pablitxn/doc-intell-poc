@@ -1,0 +1,13 @@
+{
+  "status": "passed",
+  "taxcalc_cases": 50,
+  "taxcalc_files_sha256_and_git_verified": 364,
+  "taxcalc_input_pdfs": 264,
+  "taxcalc_pages_from_audited_manifest": 314,
+  "official_pdfs_sha256_verified": 39,
+  "official_failed_urls_recorded": 3,
+  "extractbench_tax_tasks_manifest_only": 77,
+  "fake_w2_image_label_pairs": 5,
+  "release_file_hashes_verified": 0,
+  "scope": "Integrity and inventory only. Does not certify tax labels or harness accuracy."
+}

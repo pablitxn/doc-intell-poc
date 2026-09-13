@@ -4,6 +4,7 @@ This is executed as Python code by diagnostics, never as a model prompt.
 Provider probes perform a TLS handshake only, without an API request or login.
 """
 
+from collections import Counter
 import hashlib
 import http.client
 import importlib.util
@@ -18,14 +19,16 @@ import urllib.request
 
 
 def probe(config):
+    formats = dict(Counter(Path(doc['path']).suffix.lower() for doc in config['documents']))
     checks = {
         'documents_readable': all(
             Path('/workspace/' + doc['path']).is_file()
             and hashlib.sha256(Path('/workspace/' + doc['path']).read_bytes()).hexdigest() == doc['sha256']
             for doc in config['documents']),
         'references_hidden': not Path('/workspace/ground_truth').exists(),
-        'pdf_tools': bool(shutil.which('pdftotext') or importlib.util.find_spec('pypdf')),
     }
+    if '.pdf' in formats:
+        checks['pdf_tools'] = bool(shutil.which('pdftotext') or importlib.util.find_spec('pypdf'))
     network = []
     if config['network']:
         for host in config['hosts']:
@@ -61,7 +64,9 @@ def probe(config):
                 break
             except (OSError, urllib.error.URLError):
                 time.sleep(0.15)
-    return {'checks': checks, 'network': network, 'python': sys.version.split()[0]}
+    return {'checks': checks, 'network': network, 'python': sys.version.split()[0],
+            'document_formats': formats, 'document_content_validation': 'not_performed',
+            'model_document_reading': 'not_tested'}
 
 
 if __name__ == '__main__':

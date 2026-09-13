@@ -30,7 +30,7 @@ def main() -> int:
     source.add_argument('--upload-only', type=Path, help='Retry publication of local artifacts; never invokes a harness')
     source.add_argument('--import-run', type=Path, help='Import saved results into another Phoenix instance without running models or regrading')
     parser.add_argument('--dataset', type=Path, default=Path(__file__).resolve().parent / 'datasets/tax-mini-poc')
-    parser.add_argument('--task', help='One task_id; defaults to all six')
+    parser.add_argument('--task', help='One task_id; defaults to all tasks in the selected dataset')
     parser.add_argument('--timeout', type=float, default=120.0)
     parser.add_argument('--output-dir', type=Path, default=Path('runs'))
     parser.add_argument('--phoenix-url', default=os.environ.get('PHOENIX_ENDPOINT', 'http://127.0.0.1:6006'))
@@ -101,7 +101,10 @@ def main() -> int:
                     print(f"Phoenix: {args.phoenix_url.rstrip('/')} (experiment {publication['experiment_id']})", flush=True)
                 except Exception as exc:
                     publication_failed = True
-                    print(f'Publication failed ({type(exc).__name__}); retry with --upload-only {run_dir}', file=sys.stderr, flush=True)
+                    retry = shlex.join(['./run.py', '--dataset', str(args.dataset),
+                                        '--phoenix-url', args.phoenix_url,
+                                        '--upload-only', str(run_dir)])
+                    print(f'Publication failed ({type(exc).__name__}); retry with {retry}', file=sys.stderr, flush=True)
             if len(run_dirs) > 1:
                 print(f"Comparison: {write_comparison(run_dirs, args.output_dir)}")
             if publication_failed:

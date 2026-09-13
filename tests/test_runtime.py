@@ -205,6 +205,36 @@ class RuntimeTests(unittest.TestCase):
                     self.fail("Invalid document was accepted")
             run.assert_not_called()
 
+    def test_only_assigned_mixed_format_inputs_are_mounted_readonly(self):
+        paths = ["inputs/nested/document" + suffix for suffix in (".pdf", ".jpg", ".jpeg", ".png", ".json")]
+        (self.dataset / "inputs/nested").mkdir()
+        for name in paths:
+            (self.dataset / name).write_bytes(b"input-fixture")
+        (self.dataset / "inputs/unassigned.json").write_text('{"unassigned":true}')
+        invocation = HarnessInvocation(**{**self.invocation.__dict__,
+            "documents": tuple({"path": name} for name in paths)})
+        profile = {**load_profile("pi"), "auth": "none"}
+        with self.runtime(), make_preparer(profile)(invocation) as spec:
+            mounts = [spec.argv[index + 1] for index, arg in enumerate(spec.argv) if arg == "--mount"]
+        self.assertEqual(len(mounts), len(paths))
+        for name, mount in zip(paths, mounts):
+            self.assertEqual(mount, f"type=bind,src={(self.dataset / name).resolve()},dst=/workspace/{name},readonly")
+        self.assertNotIn("unassigned.json", repr(mounts))
+        self.assertNotIn("ground_truth", repr(mounts))
+        self.assertNotIn("expected.json", repr(mounts))
+
+    def test_new_formats_cannot_mount_references_symlinks_or_unsupported_files(self):
+        link = self.dataset / "inputs/leak.json"
+        link.symlink_to(self.dataset / "ground_truth/expected.json")
+        (self.dataset / "inputs/script.py").write_text("print('not an input document')")
+        for name in ("inputs/leak.json", "inputs/../ground_truth/expected.json",
+                     "ground_truth/expected.json", "inputs/script.py", "inputs/nested,readonly.json"):
+            with self.subTest(path=name), self.runtime() as run:
+                invocation = HarnessInvocation(**{**self.invocation.__dict__, "documents": ({"path": name},)})
+                with self.assertRaises(ValueError), make_preparer(load_profile("pi"))(invocation):
+                    self.fail("Invalid input document was mounted")
+                run.assert_not_called()
+
     def test_fresh_container_name_for_each_invocation(self):
         names = []
         with self.runtime():

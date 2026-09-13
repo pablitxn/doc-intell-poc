@@ -1,0 +1,252 @@
+{
+  "begin tax year": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "end yax year": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "20 _ _": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "ssn or fein": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "fein": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "partner name": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "partnership name": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "address": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "address part": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "city 1": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "state 1": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "zip 1": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "city 2": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "state 2": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "zip 2": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "code": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "month": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "day": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "year": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "PS": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "PS END": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Check Box60": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Check Box60.0": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Check Box60.0.0": {
+    "type": "/Btn",
+    "label": "",
+    "value": ""
+  },
+  "Check Box60.0.1": {
+    "type": "/Btn",
+    "label": "",
+    "value": ""
+  },
+  "Check Box60.1": {
+    "type": "",
+    "label": "",
+    "value": ""
+  },
+  "Check Box60.1.0": {
+    "type": "/Btn",
+    "label": "",
+    "value": ""
+  },
+  "Check Box60.1.1": {
+    "type": "/Btn",
+    "label": "",
+    "value": ""
+  },
+  "LS": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "LS END": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "CO": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "CO END": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "Check Box38": {
+    "type": "/Btn",
+    "label": "",
+    "value": ""
+  },
+  "p6fein": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "p6name": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "imcome loss a": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "income loss b": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "net pay a": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "net pay b": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "401k a": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "401k b": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "lines 1+2-3 a": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "lines 1+2-3 b": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "pension": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "net gain a": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "net gain b": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "non res share tax": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "partner deduction": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "workshop credit": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  },
+  "pass through": {
+    "type": "/Tx",
+    "label": "",
+    "value": ""
+  }
+}

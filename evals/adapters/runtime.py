@@ -200,8 +200,9 @@ def _document_mounts(invocation: HarnessInvocation) -> list[str]:
         if not relative.parts or relative.is_absolute() or ".." in relative.parts or relative.parts[0] != "inputs":
             raise ValueError("Harness documents must be relative paths under dataset/inputs")
         source = (dataset / str(relative)).resolve()
-        if not source.is_file() or not source.is_relative_to(inputs) or source.suffix.lower() != ".pdf":
-            raise ValueError("Only assigned PDF files within dataset/inputs may be mounted")
+        if (not source.is_file() or not source.is_relative_to(inputs)
+                or source.suffix.lower() not in {".pdf", ".jpg", ".jpeg", ".png", ".json"}):
+            raise ValueError("Only assigned PDF, JPEG, PNG or JSON files within dataset/inputs may be mounted")
         if "," in str(source) or "," in str(relative):
             raise ValueError("Document paths cannot contain Docker mount separators")
         destination = f"/workspace/{relative}"

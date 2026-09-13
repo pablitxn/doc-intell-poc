@@ -1,0 +1,6 @@
+arize-phoenix-client==3.5.0
+opentelemetry-proto==1.44.0
+pypdf==6.10.0
+pdfplumber==0.11.9
+pypdfium2==5.13.0
+Pillow==12.3.0

@@ -1,0 +1,172 @@
+{
+  "592-B Form 1001": {
+    "type": "/Tx",
+    "label": "Part 1. Withholding Agent Information. Name of withholding agent (from Form 592, 592-PTE, or 592-F)",
+    "value": ""
+  },
+  "592-B Form 1012": {
+    "type": "/Tx",
+    "label": "Part 2. Payee Information. Name of payee.",
+    "value": ""
+  },
+  "592-B Form 1003": {
+    "type": "/Tx",
+    "label": "Withholding Agent Address. (apartment, suite, room, Post Office box, or private mailbox number)\r.",
+    "value": ""
+  },
+  "592-B Form 1014": {
+    "type": "/Tx",
+    "label": "Payee's Address. (apartment, suite, room, Post Office box, or private mailbox number)\r.",
+    "value": ""
+  },
+  "592-B Form 1008": {
+    "type": "/Tx",
+    "label": "Withholding agent's City. (If you have a foreign address, see instructions.)",
+    "value": ""
+  },
+  "592-B Form 1018": {
+    "type": "/Tx",
+    "label": "Payee's City. (If you have a foreign address, see instructions.)",
+    "value": ""
+  },
+  "592-B Form 1009": {
+    "type": "/Tx",
+    "label": "Withholding agent's 2 letter state abbreviation.",
+    "value": ""
+  },
+  "592-B Form 1019": {
+    "type": "/Tx",
+    "label": "Payee's 2 letter state abbreviation.",
+    "value": ""
+  },
+  "592-B Form 1010": {
+    "type": "/Tx",
+    "label": "Withholding agent's Zip code. Enter 5 digits - 4 digits.",
+    "value": ""
+  },
+  "592-B Form 1020": {
+    "type": "/Tx",
+    "label": "Payee's Zip code.  Enter 5 digits - 4 digits.",
+    "value": ""
+  },
+  "592-B Form 1032": {
+    "type": "/Tx",
+    "label": "Part 4. Tax Withheld. Line 1. Total income subject to withholding. Enter Dollar amount.",
+    "value": ""
+  },
+  "592-B Form 1034": {
+    "type": "/Tx",
+    "label": "Tax Withheld Line 2. Total resident and/or nonresident tax withheld (excluding backup withholding). Enter Dollar amount.",
+    "value": ""
+  },
+  "592-B Form 1036": {
+    "type": "/Tx",
+    "label": "Tax Withheld Line 3. Total backup withholding. Enter Dollar amount.",
+    "value": ""
+  },
+  "592-B Form 1033": {
+    "type": "/Tx",
+    "label": "Line 1. Enter Cents Amount",
+    "value": ""
+  },
+  "592-B Form 1035": {
+    "type": "/Tx",
+    "label": "Line 2. Enter Cents Amount",
+    "value": ""
+  },
+  "592-B Form 1037": {
+    "type": "/Tx",
+    "label": "Line 3. Enter Cents Amount",
+    "value": ""
+  },
+  "592-B Form 1031": {
+    "type": "/Tx",
+    "label": "Type of other income subject to withholding.",
+    "value": ""
+  },
+  "592-B Form 1011": {
+    "type": "/Tx",
+    "label": "Withholding agent's Daytime telephone number. Enter 10 digits.",
+    "value": ""
+  },
+  "592-B Form 1007": {
+    "type": "/Tx",
+    "label": "Enter Withholding agent's identification number of the selected type",
+    "value": ""
+  },
+  "592-B Form 1002": {
+    "type": "/Tx",
+    "label": "Social security number or Individual Taxpayer Identification Number of withholding agent. Enter 9 digits.",
+    "value": ""
+  },
+  "592-B Form 1013": {
+    "type": "/Tx",
+    "label": "Payee's Social security number or Individual Taxpayer Identification Number. Enter 9 digits.",
+    "value": ""
+  },
+  "592-B Form 1017": {
+    "type": "/Tx",
+    "label": "Enter Payee's identification number of the selected type.",
+    "value": ""
+  },
+  "592-B Form 1000 CB": {
+    "type": "/Btn",
+    "label": "Amended",
+    "value": ""
+  },
+  "592-B Form 1021 CB": {
+    "type": "/Btn",
+    "label": " Part 3. Type of Income Subject to Withholding. Check the applicable box(es). Box A. Payments to Independent Contractors.",
+    "value": ""
+  },
+  "592-B Form 1025 CB": {
+    "type": "/Btn",
+    "label": "Box E. Estate Distributions.",
+    "value": ""
+  },
+  "592-B Form 1029 CB": {
+    "type": "/Btn",
+    "label": "Box H. Allocations to Foreign (non-U S) Nonresident Partners or Members.",
+    "value": ""
+  },
+  "592-B Form 1023 CB": {
+    "type": "/Btn",
+    "label": "Box C. Rents or Royalties.",
+    "value": ""
+  },
+  "592-B Form 1028 CB": {
+    "type": "/Btn",
+    "label": "Box G. Elective Withholding/Indian Tribe.",
+    "value": ""
+  },
+  "592-B Form 1030 CB": {
+    "type": "/Btn",
+    "label": "Box I. Other.",
+    "value": ""
+  },
+  "592-B Form 1022 CB": {
+    "type": "/Btn",
+    "label": "Box B. Trust Distributions.",
+    "value": ""
+  },
+  "592-B Form 1026 CB": {
+    "type": "/Btn",
+    "label": "Box F. Elective Withholding.",
+    "value": ""
+  },
+  "592-B Form 1024 CB": {
+    "type": "/Btn",
+    "label": "Box D. Distributions to Domestic (U S) Nonresident Partners, Members, Beneficiaries, S Corporation Shareholders.\r",
+    "value": ""
+  },
+  "592-B Form 1004 RB": {
+    "type": "/Btn",
+    "label": "Withholding agent's identification number type",
+    "value": ""
+  },
+  "592-B Form 1015 RB": {
+    "type": "/Btn",
+    "label": "Payee's identification number type",
+    "value": ""
+  }
+}

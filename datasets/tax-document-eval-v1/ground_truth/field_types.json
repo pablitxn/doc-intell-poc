@@ -1,0 +1,2199 @@
+{
+  "extract_taxcalc_ty25_ca_001_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_ca_001_1099g_1": {
+    "unemployment_compensation": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_001_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "ca_applied_from_prior_year": "money",
+    "ca_applied_py_refund": "boolean",
+    "ca_estimated_tax_payment_1": "money",
+    "ca_estimated_tax_payment_2": "money",
+    "ca_estimated_tax_payment_3": "money",
+    "ca_estimated_tax_payment_4": "money",
+    "ca_extension_payment": "money",
+    "ca_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_ca_001_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_002_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_ca_002_1098t_1": {
+    "qualified_tuition_payments": "money"
+  },
+  "extract_taxcalc_ty25_ca_002_1099int_1": {
+    "interest_income": "money",
+    "us_savings_treasury_interest": "money",
+    "federal_income_tax_withheld": "money",
+    "tax_exempt_interest": "money"
+  },
+  "extract_taxcalc_ty25_ca_002_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "ca_applied_from_prior_year": "money",
+    "ca_applied_py_refund": "boolean",
+    "ca_estimated_tax_payment_1": "money",
+    "ca_estimated_tax_payment_2": "money",
+    "ca_estimated_tax_payment_3": "money",
+    "ca_estimated_tax_payment_4": "money",
+    "ca_extension_payment": "money",
+    "ca_paid_extension": "boolean",
+    "ca_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_ca_002_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_003_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_ca_003_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "ca_applied_from_prior_year": "money",
+    "ca_estimated_tax_payment_1": "money",
+    "ca_estimated_tax_payment_2": "money",
+    "ca_estimated_tax_payment_3": "money",
+    "ca_estimated_tax_payment_4": "money",
+    "ca_extension_payment": "money"
+  },
+  "extract_taxcalc_ty25_ca_003_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_003_w2_2": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_004_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_ca_004_1098e_1": {
+    "student_loan_interest": "money"
+  },
+  "extract_taxcalc_ty25_ca_004_1099int_1": {
+    "interest_income": "money",
+    "us_savings_treasury_interest": "money",
+    "federal_income_tax_withheld": "money",
+    "tax_exempt_interest": "money"
+  },
+  "extract_taxcalc_ty25_ca_004_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "ca_applied_from_prior_year": "money",
+    "ca_estimated_tax_payment_1": "money",
+    "ca_estimated_tax_payment_2": "money",
+    "ca_estimated_tax_payment_3": "money",
+    "ca_estimated_tax_payment_4": "money",
+    "ca_extension_payment": "money"
+  },
+  "extract_taxcalc_ty25_ca_004_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_005_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_ca_005_1098_1": {
+    "mortgage_interest_received": "money",
+    "outstanding_mortgage_principal": "money"
+  },
+  "extract_taxcalc_ty25_ca_005_1099b_1": {
+    "proceeds": "money",
+    "cost_or_other_basis": "money"
+  },
+  "extract_taxcalc_ty25_ca_005_1099div_1": {
+    "ordinary_dividends": "money",
+    "qualified_dividends": "money"
+  },
+  "extract_taxcalc_ty25_ca_005_1099int_1": {
+    "interest_income": "money"
+  },
+  "extract_taxcalc_ty25_ca_005_1099r_1": {
+    "gross_distribution": "money",
+    "taxable_amount": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_005_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean",
+    "ca_applied_from_prior_year": "money",
+    "ca_estimated_tax_payment_1": "money",
+    "ca_estimated_tax_payment_2": "money",
+    "ca_estimated_tax_payment_3": "money",
+    "ca_estimated_tax_payment_4": "money",
+    "ca_extension_payment": "money"
+  },
+  "extract_taxcalc_ty25_ca_005_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_005_w2_2": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_006_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_ca_006_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean",
+    "ca_applied_py_refund": "boolean",
+    "ca_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_ca_006_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_006_w2_2": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_007_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_ca_007_1098_1": {
+    "mortgage_interest_received": "money"
+  },
+  "extract_taxcalc_ty25_ca_007_1098t_1": {
+    "qualified_tuition_payments": "money"
+  },
+  "extract_taxcalc_ty25_ca_007_1099div_1": {
+    "ordinary_dividends": "money",
+    "qualified_dividends": "money",
+    "capital_gain_distributions": "money"
+  },
+  "extract_taxcalc_ty25_ca_007_1099misc_1_schedule_c_2_accounting": {
+    "rents": "money",
+    "royalties": "money",
+    "other_income": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_007_1099misc_2_schedule_c_2_accounting": {
+    "rents": "money",
+    "royalties": "money",
+    "other_income": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_007_1099misc_3_schedule_c_3_spoetzel_brew_distribution": {
+    "rents": "money",
+    "royalties": "money",
+    "other_income": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_007_1099r_1": {
+    "gross_distribution": "money",
+    "taxable_amount": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_007_1099r_2": {
+    "gross_distribution": "money",
+    "taxable_amount": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_007_1099r_3": {
+    "gross_distribution": "money",
+    "taxable_amount": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_007_1099r_4": {
+    "gross_distribution": "money",
+    "taxable_amount": "money"
+  },
+  "extract_taxcalc_ty25_ca_007_1099r_5": {
+    "gross_distribution": "money",
+    "taxable_amount": "money"
+  },
+  "extract_taxcalc_ty25_ca_007_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean",
+    "ca_applied_from_prior_year": "money",
+    "ca_applied_py_refund": "boolean",
+    "ca_estimated_tax_payment_1": "money",
+    "ca_estimated_tax_payment_2": "money",
+    "ca_estimated_tax_payment_3": "money",
+    "ca_estimated_tax_payment_4": "money",
+    "ca_extension_payment": "money",
+    "ca_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_ca_007_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_007_w2g_1": {
+    "reportable_winnings": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_008_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_ca_008_1098_1": {
+    "mortgage_interest_received": "money"
+  },
+  "extract_taxcalc_ty25_ca_008_1098t_1": {
+    "qualified_tuition_payments": "money"
+  },
+  "extract_taxcalc_ty25_ca_008_1099div_1": {
+    "ordinary_dividends": "money",
+    "qualified_dividends": "money",
+    "capital_gain_distributions": "money"
+  },
+  "extract_taxcalc_ty25_ca_008_1099misc_1_schedule_c_1_abc": {
+    "rents": "money",
+    "royalties": "money",
+    "other_income": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_008_1099misc_2_schedule_c_1_abc": {
+    "rents": "money",
+    "royalties": "money",
+    "other_income": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_008_1099misc_3_schedule_c_2_accounting": {
+    "rents": "money",
+    "royalties": "money",
+    "other_income": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_008_1099misc_4_schedule_c_2_accounting": {
+    "rents": "money",
+    "royalties": "money",
+    "other_income": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_008_1099misc_5_schedule_c_3_spoetzel_brew_distribution": {
+    "rents": "money",
+    "royalties": "money",
+    "other_income": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_008_1099r_1": {
+    "gross_distribution": "money",
+    "taxable_amount": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_008_1099r_2": {
+    "gross_distribution": "money",
+    "taxable_amount": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_008_1099r_3": {
+    "gross_distribution": "money",
+    "taxable_amount": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_008_1099r_4": {
+    "gross_distribution": "money",
+    "taxable_amount": "money"
+  },
+  "extract_taxcalc_ty25_ca_008_1099r_5": {
+    "gross_distribution": "money",
+    "taxable_amount": "money"
+  },
+  "extract_taxcalc_ty25_ca_008_1099sa_1": {
+    "gross_distribution": "money"
+  },
+  "extract_taxcalc_ty25_ca_008_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean",
+    "ca_applied_from_prior_year": "money",
+    "ca_applied_py_refund": "boolean",
+    "ca_estimated_tax_payment_1": "money",
+    "ca_estimated_tax_payment_2": "money",
+    "ca_estimated_tax_payment_3": "money",
+    "ca_estimated_tax_payment_4": "money",
+    "ca_extension_payment": "money",
+    "ca_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_ca_008_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_008_w2g_1": {
+    "reportable_winnings": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_009_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_ca_009_1099b_1": {
+    "proceeds": "money",
+    "cost_or_other_basis": "money"
+  },
+  "extract_taxcalc_ty25_ca_009_1099div_1": {
+    "ordinary_dividends": "money",
+    "qualified_dividends": "money",
+    "capital_gain_distributions": "money"
+  },
+  "extract_taxcalc_ty25_ca_009_1099int_1": {
+    "interest_income": "money"
+  },
+  "extract_taxcalc_ty25_ca_009_1099r_1": {
+    "gross_distribution": "money",
+    "taxable_amount": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_009_1099sa_1": {
+    "gross_distribution": "money",
+    "earnings_on_excess_contributions": "money"
+  },
+  "extract_taxcalc_ty25_ca_009_1099sa_2": {
+    "gross_distribution": "money"
+  },
+  "extract_taxcalc_ty25_ca_009_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean",
+    "ca_applied_from_prior_year": "money",
+    "ca_estimated_tax_payment_1": "money",
+    "ca_estimated_tax_payment_2": "money",
+    "ca_estimated_tax_payment_3": "money",
+    "ca_estimated_tax_payment_4": "money",
+    "ca_extension_payment": "money"
+  },
+  "extract_taxcalc_ty25_ca_009_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ca_010_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_ca_010_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "federal_schedule3_requested_extension": "boolean",
+    "ca_applied_from_prior_year": "money",
+    "ca_estimated_tax_payment_1": "money",
+    "ca_estimated_tax_payment_2": "money",
+    "ca_estimated_tax_payment_3": "money",
+    "ca_estimated_tax_payment_4": "money",
+    "ca_extension_payment": "money"
+  },
+  "extract_taxcalc_ty25_ca_010_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_001_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_il_001_1099g_1": {
+    "unemployment_compensation": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_001_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "federal_schedule3_requested_extension": "boolean",
+    "il_applied_from_prior_year": "money",
+    "il_estimated_payment_1": "money",
+    "il_estimated_payment_2": "money",
+    "il_estimated_payment_3": "money",
+    "il_estimated_payment_4": "money",
+    "il_extension_payment": "money"
+  },
+  "extract_taxcalc_ty25_il_001_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_002_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_il_002_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_il_003_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_il_003_1099g_1": {
+    "unemployment_compensation": "money"
+  },
+  "extract_taxcalc_ty25_il_003_1099int_1": {
+    "interest_income": "money",
+    "us_savings_treasury_interest": "money",
+    "federal_income_tax_withheld": "money",
+    "tax_exempt_interest": "money"
+  },
+  "extract_taxcalc_ty25_il_003_1099int_2": {
+    "interest_income": "money",
+    "us_savings_treasury_interest": "money",
+    "federal_income_tax_withheld": "money",
+    "tax_exempt_interest": "money"
+  },
+  "extract_taxcalc_ty25_il_003_1099k_1_schedule_c_1_abc": {
+    "gross_payment_transactions": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_003_1099k_2_schedule_c_1_abc": {
+    "gross_payment_transactions": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_003_1099misc_1_schedule_c_1_abc": {
+    "rents": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_003_1099misc_2_schedule_c_1_abc": {
+    "other_income": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_003_1099nec_1_schedule_c_1_abc": {
+    "nonemployee_compensation": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_003_1099nec_2_schedule_c_1_abc": {
+    "nonemployee_compensation": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_003_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "federal_schedule3_requested_extension": "boolean",
+    "il_applied_from_prior_year": "money",
+    "il_estimated_payment_1": "money",
+    "il_estimated_payment_2": "money",
+    "il_estimated_payment_3": "money"
+  },
+  "extract_taxcalc_ty25_il_003_w2_1": {
+    "wages": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_004_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_il_004_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "federal_schedule3_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_il_004_w2_1": {
+    "wages": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_005_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_il_005_1099b_1": {
+    "proceeds": "money",
+    "cost_or_other_basis": "money"
+  },
+  "extract_taxcalc_ty25_il_005_1099b_2": {
+    "proceeds": "money"
+  },
+  "extract_taxcalc_ty25_il_005_1099b_3": {
+    "proceeds": "money",
+    "cost_or_other_basis": "money"
+  },
+  "extract_taxcalc_ty25_il_005_1099b_4": {
+    "proceeds": "money",
+    "cost_or_other_basis": "money"
+  },
+  "extract_taxcalc_ty25_il_005_1099div_1": {
+    "ordinary_dividends": "money",
+    "qualified_dividends": "money",
+    "capital_gain_distributions": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_005_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "federal_schedule3_requested_extension": "boolean",
+    "il_applied_from_prior_year": "money",
+    "il_estimated_payment_1": "money",
+    "il_estimated_payment_2": "money",
+    "il_estimated_payment_3": "money",
+    "il_estimated_payment_4": "money",
+    "il_extension_payment": "money"
+  },
+  "extract_taxcalc_ty25_il_005_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_006_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_il_006_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "federal_schedule3_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_il_006_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_007_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_il_007_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "federal_schedule3_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_il_007_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_008_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_il_008_1099div_1": {
+    "ordinary_dividends": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_008_1099g_1": {
+    "unemployment_compensation": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_008_1099int_1": {
+    "interest_income": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_008_1099k_1": {
+    "gross_payment_transactions": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_008_1099misc_1": {
+    "other_income": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_008_1099nec_1": {
+    "nonemployee_compensation": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_008_1099r_1": {
+    "gross_distribution": "money",
+    "taxable_amount": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_008_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "federal_schedule3_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_il_008_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_008_w2g_1": {
+    "reportable_winnings": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_009_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_il_009_1099k_1": {
+    "gross_payment_transactions": "money"
+  },
+  "extract_taxcalc_ty25_il_009_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "federal_schedule3_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_il_009_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_010_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_il_010_1099int_1": {
+    "interest_income": "money"
+  },
+  "extract_taxcalc_ty25_il_010_1099nec_1": {
+    "nonemployee_compensation": "money"
+  },
+  "extract_taxcalc_ty25_il_010_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "federal_schedule3_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_il_010_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_il_010_w2_2": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_001_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_ny_001_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "federal_schedule3_requested_extension": "boolean",
+    "ny_applied_from_prior_year": "money",
+    "ny_estimated_payment_1": "money",
+    "ny_estimated_payment_2": "money",
+    "ny_estimated_payment_3": "money",
+    "ny_estimated_payment_4": "money",
+    "ny_extension_payment": "money"
+  },
+  "extract_taxcalc_ty25_ny_001_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_002_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_ny_002_1098e_1": {
+    "student_loan_interest": "money"
+  },
+  "extract_taxcalc_ty25_ny_002_1098t_1": {
+    "qualified_tuition_payments": "money"
+  },
+  "extract_taxcalc_ty25_ny_002_1099g_1": {
+    "unemployment_compensation": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_002_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "federal_schedule3_requested_extension": "boolean",
+    "ny_applied_from_prior_year": "money",
+    "ny_estimated_payment_1": "money",
+    "ny_estimated_payment_2": "money",
+    "ny_estimated_payment_3": "money",
+    "ny_estimated_payment_4": "money",
+    "ny_extension_payment": "money"
+  },
+  "extract_taxcalc_ty25_ny_002_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_003_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_ny_003_1098t_1": {
+    "qualified_tuition_payments": "money"
+  },
+  "extract_taxcalc_ty25_ny_003_1099b_1": {
+    "proceeds": "money",
+    "cost_or_other_basis": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_003_1099b_2": {
+    "proceeds": "money",
+    "cost_or_other_basis": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_003_1099div_1": {
+    "ordinary_dividends": "money",
+    "qualified_dividends": "money",
+    "capital_gain_distributions": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_003_1099g_1": {
+    "unemployment_compensation": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_003_1099g_2": {
+    "unemployment_compensation": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_003_1099int_1": {
+    "interest_income": "money",
+    "us_savings_treasury_interest": "money",
+    "federal_income_tax_withheld": "money",
+    "tax_exempt_interest": "money"
+  },
+  "extract_taxcalc_ty25_ny_003_1099misc_1": {
+    "rents": "money",
+    "royalties": "money",
+    "other_income": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_003_1099nec_1": {
+    "nonemployee_compensation": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_003_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "federal_schedule3_requested_extension": "boolean",
+    "ny_applied_from_prior_year": "money",
+    "ny_applied_py_refund": "boolean",
+    "ny_estimated_payment_1": "money",
+    "ny_estimated_payment_2": "money",
+    "ny_estimated_payment_3": "money",
+    "ny_estimated_payment_4": "money",
+    "ny_extension_payment": "money",
+    "ny_paid_extension": "boolean",
+    "ny_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_ny_003_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_004_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_ny_004_1098e_1": {
+    "student_loan_interest": "money"
+  },
+  "extract_taxcalc_ty25_ny_004_1099div_1": {
+    "ordinary_dividends": "money",
+    "qualified_dividends": "money",
+    "capital_gain_distributions": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_004_1099int_1": {
+    "interest_income": "money",
+    "us_savings_treasury_interest": "money",
+    "federal_income_tax_withheld": "money",
+    "tax_exempt_interest": "money"
+  },
+  "extract_taxcalc_ty25_ny_004_1099nec_1": {
+    "nonemployee_compensation": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_004_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "federal_schedule3_requested_extension": "boolean",
+    "ny_applied_from_prior_year": "money",
+    "ny_applied_py_refund": "boolean",
+    "ny_estimated_payment_1": "money",
+    "ny_estimated_payment_2": "money",
+    "ny_estimated_payment_3": "money",
+    "ny_estimated_payment_4": "money",
+    "ny_extension_payment": "money",
+    "ny_paid_extension": "boolean",
+    "ny_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_ny_004_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_004_w2_2": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_005_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_ny_005_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "ny_applied_from_prior_year": "money",
+    "ny_applied_py_refund": "boolean",
+    "ny_estimated_payment_1": "money",
+    "ny_estimated_payment_2": "money",
+    "ny_estimated_payment_3": "money",
+    "ny_estimated_payment_4": "money",
+    "ny_extension_payment": "money",
+    "ny_paid_extension": "boolean",
+    "ny_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_ny_005_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_006_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_ny_006_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "federal_schedule3_requested_extension": "boolean",
+    "ny_applied_from_prior_year": "money",
+    "ny_applied_py_refund": "boolean",
+    "ny_estimated_payment_1": "money",
+    "ny_estimated_payment_2": "money",
+    "ny_estimated_payment_3": "money",
+    "ny_estimated_payment_4": "money",
+    "ny_extension_payment": "money",
+    "ny_paid_extension": "boolean",
+    "ny_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_ny_006_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_007_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_ny_007_1098t_1": {
+    "qualified_tuition_payments": "money"
+  },
+  "extract_taxcalc_ty25_ny_007_1098t_2": {
+    "qualified_tuition_payments": "money"
+  },
+  "extract_taxcalc_ty25_ny_007_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "federal_schedule3_requested_extension": "boolean",
+    "ny_applied_from_prior_year": "money",
+    "ny_applied_py_refund": "boolean",
+    "ny_estimated_payment_1": "money",
+    "ny_estimated_payment_2": "money",
+    "ny_estimated_payment_3": "money",
+    "ny_estimated_payment_4": "money",
+    "ny_extension_payment": "money",
+    "ny_paid_extension": "boolean",
+    "ny_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_ny_007_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_008_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_ny_008_1098e_1": {
+    "student_loan_interest": "money"
+  },
+  "extract_taxcalc_ty25_ny_008_1099div_1": {
+    "ordinary_dividends": "money",
+    "qualified_dividends": "money",
+    "capital_gain_distributions": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_008_1099g_1": {
+    "unemployment_compensation": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_008_1099int_1": {
+    "interest_income": "money",
+    "us_savings_treasury_interest": "money",
+    "federal_income_tax_withheld": "money",
+    "tax_exempt_interest": "money"
+  },
+  "extract_taxcalc_ty25_ny_008_1099nec_1": {
+    "nonemployee_compensation": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_008_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "ny_applied_from_prior_year": "money",
+    "ny_estimated_payment_1": "money",
+    "ny_estimated_payment_2": "money",
+    "ny_estimated_payment_3": "money",
+    "ny_estimated_payment_4": "money",
+    "ny_extension_payment": "money"
+  },
+  "extract_taxcalc_ty25_ny_008_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_009_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_ny_009_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "ny_applied_from_prior_year": "money",
+    "ny_applied_py_refund": "boolean",
+    "ny_estimated_payment_1": "money",
+    "ny_estimated_payment_2": "money",
+    "ny_estimated_payment_3": "money",
+    "ny_estimated_payment_4": "money",
+    "ny_extension_payment": "money",
+    "ny_paid_extension": "boolean",
+    "ny_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_ny_009_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_ny_010_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_ny_010_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean"
+  },
+  "extract_taxcalc_ty25_us_001_1040_2024": {
+    "form_year": "string"
+  },
+  "extract_taxcalc_ty25_us_001_1098_1": {
+    "mortgage_interest_received": "money"
+  },
+  "extract_taxcalc_ty25_us_001_1099b_1": {
+    "proceeds": "money",
+    "cost_or_other_basis": "money"
+  },
+  "extract_taxcalc_ty25_us_001_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_us_001_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_us_002_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_us_002_1098_1": {
+    "mortgage_interest_received": "money",
+    "outstanding_mortgage_principal": "money"
+  },
+  "extract_taxcalc_ty25_us_002_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_us_002_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_us_003_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_us_003_1099r_1": {
+    "gross_distribution": "money",
+    "taxable_amount": "money"
+  },
+  "extract_taxcalc_ty25_us_003_1099r_2": {
+    "gross_distribution": "money",
+    "taxable_amount": "money"
+  },
+  "extract_taxcalc_ty25_us_003_1099r_3": {
+    "gross_distribution": "money",
+    "taxable_amount": "money"
+  },
+  "extract_taxcalc_ty25_us_003_1099r_4": {
+    "gross_distribution": "money",
+    "taxable_amount": "money"
+  },
+  "extract_taxcalc_ty25_us_003_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_us_003_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_us_004_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_us_004_1099b_1": {
+    "proceeds": "money",
+    "cost_or_other_basis": "money"
+  },
+  "extract_taxcalc_ty25_us_004_1099div_1": {
+    "ordinary_dividends": "money",
+    "qualified_dividends": "money"
+  },
+  "extract_taxcalc_ty25_us_004_1099int_1": {
+    "interest_income": "money"
+  },
+  "extract_taxcalc_ty25_us_004_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_us_004_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_us_004_w2_2": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_us_005_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_us_005_1099div_1": {
+    "ordinary_dividends": "money",
+    "qualified_dividends": "money"
+  },
+  "extract_taxcalc_ty25_us_005_1099int_1": {
+    "interest_income": "money"
+  },
+  "extract_taxcalc_ty25_us_005_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_us_005_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_us_006_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_us_006_1099div_1": {
+    "ordinary_dividends": "money",
+    "qualified_dividends": "money"
+  },
+  "extract_taxcalc_ty25_us_006_1099int_1": {
+    "interest_income": "money"
+  },
+  "extract_taxcalc_ty25_us_006_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_us_006_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_us_006_w2g_1": {
+    "reportable_winnings": "money"
+  },
+  "extract_taxcalc_ty25_us_007_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_us_007_1098_1": {
+    "mortgage_interest_received": "money",
+    "outstanding_mortgage_principal": "money"
+  },
+  "extract_taxcalc_ty25_us_007_1099b_1": {
+    "proceeds": "money",
+    "cost_or_other_basis": "money"
+  },
+  "extract_taxcalc_ty25_us_007_1099b_2": {
+    "proceeds": "money",
+    "cost_or_other_basis": "money"
+  },
+  "extract_taxcalc_ty25_us_007_1099div_1": {
+    "ordinary_dividends": "money",
+    "qualified_dividends": "money"
+  },
+  "extract_taxcalc_ty25_us_007_1099int_1": {
+    "interest_income": "money"
+  },
+  "extract_taxcalc_ty25_us_007_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_us_007_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_us_008_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_us_008_1099nec_1": {
+    "nonemployee_compensation": "money"
+  },
+  "extract_taxcalc_ty25_us_008_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_us_008_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_us_009_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_us_009_1099div_1": {
+    "ordinary_dividends": "money",
+    "qualified_dividends": "money"
+  },
+  "extract_taxcalc_ty25_us_009_1099int_1": {
+    "interest_income": "money"
+  },
+  "extract_taxcalc_ty25_us_009_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_us_009_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_us_010_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_us_010_1099int_1": {
+    "interest_income": "money"
+  },
+  "extract_taxcalc_ty25_us_010_1099r_1": {
+    "gross_distribution": "money",
+    "taxable_amount": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_us_010_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean"
+  },
+  "extract_taxcalc_ty25_us_010_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_va_001_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_va_001_1098t_1": {
+    "qualified_tuition_payments": "money"
+  },
+  "extract_taxcalc_ty25_va_001_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean",
+    "va_applied_refund_from_prior_year": "boolean",
+    "va_state_extension_requested": "boolean"
+  },
+  "extract_taxcalc_ty25_va_001_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_va_002_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_va_002_1099nec_1": {
+    "nonemployee_compensation": "money"
+  },
+  "extract_taxcalc_ty25_va_002_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "va_applied_refund_from_prior_year": "boolean",
+    "va_estimated_payment_q1": "money",
+    "va_estimated_payment_q2": "money",
+    "va_estimated_payment_q3": "money",
+    "va_estimated_payment_q4": "money",
+    "va_extension_payment": "money",
+    "va_paid_extension": "boolean",
+    "va_state_extension_requested": "boolean"
+  },
+  "extract_taxcalc_ty25_va_002_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_va_003_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_va_003_1099div_1": {
+    "ordinary_dividends": "money"
+  },
+  "extract_taxcalc_ty25_va_003_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean",
+    "va_applied_from_prior_year": "money",
+    "va_applied_refund_from_prior_year": "boolean",
+    "va_estimated_payment_q1": "money",
+    "va_estimated_payment_q2": "money",
+    "va_estimated_payment_q3": "money",
+    "va_extension_payment": "money",
+    "va_paid_extension": "boolean",
+    "va_state_extension_requested": "boolean"
+  },
+  "extract_taxcalc_ty25_va_003_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_va_004_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money",
+    "prior_overpayment_elected_for_2025": "money"
+  },
+  "extract_taxcalc_ty25_va_004_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "federal_schedule3_requested_extension": "boolean",
+    "va_applied_from_prior_year": "money",
+    "va_applied_refund_from_prior_year": "boolean",
+    "va_estimated_payment_q1": "money",
+    "va_estimated_payment_q2": "money",
+    "va_estimated_payment_q3": "money",
+    "va_extension_payment": "money",
+    "va_paid_extension": "boolean",
+    "va_state_extension_requested": "boolean"
+  },
+  "extract_taxcalc_ty25_va_004_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_va_004_w2_2": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_va_005_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_va_005_1099b_1": {
+    "proceeds": "money"
+  },
+  "extract_taxcalc_ty25_va_005_1099b_2": {
+    "proceeds": "money"
+  },
+  "extract_taxcalc_ty25_va_005_1099b_3": {
+    "proceeds": "money"
+  },
+  "extract_taxcalc_ty25_va_005_1099div_1": {
+    "ordinary_dividends": "money",
+    "qualified_dividends": "money",
+    "capital_gain_distributions": "money"
+  },
+  "extract_taxcalc_ty25_va_005_1099div_2": {
+    "ordinary_dividends": "money",
+    "qualified_dividends": "money",
+    "capital_gain_distributions": "money"
+  },
+  "extract_taxcalc_ty25_va_005_1099div_3": {
+    "ordinary_dividends": "money",
+    "qualified_dividends": "money",
+    "capital_gain_distributions": "money"
+  },
+  "extract_taxcalc_ty25_va_005_1099g_1": {
+    "unemployment_compensation": "money"
+  },
+  "extract_taxcalc_ty25_va_005_1099g_2": {
+    "unemployment_compensation": "money"
+  },
+  "extract_taxcalc_ty25_va_005_1099int_1": {
+    "interest_income": "money"
+  },
+  "extract_taxcalc_ty25_va_005_1099int_2": {
+    "interest_income": "money"
+  },
+  "extract_taxcalc_ty25_va_005_1099int_3": {
+    "interest_income": "money"
+  },
+  "extract_taxcalc_ty25_va_005_1099k_1": {
+    "gross_payment_transactions": "money"
+  },
+  "extract_taxcalc_ty25_va_005_1099k_2": {
+    "gross_payment_transactions": "money"
+  },
+  "extract_taxcalc_ty25_va_005_1099misc_1": {
+    "rents": "money"
+  },
+  "extract_taxcalc_ty25_va_005_1099misc_2": {
+    "rents": "money"
+  },
+  "extract_taxcalc_ty25_va_005_1099nec_1": {
+    "nonemployee_compensation": "money"
+  },
+  "extract_taxcalc_ty25_va_005_1099nec_2": {
+    "nonemployee_compensation": "money"
+  },
+  "extract_taxcalc_ty25_va_005_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean",
+    "va_applied_from_prior_year": "money",
+    "va_applied_refund_from_prior_year": "boolean",
+    "va_estimated_payment_q1": "money",
+    "va_estimated_payment_q2": "money",
+    "va_estimated_payment_q3": "money",
+    "va_extension_payment": "money",
+    "va_paid_extension": "boolean",
+    "va_state_extension_requested": "boolean"
+  },
+  "extract_taxcalc_ty25_va_005_w2_1": {
+    "wages": "money",
+    "social_security_wages": "money",
+    "medicare_wages_and_tips": "money"
+  },
+  "extract_taxcalc_ty25_va_005_w2_2": {
+    "wages": "money",
+    "social_security_wages": "money",
+    "medicare_wages_and_tips": "money"
+  },
+  "extract_taxcalc_ty25_va_006_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_va_006_1098e_1": {
+    "student_loan_interest": "money"
+  },
+  "extract_taxcalc_ty25_va_006_1098t_1": {
+    "qualified_tuition_payments": "money"
+  },
+  "extract_taxcalc_ty25_va_006_1099b_1": {
+    "proceeds": "money",
+    "cost_or_other_basis": "money"
+  },
+  "extract_taxcalc_ty25_va_006_1099b_2": {
+    "proceeds": "money",
+    "cost_or_other_basis": "money"
+  },
+  "extract_taxcalc_ty25_va_006_1099b_3": {
+    "proceeds": "money",
+    "cost_or_other_basis": "money"
+  },
+  "extract_taxcalc_ty25_va_006_1099div_1": {
+    "ordinary_dividends": "money",
+    "qualified_dividends": "money",
+    "capital_gain_distributions": "money"
+  },
+  "extract_taxcalc_ty25_va_006_1099g_1": {
+    "unemployment_compensation": "money"
+  },
+  "extract_taxcalc_ty25_va_006_1099g_2": {
+    "unemployment_compensation": "money"
+  },
+  "extract_taxcalc_ty25_va_006_1099int_1": {
+    "interest_income": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_va_006_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "federal_schedule3_requested_extension": "boolean",
+    "va_applied_refund_from_prior_year": "boolean",
+    "va_paid_extension": "boolean",
+    "va_state_extension_requested": "boolean"
+  },
+  "extract_taxcalc_ty25_va_006_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_va_006_w2_2": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_va_007_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_va_007_1098e_1": {
+    "student_loan_interest": "money"
+  },
+  "extract_taxcalc_ty25_va_007_1098t_1": {
+    "qualified_tuition_payments": "money"
+  },
+  "extract_taxcalc_ty25_va_007_1099b_1": {
+    "proceeds": "money",
+    "cost_or_other_basis": "money"
+  },
+  "extract_taxcalc_ty25_va_007_1099b_2": {
+    "proceeds": "money",
+    "cost_or_other_basis": "money"
+  },
+  "extract_taxcalc_ty25_va_007_1099b_3": {
+    "proceeds": "money",
+    "cost_or_other_basis": "money"
+  },
+  "extract_taxcalc_ty25_va_007_1099div_1": {
+    "ordinary_dividends": "money",
+    "qualified_dividends": "money",
+    "capital_gain_distributions": "money"
+  },
+  "extract_taxcalc_ty25_va_007_1099int_1": {
+    "interest_income": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_va_007_remaining_data": {
+    "federal_estimated_tax_payment_1": "money",
+    "federal_estimated_tax_payment_2": "money",
+    "federal_estimated_tax_payment_3": "money",
+    "federal_estimated_tax_payment_4": "money",
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_extension_payment": "money",
+    "federal_schedule3_requested_extension": "boolean",
+    "va_applied_refund_from_prior_year": "boolean",
+    "va_paid_extension": "boolean",
+    "va_state_extension_requested": "boolean"
+  },
+  "extract_taxcalc_ty25_va_007_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_va_008_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_va_008_1098_1": {
+    "mortgage_interest_received": "money",
+    "outstanding_mortgage_principal": "money",
+    "mortgage_insurance_premiums": "money"
+  },
+  "extract_taxcalc_ty25_va_008_1099int_1": {
+    "interest_income": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_va_008_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean",
+    "va_applied_refund_from_prior_year": "boolean",
+    "va_state_extension_requested": "boolean"
+  },
+  "extract_taxcalc_ty25_va_008_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_va_008_w2g_1": {
+    "reportable_winnings": "money",
+    "federal_income_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_va_009_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_va_009_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean",
+    "va_applied_from_prior_year": "money",
+    "va_applied_refund_from_prior_year": "boolean",
+    "va_estimated_payment_q1": "money",
+    "va_estimated_payment_q2": "money",
+    "va_estimated_payment_q3": "money",
+    "va_extension_payment": "money",
+    "va_paid_extension": "boolean",
+    "va_state_extension_requested": "boolean"
+  },
+  "extract_taxcalc_ty25_va_009_w2_1": {
+    "wages": "money",
+    "federal_income_tax_withheld": "money",
+    "social_security_wages": "money",
+    "social_security_tax_withheld": "money",
+    "medicare_wages_and_tips": "money",
+    "medicare_tax_withheld": "money"
+  },
+  "extract_taxcalc_ty25_va_010_1040_2024": {
+    "form_year": "string",
+    "prior_adjusted_gross_income": "money"
+  },
+  "extract_taxcalc_ty25_va_010_1099g_1": {
+    "unemployment_compensation": "money"
+  },
+  "extract_taxcalc_ty25_va_010_1099int_1": {
+    "interest_income": "money"
+  },
+  "extract_taxcalc_ty25_va_010_remaining_data": {
+    "federal_paid_estimated_tax_pmts": "boolean",
+    "federal_schedule3_requested_extension": "boolean",
+    "va_applied_refund_from_prior_year": "boolean",
+    "va_state_extension_requested": "boolean"
+  },
+  "extract_fake_w2_test_000": {
+    "box_1_wages": "money",
+    "box_2_federal_tax_withheld": "money",
+    "box_3_social_security_wages": "money",
+    "box_4_social_security_tax_withheld": "money",
+    "box_5_medicare_wages": "money",
+    "box_6_medicare_tax_withheld": "money",
+    "box_7_social_security_tips": "money",
+    "box_8_allocated_tips": "money",
+    "box_10_dependent_care_benefits": "money",
+    "box_11_nonqualified_plans": "money",
+    "box_12a_value": "money",
+    "box_12b_value": "money",
+    "box_12c_value": "money",
+    "box_12d_value": "money",
+    "box_16_first_state_wages": "money",
+    "box_17_first_state_income_tax": "money",
+    "box_18_first_local_wages": "money",
+    "box_19_first_local_income_tax": "money",
+    "box_16_second_state_wages": "money",
+    "box_17_second_state_income_tax": "money",
+    "box_18_second_local_wages": "money",
+    "box_19_second_local_income_tax": "money",
+    "box_13_statutory_employee": "boolean",
+    "box_13_retirement_plan": "boolean",
+    "box_13_third_party_sick_pay": "boolean"
+  },
+  "extract_fake_w2_test_001": {
+    "box_1_wages": "money",
+    "box_2_federal_tax_withheld": "money",
+    "box_3_social_security_wages": "money",
+    "box_4_social_security_tax_withheld": "money",
+    "box_5_medicare_wages": "money",
+    "box_6_medicare_tax_withheld": "money",
+    "box_7_social_security_tips": "money",
+    "box_8_allocated_tips": "money",
+    "box_10_dependent_care_benefits": "money",
+    "box_11_nonqualified_plans": "money",
+    "box_12a_value": "money",
+    "box_12b_value": "money",
+    "box_12c_value": "money",
+    "box_12d_value": "money",
+    "box_16_first_state_wages": "money",
+    "box_17_first_state_income_tax": "money",
+    "box_18_first_local_wages": "money",
+    "box_19_first_local_income_tax": "money",
+    "box_16_second_state_wages": "money",
+    "box_17_second_state_income_tax": "money",
+    "box_18_second_local_wages": "money",
+    "box_19_second_local_income_tax": "money",
+    "box_13_statutory_employee": "boolean",
+    "box_13_retirement_plan": "boolean",
+    "box_13_third_party_sick_pay": "boolean"
+  },
+  "extract_fake_w2_test_002": {
+    "box_1_wages": "money",
+    "box_2_federal_tax_withheld": "money",
+    "box_3_social_security_wages": "money",
+    "box_4_social_security_tax_withheld": "money",
+    "box_5_medicare_wages": "money",
+    "box_6_medicare_tax_withheld": "money",
+    "box_7_social_security_tips": "money",
+    "box_8_allocated_tips": "money",
+    "box_10_dependent_care_benefits": "money",
+    "box_11_nonqualified_plans": "money",
+    "box_12a_value": "money",
+    "box_12b_value": "money",
+    "box_12c_value": "money",
+    "box_12d_value": "money",
+    "box_16_first_state_wages": "money",
+    "box_17_first_state_income_tax": "money",
+    "box_18_first_local_wages": "money",
+    "box_19_first_local_income_tax": "money",
+    "box_16_second_state_wages": "money",
+    "box_17_second_state_income_tax": "money",
+    "box_18_second_local_wages": "money",
+    "box_19_second_local_income_tax": "money",
+    "box_13_statutory_employee": "boolean",
+    "box_13_retirement_plan": "boolean",
+    "box_13_third_party_sick_pay": "boolean"
+  },
+  "extract_fake_w2_test_003": {
+    "box_1_wages": "money",
+    "box_2_federal_tax_withheld": "money",
+    "box_3_social_security_wages": "money",
+    "box_4_social_security_tax_withheld": "money",
+    "box_5_medicare_wages": "money",
+    "box_6_medicare_tax_withheld": "money",
+    "box_7_social_security_tips": "money",
+    "box_8_allocated_tips": "money",
+    "box_10_dependent_care_benefits": "money",
+    "box_11_nonqualified_plans": "money",
+    "box_12a_value": "money",
+    "box_12b_value": "money",
+    "box_12c_value": "money",
+    "box_12d_value": "money",
+    "box_16_first_state_wages": "money",
+    "box_17_first_state_income_tax": "money",
+    "box_18_first_local_wages": "money",
+    "box_19_first_local_income_tax": "money",
+    "box_16_second_state_wages": "money",
+    "box_17_second_state_income_tax": "money",
+    "box_18_second_local_wages": "money",
+    "box_19_second_local_income_tax": "money",
+    "box_13_statutory_employee": "boolean",
+    "box_13_retirement_plan": "boolean",
+    "box_13_third_party_sick_pay": "boolean"
+  },
+  "extract_fake_w2_test_004": {
+    "box_1_wages": "money",
+    "box_2_federal_tax_withheld": "money",
+    "box_3_social_security_wages": "money",
+    "box_4_social_security_tax_withheld": "money",
+    "box_5_medicare_wages": "money",
+    "box_6_medicare_tax_withheld": "money",
+    "box_7_social_security_tips": "money",
+    "box_8_allocated_tips": "money",
+    "box_10_dependent_care_benefits": "money",
+    "box_11_nonqualified_plans": "money",
+    "box_12a_value": "money",
+    "box_12b_value": "money",
+    "box_12c_value": "money",
+    "box_12d_value": "money",
+    "box_16_first_state_wages": "money",
+    "box_17_first_state_income_tax": "money",
+    "box_18_first_local_wages": "money",
+    "box_19_first_local_income_tax": "money",
+    "box_16_second_state_wages": "money",
+    "box_17_second_state_income_tax": "money",
+    "box_18_second_local_wages": "money",
+    "box_19_second_local_income_tax": "money",
+    "box_13_statutory_employee": "boolean",
+    "box_13_retirement_plan": "boolean",
+    "box_13_third_party_sick_pay": "boolean"
+  },
+  "reconcile_ty25_ca_001": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_ca_002": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_ca_003": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_ca_004": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_ca_005": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_ca_006": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_ca_007": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_ca_008": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_ca_009": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_ca_010": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_il_001": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_il_003": {
+    "w2_wages_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_il_004": {
+    "w2_wages_total": "money"
+  },
+  "reconcile_ty25_il_005": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_il_006": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_il_007": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_il_008": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_il_009": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_il_010": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_ny_001": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_ny_002": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_ny_003": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_ny_004": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_ny_005": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_ny_006": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_ny_007": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_ny_008": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_ny_009": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_us_001": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_us_002": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_us_003": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_us_004": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_us_005": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_us_006": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_us_007": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_us_008": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_us_009": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_us_010": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_va_001": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_va_002": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_va_003": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_va_004": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_va_005": {
+    "w2_wages_total": "money"
+  },
+  "reconcile_ty25_va_006": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_va_007": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_va_008": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  },
+  "reconcile_ty25_va_009": {
+    "w2_wages_total": "money",
+    "w2_federal_withholding_total": "money",
+    "documented_federal_withholding_total": "money"
+  }
+}

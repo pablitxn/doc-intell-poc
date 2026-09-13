@@ -1,0 +1,68 @@
+{
+  "recorded_at": "2026-09-13T17:49:56.953591+00:00",
+  "dataset": "tax-document-eval-v1",
+  "dataset_version": "8caee9331e585177a1c26645d29932cf37866d357e657e64b7646fa3c4c60b0c",
+  "source_release_files_verified": 485,
+  "documents": 319,
+  "cases": 55,
+  "tasks": 366,
+  "fields": 1465,
+  "full_suite": {
+    "passed": 256,
+    "skipped": 0,
+    "exit_code": 0,
+    "duration_seconds": 60.49,
+    "command": "DOC_INTELL_DOCKER_TESTS=1 DOC_INTELL_PHOENIX_TESTS=1 uv run --with-requirements tests/requirements.txt python -m unittest discover -s tests -q",
+    "includes": [
+      "source references and independent sums",
+      "all task contracts and adversarial answers",
+      "real Docker isolation",
+      "real OTel SDK export",
+      "366-example Phoenix publication and import into a second ephemeral instance"
+    ]
+  },
+  "real_smoke": {
+    "model_calls_in_smoke": 12,
+    "requested_model": "gpt-5.6-sol",
+    "reasoning": "medium",
+    "tasks_passed": 12,
+    "fields_evaluated": 147,
+    "scores_verified": 60,
+    "spans_verified": 77
+  },
+  "portability_check": {
+    "copy_without_git_runs_or_credentials": true,
+    "destination_path_contains_spaces": true,
+    "byte_identical_rebuild": true,
+    "all_harness_diagnostics_ready": true,
+    "new_machine": false,
+    "reused_host_prerequisites": [
+      "Docker",
+      "harness image",
+      "existing account authentication"
+    ]
+  },
+  "limitations": [
+    "Selected observable fields and explicitly defined withholding sums; not a full fiscal-return oracle.",
+    "All examples are development; no independent holdout claim.",
+    "The complete 3294-call Luna/Sol/Terra matrix was not executed.",
+    "The corporate machine, private harness, private OTel implementation and future Doc Intelligence MCP remain untested here."
+  ],
+  "evidence_sha256": {
+    "README.md": "c340fbdc6778310769d2f56c997fd96fb7dd0ad748c7c074079cdc4f068b66b1",
+    "clean-diagnostics.json": "6a95b1e3b3094a8656ea3487ff4e320eba54c4aa84907d6adbf706cf8199c3fe",
+    "clean-reproduction.json": "da00cbfab9403653308c2bef7a2a18155f544185926690b146022f75995d23b3",
+    "diagnostics.json": "c6f8bbac15f533f8495bdd8ea72acf7f48a84ffc9b9aa6adf5f9cec1ed149c86",
+    "fake-w2-source-audit.json": "7446cdf405907c72da9c276533b1eb63e619eec229d218f0ac910e24a93cd9e8",
+    "independent-preparation-review.json": "04d4dfe1488d9fbf8f296331aabd10fb626d1c3632b2fdb29456bced637e68ad",
+    "live-smoke.json": "54c02b25b57c025231041531c747983d87498b94f421932b2ae44b9c3fe6b00a",
+    "live-validation.json": "0df3d344bf74e0ce172d248de0e58b4a2afeedda523c999ef0ffff8a34dcbbad",
+    "reproduction.json": "da00cbfab9403653308c2bef7a2a18155f544185926690b146022f75995d23b3",
+    "runs-manifest.json": "3d4c7da57d70cc0f9a8251cb90477ccb76f4432f7707407a5a3583e58f07023c",
+    "runs.tar.gz": "b7768541191920734c328b27da2a47c0fbde3c038c08fd4d007b8370fed20458",
+    "taxcalc-source-audit.json": "5e11898f9570373f7c938a8cb11f7c0efd5b698da4b640ab3eeb38bf57375756",
+    "taxcalc-visible-fields.json": "9354414d165864369653e27fa78e9ab5d7df55f32b5571e313a29a60ad1dbc52",
+    "tests.txt": "a9ecc22d8ae1cd4ad44b3c60bf2e4800f29dbef6f89e1a9ec2dec0eff3278cb3",
+    "verify_live.py": "02964e464c30892cdfb6ee195258eb565dac49e25e2a7cd5556ef50b418b4d3d"
+  }
+}

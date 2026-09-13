@@ -1,0 +1,283 @@
+{
+  "preparation_version": "tax-document-projection-v1",
+  "source": "tax-document-dataset-v0.1",
+  "release_files_verified": 485,
+  "sha256sums_sha256": "8d29d7b271972247db66801cb65ec6874d78ae88ea071cfc615e0daec87cae64",
+  "dataset_version": "8caee9331e585177a1c26645d29932cf37866d357e657e64b7646fa3c4c60b0c",
+  "model_calls": 0,
+  "documents": 319,
+  "cases": 55,
+  "tasks": 366,
+  "fields": 1465,
+  "extraction_tasks": 319,
+  "reconciliation_tasks": 47,
+  "document_families": {
+    "1040": 50,
+    "1098": 7,
+    "1098e": 6,
+    "1098t": 10,
+    "1099b": 21,
+    "1099div": 20,
+    "1099g": 13,
+    "1099int": 24,
+    "1099k": 6,
+    "1099misc": 14,
+    "1099nec": 11,
+    "1099r": 18,
+    "1099sa": 3,
+    "declared_payments": 50,
+    "fake_w2": 5,
+    "w2": 56,
+    "w2g": 5
+  },
+  "document_formats": {
+    ".jpg": 5,
+    ".json": 50,
+    ".pdf": 264
+  },
+  "field_types": {
+    "boolean": 162,
+    "money": 1253,
+    "string": 50
+  },
+  "monetary_fields": 1253,
+  "printed_or_declared_zero_amounts": 347,
+  "source_groups": 52,
+  "duplicate_content_groups": [
+    {
+      "sha256": "2748b90e08bae0dc95112f6a423331c2c6a20ee72098fd14edbecb037ce31d38",
+      "document_ids": [
+        "taxcalc_ty25_ca_007_1099r_1",
+        "taxcalc_ty25_ca_008_1099r_1"
+      ]
+    },
+    {
+      "sha256": "434aff95398f42bffc4ee0a5b0a93aa5799640aeecb8f34cbb28e15a64fa4818",
+      "document_ids": [
+        "taxcalc_ty25_il_009_1040_2024",
+        "taxcalc_ty25_il_010_1040_2024"
+      ]
+    },
+    {
+      "sha256": "43de187404c5b6ebf174de9e46f724cb5af6f8e78d7d61da25f2ab1f9137d22d",
+      "document_ids": [
+        "taxcalc_ty25_ca_007_1098t_1",
+        "taxcalc_ty25_ca_008_1098t_1"
+      ]
+    },
+    {
+      "sha256": "506cd6ed4883dd3800c2f040d7342def83d4555b9490a37ab263dcd52eda9d77",
+      "document_ids": [
+        "taxcalc_ty25_ca_007_1099r_3",
+        "taxcalc_ty25_ca_008_1099r_3"
+      ]
+    },
+    {
+      "sha256": "5328681eb92a8cf55aac0ad3b492f69b82d61b7ad84e1f845bb581ae0fcbaa90",
+      "document_ids": [
+        "taxcalc_ty25_ca_007_1099r_2",
+        "taxcalc_ty25_ca_008_1099r_2"
+      ]
+    },
+    {
+      "sha256": "63de405dccd2662fa56d076963554dda8e4f1af97ee89bb57965dab44b54d6f4",
+      "document_ids": [
+        "taxcalc_ty25_va_006_1099b_2",
+        "taxcalc_ty25_va_007_1099b_2"
+      ]
+    },
+    {
+      "sha256": "6a00f11e735846151dc4da25e253dcec0015f7eea0c2debea5a89a48b7a0c9b3",
+      "document_ids": [
+        "taxcalc_ty25_va_006_1099div_1",
+        "taxcalc_ty25_va_007_1099div_1"
+      ]
+    },
+    {
+      "sha256": "830484a5142bd86cd9cdd7767ee508d575c2da5b23ea176deeddcf64ee916ed8",
+      "document_ids": [
+        "taxcalc_ty25_ca_007_1099misc_2_schedule_c_2_accounting",
+        "taxcalc_ty25_ca_008_1099misc_4_schedule_c_2_accounting"
+      ]
+    },
+    {
+      "sha256": "94344bbd6dc0f2508df2404f490d069e3064d0afe4d85b0791c02e29377ad868",
+      "document_ids": [
+        "taxcalc_ty25_ca_007_1098_1",
+        "taxcalc_ty25_ca_008_1098_1"
+      ]
+    },
+    {
+      "sha256": "a650b832f682301dc837b0a643dde578ea9f9647042ff3c50e716a3ac6b14fd6",
+      "document_ids": [
+        "taxcalc_ty25_ca_007_w2g_1",
+        "taxcalc_ty25_ca_008_w2g_1"
+      ]
+    },
+    {
+      "sha256": "ab9b8b7d6a4bd21bd4519a4a5a710f0038f05fb1424d6b8a0f2cd7930a15b6c4",
+      "document_ids": [
+        "taxcalc_ty25_ca_007_w2_1",
+        "taxcalc_ty25_ca_008_w2_1"
+      ]
+    },
+    {
+      "sha256": "b5f32da493808030ec7e64ffee68c3a575a2069117ce31ad45a7c782745e7176",
+      "document_ids": [
+        "taxcalc_ty25_ca_007_1099misc_3_schedule_c_3_spoetzel_brew_distribution",
+        "taxcalc_ty25_ca_008_1099misc_5_schedule_c_3_spoetzel_brew_distribution"
+      ]
+    },
+    {
+      "sha256": "be306b40e21bd4288c0588ec214fd104ca313019974a10d000d547de02a1589a",
+      "document_ids": [
+        "taxcalc_ty25_va_006_1098t_1",
+        "taxcalc_ty25_va_007_1098t_1"
+      ]
+    },
+    {
+      "sha256": "c31e333ce558048e7d35447021a6f71bb3f8ea11c2c9bc2fb9491c12a89888c8",
+      "document_ids": [
+        "taxcalc_ty25_va_006_1099b_1",
+        "taxcalc_ty25_va_007_1099b_1"
+      ]
+    },
+    {
+      "sha256": "c4ed138242422eef22ec95d01f1d6037e03957b1339540eefe0ef684ba9f0486",
+      "document_ids": [
+        "taxcalc_ty25_va_006_w2_2",
+        "taxcalc_ty25_va_007_w2_1"
+      ]
+    },
+    {
+      "sha256": "c8e9f57982a88bdfa5af78292919cbbae666d5630d66f374f3cda21789dc3ea8",
+      "document_ids": [
+        "taxcalc_ty25_va_006_1099b_3",
+        "taxcalc_ty25_va_007_1099b_3"
+      ]
+    },
+    {
+      "sha256": "cacf6dee24884831e1fb51cb4a6236a4daca37247a55b33ea186c4670eafd7b6",
+      "document_ids": [
+        "taxcalc_ty25_va_006_1099int_1",
+        "taxcalc_ty25_va_007_1099int_1"
+      ]
+    },
+    {
+      "sha256": "d1dc3127cbd6f732821966b9f1b86208e79194d0b3fefafdbcf2ed7ac26f15e6",
+      "document_ids": [
+        "taxcalc_ty25_ca_007_1099div_1",
+        "taxcalc_ty25_ca_008_1099div_1"
+      ]
+    },
+    {
+      "sha256": "d603bce63cb9e24692acfbd0101d87532d24468283a316753d0c439783605baf",
+      "document_ids": [
+        "taxcalc_ty25_ca_007_1099r_4",
+        "taxcalc_ty25_ca_008_1099r_4"
+      ]
+    },
+    {
+      "sha256": "f430e290a3393986e74f11c235bfb870ba4cde588d3f933dc010c80889fe9e28",
+      "document_ids": [
+        "taxcalc_ty25_ca_007_1099misc_1_schedule_c_2_accounting",
+        "taxcalc_ty25_ca_008_1099misc_3_schedule_c_2_accounting"
+      ]
+    }
+  ],
+  "unobservable_aggregate_fields": [
+    {
+      "case_id": "ty25-il-002",
+      "field": "w2_wages_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-il-002",
+      "field": "w2_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-il-002",
+      "field": "documented_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-il-003",
+      "field": "w2_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-il-004",
+      "field": "w2_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-il-004",
+      "field": "documented_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-ny-010",
+      "field": "w2_wages_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-ny-010",
+      "field": "w2_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-ny-010",
+      "field": "documented_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-va-005",
+      "field": "w2_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-va-005",
+      "field": "documented_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-va-010",
+      "field": "w2_wages_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-va-010",
+      "field": "w2_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    },
+    {
+      "case_id": "ty25-va-010",
+      "field": "documented_federal_withholding_total",
+      "reason": "No explicitly printed contributing amount; not inferred as zero"
+    }
+  ],
+  "split_policy": "All tasks are development; no held-out quality claim. Keep source groups together for future splits.",
+  "reference_scope": "Selected observable fields and explicitly defined withholding sums. No full tax-return or leadsheet oracle.",
+  "source_exclusions": {
+    "official_pdfs": {
+      "count": 39,
+      "reason": "37 blank templates and 2 reference documents, not populated labelled cases"
+    },
+    "taxcalc_output_xml": {
+      "count": 50,
+      "reason": "Candidate computed tax outputs; not extraction or general fiscal ground truth"
+    },
+    "extractbench_manifest_tasks": {
+      "count": 77,
+      "reason": "PDF and ground-truth files not acquired"
+    },
+    "fields_outside_projection": "Blank/unreadable/unselected fields are not silently treated as zero or counted as correct."
+  },
+  "preparation_source_sha256": {
+    "scripts/prepare_full_dataset.py": "c4d50c50cda14f9fbb425bef32925994f55f78998c1e30e8b92111b8d3192aae",
+    "scripts/taxcalc_boxes.py": "d10eb5b89c1582942d43da2844ce03f81f87ad593d0ea5da05b8ff3dae994924",
+    "scripts/prior_1040_labels.py": "c8044d0fc8faa4f60d16ce11e1e66a06feb0b99472e39463da4093e3592dfd99",
+    "scripts/fake_w2_labels.py": "84b7b061a9298bcc13a649d10d80e6990742e2dd357d2a69b4d92b7449b28ed6"
+  }
+}

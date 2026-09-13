@@ -26,6 +26,40 @@ DATASET = Path(__file__).resolve().parents[1] / 'datasets/tax-mini-poc'
 
 @unittest.skipUnless(os.environ.get('DOC_INTELL_DOCKER_TESTS') == '1', 'Opt-in real Docker conformance')
 class DockerConformanceTests(unittest.TestCase):
+    def test_mixed_format_mounts_expose_only_assigned_inputs(self):
+        code = r'''
+import json, pathlib
+base = pathlib.Path('/workspace')
+checks = {'assigned_' + suffix: (base / ('inputs/nested/document.' + suffix)).read_bytes() == b'input-fixture'
+          for suffix in ('pdf', 'jpg', 'jpeg', 'png', 'json')}
+checks['unassigned_hidden'] = not (base / 'inputs/unassigned.json').exists()
+checks['ground_truth_hidden'] = not (base / 'ground_truth').exists()
+checks['source_kit_hidden'] = not (base / 'taxcalc').exists()
+try:
+    (base / 'inputs/nested/document.json').write_text('changed')
+    checks['readonly'] = False
+except OSError:
+    checks['readonly'] = True
+print(json.dumps(checks))
+'''
+        profile = {'name': 'asset-conformance', 'command': ['python3', '-c', code],
+                   'output_mode': 'json', 'auth': 'none', 'telemetry': 'none'}
+        with TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            (root / 'inputs/nested').mkdir(parents=True)
+            (root / 'ground_truth').mkdir()
+            (root / 'ground_truth/expected.json').write_text('{"hidden":true}')
+            (root / 'inputs/unassigned.json').write_text('{"hidden":true}')
+            (root / 'taxcalc').mkdir()
+            paths = ['inputs/nested/document.' + suffix for suffix in ('pdf', 'jpg', 'jpeg', 'png', 'json')]
+            for name in paths:
+                (root / name).write_bytes(b'input-fixture')
+            invocation = HarnessInvocation('', 'check', 1, root, tuple({'path': name} for name in paths),
+                                           root / 'artifacts', '1' * 32, '2' * 16)
+            result = NativeHarness(profile, make_preparer(profile), 20).invoke(invocation)
+        self.assertEqual(result.status, 'success', result.error)
+        self.assertTrue(all(result.output.values()), result.output)
+
     def test_native_model_catalogs_contain_exact_luna_sol_terra_with_medium(self):
         # Inspect the immutable installed catalogs: no login, network, or model
         # invocation is involved. Provider access is verified by actual runs.

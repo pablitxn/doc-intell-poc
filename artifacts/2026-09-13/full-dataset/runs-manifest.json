@@ -1,0 +1,441 @@
+{
+  "scope": "12 real native-harness smoke runs for the prepared full dataset; original local artifacts unchanged",
+  "run_ids": [
+    "20260913T172846Z-1ba05d55b04d",
+    "20260913T172903Z-31a43b8dcb6a",
+    "20260913T172919Z-96dac4cc47a4",
+    "20260913T172941Z-fab8a7fd6854",
+    "20260913T173013Z-9165c44ff83c",
+    "20260913T173050Z-ae8afb9b8dc7",
+    "20260913T173135Z-b47451d52ceb",
+    "20260913T173206Z-7d47d945d12e",
+    "20260913T173237Z-0d6e79705e42",
+    "20260913T173337Z-5fd515138300",
+    "20260913T173406Z-050377ceb512",
+    "20260913T173436Z-5268576f4e69"
+  ],
+  "archive_sha256": "b7768541191920734c328b27da2a47c0fbde3c038c08fd4d007b8370fed20458",
+  "file_count": 84,
+  "files": [
+    {
+      "path": "runs/20260913T172846Z-1ba05d55b04d/dataset-snapshot.json",
+      "bytes": 1629453,
+      "sha256": "33a17db33c4ce46a4b5c594cc40d708c00e5d54a68a79aa2f497fab6f31b224a"
+    },
+    {
+      "path": "runs/20260913T172846Z-1ba05d55b04d/phoenix.json",
+      "bytes": 296,
+      "sha256": "a997d2954df85c09625458392fbe5c8eb61d0c67660b73fddea0fa3f21a2eb38"
+    },
+    {
+      "path": "runs/20260913T172846Z-1ba05d55b04d/report.json",
+      "bytes": 8851,
+      "sha256": "8765fae6938e42559a3d3b43c2eec199c74f8ca3823736eaf1068e2454591517"
+    },
+    {
+      "path": "runs/20260913T172846Z-1ba05d55b04d/scores.csv",
+      "bytes": 248,
+      "sha256": "4aefacbf5eb105ef20098108f13ce99c82df23ca72fea14c808805854d939698"
+    },
+    {
+      "path": "runs/20260913T172846Z-1ba05d55b04d/tasks/extract_taxcalc_ty25_ca_001_w2_1-1/events.json",
+      "bytes": 1814,
+      "sha256": "466266fb4b770471d0c3b94736d6835c5db7c69dd2fd43d1461510137da9aba5"
+    },
+    {
+      "path": "runs/20260913T172846Z-1ba05d55b04d/traces-upload.json",
+      "bytes": 195,
+      "sha256": "dcd0b1d5b0946084d177d80519f8c1a5964a021dbc1a51bdd208c643d985fee0"
+    },
+    {
+      "path": "runs/20260913T172846Z-1ba05d55b04d/traces.json",
+      "bytes": 9083,
+      "sha256": "e5daab564aae093368873845c03e87282a3703051b7f60dc6c955031fafb57bc"
+    },
+    {
+      "path": "runs/20260913T172903Z-31a43b8dcb6a/dataset-snapshot.json",
+      "bytes": 1629453,
+      "sha256": "33a17db33c4ce46a4b5c594cc40d708c00e5d54a68a79aa2f497fab6f31b224a"
+    },
+    {
+      "path": "runs/20260913T172903Z-31a43b8dcb6a/phoenix.json",
+      "bytes": 296,
+      "sha256": "6cf1da4a9c6fcca9db070071142e53eaac30900413d434cd28d93ff58f9b947f"
+    },
+    {
+      "path": "runs/20260913T172903Z-31a43b8dcb6a/report.json",
+      "bytes": 8797,
+      "sha256": "d609b8abc1b8b585781e38deab87513abf4a7d44ea78cf27f57f4042e9ce6750"
+    },
+    {
+      "path": "runs/20260913T172903Z-31a43b8dcb6a/scores.csv",
+      "bytes": 249,
+      "sha256": "6f64f317565912abeb9e7e3e61d3cb22f976cf01b952bd16b2cf8e1e29957faa"
+    },
+    {
+      "path": "runs/20260913T172903Z-31a43b8dcb6a/tasks/extract_taxcalc_ty25_ca_001_w2_1-1/events.json",
+      "bytes": 1811,
+      "sha256": "fbdcf6017018835f0da0b03d822a96661760d22af1934f544dcc44fbc38608d5"
+    },
+    {
+      "path": "runs/20260913T172903Z-31a43b8dcb6a/traces-upload.json",
+      "bytes": 195,
+      "sha256": "955f5b914773d01ec2a5e557a8d01e592fcf358f36e6482445534335fee70f96"
+    },
+    {
+      "path": "runs/20260913T172903Z-31a43b8dcb6a/traces.json",
+      "bytes": 9021,
+      "sha256": "996b0d90e9758c63281bed26ca29a77768d41ccc918fa94d12c4a73c8f08fee3"
+    },
+    {
+      "path": "runs/20260913T172919Z-96dac4cc47a4/dataset-snapshot.json",
+      "bytes": 1629453,
+      "sha256": "33a17db33c4ce46a4b5c594cc40d708c00e5d54a68a79aa2f497fab6f31b224a"
+    },
+    {
+      "path": "runs/20260913T172919Z-96dac4cc47a4/phoenix.json",
+      "bytes": 296,
+      "sha256": "1907f83b3243444b6c643670465a13a8653a2ee744dfb4698355bcfd71d2d360"
+    },
+    {
+      "path": "runs/20260913T172919Z-96dac4cc47a4/report.json",
+      "bytes": 8795,
+      "sha256": "e6274e3f434bddc46bfa46d996e939959b8def75d00a996ac6181b3e64d885d8"
+    },
+    {
+      "path": "runs/20260913T172919Z-96dac4cc47a4/scores.csv",
+      "bytes": 248,
+      "sha256": "a27f34b5cfab1a4723d0e45ae3ab449aa14c7c6454a0bb7338a9b2a1b4293160"
+    },
+    {
+      "path": "runs/20260913T172919Z-96dac4cc47a4/tasks/extract_taxcalc_ty25_ca_001_w2_1-1/events.json",
+      "bytes": 354,
+      "sha256": "019b3bff199d19b214e3e71b13a1ae291c94fdb8688ed87e01a504cc6bbf5b45"
+    },
+    {
+      "path": "runs/20260913T172919Z-96dac4cc47a4/traces-upload.json",
+      "bytes": 195,
+      "sha256": "4e8f63e5c9c87c84354f1c552c8122ba894c7c056848f25b9a00d81bbf211b77"
+    },
+    {
+      "path": "runs/20260913T172919Z-96dac4cc47a4/traces.json",
+      "bytes": 7020,
+      "sha256": "da02ef5782f695e650c92ceb0cf0d13b32c697e496881cf2d381353e1f104781"
+    },
+    {
+      "path": "runs/20260913T172941Z-fab8a7fd6854/dataset-snapshot.json",
+      "bytes": 1629453,
+      "sha256": "33a17db33c4ce46a4b5c594cc40d708c00e5d54a68a79aa2f497fab6f31b224a"
+    },
+    {
+      "path": "runs/20260913T172941Z-fab8a7fd6854/phoenix.json",
+      "bytes": 288,
+      "sha256": "ec98096c51303f4a3e52086a2f4045505e7e744e18224beab718fcc9530985ea"
+    },
+    {
+      "path": "runs/20260913T172941Z-fab8a7fd6854/report.json",
+      "bytes": 19691,
+      "sha256": "b995cb5d2fe3b08034a4c50011be02fff5ccf93b45fae40c14a93bf1ae95ca83"
+    },
+    {
+      "path": "runs/20260913T172941Z-fab8a7fd6854/scores.csv",
+      "bytes": 241,
+      "sha256": "90af6102f74b08df764b3132feaf5490f68de07016762b2ae3dbdc7fb44037b9"
+    },
+    {
+      "path": "runs/20260913T172941Z-fab8a7fd6854/tasks/extract_fake_w2_test_000-1/events.json",
+      "bytes": 1356,
+      "sha256": "22e426c8e4d6cbfd971dbd5ac3957d6b70f4f2dc70a4c642d8800d2ad0b25cc8"
+    },
+    {
+      "path": "runs/20260913T172941Z-fab8a7fd6854/traces-upload.json",
+      "bytes": 195,
+      "sha256": "2b68d569a7de735271be5c02ff5214e5c5d65317d7f781f290f65cd52a45081e"
+    },
+    {
+      "path": "runs/20260913T172941Z-fab8a7fd6854/traces.json",
+      "bytes": 15007,
+      "sha256": "06b46f3a5862601f149296159d1f295d2f7e3b3f7f665a6ad1a78c98532bb9e5"
+    },
+    {
+      "path": "runs/20260913T173013Z-9165c44ff83c/dataset-snapshot.json",
+      "bytes": 1629453,
+      "sha256": "33a17db33c4ce46a4b5c594cc40d708c00e5d54a68a79aa2f497fab6f31b224a"
+    },
+    {
+      "path": "runs/20260913T173013Z-9165c44ff83c/phoenix.json",
+      "bytes": 288,
+      "sha256": "f8860d1c904b66562c2a28f304c811c0f2f2942c0400e60e17110a22e3dd63c4"
+    },
+    {
+      "path": "runs/20260913T173013Z-9165c44ff83c/report.json",
+      "bytes": 19634,
+      "sha256": "92d886c120c88898656b66de03304deee885fb7343ddd74f785f96442ae9d690"
+    },
+    {
+      "path": "runs/20260913T173013Z-9165c44ff83c/scores.csv",
+      "bytes": 241,
+      "sha256": "3565b00cf67580aa95589d661d0be100f8489c1dd0c56b2b154ef1844a3c9444"
+    },
+    {
+      "path": "runs/20260913T173013Z-9165c44ff83c/tasks/extract_fake_w2_test_000-1/events.json",
+      "bytes": 1359,
+      "sha256": "5b2efa68dea369acabb5964a1bf18a81b63af8c5f3946be9de0f1dd6701539e7"
+    },
+    {
+      "path": "runs/20260913T173013Z-9165c44ff83c/traces-upload.json",
+      "bytes": 195,
+      "sha256": "4ef599512f08386033cc4d7c5bfab7286a589d26a2ca0082d8a42c91351941dd"
+    },
+    {
+      "path": "runs/20260913T173013Z-9165c44ff83c/traces.json",
+      "bytes": 14957,
+      "sha256": "5b3a6d768c0fbc1952ff9b7af9e92bed1a524bb46a735847e68061f60e51c764"
+    },
+    {
+      "path": "runs/20260913T173050Z-ae8afb9b8dc7/dataset-snapshot.json",
+      "bytes": 1629453,
+      "sha256": "33a17db33c4ce46a4b5c594cc40d708c00e5d54a68a79aa2f497fab6f31b224a"
+    },
+    {
+      "path": "runs/20260913T173050Z-ae8afb9b8dc7/phoenix.json",
+      "bytes": 288,
+      "sha256": "e51c9af3607ec3489f32ba6829e5d288256c10442463e5ef43f65289cecf77b6"
+    },
+    {
+      "path": "runs/20260913T173050Z-ae8afb9b8dc7/report.json",
+      "bytes": 19629,
+      "sha256": "7b01d7d1808e544f843c9799f0929f6f04efcfddddcdb47676b6a8b467c0adaa"
+    },
+    {
+      "path": "runs/20260913T173050Z-ae8afb9b8dc7/scores.csv",
+      "bytes": 240,
+      "sha256": "3d92766c85ad7533c4015ce322d316452ff10a4472c57e4a50354e31e6ca825d"
+    },
+    {
+      "path": "runs/20260913T173050Z-ae8afb9b8dc7/tasks/extract_fake_w2_test_000-1/events.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "runs/20260913T173050Z-ae8afb9b8dc7/traces-upload.json",
+      "bytes": 195,
+      "sha256": "eea50970289beee08f1be89cac7c1c1fa8e7c41c059bd2d50428be973fa94d4c"
+    },
+    {
+      "path": "runs/20260913T173050Z-ae8afb9b8dc7/traces.json",
+      "bytes": 13002,
+      "sha256": "6be9450e42739aaa666665be4b6fa18fc0ddaa94d2b42000785c587b541c7557"
+    },
+    {
+      "path": "runs/20260913T173135Z-b47451d52ceb/dataset-snapshot.json",
+      "bytes": 1629453,
+      "sha256": "33a17db33c4ce46a4b5c594cc40d708c00e5d54a68a79aa2f497fab6f31b224a"
+    },
+    {
+      "path": "runs/20260913T173135Z-b47451d52ceb/phoenix.json",
+      "bytes": 306,
+      "sha256": "8c2154995950859a42cf0dd6d41ccfc2c0bfd0986856fb1c347a394df0e2da1b"
+    },
+    {
+      "path": "runs/20260913T173135Z-b47451d52ceb/report.json",
+      "bytes": 18120,
+      "sha256": "eeaaee2a1aea5e693f6df7bcfd5c3c975ede48f984bb6c27d6c21404aaa5941f"
+    },
+    {
+      "path": "runs/20260913T173135Z-b47451d52ceb/scores.csv",
+      "bytes": 258,
+      "sha256": "580665668b91cbd4457b5ffa6ec8c03def8483498d3bc649cc8fb0c65180235d"
+    },
+    {
+      "path": "runs/20260913T173135Z-b47451d52ceb/tasks/extract_taxcalc_ty25_va_004_remaining_data-1/events.json",
+      "bytes": 1358,
+      "sha256": "645853441072fa33a303623838bf6a7308f685a359665bd990b4351a3c3e54ff"
+    },
+    {
+      "path": "runs/20260913T173135Z-b47451d52ceb/traces-upload.json",
+      "bytes": 195,
+      "sha256": "6bd1107e3e536e3fa9b9863b896d08f1ff0fa94f49f6b9ea81845447da5459a6"
+    },
+    {
+      "path": "runs/20260913T173135Z-b47451d52ceb/traces.json",
+      "bytes": 15659,
+      "sha256": "88f6a13add7159d9cebb4d4fc15e1ea81da82046dd1d4605ca9a0d155518cbea"
+    },
+    {
+      "path": "runs/20260913T173206Z-7d47d945d12e/dataset-snapshot.json",
+      "bytes": 1629453,
+      "sha256": "33a17db33c4ce46a4b5c594cc40d708c00e5d54a68a79aa2f497fab6f31b224a"
+    },
+    {
+      "path": "runs/20260913T173206Z-7d47d945d12e/phoenix.json",
+      "bytes": 306,
+      "sha256": "57b1aebf5866055f0d256545565f566f044bfe2c9ca5977427d9780012c346e1"
+    },
+    {
+      "path": "runs/20260913T173206Z-7d47d945d12e/report.json",
+      "bytes": 18069,
+      "sha256": "e13261c3d02601f0c3c89583b2488857a0f9fc8691a2ed8b1768f87be7f23702"
+    },
+    {
+      "path": "runs/20260913T173206Z-7d47d945d12e/scores.csv",
+      "bytes": 259,
+      "sha256": "533646fcc98305044f6068ab47537436a16a7352c0109294df3e1f492ea188f2"
+    },
+    {
+      "path": "runs/20260913T173206Z-7d47d945d12e/tasks/extract_taxcalc_ty25_va_004_remaining_data-1/events.json",
+      "bytes": 1358,
+      "sha256": "77de0e55b71e569686b50fa95238f03165ce8ead919034eb6bd2a63c7db7bc4a"
+    },
+    {
+      "path": "runs/20260913T173206Z-7d47d945d12e/traces-upload.json",
+      "bytes": 195,
+      "sha256": "cb0b387bb2d8649474bea1c98c76261187f46edcb0ebcb5853e4e150607db5a0"
+    },
+    {
+      "path": "runs/20260913T173206Z-7d47d945d12e/traces.json",
+      "bytes": 15603,
+      "sha256": "8787210f8387d98f604cbd25f02b98b50137d0ec071cbb7ee5e0602c9161b237"
+    },
+    {
+      "path": "runs/20260913T173237Z-0d6e79705e42/dataset-snapshot.json",
+      "bytes": 1629453,
+      "sha256": "33a17db33c4ce46a4b5c594cc40d708c00e5d54a68a79aa2f497fab6f31b224a"
+    },
+    {
+      "path": "runs/20260913T173237Z-0d6e79705e42/phoenix.json",
+      "bytes": 306,
+      "sha256": "a4b66fbe1c7b7a82471c12c7283c8b541c3debd66a8bcac2adbc39dc27b4506d"
+    },
+    {
+      "path": "runs/20260913T173237Z-0d6e79705e42/report.json",
+      "bytes": 18064,
+      "sha256": "b33c1b0dacf43e7f3d7761ffd27053a72ef6c81c03719b1a7f02793f7c161ca9"
+    },
+    {
+      "path": "runs/20260913T173237Z-0d6e79705e42/scores.csv",
+      "bytes": 258,
+      "sha256": "d3283deb8e427f91cd6129d018e592ff7ac1cfc238297ea023e3e4bcb401ba15"
+    },
+    {
+      "path": "runs/20260913T173237Z-0d6e79705e42/tasks/extract_taxcalc_ty25_va_004_remaining_data-1/events.json",
+      "bytes": 1052,
+      "sha256": "2da41a0664306d894c9c757c4d4888d9ff206880a9c03fa1cfe58e4738f39c81"
+    },
+    {
+      "path": "runs/20260913T173237Z-0d6e79705e42/traces-upload.json",
+      "bytes": 195,
+      "sha256": "bb1c21f04596e510c5f3ce844111fcd2b4bb0b8be406ed36589f63c1e4bf2505"
+    },
+    {
+      "path": "runs/20260913T173237Z-0d6e79705e42/traces.json",
+      "bytes": 15064,
+      "sha256": "972c6a8f1f6a4c0f88ea71a36870c645f87b1f8e6b4b32d7d23a9f565e703364"
+    },
+    {
+      "path": "runs/20260913T173337Z-5fd515138300/dataset-snapshot.json",
+      "bytes": 1629453,
+      "sha256": "33a17db33c4ce46a4b5c594cc40d708c00e5d54a68a79aa2f497fab6f31b224a"
+    },
+    {
+      "path": "runs/20260913T173337Z-5fd515138300/phoenix.json",
+      "bytes": 285,
+      "sha256": "1e0cdcc6d53cdd54c7932c9b5253083b81a9e30ec9da21ca94a6be33325ce625"
+    },
+    {
+      "path": "runs/20260913T173337Z-5fd515138300/report.json",
+      "bytes": 10984,
+      "sha256": "e0cb28467b66e9c364b89ebf7bdb7b4fddf950566bebedfa754bd2b664a33155"
+    },
+    {
+      "path": "runs/20260913T173337Z-5fd515138300/scores.csv",
+      "bytes": 242,
+      "sha256": "ea32bf2b7545ccb80e092a36a2dd9c20b24cdf0294dbaf6d46c2c21c274aef7c"
+    },
+    {
+      "path": "runs/20260913T173337Z-5fd515138300/tasks/reconcile_ty25_ca_007-1/events.json",
+      "bytes": 3174,
+      "sha256": "5867c97e9ee75f13d12cd07e91e2b2b15d98ad753dcca30b8f9aebd95344ae25"
+    },
+    {
+      "path": "runs/20260913T173337Z-5fd515138300/traces-upload.json",
+      "bytes": 196,
+      "sha256": "66c106453347d550d71a80a5aa05712b32ac0f0f53a978abcdebc71891c22b50"
+    },
+    {
+      "path": "runs/20260913T173337Z-5fd515138300/traces.json",
+      "bytes": 12570,
+      "sha256": "8b774801a69cec43204f52d0019ffef249859468334678c50b4fb8556f6bb3ef"
+    },
+    {
+      "path": "runs/20260913T173406Z-050377ceb512/dataset-snapshot.json",
+      "bytes": 1629453,
+      "sha256": "33a17db33c4ce46a4b5c594cc40d708c00e5d54a68a79aa2f497fab6f31b224a"
+    },
+    {
+      "path": "runs/20260913T173406Z-050377ceb512/phoenix.json",
+      "bytes": 285,
+      "sha256": "d8d4ecfd43ee5390f6b56b96b00df70365a8b5818341bff56b31d3bc2a182497"
+    },
+    {
+      "path": "runs/20260913T173406Z-050377ceb512/report.json",
+      "bytes": 10923,
+      "sha256": "3fd71fc51ea2679aff328f172ada46fedbf6017409dae1bae1a1d90dfb626886"
+    },
+    {
+      "path": "runs/20260913T173406Z-050377ceb512/scores.csv",
+      "bytes": 242,
+      "sha256": "32b312879edc0a528632a3f85b13243c591bd0e09ee57e612c3efe816294e245"
+    },
+    {
+      "path": "runs/20260913T173406Z-050377ceb512/tasks/reconcile_ty25_ca_007-1/events.json",
+      "bytes": 3174,
+      "sha256": "9dfff9c38c7257a2f2b0d572946b80818b9389952918a6bb8e28d368ac80f040"
+    },
+    {
+      "path": "runs/20260913T173406Z-050377ceb512/traces-upload.json",
+      "bytes": 196,
+      "sha256": "70b4e39d5fd796c4dbc29902a2b2e04791ff451062d921371691993749ddd861"
+    },
+    {
+      "path": "runs/20260913T173406Z-050377ceb512/traces.json",
+      "bytes": 12512,
+      "sha256": "e64a47ab68d1933a18de8294b136a77b3df07be38ff9dfa5b82351bfded4558f"
+    },
+    {
+      "path": "runs/20260913T173436Z-5268576f4e69/dataset-snapshot.json",
+      "bytes": 1629453,
+      "sha256": "33a17db33c4ce46a4b5c594cc40d708c00e5d54a68a79aa2f497fab6f31b224a"
+    },
+    {
+      "path": "runs/20260913T173436Z-5268576f4e69/phoenix.json",
+      "bytes": 285,
+      "sha256": "430d88301e9e1e3d6d675ac89c00817bf74545bc1583b1ded49f98a79d960df2"
+    },
+    {
+      "path": "runs/20260913T173436Z-5268576f4e69/report.json",
+      "bytes": 10918,
+      "sha256": "a7aba7750cce935da157102e6b09eb6c55be273a7357cba73f546a3dc5df3f65"
+    },
+    {
+      "path": "runs/20260913T173436Z-5268576f4e69/scores.csv",
+      "bytes": 241,
+      "sha256": "c548985960fe0dd0d43b31bd77f8afd9035b212b585cef08b07766be12f627d4"
+    },
+    {
+      "path": "runs/20260913T173436Z-5268576f4e69/tasks/reconcile_ty25_ca_007-1/events.json",
+      "bytes": 1056,
+      "sha256": "71e22ed8f7190fd08a7249b43c07d19691eb655674b2196f2f4d89d49029d941"
+    },
+    {
+      "path": "runs/20260913T173436Z-5268576f4e69/traces-upload.json",
+      "bytes": 195,
+      "sha256": "355d5e59cccbf16e4ad30ad752cd39901b2c95d87035df1e4acf28e3617df384"
+    },
+    {
+      "path": "runs/20260913T173436Z-5268576f4e69/traces.json",
+      "bytes": 9683,
+      "sha256": "03e183b32cfeb1164cca70a282793e545fe3997e128834288f4fc277b667899e"
+    }
+  ]
+}
