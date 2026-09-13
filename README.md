@@ -44,7 +44,7 @@ python3 -m evals --dataset datasets/tax-document-eval-v1 \
 
 El resultado queda en `runs/<id>/report.json` y en [Phoenix local](http://127.0.0.1:6006). Para saber si la tarea aprobó, mirá `summary.tasks_passed` y `rows[].scores.task_pass`: un proceso que termina con código 0 puede contener respuestas incorrectas.
 
-`./run.py` ejecuta y publica resultados. `python3 -m evals` ejecuta y guarda reportes locales; un harness con OTel propio puede seguir enviando sus spans. Los dos usan el mismo runner y los mismos evaluadores.
+`./run.py` ejecuta y publica resultados. `python3 -m evals` ejecuta y guarda reportes locales; un harness con OTel propio puede seguir enviando sus spans. Los dos comparten el flujo de [`evals/application.py`](evals/application.py), el runner y los evaluadores.
 
 ## Dónde vive cada cosa
 
@@ -55,8 +55,9 @@ El resultado queda en `runs/<id>/report.json` y en [Phoenix local](http://127.0.
 | [`harnesses/`](harnesses/) | Perfiles de Pi, Tau, Codex y ejemplo corporativo |
 | [`containers/`](containers/) | Imagen, proceso del worker y proxy de salida |
 | [`datasets/`](datasets/) | Documentos, tareas y referencias del evaluador |
-| [`scripts/`](scripts/) | Preparar y verificar el dataset completo desde las fuentes |
-| [`tests/`](tests/) | Contratos, casos adversariales e integración |
+| [`preparation/`](preparation/) | Construcción del dataset, integridad de fuentes y extractores auditados |
+| [`scripts/`](scripts/) | Comandos pequeños de entrada; delegan en los paquetes |
+| [`tests/`](tests/) | `unit/`: lógica; `datasets/`: fuentes y referencias; `integration/`: Docker/Phoenix; `support/`: utilidades compartidas |
 | `runs/` | Resultados locales; Git los ignora |
 | [`artifacts/`](artifacts/) | Evidencias y respaldos de corridas guardados en Git |
 | [`docs/`](docs/README.md) | Guías, decisiones y auditorías |
@@ -65,4 +66,4 @@ El resultado queda en `runs/<id>/report.json` y en [Phoenix local](http://127.0.
 
 La [auditoría del conjunto completo](docs/FULL_DATASET_AUDIT.md) registra **256 tests aprobados y 12/12 corridas reales con Sol medium**: cuatro tareas en cada harness, cubriendo PDF, imagen, JSON y conciliación. La matriz completa de 3.294 invocaciones y el CLI corporativo quedan pendientes.
 
-Los campos evaluados y las sumas tienen un alcance explícito; no representan una declaración fiscal completa. Los resultados históricos del minimal conservan su contrato original. El [índice](docs/README.md) permite encontrar cada evidencia sin confundirla con las instrucciones actuales.
+Los campos evaluados y las sumas tienen un alcance explícito; no representan una declaración fiscal completa. Los resultados históricos conservan sus identidades originales. La reubicación del scorer cambia su hash de fuente, aunque mantiene sus reglas; para recuperar las corridas anteriores se usa `--import-run`, como explica [compatibilidad](docs/FINGERPRINTS.md). El [índice](docs/README.md) permite encontrar cada evidencia sin confundirla con las instrucciones actuales.

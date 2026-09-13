@@ -1,0 +1,85 @@
+{
+  "recorded_at": "2026-09-13T18:52:41.966549+00:00",
+  "base_commit": "79317f4b293d31c286bac0e7266d5f780a18574a",
+  "scope": "Physical module and test reorganization; same task contract, same verified scoring decisions, new explicit scoring source identity.",
+  "full_suite": {
+    "passed": 264,
+    "skipped": 0,
+    "duration_seconds": 60.935,
+    "command": "DOC_INTELL_DOCKER_TESTS=1 DOC_INTELL_PHOENIX_TESTS=1 uv run --with-requirements tests/requirements.txt python -m unittest discover -s tests -q"
+  },
+  "model_calls": 0,
+  "fingerprints_before": {
+    "fingerprint_version": "eval-fingerprints-v1",
+    "contract_sha256": "9db95f92ea265d8fb32f002892b0beaf23b296620dc09cdbbd7ac5aa5c0d36ea",
+    "scoring_sha256": "90648ee27f2efe07cbb5f4e5643084d833cde89e380f45755bd1e4e40924a94f",
+    "runtime_code_sha256": "22b0fc0f0e6f2ebdb3d076333a50416686893473a2811966f973a5c77599d320"
+  },
+  "fingerprints_after": {
+    "fingerprint_version": "eval-fingerprints-v1",
+    "contract_sha256": "9db95f92ea265d8fb32f002892b0beaf23b296620dc09cdbbd7ac5aa5c0d36ea",
+    "scoring_sha256": "7cb36ed0d74c892ccd72eaf65465386b83ee55e88b896b1e0f418300eac99d25",
+    "runtime_code_sha256": "af90c8bfc4b9a665e97c92cdc90b2cfba9bfade8a0e524260eede8bbb833dc1b"
+  },
+  "dataset_versions": {
+    "tax-mini-poc": "0cc394dfbe7f4a18d7fda9265f7b6b0bc3137904f0e59719c53843ac7879720e",
+    "tax-document-eval-v1": "8caee9331e585177a1c26645d29932cf37866d357e657e64b7646fa3c4c60b0c"
+  },
+  "contract_unchanged": true,
+  "protected_files_checked": 850,
+  "protected_files_identical": 849,
+  "protected_changes": {
+    "datasets/tax-document-eval-v1/audit.json": {
+      "before": "1192659cd73a987c8967f416305e0fcf6389d4b6ce4ac7265ed0c1ec6a620ccf",
+      "after": "fe6abf2826177c1910d1d63156870f7f188911ee0c1f5e102174c17409b598c4"
+    }
+  },
+  "scoring_equivalence": {
+    "tasks": 372,
+    "reference_answers": true,
+    "every_field_mutations": [
+      "missing",
+      "wrong_value",
+      "wrong_document",
+      "wrong_page",
+      "wrong_box",
+      "extra_reference"
+    ],
+    "malformed_answers": true,
+    "execution_statuses": [
+      "success",
+      "timeout",
+      "unsupported",
+      "adapter_error",
+      "invalid_response"
+    ],
+    "exported_phoenix_evaluators_byte_identical": 5
+  },
+  "history": {
+    "baseline_manifest_unchanged": true,
+    "original_artifacts_unchanged": true,
+    "original_grader_unchanged": true,
+    "historical_migration_uses_hash_verified_frozen_sources": true,
+    "old_and_new_scoring_sources_not_implicitly_comparable": true,
+    "real_runs_read_back_without_model_calls": 12
+  },
+  "evidence_sha256": {
+    "README.md": "fce2fbf7bb6e335d8d9523fce57a606d676dc84a7539241a2e8010fd16af6289",
+    "baseline-scoring.json": "a06f196046b9c2bc4d18e77450fec4f68bbe2a1fb79a3d7007d4790aaacade6d",
+    "diagnostics.json": "c6f8bbac15f533f8495bdd8ea72acf7f48a84ffc9b9aa6adf5f9cec1ed149c86",
+    "docs-check.json": "a70a3462233a05aa8d14cf0d67b4fdc27d95d6ec1897029b13d76722d5c917f6",
+    "formatting-check.txt": "bf9e10897809ff109ff552809ca6f817ed657fdab2829cc25699fff0a4fbf2fa",
+    "historical-live-readback.json": "2b6630dd624a6065a916ba749cff9091f97df23e8dacdbf15919e67874809c5e",
+    "preparation-check.json": "2c796114607b46fb2ab0a27e1eec5afcd5c2cb1bb6638c0a482c5d3d9ced6cd6",
+    "preparation-migration.json": "1457aa59b647506a2b7d4f7a8f3f02e6a868ea103f470e222f779f55d97304cd",
+    "test-layout.json": "d0de3c383b96d7245343905fd53c517e64f17cbfc9c34bb0e1094d9fd9fec61d",
+    "tests.txt": "081e75c79dbc7f2cc3280adb40c038b16f837190c9cd6c09941c71a696db3af2"
+  },
+  "post_suite_formatting_check": {
+    "changes": "Remove one trailing blank line in preparation/sources.py and tests/support/reports.py; refresh exact-byte preparation provenance.",
+    "tests_passed": 28,
+    "skipped": 0,
+    "dataset_reproduction": "byte-for-byte-identical",
+    "command": "uv run --with-requirements tests/requirements.txt python -m unittest tests.datasets.test_full_dataset tests.unit.test_phoenix_import -q"
+  }
+}

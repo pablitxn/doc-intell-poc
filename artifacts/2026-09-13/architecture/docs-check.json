@@ -1,0 +1,14 @@
+{
+  "markdown_files": 8,
+  "local_links_verified": 144,
+  "anchors_verified": 5,
+  "notebook_json_valid": true,
+  "stale_active_module_or_test_paths": 0,
+  "git_diff_check": "passed",
+  "documented_scoring_test_command": {
+    "command": "python3 -m unittest tests.unit.test_scoring -v",
+    "tests": 12,
+    "result": "passed"
+  },
+  "historical_counts_changed": false
+}

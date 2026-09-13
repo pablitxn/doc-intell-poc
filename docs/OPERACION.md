@@ -120,7 +120,7 @@ Para reconstruir resultados guardados en otra instancia, incluso históricos:
   --phoenix-url http://127.0.0.1:6006 --output-dir runs/restored
 ```
 
-Los dos comandos evitan nuevas inferencias. `--upload-only` exige el dataset y contrato/scoring actuales y reutiliza los checkpoints originales. `--import-run` conserva respuestas y scores históricos, verifica el destino y guarda recibos separados. Los contratos históricos v4 requieren la ruta de importación: [detalles](CORPORATE_READINESS.md#reconstruir-el-historial-en-phoenix).
+Los dos comandos evitan nuevas inferencias. `--upload-only` exige el dataset y contrato/scoring actuales y reutiliza los checkpoints originales. `--import-run` conserva respuestas y scores históricos, verifica el destino y guarda recibos separados. También requieren importación las corridas anteriores al reordenamiento del scorer: tanto la matriz minimal v4 como las 12 pruebas del completo v5 conservan el hash de scoring anterior. Usar el mismo prompt v5 no alcanza para habilitar `--upload-only`. Ver [detalles](CORPORATE_READINESS.md#reconstruir-el-historial-en-phoenix).
 
 `--phoenix-url` o `PHOENIX_ENDPOINT` eligen el destino; `PHOENIX_API_KEY` configura su autenticación. El endpoint admite un origen HTTP(S), sin credenciales embebidas ni prefijo de ruta. Ante una respuesta de red incierta pueden retransmitirse los mismos IDs; no se repite la inferencia. Los reportes incompletos no se publican.
 
@@ -152,6 +152,8 @@ Ese modo usa texto stdin / JSON stdout y timeout, pero no aplica el aislamiento 
 | Perfil, imagen o red | Diagnóstico `--check --check-network`, luego una tarea real explícita |
 | Adapter, tracing, reporting o importación | Tests correspondientes y pruebas de integración con Docker/Phoenix |
 | Documentación | Enlaces y ejemplos contra la CLI y los archivos; no necesita inferencias |
+
+Las pruebas se agrupan por responsabilidad: [`unit/`](../tests/unit/) para lógica, [`datasets/`](../tests/datasets/) para fuentes/referencias y [`integration/`](../tests/integration/) para Docker/Phoenix. [`support/`](../tests/support/) contiene utilidades compartidas, y [`fixtures/`](../tests/fixtures/) datos y procesos de prueba. Por ejemplo, `python3 -m unittest tests.unit.test_scoring -v` ejecuta sólo el scoring; `tests.datasets.test_full_dataset` selecciona los controles del conjunto completo.
 
 Suite local sin activar las integraciones opcionales:
 

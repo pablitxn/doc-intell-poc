@@ -2,6 +2,7 @@
 
 from pathlib import Path
 import math
+import os
 
 
 def add_execution_options(parser, source):
@@ -18,8 +19,18 @@ def add_execution_options(parser, source):
     parser.add_argument('--check-network', action='store_true', help='With --check, probe provider TLS and Phoenix transport without model calls')
 
 
+def add_run_options(parser):
+    """Keep dataset, selection and output defaults identical in both CLIs."""
+    parser.add_argument('--dataset', type=Path, default=Path(__file__).resolve().parents[1] / 'datasets/tax-mini-poc')
+    parser.add_argument('--task', help='One task_id; defaults to all tasks in the selected dataset')
+    parser.add_argument('--timeout', type=float, default=120.0, help='Seconds per harness invocation (default: 120)')
+    parser.add_argument('--output-dir', type=Path, default=Path('runs'))
+    parser.add_argument('--phoenix-url', default=os.environ.get('PHOENIX_ENDPOINT', 'http://127.0.0.1:6006'),
+                        help='Phoenix origin for diagnostics, native OTel and publication when enabled')
+
+
 def selected_profiles(args):
-    from .adapters.runtime import load_profile
+    from .runtime.profiles import load_profile
     names = ['pi', 'tau', 'codex'] if args.harness == 'all' else [args.profile or args.harness]
     return [load_profile(name, model=model, thinking=args.thinking)
             for model in getattr(args, 'models', None) or [args.model] for name in names]
@@ -28,8 +39,9 @@ def selected_profiles(args):
 def native_adapters(args):
     """Preflight every requested profile before any paid invocation."""
     from .adapters.native import NativeHarness
-    from .adapters.runtime import DEFAULT_IMAGE, make_preparer, preflight
-    from .adapters.network import trace_endpoint
+    from .runtime.profiles import DEFAULT_IMAGE
+    from .runtime.docker import make_preparer, preflight
+    from .runtime.network import trace_endpoint
     phoenix_url = getattr(args, 'phoenix_url', 'http://127.0.0.1:6006')
     trace_endpoint(phoenix_url)
     prepared = []

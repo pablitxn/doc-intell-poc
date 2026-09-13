@@ -11,8 +11,9 @@ from uuid import uuid4
 import urllib.request
 import urllib.error
 
-from .adapters.network import trace_endpoint
-from .adapters.runtime import DEFAULT_IMAGE, make_preparer, preflight
+from .runtime.network import trace_endpoint
+from .runtime.profiles import DEFAULT_IMAGE
+from .runtime.docker import make_preparer, preflight
 from .contracts import HarnessInvocation
 from .datasets.loader import load_examples
 from .json_io import strict_json_loads

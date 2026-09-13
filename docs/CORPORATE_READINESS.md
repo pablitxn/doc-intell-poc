@@ -53,14 +53,14 @@ La prueba con SDK OpenTelemetry 1.44.0 crea un Phoenix efímero sin volumen, emi
 
 ```bash
 DOC_INTELL_PHOENIX_TESTS=1 uv run --with opentelemetry-proto==1.44.0 \
-  python -m unittest tests.test_runtime_integration.CorporateOtelConformanceTests -v
+  python -m unittest tests.integration.test_corporate_otel.CorporateOtelConformanceTests -v
 ```
 
 Esta prueba demuestra nuestro contrato/transporte usando un SDK real; la implementación privada debe ejecutar después su propia comprobación. La [propagación estándar](https://opentelemetry.io/docs/languages/python/propagation/) requiere que el proceso receptor extraiga el contexto.
 
 ## Comparar con la línea base
 
-Los [fingerprints separados](FINGERPRINTS.md) permiten cambiar adapters/reporting sin confundir ese cambio con uno de consigna o evaluador. Las nueve corridas GPT-5.6 existentes tienen una migración explícita, verificada y sin inferencias, que crea copias históricas y conserva las originales. El dataset y scoring de esa línea base permanecen intactos. El prompt actual v5 cambia el contrato: no se compara automáticamente una corrida nueva con aquellos resultados v4.
+Los [fingerprints separados](FINGERPRINTS.md) permiten cambiar adapters/reporting sin confundir ese cambio con uno de consigna o evaluador. Las nueve corridas GPT-5.6 existentes tienen una migración explícita, verificada y sin inferencias, que crea copias históricas y conserva las originales. El dataset y las identidades históricas de esa línea base permanecen intactos. La migración verifica el scoring original congelado contra su manifiesto antes de ejecutarlo; no recalifica con el scorer actual. El prompt v5 difiere del contrato de aquella matriz v4, y el reordenamiento del scorer agrega un nuevo hash de scoring. Para comparar con una corrida corporativa nueva, elegir una referencia que coincida en dataset, contrato y scoring; los detalles están en [fingerprints](FINGERPRINTS.md).
 
 ```bash
 tar -xzf artifacts/2026-09-13/runs.tar.gz
@@ -68,7 +68,7 @@ python3 -m evals.experiments.fingerprints migrate-baseline \
   runs/20260913T130955Z-a5ece05863e2 --historical-only \
   --output-dir runs/baseline-historical
 python3 -m evals.experiments.comparison \
-  runs/ID_REFERENCIA_CON_EL_MISMO_DATASET_Y_CONTRATO \
+  runs/ID_REFERENCIA_CON_MISMO_DATASET_CONTRATO_Y_SCORING \
   runs/ID_DEL_CORPORATIVO --output-dir runs/comparisons
 ```
 
@@ -93,7 +93,7 @@ Cada reintento comprueba contenido remoto, no solo IDs locales: recupera tras un
 ./run.py --dataset datasets/tax-document-eval-v1 --upload-only runs/ID_DE_LA_CORRIDA
 ```
 
-Para históricos usar `--import-run`. La migración opcional `--historical-only` agrega un snapshot verificado conservando el contrato v4; esas copias también se publican con `--import-run`, no con `--upload-only`. No se reinterpreta automáticamente una versión antigua con el evaluador actual.
+Para históricos usar `--import-run`, incluidas las 12 pruebas previas del completo con prompt v5 y scoring anterior. La migración opcional `--historical-only` agrega un snapshot verificado conservando el contrato v4; esas copias también se publican con `--import-run`, no con `--upload-only`. No se reinterpreta automáticamente una versión antigua con el evaluador actual.
 
 ## Después de esta etapa
 

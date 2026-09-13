@@ -1,0 +1,1052 @@
+{
+  "check": "unittest-discovery-without-execution",
+  "baseline_count": 256,
+  "discovered_count": 264,
+  "import_errors": [],
+  "missing_baseline_methods": [
+    "BaselineMigrationTests.test_historical_mode_rejects_changed_scoring_sources_or_new_evaluator"
+  ],
+  "added_methods": [
+    "BaselineMigrationTests.test_historical_mode_rejects_corrupt_frozen_sources_before_execution",
+    "BaselineMigrationTests.test_historical_mode_rejects_missing_or_extra_frozen_source",
+    "FingerprintTests.test_legacy_dataset_grader_is_not_a_current_runtime_dependency",
+    "FullDatasetTests.test_preparation_provenance_covers_current_package_and_entry_point",
+    "ScoringRelocationTests.test_active_grader_is_generic_and_original_dataset_grader_is_intact",
+    "ScoringRelocationTests.test_all_five_exported_evaluators_are_byte_identical",
+    "ScoringRelocationTests.test_all_selected_reference_answers_and_execution_failures_preserve_scores",
+    "ScoringRelocationTests.test_every_selected_value_and_reference_mutation_preserves_decisions",
+    "ScoringRelocationTests.test_malformed_answers_preserve_schema_and_failure_classification"
+  ],
+  "duplicate_methods": [],
+  "relocated_tests": [
+    {
+      "before": "test_evaluator_adversarial.AdversarialDatasetContractTests.test_added_requested_field_without_expected_cannot_silently_pass",
+      "after": "unit.test_evaluator_adversarial.AdversarialDatasetContractTests.test_added_requested_field_without_expected_cannot_silently_pass"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialDatasetContractTests.test_case_and_year_overrides_preserve_other_tasks_and_change_dataset_identity",
+      "after": "unit.test_evaluator_adversarial.AdversarialDatasetContractTests.test_case_and_year_overrides_preserve_other_tasks_and_change_dataset_identity"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialDatasetContractTests.test_duplicate_json_keys_and_nonfinite_numbers_are_rejected_at_read",
+      "after": "unit.test_evaluator_adversarial.AdversarialDatasetContractTests.test_duplicate_json_keys_and_nonfinite_numbers_are_rejected_at_read"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialDatasetContractTests.test_empty_tasks_fields_documents_and_extra_reference_task_are_rejected",
+      "after": "unit.test_evaluator_adversarial.AdversarialDatasetContractTests.test_empty_tasks_fields_documents_and_extra_reference_task_are_rejected"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialDatasetContractTests.test_field_types_cannot_diverge_from_tasks_without_detection",
+      "after": "unit.test_evaluator_adversarial.AdversarialDatasetContractTests.test_field_types_cannot_diverge_from_tasks_without_detection"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialDatasetContractTests.test_invalid_task_case_and_year_overrides_are_rejected",
+      "after": "unit.test_evaluator_adversarial.AdversarialDatasetContractTests.test_invalid_task_case_and_year_overrides_are_rejected"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialDatasetContractTests.test_manifest_duplicate_ids_paths_and_invalid_pages_are_rejected",
+      "after": "unit.test_evaluator_adversarial.AdversarialDatasetContractTests.test_manifest_duplicate_ids_paths_and_invalid_pages_are_rejected"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialDatasetContractTests.test_missing_reference_field_or_extra_reference_field_is_rejected",
+      "after": "unit.test_evaluator_adversarial.AdversarialDatasetContractTests.test_missing_reference_field_or_extra_reference_field_is_rejected"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialDatasetContractTests.test_overriding_case_does_not_authorize_another_tasks_document",
+      "after": "unit.test_evaluator_adversarial.AdversarialDatasetContractTests.test_overriding_case_does_not_authorize_another_tasks_document"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialDatasetContractTests.test_reference_and_type_task_membership_must_match",
+      "after": "unit.test_evaluator_adversarial.AdversarialDatasetContractTests.test_reference_and_type_task_membership_must_match"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialDatasetContractTests.test_reference_types_docs_and_pages_are_validated",
+      "after": "unit.test_evaluator_adversarial.AdversarialDatasetContractTests.test_reference_types_docs_and_pages_are_validated"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialDatasetContractTests.test_type_file_participates_in_dataset_fingerprint",
+      "after": "unit.test_evaluator_adversarial.AdversarialDatasetContractTests.test_type_file_participates_in_dataset_fingerprint"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialScoringTests.test_boolean_is_not_an_integer_and_dates_must_exist",
+      "after": "unit.test_evaluator_adversarial.AdversarialScoringTests.test_boolean_is_not_an_integer_and_dates_must_exist"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialScoringTests.test_citations_are_exact_sets_with_no_coercion_or_extra_support",
+      "after": "unit.test_evaluator_adversarial.AdversarialScoringTests.test_citations_are_exact_sets_with_no_coercion_or_extra_support"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialScoringTests.test_documented_set_semantics_and_independent_accuracy_are_preserved",
+      "after": "unit.test_evaluator_adversarial.AdversarialScoringTests.test_documented_set_semantics_and_independent_accuracy_are_preserved"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialScoringTests.test_each_failure_status_keeps_every_field_in_denominator_and_zeroes_credit",
+      "after": "unit.test_evaluator_adversarial.AdversarialScoringTests.test_each_failure_status_keeps_every_field_in_denominator_and_zeroes_credit"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialScoringTests.test_extra_or_unrequested_fields_do_not_pass_schema",
+      "after": "unit.test_evaluator_adversarial.AdversarialScoringTests.test_extra_or_unrequested_fields_do_not_pass_schema"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialScoringTests.test_missing_zero_and_false_stay_wrong",
+      "after": "unit.test_evaluator_adversarial.AdversarialScoringTests.test_missing_zero_and_false_stay_wrong"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialScoringTests.test_money_mutations_reject_false_task_pass_and_match_phoenix",
+      "after": "unit.test_evaluator_adversarial.AdversarialScoringTests.test_money_mutations_reject_false_task_pass_and_match_phoenix"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialScoringTests.test_prompts_include_only_assigned_documents_and_shared_format_contract",
+      "after": "unit.test_evaluator_adversarial.AdversarialScoringTests.test_prompts_include_only_assigned_documents_and_shared_format_contract"
+    },
+    {
+      "before": "test_evaluator_adversarial.AdversarialScoringTests.test_runner_repetitions_do_not_drop_failed_tasks",
+      "after": "unit.test_evaluator_adversarial.AdversarialScoringTests.test_runner_repetitions_do_not_drop_failed_tasks"
+    },
+    {
+      "before": "test_fingerprints.BaselineMigrationTests.test_changed_source_or_sidecar_fails_before_writing_copy",
+      "after": "unit.test_fingerprints.BaselineMigrationTests.test_changed_source_or_sidecar_fails_before_writing_copy"
+    },
+    {
+      "before": "test_fingerprints.BaselineMigrationTests.test_committed_manifest_covers_exact_nine_archived_reports_and_reviewed_sources",
+      "after": "unit.test_fingerprints.BaselineMigrationTests.test_committed_manifest_covers_exact_nine_archived_reports_and_reviewed_sources"
+    },
+    {
+      "before": "test_fingerprints.BaselineMigrationTests.test_exact_archive_migrates_without_rewriting_original_results",
+      "after": "unit.test_fingerprints.BaselineMigrationTests.test_exact_archive_migrates_without_rewriting_original_results"
+    },
+    {
+      "before": "test_fingerprints.BaselineMigrationTests.test_historical_mode_rejects_changed_reference_dataset",
+      "after": "unit.test_fingerprints.BaselineMigrationTests.test_historical_mode_rejects_changed_reference_dataset"
+    },
+    {
+      "before": "test_fingerprints.BaselineMigrationTests.test_modified_report_cannot_claim_baseline_compatibility",
+      "after": "unit.test_fingerprints.BaselineMigrationTests.test_modified_report_cannot_claim_baseline_compatibility"
+    },
+    {
+      "before": "test_evals.CLITests.test_cli_passes_command_as_arguments_and_run_options",
+      "after": "unit.test_cli.CLITests.test_cli_passes_command_as_arguments_and_run_options"
+    },
+    {
+      "before": "test_evals.CLITests.test_harness_command_is_required",
+      "after": "unit.test_cli.CLITests.test_harness_command_is_required"
+    },
+    {
+      "before": "test_evals.CLITests.test_missing_executable_does_not_start_an_experiment",
+      "after": "unit.test_cli.CLITests.test_missing_executable_does_not_start_an_experiment"
+    },
+    {
+      "before": "test_command.CommandHarnessTests.test_command_is_snapshotted_at_construction",
+      "after": "unit.test_command.CommandHarnessTests.test_command_is_snapshotted_at_construction"
+    },
+    {
+      "before": "test_command.CommandHarnessTests.test_duplicate_object_keys_are_rejected_instead_of_silently_overwritten",
+      "after": "unit.test_command.CommandHarnessTests.test_duplicate_object_keys_are_rejected_instead_of_silently_overwritten"
+    },
+    {
+      "before": "test_command.CommandHarnessTests.test_inherits_environment_without_exposing_stderr",
+      "after": "unit.test_command.CommandHarnessTests.test_inherits_environment_without_exposing_stderr"
+    },
+    {
+      "before": "test_command.CommandHarnessTests.test_invalid_or_extra_stdout_is_a_safe_response_error",
+      "after": "unit.test_command.CommandHarnessTests.test_invalid_or_extra_stdout_is_a_safe_response_error"
+    },
+    {
+      "before": "test_command.CommandHarnessTests.test_invalid_utf8_stdout_is_a_response_error",
+      "after": "unit.test_command.CommandHarnessTests.test_invalid_utf8_stdout_is_a_response_error"
+    },
+    {
+      "before": "test_command.CommandHarnessTests.test_nonfinite_json_numbers_are_rejected_including_numeric_overflow",
+      "after": "unit.test_command.CommandHarnessTests.test_nonfinite_json_numbers_are_rejected_including_numeric_overflow"
+    },
+    {
+      "before": "test_command.CommandHarnessTests.test_nonzero_exit_has_safe_error_without_diagnostics",
+      "after": "unit.test_command.CommandHarnessTests.test_nonzero_exit_has_safe_error_without_diagnostics"
+    },
+    {
+      "before": "test_command.CommandHarnessTests.test_passes_exact_text_on_stdin_without_shell_interpretation",
+      "after": "unit.test_command.CommandHarnessTests.test_passes_exact_text_on_stdin_without_shell_interpretation"
+    },
+    {
+      "before": "test_command.CommandHarnessTests.test_rejects_invalid_command_before_invocation",
+      "after": "unit.test_command.CommandHarnessTests.test_rejects_invalid_command_before_invocation"
+    },
+    {
+      "before": "test_command.CommandHarnessTests.test_rejects_invalid_timeout_before_invocation",
+      "after": "unit.test_command.CommandHarnessTests.test_rejects_invalid_timeout_before_invocation"
+    },
+    {
+      "before": "test_command.CommandHarnessTests.test_rejects_nontext_input",
+      "after": "unit.test_command.CommandHarnessTests.test_rejects_nontext_input"
+    },
+    {
+      "before": "test_command.CommandHarnessTests.test_resolves_installed_executable_on_path",
+      "after": "unit.test_command.CommandHarnessTests.test_resolves_installed_executable_on_path"
+    },
+    {
+      "before": "test_command.CommandHarnessTests.test_same_keys_in_distinct_objects_and_finite_numbers_remain_valid",
+      "after": "unit.test_command.CommandHarnessTests.test_same_keys_in_distinct_objects_and_finite_numbers_remain_valid"
+    },
+    {
+      "before": "test_command.CommandHarnessTests.test_timeout_also_terminates_children_holding_output_pipes",
+      "after": "unit.test_command.CommandHarnessTests.test_timeout_also_terminates_children_holding_output_pipes"
+    },
+    {
+      "before": "test_command.CommandHarnessTests.test_timeout_terminates_harness_and_hides_diagnostics",
+      "after": "unit.test_command.CommandHarnessTests.test_timeout_terminates_harness_and_hides_diagnostics"
+    },
+    {
+      "before": "test_command.CommandHarnessTests.test_uses_a_fresh_process_for_each_call",
+      "after": "unit.test_command.CommandHarnessTests.test_uses_a_fresh_process_for_each_call"
+    },
+    {
+      "before": "test_comparison.ComparisonTests.test_changed_contract_or_scoring_blocks_comparison",
+      "after": "unit.test_comparison.ComparisonTests.test_changed_contract_or_scoring_blocks_comparison"
+    },
+    {
+      "before": "test_comparison.ComparisonTests.test_changed_evaluator_code_cannot_be_compared_under_same_version_label",
+      "after": "unit.test_comparison.ComparisonTests.test_changed_evaluator_code_cannot_be_compared_under_same_version_label"
+    },
+    {
+      "before": "test_comparison.ComparisonTests.test_comparison_keeps_failures_null_consumption_and_original_evidence",
+      "after": "unit.test_comparison.ComparisonTests.test_comparison_keeps_failures_null_consumption_and_original_evidence"
+    },
+    {
+      "before": "test_comparison.ComparisonTests.test_comparison_metadata_and_hashes_must_be_nonempty_text",
+      "after": "unit.test_comparison.ComparisonTests.test_comparison_metadata_and_hashes_must_be_nonempty_text"
+    },
+    {
+      "before": "test_comparison.ComparisonTests.test_complete_must_be_explicit_boolean_true",
+      "after": "unit.test_comparison.ComparisonTests.test_complete_must_be_explicit_boolean_true"
+    },
+    {
+      "before": "test_comparison.ComparisonTests.test_different_task_membership_cannot_be_compared",
+      "after": "unit.test_comparison.ComparisonTests.test_different_task_membership_cannot_be_compared"
+    },
+    {
+      "before": "test_comparison.ComparisonTests.test_legacy_requires_matching_whole_source_and_cannot_mix_with_modern",
+      "after": "unit.test_comparison.ComparisonTests.test_legacy_requires_matching_whole_source_and_cannot_mix_with_modern"
+    },
+    {
+      "before": "test_comparison.ComparisonTests.test_missing_repetitions_cannot_hide_behind_complete_true",
+      "after": "unit.test_comparison.ComparisonTests.test_missing_repetitions_cannot_hide_behind_complete_true"
+    },
+    {
+      "before": "test_comparison.ComparisonTests.test_partial_fingerprint_metadata_cannot_fall_back_to_legacy",
+      "after": "unit.test_comparison.ComparisonTests.test_partial_fingerprint_metadata_cannot_fall_back_to_legacy"
+    },
+    {
+      "before": "test_comparison.ComparisonTests.test_partial_reports_cannot_be_compared_as_finished_experiments",
+      "after": "unit.test_comparison.ComparisonTests.test_partial_reports_cannot_be_compared_as_finished_experiments"
+    },
+    {
+      "before": "test_comparison.ComparisonTests.test_repetitions_must_be_a_positive_integer",
+      "after": "unit.test_comparison.ComparisonTests.test_repetitions_must_be_a_positive_integer"
+    },
+    {
+      "before": "test_comparison.ComparisonTests.test_runtime_sources_can_differ_with_matching_contract_and_scoring",
+      "after": "unit.test_comparison.ComparisonTests.test_runtime_sources_can_differ_with_matching_contract_and_scoring"
+    },
+    {
+      "before": "test_comparison.ComparisonTests.test_unknown_model_is_not_reported_as_controlled_comparison",
+      "after": "unit.test_comparison.ComparisonTests.test_unknown_model_is_not_reported_as_controlled_comparison"
+    },
+    {
+      "before": "test_runtime_integration.CorporateOtelConformanceTests.test_corporate_sdk_exports_connected_spans_with_and_without_gzip",
+      "after": "integration.test_corporate_otel.CorporateOtelConformanceTests.test_corporate_sdk_exports_connected_spans_with_and_without_gzip"
+    },
+    {
+      "before": "test_dataset_source_audit.DatasetSourceAuditTests.test_all_54_ground_truth_values_and_citations_match_independent_transcription",
+      "after": "datasets.test_dataset_source_audit.DatasetSourceAuditTests.test_all_54_ground_truth_values_and_citations_match_independent_transcription"
+    },
+    {
+      "before": "test_dataset_source_audit.DatasetSourceAuditTests.test_all_sources_match_the_visually_reviewed_pdf_bytes",
+      "after": "datasets.test_dataset_source_audit.DatasetSourceAuditTests.test_all_sources_match_the_visually_reviewed_pdf_bytes"
+    },
+    {
+      "before": "test_dataset_source_audit.DatasetSourceAuditTests.test_dataset_checksum_receipt_has_no_stale_or_missing_files",
+      "after": "datasets.test_dataset_source_audit.DatasetSourceAuditTests.test_dataset_checksum_receipt_has_no_stale_or_missing_files"
+    },
+    {
+      "before": "test_dataset_source_audit.DatasetSourceAuditTests.test_reconciliation_and_payroll_arithmetic_recompute_from_printed_inputs",
+      "after": "datasets.test_dataset_source_audit.DatasetSourceAuditTests.test_reconciliation_and_payroll_arithmetic_recompute_from_printed_inputs"
+    },
+    {
+      "before": "test_diagnostics.DiagnosticTests.test_acquisition_kit_requires_derived_tasks_before_any_runtime_access",
+      "after": "unit.test_diagnostics.DiagnosticTests.test_acquisition_kit_requires_derived_tasks_before_any_runtime_access"
+    },
+    {
+      "before": "test_diagnostics.DiagnosticTests.test_check_entrypoint_stops_before_harness_or_phoenix_publication",
+      "after": "unit.test_diagnostics.DiagnosticTests.test_check_entrypoint_stops_before_harness_or_phoenix_publication"
+    },
+    {
+      "before": "test_diagnostics.DiagnosticTests.test_formats_are_reported_without_claiming_content_or_model_validation",
+      "after": "unit.test_diagnostics.DiagnosticTests.test_formats_are_reported_without_claiming_content_or_model_validation"
+    },
+    {
+      "before": "test_diagnostics.DiagnosticTests.test_invalid_dataset_fails_before_runtime_or_network",
+      "after": "unit.test_diagnostics.DiagnosticTests.test_invalid_dataset_fails_before_runtime_or_network"
+    },
+    {
+      "before": "test_diagnostics.DiagnosticTests.test_local_checks_report_scope_and_never_invoke_harness",
+      "after": "unit.test_diagnostics.DiagnosticTests.test_local_checks_report_scope_and_never_invoke_harness"
+    },
+    {
+      "before": "test_diagnostics.DiagnosticTests.test_network_failure_is_visible_without_model_call",
+      "after": "unit.test_diagnostics.DiagnosticTests.test_network_failure_is_visible_without_model_call"
+    },
+    {
+      "before": "test_diagnostics.DiagnosticTests.test_phoenix_readiness_does_not_follow_redirects_with_credentials",
+      "after": "unit.test_diagnostics.DiagnosticTests.test_phoenix_readiness_does_not_follow_redirects_with_credentials"
+    },
+    {
+      "before": "test_diagnostics.DiagnosticTests.test_unfilled_corporate_profile_does_not_appear_ready",
+      "after": "unit.test_diagnostics.DiagnosticTests.test_unfilled_corporate_profile_does_not_appear_ready"
+    },
+    {
+      "before": "test_diagnostics.DiagnosticTests.test_unverified_image_version_is_explicit",
+      "after": "unit.test_diagnostics.DiagnosticTests.test_unverified_image_version_is_explicit"
+    },
+    {
+      "before": "test_diagnostics.DiagnosticTests.test_worker_diagnostic_drops_provider_credentials",
+      "after": "unit.test_diagnostics.DiagnosticTests.test_worker_diagnostic_drops_provider_credentials"
+    },
+    {
+      "before": "test_runtime_integration.DockerConformanceTests.test_mixed_format_mounts_expose_only_assigned_inputs",
+      "after": "integration.test_docker_runtime.DockerConformanceTests.test_mixed_format_mounts_expose_only_assigned_inputs"
+    },
+    {
+      "before": "test_runtime_integration.DockerConformanceTests.test_native_model_catalogs_contain_exact_luna_sol_terra_with_medium",
+      "after": "integration.test_docker_runtime.DockerConformanceTests.test_native_model_catalogs_contain_exact_luna_sol_terra_with_medium"
+    },
+    {
+      "before": "test_runtime_integration.DockerConformanceTests.test_worker_has_assigned_pdf_but_no_ground_truth_or_evaluator_network",
+      "after": "integration.test_docker_runtime.DockerConformanceTests.test_worker_has_assigned_pdf_but_no_ground_truth_or_evaluator_network"
+    },
+    {
+      "before": "test_evals.EvaluatorTests.test_correct_number_still_requires_decimal_string",
+      "after": "unit.test_scoring.EvaluatorTests.test_correct_number_still_requires_decimal_string"
+    },
+    {
+      "before": "test_evals.EvaluatorTests.test_double_counted_sdi_fails",
+      "after": "unit.test_scoring.EvaluatorTests.test_double_counted_sdi_fails"
+    },
+    {
+      "before": "test_evals.EvaluatorTests.test_equal_amount_in_an_intermediate_box_is_not_the_requested_total",
+      "after": "unit.test_scoring.EvaluatorTests.test_equal_amount_in_an_intermediate_box_is_not_the_requested_total"
+    },
+    {
+      "before": "test_evals.EvaluatorTests.test_extra_wrong_citation_fails",
+      "after": "unit.test_scoring.EvaluatorTests.test_extra_wrong_citation_fails"
+    },
+    {
+      "before": "test_evals.EvaluatorTests.test_failure_cannot_pass_with_reference_output",
+      "after": "unit.test_scoring.EvaluatorTests.test_failure_cannot_pass_with_reference_output"
+    },
+    {
+      "before": "test_evals.EvaluatorTests.test_malformed_outputs_are_scored_without_crashing",
+      "after": "unit.test_scoring.EvaluatorTests.test_malformed_outputs_are_scored_without_crashing"
+    },
+    {
+      "before": "test_evals.EvaluatorTests.test_missing_is_not_zero",
+      "after": "unit.test_scoring.EvaluatorTests.test_missing_is_not_zero"
+    },
+    {
+      "before": "test_evals.EvaluatorTests.test_reference_answers_pass_all_54_fields",
+      "after": "unit.test_scoring.EvaluatorTests.test_reference_answers_pass_all_54_fields"
+    },
+    {
+      "before": "test_evals.EvaluatorTests.test_task_inputs_contain_no_reference_labels",
+      "after": "unit.test_scoring.EvaluatorTests.test_task_inputs_contain_no_reference_labels"
+    },
+    {
+      "before": "test_evals.EvaluatorTests.test_tax_liability_citation_is_not_withholding",
+      "after": "unit.test_scoring.EvaluatorTests.test_tax_liability_citation_is_not_withholding"
+    },
+    {
+      "before": "test_evals.EvaluatorTests.test_unrequested_top_level_answer_content_fails_schema",
+      "after": "unit.test_scoring.EvaluatorTests.test_unrequested_top_level_answer_content_fails_schema"
+    },
+    {
+      "before": "test_evals.EvaluatorTests.test_wrong_amount_fails_values_only",
+      "after": "unit.test_scoring.EvaluatorTests.test_wrong_amount_fails_values_only"
+    },
+    {
+      "before": "test_fingerprints.FingerprintTests.test_adapter_reporting_and_runner_changes_are_runtime_only",
+      "after": "unit.test_fingerprints.FingerprintTests.test_adapter_reporting_and_runner_changes_are_runtime_only"
+    },
+    {
+      "before": "test_fingerprints.FingerprintTests.test_contract_and_scoring_changes_have_separate_fingerprints",
+      "after": "unit.test_fingerprints.FingerprintTests.test_contract_and_scoring_changes_have_separate_fingerprints"
+    },
+    {
+      "before": "test_fingerprints.FingerprintTests.test_runtime_context_does_not_change_public_task_contract",
+      "after": "unit.test_fingerprints.FingerprintTests.test_runtime_context_does_not_change_public_task_contract"
+    },
+    {
+      "before": "test_fingerprints.FingerprintTests.test_snapshot_is_complete_private_and_hashed_even_for_one_selected_task",
+      "after": "unit.test_fingerprints.FingerprintTests.test_snapshot_is_complete_private_and_hashed_even_for_one_selected_task"
+    },
+    {
+      "before": "test_full_dataset_integration.FullDatasetPhoenixIntegrationTests.test_complete_dataset_publication_and_fixture_archive_round_trip",
+      "after": "integration.test_full_dataset_integration.FullDatasetPhoenixIntegrationTests.test_complete_dataset_publication_and_fixture_archive_round_trip"
+    },
+    {
+      "before": "test_full_dataset.FullDatasetTests.test_all_50_cases_independently_define_only_supported_reconciliations",
+      "after": "datasets.test_full_dataset.FullDatasetTests.test_all_50_cases_independently_define_only_supported_reconciliations"
+    },
+    {
+      "before": "test_full_dataset.FullDatasetTests.test_audited_blank_prior_return_has_no_invented_zero_amount",
+      "after": "datasets.test_full_dataset.FullDatasetTests.test_audited_blank_prior_return_has_no_invented_zero_amount"
+    },
+    {
+      "before": "test_full_dataset.FullDatasetTests.test_case_and_year_context_matches_every_assigned_document",
+      "after": "datasets.test_full_dataset.FullDatasetTests.test_case_and_year_context_matches_every_assigned_document"
+    },
+    {
+      "before": "test_full_dataset.FullDatasetTests.test_complete_document_task_and_reference_membership",
+      "after": "datasets.test_full_dataset.FullDatasetTests.test_complete_document_task_and_reference_membership"
+    },
+    {
+      "before": "test_full_dataset.FullDatasetTests.test_each_money_task_rejects_json_float_even_when_numerically_equal",
+      "after": "datasets.test_full_dataset.FullDatasetTests.test_each_money_task_rejects_json_float_even_when_numerically_equal"
+    },
+    {
+      "before": "test_full_dataset.FullDatasetTests.test_each_task_rejects_an_incorrect_value_none_and_wrong_box",
+      "after": "datasets.test_full_dataset.FullDatasetTests.test_each_task_rejects_an_incorrect_value_none_and_wrong_box"
+    },
+    {
+      "before": "test_full_dataset.FullDatasetTests.test_expected_answers_are_compatible_with_the_contract_not_a_source_oracle",
+      "after": "datasets.test_full_dataset.FullDatasetTests.test_expected_answers_are_compatible_with_the_contract_not_a_source_oracle"
+    },
+    {
+      "before": "test_full_dataset.FullDatasetTests.test_fake_w2_values_match_reviewed_source_metadata_without_personal_identifiers",
+      "after": "datasets.test_full_dataset.FullDatasetTests.test_fake_w2_values_match_reviewed_source_metadata_without_personal_identifiers"
+    },
+    {
+      "before": "test_full_dataset.FullDatasetTests.test_identical_source_documents_cannot_be_assigned_different_split_groups",
+      "after": "datasets.test_full_dataset.FullDatasetTests.test_identical_source_documents_cannot_be_assigned_different_split_groups"
+    },
+    {
+      "before": "test_full_dataset.FullDatasetTests.test_prompts_and_public_document_metadata_do_not_include_grading_files",
+      "after": "datasets.test_full_dataset.FullDatasetTests.test_prompts_and_public_document_metadata_do_not_include_grading_files"
+    },
+    {
+      "before": "test_full_dataset.FullDatasetTests.test_references_are_assigned_and_qualifiers_are_public",
+      "after": "datasets.test_full_dataset.FullDatasetTests.test_references_are_assigned_and_qualifiers_are_public"
+    },
+    {
+      "before": "test_full_dataset.FullDatasetTests.test_same_amount_in_a_different_printed_box_is_not_interchangeable",
+      "after": "datasets.test_full_dataset.FullDatasetTests.test_same_amount_in_a_different_printed_box_is_not_interchangeable"
+    },
+    {
+      "before": "test_full_dataset.FullDatasetTests.test_source_bytes_and_derived_inputs_have_exact_membership",
+      "after": "datasets.test_full_dataset.FullDatasetTests.test_source_bytes_and_derived_inputs_have_exact_membership"
+    },
+    {
+      "before": "test_model_matrix.ModelMatrixTests.test_all_nine_combinations_preserve_model_and_medium",
+      "after": "unit.test_model_matrix.ModelMatrixTests.test_all_nine_combinations_preserve_model_and_medium"
+    },
+    {
+      "before": "test_model_matrix.ModelMatrixTests.test_network_checks_are_explicit_and_timeouts_are_finite",
+      "after": "unit.test_model_matrix.ModelMatrixTests.test_network_checks_are_explicit_and_timeouts_are_finite"
+    },
+    {
+      "before": "test_model_matrix.ModelMatrixTests.test_profile_error_prevents_any_execution",
+      "after": "unit.test_model_matrix.ModelMatrixTests.test_profile_error_prevents_any_execution"
+    },
+    {
+      "before": "test_model_matrix.ModelMatrixTests.test_rejects_duplicate_models_and_legacy_model_matrix",
+      "after": "unit.test_model_matrix.ModelMatrixTests.test_rejects_duplicate_models_and_legacy_model_matrix"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_closing_stdout_then_sleeping_is_still_bounded",
+      "after": "unit.test_native.NativeHarnessTests.test_closing_stdout_then_sleeping_is_still_bounded"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_codex_mcp_and_failed_tools_keep_only_safe_lifecycle",
+      "after": "unit.test_native.NativeHarnessTests.test_codex_mcp_and_failed_tools_keep_only_safe_lifecycle"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_codex_subscription_composite_tool_ids_do_not_invalidate_pi_tau_answers",
+      "after": "unit.test_native.NativeHarnessTests.test_codex_subscription_composite_tool_ids_do_not_invalidate_pi_tau_answers"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_codex_tools_and_usage_are_observed_without_fabricated_llm_spans",
+      "after": "unit.test_native.NativeHarnessTests.test_codex_tools_and_usage_are_observed_without_fabricated_llm_spans"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_duplicate_response_keys_are_rejected_for_every_transport",
+      "after": "unit.test_native.NativeHarnessTests.test_duplicate_response_keys_are_rejected_for_every_transport"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_duplicate_wire_event_keys_fail_safely_and_preserve_prior_telemetry",
+      "after": "unit.test_native.NativeHarnessTests.test_duplicate_wire_event_keys_fail_safely_and_preserve_prior_telemetry"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_each_invocation_starts_a_fresh_process",
+      "after": "unit.test_native.NativeHarnessTests.test_each_invocation_starts_a_fresh_process"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_explicit_final_phase_excludes_commentary_in_same_message",
+      "after": "unit.test_native.NativeHarnessTests.test_explicit_final_phase_excludes_commentary_in_same_message"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_generic_json_passes_exact_stdin_and_preserves_answer",
+      "after": "unit.test_native.NativeHarnessTests.test_generic_json_passes_exact_stdin_and_preserves_answer"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_incomplete_native_stream_is_invalid_even_with_an_assistant_item",
+      "after": "unit.test_native.NativeHarnessTests.test_incomplete_native_stream_is_invalid_even_with_an_assistant_item"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_invalid_timeouts_and_output_modes_fail_before_launch",
+      "after": "unit.test_native.NativeHarnessTests.test_invalid_timeouts_and_output_modes_fail_before_launch"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_invalid_utf8_and_malformed_stream_fail_safely",
+      "after": "unit.test_native.NativeHarnessTests.test_invalid_utf8_and_malformed_stream_fail_safely"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_json_is_strict_without_markdown_or_extra_object_repair",
+      "after": "unit.test_native.NativeHarnessTests.test_json_is_strict_without_markdown_or_extra_object_repair"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_missing_final_message_is_distinct_from_invalid_json_text",
+      "after": "unit.test_native.NativeHarnessTests.test_missing_final_message_is_distinct_from_invalid_json_text"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_missing_usage_stays_unknown_and_reported_zero_is_preserved",
+      "after": "unit.test_native.NativeHarnessTests.test_missing_usage_stays_unknown_and_reported_zero_is_preserved"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_native_fatal_event_is_error_even_when_process_exits_zero",
+      "after": "unit.test_native.NativeHarnessTests.test_native_fatal_event_is_error_even_when_process_exits_zero"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_nonzero_exit_preserves_events_and_suppresses_diagnostics",
+      "after": "unit.test_native.NativeHarnessTests.test_nonzero_exit_preserves_events_and_suppresses_diagnostics"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_only_last_assistant_response_is_parsed",
+      "after": "unit.test_native.NativeHarnessTests.test_only_last_assistant_response_is_parsed"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_partial_usage_is_not_reported_as_complete_total",
+      "after": "unit.test_native.NativeHarnessTests.test_partial_usage_is_not_reported_as_complete_total"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_pi_and_tau_camelcase_fixtures_produce_only_safe_metadata",
+      "after": "unit.test_native.NativeHarnessTests.test_pi_and_tau_camelcase_fixtures_produce_only_safe_metadata"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_pi_duplicate_message_end_and_aggregate_copies_do_not_double_usage",
+      "after": "unit.test_native.NativeHarnessTests.test_pi_duplicate_message_end_and_aggregate_copies_do_not_double_usage"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_prepare_and_cleanup_exceptions_are_sanitized",
+      "after": "unit.test_native.NativeHarnessTests.test_prepare_and_cleanup_exceptions_are_sanitized"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_prepared_environment_and_cwd_are_used_without_shell",
+      "after": "unit.test_native.NativeHarnessTests.test_prepared_environment_and_cwd_are_used_without_shell"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_stdout_and_line_limits_preserve_earlier_events",
+      "after": "unit.test_native.NativeHarnessTests.test_stdout_and_line_limits_preserve_earlier_events"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_timeout_preserves_received_events_and_does_not_wait_for_children",
+      "after": "unit.test_native.NativeHarnessTests.test_timeout_preserves_received_events_and_does_not_wait_for_children"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_tool_json_decoy_and_intermediate_assistant_never_become_final",
+      "after": "unit.test_native.NativeHarnessTests.test_tool_json_decoy_and_intermediate_assistant_never_become_final"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_tool_use_without_final_answer_is_invalid",
+      "after": "unit.test_native.NativeHarnessTests.test_tool_use_without_final_answer_is_invalid"
+    },
+    {
+      "before": "test_native.NativeHarnessTests.test_unknown_event_payload_is_not_retained",
+      "after": "unit.test_native.NativeHarnessTests.test_unknown_event_payload_is_not_retained"
+    },
+    {
+      "before": "test_phoenix_evaluators.PhoenixEvaluatorTests.test_disabled_provider_is_not_reenabled",
+      "after": "unit.test_phoenix_evaluators.PhoenixEvaluatorTests.test_disabled_provider_is_not_reenabled"
+    },
+    {
+      "before": "test_phoenix_evaluators.PhoenixEvaluatorTests.test_duplicate_definitions_are_rejected_before_network_access",
+      "after": "unit.test_phoenix_evaluators.PhoenixEvaluatorTests.test_duplicate_definitions_are_rejected_before_network_access"
+    },
+    {
+      "before": "test_phoenix_evaluators.PhoenixEvaluatorTests.test_follows_pagination_when_looking_up_an_existing_definition",
+      "after": "unit.test_phoenix_evaluators.PhoenixEvaluatorTests.test_follows_pagination_when_looking_up_an_existing_definition"
+    },
+    {
+      "before": "test_phoenix_evaluators.PhoenixEvaluatorTests.test_graphql_failure_does_not_expose_server_diagnostics",
+      "after": "unit.test_phoenix_evaluators.PhoenixEvaluatorTests.test_graphql_failure_does_not_expose_server_diagnostics"
+    },
+    {
+      "before": "test_phoenix_evaluators.PhoenixEvaluatorTests.test_refuses_remote_edits_instead_of_overwriting_them",
+      "after": "unit.test_phoenix_evaluators.PhoenixEvaluatorTests.test_refuses_remote_edits_instead_of_overwriting_them"
+    },
+    {
+      "before": "test_phoenix_evaluators.PhoenixEvaluatorTests.test_registers_five_code_definitions_with_one_local_sandbox",
+      "after": "unit.test_phoenix_evaluators.PhoenixEvaluatorTests.test_registers_five_code_definitions_with_one_local_sandbox"
+    },
+    {
+      "before": "test_phoenix_evaluators.PhoenixEvaluatorTests.test_repeated_registration_reuses_records_without_mutations_or_runtime_access",
+      "after": "unit.test_phoenix_evaluators.PhoenixEvaluatorTests.test_repeated_registration_reuses_records_without_mutations_or_runtime_access"
+    },
+    {
+      "before": "test_phoenix_evaluators.PhoenixEvaluatorTests.test_reuses_available_python_wasm_config",
+      "after": "unit.test_phoenix_evaluators.PhoenixEvaluatorTests.test_reuses_available_python_wasm_config"
+    },
+    {
+      "before": "test_phoenix_evaluators.PhoenixEvaluatorTests.test_reuses_persisted_definitions_with_phoenix_20_11_hidden_output_configs",
+      "after": "unit.test_phoenix_evaluators.PhoenixEvaluatorTests.test_reuses_persisted_definitions_with_phoenix_20_11_hidden_output_configs"
+    },
+    {
+      "before": "test_phoenix_evaluators.PhoenixEvaluatorTests.test_source_changes_get_new_names_preserving_original_definitions",
+      "after": "unit.test_phoenix_evaluators.PhoenixEvaluatorTests.test_source_changes_get_new_names_preserving_original_definitions"
+    },
+    {
+      "before": "test_phoenix_import.PhoenixImportIntegrationTests.test_empty_phoenix_import_and_retry_verify_outputs_scores_and_spans",
+      "after": "integration.test_phoenix_import.PhoenixImportIntegrationTests.test_empty_phoenix_import_and_retry_verify_outputs_scores_and_spans"
+    },
+    {
+      "before": "test_phoenix_import.PhoenixImportTests.test_invalid_report_rejected_before_remote_writes",
+      "after": "unit.test_phoenix_import.PhoenixImportTests.test_invalid_report_rejected_before_remote_writes"
+    },
+    {
+      "before": "test_phoenix_import.PhoenixImportTests.test_lost_responses_recover_by_remote_identity_without_duplicates",
+      "after": "unit.test_phoenix_import.PhoenixImportTests.test_lost_responses_recover_by_remote_identity_without_duplicates"
+    },
+    {
+      "before": "test_phoenix_import.PhoenixImportTests.test_lost_trace_response_recovers_only_after_reading_persisted_span",
+      "after": "unit.test_phoenix_import.PhoenixImportTests.test_lost_trace_response_recovers_only_after_reading_persisted_span"
+    },
+    {
+      "before": "test_phoenix_import.PhoenixImportTests.test_metadata_normalization_and_changed_attribute_with_original_marker",
+      "after": "unit.test_phoenix_import.PhoenixImportTests.test_metadata_normalization_and_changed_attribute_with_original_marker"
+    },
+    {
+      "before": "test_phoenix_import.PhoenixImportTests.test_missing_trace_artifact_is_not_silently_dropped",
+      "after": "unit.test_phoenix_import.PhoenixImportTests.test_missing_trace_artifact_is_not_silently_dropped"
+    },
+    {
+      "before": "test_phoenix_import.PhoenixImportTests.test_old_scores_and_versions_preserved_without_regrade_or_original_changes",
+      "after": "unit.test_phoenix_import.PhoenixImportTests.test_old_scores_and_versions_preserved_without_regrade_or_original_changes"
+    },
+    {
+      "before": "test_phoenix_import.PhoenixImportTests.test_output_directory_cannot_modify_original",
+      "after": "unit.test_phoenix_import.PhoenixImportTests.test_output_directory_cannot_modify_original"
+    },
+    {
+      "before": "test_phoenix_import.PhoenixImportTests.test_reference_snapshot_requires_original_digest_and_input",
+      "after": "unit.test_phoenix_import.PhoenixImportTests.test_reference_snapshot_requires_original_digest_and_input"
+    },
+    {
+      "before": "test_phoenix_import.PhoenixImportTests.test_remote_experiment_and_dataset_corruption_is_rejected",
+      "after": "unit.test_phoenix_import.PhoenixImportTests.test_remote_experiment_and_dataset_corruption_is_rejected"
+    },
+    {
+      "before": "test_phoenix_import.PhoenixImportTests.test_remote_run_corruption_is_rejected",
+      "after": "unit.test_phoenix_import.PhoenixImportTests.test_remote_run_corruption_is_rejected"
+    },
+    {
+      "before": "test_phoenix_import.PhoenixImportTests.test_remote_score_corruption_is_rejected_before_overwriting",
+      "after": "unit.test_phoenix_import.PhoenixImportTests.test_remote_score_corruption_is_rejected_before_overwriting"
+    },
+    {
+      "before": "test_phoenix_import.PhoenixImportTests.test_repeat_requeries_remote_and_does_not_duplicate",
+      "after": "unit.test_phoenix_import.PhoenixImportTests.test_repeat_requeries_remote_and_does_not_duplicate"
+    },
+    {
+      "before": "test_phoenix_import.PhoenixImportTests.test_same_url_after_server_reset_recreates_real_content_despite_complete_receipt",
+      "after": "unit.test_phoenix_import.PhoenixImportTests.test_same_url_after_server_reset_recreates_real_content_despite_complete_receipt"
+    },
+    {
+      "before": "test_phoenix_import.PhoenixImportTests.test_span_identity_verifies_content_digest_parent_timestamp_and_kind",
+      "after": "unit.test_phoenix_import.PhoenixImportTests.test_span_identity_verifies_content_digest_parent_timestamp_and_kind"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_checkpoint_for_another_dataset_version_is_rejected",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_checkpoint_for_another_dataset_version_is_rejected"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_complete_flag_cannot_hide_missing_rows_or_wrong_summary_count",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_complete_flag_cannot_hide_missing_rows_or_wrong_summary_count"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_conflict_recovery_follows_http_pagination",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_conflict_recovery_follows_http_pagination"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_conflicting_foreign_run_is_not_adopted_or_annotated",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_conflicting_foreign_run_is_not_adopted_or_annotated"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_dataset_creation_and_reuse_preserve_all_six_reference_examples",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_dataset_creation_and_reuse_preserve_all_six_reference_examples"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_duplicate_task_repetition_is_rejected_before_mutations",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_duplicate_task_repetition_is_rejected_before_mutations"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_edited_remote_ground_truth_is_rejected_without_creating_another_dataset",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_edited_remote_ground_truth_is_rejected_without_creating_another_dataset"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_error_runs_are_published_with_all_five_scores",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_error_runs_are_published_with_all_five_scores"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_historical_or_changed_scoring_sources_cannot_use_current_registry",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_historical_or_changed_scoring_sources_cannot_use_current_registry"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_incomplete_or_unknown_completion_is_rejected_before_mutations",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_incomplete_or_unknown_completion_is_rejected_before_mutations"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_incomplete_remote_dataset_is_rejected",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_incomplete_remote_dataset_is_rejected"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_invalid_schema_preserves_partial_value_credit_in_published_code",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_invalid_schema_preserves_partial_value_credit_in_published_code"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_lost_successful_run_response_is_recovered_without_another_run",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_lost_successful_run_response_is_recovered_without_another_run"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_partial_experiment_uses_full_dataset_and_only_selected_run",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_partial_experiment_uses_full_dataset_and_only_selected_run"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_partial_or_unsupported_fingerprints_are_rejected",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_partial_or_unsupported_fingerprints_are_rejected"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_repetitions_and_trace_links_survive_upload_retry",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_repetitions_and_trace_links_survive_upload_retry"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_report_mismatch_is_rejected_before_any_experiment_mutation",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_report_mismatch_is_rejected_before_any_experiment_mutation"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_runtime_changes_are_allowed_and_full_source_provenance_is_published",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_runtime_changes_are_allowed_and_full_source_provenance_is_published"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_stable_document_root_matches_dataset_and_run",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_stable_document_root_matches_dataset_and_run"
+    },
+    {
+      "before": "test_phoenix_reporting.PhoenixReportingTests.test_upload_retry_reuses_checkpointed_experiment_and_runs",
+      "after": "unit.test_phoenix_reporting.PhoenixReportingTests.test_upload_retry_reuses_checkpointed_experiment_and_runs"
+    },
+    {
+      "before": "test_evals.PromptTests.test_format_contract_is_explicit_for_reconciliation_too",
+      "after": "unit.test_prompt.PromptTests.test_format_contract_is_explicit_for_reconciliation_too"
+    },
+    {
+      "before": "test_evals.PromptTests.test_prompt_contains_dataset_reference_and_only_requested_documents",
+      "after": "unit.test_prompt.PromptTests.test_prompt_contains_dataset_reference_and_only_requested_documents"
+    },
+    {
+      "before": "test_network.ProxyBoundaryTests.test_connect_allows_only_tls_port_443",
+      "after": "unit.test_network.ProxyBoundaryTests.test_connect_allows_only_tls_port_443"
+    },
+    {
+      "before": "test_network.ProxyBoundaryTests.test_connect_opens_only_the_explicitly_allowed_tls_destination",
+      "after": "unit.test_network.ProxyBoundaryTests.test_connect_opens_only_the_explicitly_allowed_tls_destination"
+    },
+    {
+      "before": "test_network.ProxyBoundaryTests.test_connect_rejects_local_private_ip_and_unknown_hosts_before_opening_socket",
+      "after": "unit.test_network.ProxyBoundaryTests.test_connect_rejects_local_private_ip_and_unknown_hosts_before_opening_socket"
+    },
+    {
+      "before": "test_network.ProxyBoundaryTests.test_get_cannot_query_phoenix_or_forward_arbitrary_urls",
+      "after": "unit.test_network.ProxyBoundaryTests.test_get_cannot_query_phoenix_or_forward_arbitrary_urls"
+    },
+    {
+      "before": "test_network.ProxyBoundaryTests.test_post_denies_query_traversal_and_every_non_ingestion_path",
+      "after": "unit.test_network.ProxyBoundaryTests.test_post_denies_query_traversal_and_every_non_ingestion_path"
+    },
+    {
+      "before": "test_network.ProxyBoundaryTests.test_trace_post_has_fixed_destination_and_does_not_forward_worker_authorization",
+      "after": "unit.test_network.ProxyBoundaryTests.test_trace_post_has_fixed_destination_and_does_not_forward_worker_authorization"
+    },
+    {
+      "before": "test_network.ProxyBoundaryTests.test_trace_post_preserves_gzip_and_identity_without_decoding_body",
+      "after": "unit.test_network.ProxyBoundaryTests.test_trace_post_preserves_gzip_and_identity_without_decoding_body"
+    },
+    {
+      "before": "test_network.ProxyBoundaryTests.test_trace_post_rejects_incomplete_body_before_upstream",
+      "after": "unit.test_network.ProxyBoundaryTests.test_trace_post_rejects_incomplete_body_before_upstream"
+    },
+    {
+      "before": "test_network.ProxyBoundaryTests.test_trace_post_rejects_missing_oversized_and_chunked_bodies_before_upstream",
+      "after": "unit.test_network.ProxyBoundaryTests.test_trace_post_rejects_missing_oversized_and_chunked_bodies_before_upstream"
+    },
+    {
+      "before": "test_network.ProxyBoundaryTests.test_trace_post_rejects_unknown_or_multiple_encodings_without_reflection",
+      "after": "unit.test_network.ProxyBoundaryTests.test_trace_post_rejects_unknown_or_multiple_encodings_without_reflection"
+    },
+    {
+      "before": "test_network.ProxyBoundaryTests.test_trace_post_respects_configured_https_origin_and_port",
+      "after": "unit.test_network.ProxyBoundaryTests.test_trace_post_respects_configured_https_origin_and_port"
+    },
+    {
+      "before": "test_phoenix_code.PublishedCodeTests.test_exported_code_matches_local_success_and_failure_scores",
+      "after": "unit.test_phoenix_code.PublishedCodeTests.test_exported_code_matches_local_success_and_failure_scores"
+    },
+    {
+      "before": "test_experiments.RepeatedExperimentTests.test_invalid_repetitions_fail_before_calls_or_artifacts",
+      "after": "unit.test_experiments.RepeatedExperimentTests.test_invalid_repetitions_fail_before_calls_or_artifacts"
+    },
+    {
+      "before": "test_experiments.RepeatedExperimentTests.test_native_invocations_get_no_ground_truth_and_keep_all_attempts",
+      "after": "unit.test_experiments.RepeatedExperimentTests.test_native_invocations_get_no_ground_truth_and_keep_all_attempts"
+    },
+    {
+      "before": "test_experiments.RepeatedExperimentTests.test_native_metadata_and_zero_usage_survive",
+      "after": "unit.test_experiments.RepeatedExperimentTests.test_native_metadata_and_zero_usage_survive"
+    },
+    {
+      "before": "test_network.RestrictedNetworkTests.test_cleanup_removes_only_owned_proxy_and_network_after_startup_failure",
+      "after": "unit.test_network.RestrictedNetworkTests.test_cleanup_removes_only_owned_proxy_and_network_after_startup_failure"
+    },
+    {
+      "before": "test_network.RestrictedNetworkTests.test_credentialed_and_unsupported_urls_fail_before_docker_without_echoing_secrets",
+      "after": "unit.test_network.RestrictedNetworkTests.test_credentialed_and_unsupported_urls_fail_before_docker_without_echoing_secrets"
+    },
+    {
+      "before": "test_network.RestrictedNetworkTests.test_custom_phoenix_origin_is_passed_to_sidecar_with_actual_port",
+      "after": "unit.test_network.RestrictedNetworkTests.test_custom_phoenix_origin_is_passed_to_sidecar_with_actual_port"
+    },
+    {
+      "before": "test_network.RestrictedNetworkTests.test_proxy_credential_is_inherited_by_name_and_never_serialized_in_argv",
+      "after": "unit.test_network.RestrictedNetworkTests.test_proxy_credential_is_inherited_by_name_and_never_serialized_in_argv"
+    },
+    {
+      "before": "test_network.RestrictedNetworkTests.test_trace_endpoint_preserves_remote_origins_and_maps_custom_local_ports",
+      "after": "unit.test_network.RestrictedNetworkTests.test_trace_endpoint_preserves_remote_origins_and_maps_custom_local_ports"
+    },
+    {
+      "before": "test_run.RunEntrypointTests.test_all_finishes_local_comparison_when_one_publication_fails",
+      "after": "unit.test_run.RunEntrypointTests.test_all_finishes_local_comparison_when_one_publication_fails"
+    },
+    {
+      "before": "test_run.RunEntrypointTests.test_failed_upload_reports_local_artifact_for_recovery",
+      "after": "unit.test_run.RunEntrypointTests.test_failed_upload_reports_local_artifact_for_recovery"
+    },
+    {
+      "before": "test_run.RunEntrypointTests.test_failed_upload_retry_preserves_the_dataset_and_phoenix_destination",
+      "after": "unit.test_run.RunEntrypointTests.test_failed_upload_retry_preserves_the_dataset_and_phoenix_destination"
+    },
+    {
+      "before": "test_run.RunEntrypointTests.test_import_never_constructs_a_harness_or_regrades_saved_answers",
+      "after": "unit.test_run.RunEntrypointTests.test_import_never_constructs_a_harness_or_regrades_saved_answers"
+    },
+    {
+      "before": "test_run.RunEntrypointTests.test_incompatible_upload_is_rejected_before_any_remote_publication",
+      "after": "unit.test_run.RunEntrypointTests.test_incompatible_upload_is_rejected_before_any_remote_publication"
+    },
+    {
+      "before": "test_run.RunEntrypointTests.test_phoenix_unavailable_never_calls_the_harness",
+      "after": "unit.test_run.RunEntrypointTests.test_phoenix_unavailable_never_calls_the_harness"
+    },
+    {
+      "before": "test_run.RunEntrypointTests.test_upload_only_never_constructs_or_executes_a_harness",
+      "after": "unit.test_run.RunEntrypointTests.test_upload_only_never_constructs_or_executes_a_harness"
+    },
+    {
+      "before": "test_evals.RunnerTests.test_errors_do_not_drop_tasks_or_leak_messages",
+      "after": "unit.test_runner.RunnerTests.test_errors_do_not_drop_tasks_or_leak_messages"
+    },
+    {
+      "before": "test_evals.RunnerTests.test_harness_receives_only_text_and_report_preserves_it",
+      "after": "unit.test_runner.RunnerTests.test_harness_receives_only_text_and_report_preserves_it"
+    },
+    {
+      "before": "test_evals.RunnerTests.test_non_json_output_is_an_explicit_failure",
+      "after": "unit.test_runner.RunnerTests.test_non_json_output_is_an_explicit_failure"
+    },
+    {
+      "before": "test_evals.RunnerTests.test_select_one_task_and_record_adapter_name",
+      "after": "unit.test_runner.RunnerTests.test_select_one_task_and_record_adapter_name"
+    },
+    {
+      "before": "test_evals.RunnerTests.test_unique_artifacts_and_fixed_denominator",
+      "after": "unit.test_runner.RunnerTests.test_unique_artifacts_and_fixed_denominator"
+    },
+    {
+      "before": "test_runtime.RuntimeTests.test_corporate_preflight_checks_executable_without_running_harness_or_forwarding_secrets",
+      "after": "unit.test_runtime.RuntimeTests.test_corporate_preflight_checks_executable_without_running_harness_or_forwarding_secrets"
+    },
+    {
+      "before": "test_runtime.RuntimeTests.test_corporate_preflight_rejects_missing_binary_and_discards_process_output",
+      "after": "unit.test_runtime.RuntimeTests.test_corporate_preflight_rejects_missing_binary_and_discards_process_output"
+    },
+    {
+      "before": "test_runtime.RuntimeTests.test_corporate_profile_accepts_native_otel_without_event_stream",
+      "after": "unit.test_runtime.RuntimeTests.test_corporate_profile_accepts_native_otel_without_event_stream"
+    },
+    {
+      "before": "test_runtime.RuntimeTests.test_entrypoint_native_schemas_do_not_need_refresh_secret",
+      "after": "unit.test_runtime.RuntimeTests.test_entrypoint_native_schemas_do_not_need_refresh_secret"
+    },
+    {
+      "before": "test_runtime.RuntimeTests.test_escape_and_symlink_documents_rejected_before_launch",
+      "after": "unit.test_runtime.RuntimeTests.test_escape_and_symlink_documents_rejected_before_launch"
+    },
+    {
+      "before": "test_runtime.RuntimeTests.test_expired_auth_error_never_contains_credentials",
+      "after": "unit.test_runtime.RuntimeTests.test_expired_auth_error_never_contains_credentials"
+    },
+    {
+      "before": "test_runtime.RuntimeTests.test_forwarded_host_environment_cannot_replace_trace_identity_or_exporter",
+      "after": "unit.test_runtime.RuntimeTests.test_forwarded_host_environment_cannot_replace_trace_identity_or_exporter"
+    },
+    {
+      "before": "test_runtime.RuntimeTests.test_fresh_container_name_for_each_invocation",
+      "after": "unit.test_runtime.RuntimeTests.test_fresh_container_name_for_each_invocation"
+    },
+    {
+      "before": "test_runtime.RuntimeTests.test_host_execution_requires_explicit_legacy_path",
+      "after": "unit.test_runtime.RuntimeTests.test_host_execution_requires_explicit_legacy_path"
+    },
+    {
+      "before": "test_runtime.RuntimeTests.test_new_formats_cannot_mount_references_symlinks_or_unsupported_files",
+      "after": "unit.test_runtime.RuntimeTests.test_new_formats_cannot_mount_references_symlinks_or_unsupported_files"
+    },
+    {
+      "before": "test_runtime.RuntimeTests.test_only_assigned_documents_mounted_no_repo_ground_truth_or_artifacts",
+      "after": "unit.test_runtime.RuntimeTests.test_only_assigned_documents_mounted_no_repo_ground_truth_or_artifacts"
+    },
+    {
+      "before": "test_runtime.RuntimeTests.test_only_assigned_mixed_format_inputs_are_mounted_readonly",
+      "after": "unit.test_runtime.RuntimeTests.test_only_assigned_mixed_format_inputs_are_mounted_readonly"
+    },
+    {
+      "before": "test_runtime.RuntimeTests.test_preflight_checks_version_and_auth_without_paid_call",
+      "after": "unit.test_runtime.RuntimeTests.test_preflight_checks_version_and_auth_without_paid_call"
+    },
+    {
+      "before": "test_runtime.RuntimeTests.test_preflight_rejects_wrong_image_version",
+      "after": "unit.test_runtime.RuntimeTests.test_preflight_rejects_wrong_image_version"
+    },
+    {
+      "before": "test_runtime.RuntimeTests.test_preparer_passes_configured_phoenix_origin_only_to_sidecar",
+      "after": "unit.test_runtime.RuntimeTests.test_preparer_passes_configured_phoenix_origin_only_to_sidecar"
+    },
+    {
+      "before": "test_runtime.RuntimeTests.test_profiles_pin_native_cli_and_resolve_settings",
+      "after": "unit.test_runtime.RuntimeTests.test_profiles_pin_native_cli_and_resolve_settings"
+    },
+    {
+      "before": "test_runtime.RuntimeTests.test_requested_luna_sol_terra_slugs_are_preserved_for_every_harness",
+      "after": "unit.test_runtime.RuntimeTests.test_requested_luna_sol_terra_slugs_are_preserved_for_every_harness"
+    },
+    {
+      "before": "test_runtime.RuntimeTests.test_seed_excludes_refresh_and_host_config_and_auth_is_unchanged",
+      "after": "unit.test_runtime.RuntimeTests.test_seed_excludes_refresh_and_host_config_and_auth_is_unchanged"
+    },
+    {
+      "before": "test_runtime.RuntimeTests.test_timeout_cleans_container_and_temporary_auth",
+      "after": "unit.test_runtime.RuntimeTests.test_timeout_cleans_container_and_temporary_auth"
+    },
+    {
+      "before": "test_evaluator_adversarial.StandaloneGraderContractTests.test_cli_all_tasks_preserve_denominator_with_missing_predictions",
+      "after": "unit.test_evaluator_adversarial.StandaloneGraderContractTests.test_cli_all_tasks_preserve_denominator_with_missing_predictions"
+    },
+    {
+      "before": "test_evaluator_adversarial.StandaloneGraderContractTests.test_cli_rejects_invalid_ground_truth_before_producing_a_report",
+      "after": "unit.test_evaluator_adversarial.StandaloneGraderContractTests.test_cli_rejects_invalid_ground_truth_before_producing_a_report"
+    },
+    {
+      "before": "test_evaluator_adversarial.StandaloneGraderContractTests.test_cli_task_pass_schema_and_partial_accuracy_match_runner",
+      "after": "unit.test_evaluator_adversarial.StandaloneGraderContractTests.test_cli_task_pass_schema_and_partial_accuracy_match_runner"
+    },
+    {
+      "before": "test_taxcalc_boxes.TaxCalcVisibleBoxesTests.test_numeric_normalization_rejects_precision_and_nonamounts",
+      "after": "datasets.test_taxcalc_boxes.TaxCalcVisibleBoxesTests.test_numeric_normalization_rejects_precision_and_nonamounts"
+    },
+    {
+      "before": "test_taxcalc_boxes.TaxCalcVisibleBoxesTests.test_printed_zero_is_preserved_even_when_xml_omits_withholding",
+      "after": "datasets.test_taxcalc_boxes.TaxCalcVisibleBoxesTests.test_printed_zero_is_preserved_even_when_xml_omits_withholding"
+    },
+    {
+      "before": "test_taxcalc_boxes.TaxCalcVisibleBoxesTests.test_reader_disagreement_aborts_label_generation",
+      "after": "datasets.test_taxcalc_boxes.TaxCalcVisibleBoxesTests.test_reader_disagreement_aborts_label_generation"
+    },
+    {
+      "before": "test_taxcalc_boxes.TaxCalcVisibleBoxesTests.test_unprinted_w2_withholding_is_absent_instead_of_zero",
+      "after": "datasets.test_taxcalc_boxes.TaxCalcVisibleBoxesTests.test_unprinted_w2_withholding_is_absent_instead_of_zero"
+    },
+    {
+      "before": "test_taxcalc_boxes.TaxCalcVisibleBoxesTests.test_visually_reviewed_boxes_keep_their_semantics",
+      "after": "datasets.test_taxcalc_boxes.TaxCalcVisibleBoxesTests.test_visually_reviewed_boxes_keep_their_semantics"
+    },
+    {
+      "before": "test_taxcalc_boxes.TaxCalcVisibleBoxesTests.test_wrong_form_name_fails_even_with_valid_pdf_bytes",
+      "after": "datasets.test_taxcalc_boxes.TaxCalcVisibleBoxesTests.test_wrong_form_name_fails_even_with_valid_pdf_bytes"
+    },
+    {
+      "before": "test_tracing.TracingTests.test_aggregate_usage_without_llm_boundaries_remains_inspectable",
+      "after": "unit.test_tracing.TracingTests.test_aggregate_usage_without_llm_boundaries_remains_inspectable"
+    },
+    {
+      "before": "test_tracing.TracingTests.test_external_hierarchy_preserves_execution_and_quality_distinction",
+      "after": "unit.test_tracing.TracingTests.test_external_hierarchy_preserves_execution_and_quality_distinction"
+    },
+    {
+      "before": "test_tracing.TracingTests.test_interrupted_native_span_is_explicitly_incomplete",
+      "after": "unit.test_tracing.TracingTests.test_interrupted_native_span_is_explicitly_incomplete"
+    },
+    {
+      "before": "test_tracing.TracingTests.test_invalid_span_artifact_fails_before_network_mutation",
+      "after": "unit.test_tracing.TracingTests.test_invalid_span_artifact_fails_before_network_mutation"
+    },
+    {
+      "before": "test_tracing.TracingTests.test_legacy_report_without_trace_artifact_does_not_import_exporter",
+      "after": "unit.test_tracing.TracingTests.test_legacy_report_without_trace_artifact_does_not_import_exporter"
+    },
+    {
+      "before": "test_tracing.TracingTests.test_native_identifiers_make_retry_serialization_stable",
+      "after": "unit.test_tracing.TracingTests.test_native_identifiers_make_retry_serialization_stable"
+    },
+    {
+      "before": "test_tracing.TracingTests.test_only_observed_lifecycles_create_internal_spans_without_double_counting",
+      "after": "unit.test_tracing.TracingTests.test_only_observed_lifecycles_create_internal_spans_without_double_counting"
+    },
+    {
+      "before": "test_tracing.TracingTests.test_partial_rejection_does_not_report_complete",
+      "after": "unit.test_tracing.TracingTests.test_partial_rejection_does_not_report_complete"
+    },
+    {
+      "before": "test_tracing.TracingTests.test_real_protobuf_encoding_preserves_ids_parent_and_attributes",
+      "after": "unit.test_tracing.TracingTests.test_real_protobuf_encoding_preserves_ids_parent_and_attributes"
+    },
+    {
+      "before": "test_tracing.TracingTests.test_upload_retry_only_checkpoints_confirmed_success",
+      "after": "unit.test_tracing.TracingTests.test_upload_retry_only_checkpoints_confirmed_success"
+    }
+  ],
+  "intentional_replacements": {
+    "BaselineMigrationTests.test_historical_mode_rejects_changed_scoring_sources_or_new_evaluator": {
+      "replaced_by": [
+        "BaselineMigrationTests.test_historical_mode_rejects_corrupt_frozen_sources_before_execution",
+        "BaselineMigrationTests.test_historical_mode_rejects_missing_or_extra_frozen_source"
+      ],
+      "reason": "Historical migration validates frozen original scoring sources and permits the active scorer to differ."
+    }
+  }
+}

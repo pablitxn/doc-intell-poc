@@ -39,7 +39,7 @@ flowchart LR
 
 El **runner** coordina ese recorrido. El prompt contiene rutas a los documentos, no sus respuestas esperadas. Con los perfiles nativos de Docker, el worker recibe únicamente los documentos asignados, montados en lectura; `ground_truth/`, código del evaluador y reportes quedan afuera.
 
-Hay dos puertas de entrada al mismo runner: [`run.py`](../run.py) agrega publicación de reportes en Phoenix; [`python3 -m evals`](../evals/__main__.py) guarda los reportes localmente. Un perfil con OTel nativo puede enviar sus propias trazas incluso en el segundo modo; [Operación](OPERACION.md) explica la diferencia.
+Hay dos puertas de entrada al flujo compartido de [`evals/application.py`](../evals/application.py): [`run.py`](../run.py) agrega publicación de reportes en Phoenix; [`python3 -m evals`](../evals/__main__.py) guarda los reportes localmente. Un perfil con OTel nativo puede enviar sus propias trazas incluso en el segundo modo; [Operación](OPERACION.md) explica la diferencia.
 
 **Ambas puertas eligen el minimal por defecto.** `--harness all` selecciona los tres harnesses, no el dataset completo. `--dataset` elige el conjunto y `--task` limita la tarea; si omitís `--task`, se ejecutan todas las tareas del conjunto seleccionado.
 
@@ -48,15 +48,22 @@ Hay dos puertas de entrada al mismo runner: [`run.py`](../run.py) agrega publica
 | Lugar | Para qué abrirlo |
 |---|---|
 | [`datasets/tax-document-dataset-v0.1/`](../datasets/tax-document-dataset-v0.1/) | Kit de fuentes originales, checksums y licencias. No es directamente ejecutable. |
-| [`scripts/prepare_full_dataset.py`](../scripts/prepare_full_dataset.py) | Construcción reproducible del dataset completo: selección de campos, consignas, referencias y conciliaciones. No llama modelos. |
+| [`preparation/full_dataset.py`](../preparation/full_dataset.py) | Construcción reproducible: selección de campos, consignas, referencias y conciliaciones. `sources.py` verifica el kit y `extractors/` contiene los lectores auditados. No llama modelos. |
+| [`scripts/prepare_full_dataset.py`](../scripts/prepare_full_dataset.py) | Comando pequeño con las dependencias PEP723; delega en `preparation.full_dataset.main()`. |
 | [`datasets/tax-document-eval-v1/`](../datasets/tax-document-eval-v1/) | Dataset preparado: `inputs/`, `tasks.json`, `manifest.json` y `ground_truth/`. Tiene 366 tareas. |
-| [`datasets/tax-mini-poc/`](../datasets/tax-mini-poc/) | Dataset pequeño original de seis tareas; también conserva el scorer compartido `grade.py`. |
+| [`datasets/tax-mini-poc/`](../datasets/tax-mini-poc/) | Dataset pequeño original de seis tareas; conserva `grade.py` como CLI legado y evidencia histórica. El runner usa `evals/evaluators/`. |
 | [`evals/datasets/loader.py`](../evals/datasets/loader.py) y [`contracts.py`](../evals/contracts.py) | Validación del dataset y estructuras internas: separan la entrada del harness de la respuesta esperada. |
-| [`evals/experiments/`](../evals/experiments/) | Prompt, ejecución, comparación y fingerprints que identifican versiones compatibles. |
-| [`harnesses/`](../harnesses/), [`evals/adapters/`](../evals/adapters/) y [`containers/`](../containers/) | Perfiles, protocolos de cada CLI y entorno donde se ejecutan. |
-| [`evals/evaluators/`](../evals/evaluators/) y [`evals/reporting/`](../evals/reporting/) | Evaluación de respuestas, exportación de scores, trazas e importación en Phoenix. |
+| [`evals/application.py`](../evals/application.py) y [`cli.py`](../evals/cli.py) | Flujo común de ambas CLI y definición de argumentos: seleccionar harnesses, ejecutar experimentos y compararlos. Las entradas deciden cómo mostrar o publicar resultados. |
+| [`evals/experiments/`](../evals/experiments/) | Prompt, ejecución por tarea, comparación y fingerprints que identifican versiones compatibles. |
+| [`evals/adapters/`](../evals/adapters/) | `native.py` controla el proceso; `streams.py` interpreta eventos de Pi/Tau/Codex; `command.py` admite el contrato simple stdin/stdout. |
+| [`evals/runtime/`](../evals/runtime/) | `profiles.py`: configuración; `account.py`: credencial temporal; `docker.py`: workers y documentos; `network.py`: salida permitida y destino OTel. |
+| [`harnesses/`](../harnesses/) y [`containers/`](../containers/) | Perfiles JSON y archivos de construcción/entrada de las imágenes. |
+| [`evals/evaluators/`](../evals/evaluators/) | `grading.py` compara valores/evidencias; `schema.py` valida formato; `scoring.py` aplica estado de ejecución y produce el resultado común. |
+| [`evals/telemetry/`](../evals/telemetry/) | `spans.py` construye las trazas locales; `otlp.py` las codifica para transporte. |
+| [`evals/reporting/`](../evals/reporting/) | Publicación e importación en Phoenix; `trace_upload.py` envía trazas y conserva checkpoints de publicación. |
 | `runs/` y [`artifacts/`](../artifacts/) | `runs/` contiene salidas locales de trabajo; `artifacts/` conserva los respaldos y evidencia versionados que decidimos guardar. |
-| [`tests/`](../tests/) y [`docs/`](./) | Pruebas del comportamiento y documentación de uso, decisiones y auditorías. |
+| [`tests/`](../tests/) | `unit/` prueba lógica; `datasets/` comprueba fuentes y referencias; `integration/` usa Docker/Phoenix; `support/` reúne utilidades y `fixtures/` conserva datos y procesos de prueba. |
+| [`docs/`](./) | Guías de uso, decisiones y auditorías. |
 
 El [informe del dataset completo](FULL_DATASET_AUDIT.md) detalla qué campos verificamos y qué fuentes quedaron fuera. Evaluamos extracción y conciliaciones explícitas; no certificamos una declaración fiscal completa.
 
@@ -175,7 +182,7 @@ Los adapters de Pi/Tau/Codex extraen ese objeto de los eventos de su CLI. El per
 
 El evaluador comprueba formato, valor y conjunto exacto de referencias por campo. En este W-2, `2248.00` aparece en las casillas **1, 3 y 5**: citar la `3` para `wages` conserva el monto correcto, pero falla la evidencia. Para aprobar la tarea deben pasar todos los campos, el formato y la ejecución.
 
-El nombre `tax-mini-v2` es histórico: [`evals/evaluators/tax_mini.py`](../evals/evaluators/tax_mini.py) reutiliza la función genérica de [`datasets/tax-mini-poc/grade.py`](../datasets/tax-mini-poc/grade.py), también con las referencias del dataset completo. La CLI independiente de `grade.py` sigue ligada al minimal; usá los entrypoints del proyecto para evaluar el completo.
+El nombre `tax-mini-v2` es histórico: [`scoring.py`](../evals/evaluators/scoring.py) combina el esquema y el estado de ejecución con las comparaciones de [`grading.py`](../evals/evaluators/grading.py), usando las referencias del dataset elegido. El antiguo [`datasets/tax-mini-poc/grade.py`](../datasets/tax-mini-poc/grade.py) conserva sus bytes y su CLI del minimal como evidencia; el runner ya no lo importa. Para trabajar con ambos datasets usá los entrypoints del proyecto.
 
 El runner crea `runs/<run_id>/`. Para entender qué ocurrió, seguí este orden:
 
@@ -192,13 +199,16 @@ El runner crea `runs/<run_id>/`. Para entender qué ocurrió, seguí este orden:
 
 | Quiero cambiar… | Punto de entrada y comprobación |
 |---|---|
-| Una consigna del dataset completo | [`prepare_full_dataset.py`](../scripts/prepare_full_dataset.py): instrucciones de extracción o conciliación. Generar en una carpeta nueva y revisar el diff de `tasks.json`. |
+| Una consigna del dataset completo | [`preparation/full_dataset.py`](../preparation/full_dataset.py): instrucciones de extracción o conciliación. Generar en una carpeta nueva y revisar el diff de `tasks.json`. |
 | Las reglas comunes del prompt | [`evals/experiments/prompt.py`](../evals/experiments/prompt.py). Revisar `PROMPT_VERSION` y los tests de prompt; afecta a todas las tareas. |
-| Campos, valores esperados o casillas | La definición correspondiente: [`taxcalc_boxes.py`](../scripts/taxcalc_boxes.py), [`prior_1040_labels.py`](../scripts/prior_1040_labels.py), [`fake_w2_labels.py`](../scripts/fake_w2_labels.py) o `structured_fields()` del builder. Verificar la fuente y regenerar tarea, tipos, referencia y procedencia juntos. |
-| Qué significa aprobar | [`schema.py`](../evals/evaluators/schema.py), [`tax_mini.py`](../evals/evaluators/tax_mini.py) y el scorer compartido. Agregar una respuesta incorrecta que antes pasaba o una correcta que antes fallaba; revisar `EVALUATOR_VERSION`. |
+| Campos, valores esperados o casillas | La definición correspondiente: [`taxcalc.py`](../preparation/extractors/taxcalc.py), [`prior_1040.py`](../preparation/extractors/prior_1040.py), [`fake_w2.py`](../preparation/extractors/fake_w2.py) o `structured_fields()` de [`full_dataset.py`](../preparation/full_dataset.py). Verificar la fuente y regenerar tarea, tipos, referencia y procedencia juntos. |
+| Qué significa aprobar | [`schema.py`](../evals/evaluators/schema.py), [`scoring.py`](../evals/evaluators/scoring.py) y [`grading.py`](../evals/evaluators/grading.py). Agregar una respuesta incorrecta que antes pasaba o una correcta que antes fallaba; revisar `EVALUATOR_VERSION`. |
 | Harness, modelo o razonamiento | Un perfil en [`harnesses/`](../harnesses/), o flags `--harness`, `--model`, `--thinking`. Para el corporativo, partir de [`corporate.example.json`](../harnesses/corporate.example.json) y seguir [la guía corporativa](CORPORATE_READINESS.md). |
-| Protocolo de respuesta o entorno | [`native.py`](../evals/adapters/native.py), [`runtime.py`](../evals/adapters/runtime.py) y la imagen. Mantener el contrato `values/evidence` y probar el límite entre proceso y evaluador. |
-| Visualización, exportación o trazas | [`evals/reporting/`](../evals/reporting/). Cambiar cómo se publica no debería alterar la respuesta guardada ni su score. |
+| Protocolo de respuesta | [`streams.py`](../evals/adapters/streams.py) interpreta eventos; [`native.py`](../evals/adapters/native.py) controla stdin, stdout, salida y timeout. Mantener el contrato `values/evidence`. |
+| Contenedores, cuenta o red | El módulo correspondiente de [`evals/runtime/`](../evals/runtime/) y la imagen; probar el límite entre worker y evaluador. |
+| Selección y coordinación de corridas | [`application.py`](../evals/application.py); los argumentos comunes están en [`cli.py`](../evals/cli.py). Verificar ambas entradas. |
+| Contenido o codificación de trazas | [`evals/telemetry/`](../evals/telemetry/), independiente de su publicación. |
+| Visualización, exportación o reintentos | [`evals/reporting/`](../evals/reporting/). Cambiar cómo se publica no debería alterar la respuesta guardada ni su score. |
 
 Para trabajar cómodo, elegí primero una tarea representativa y conservá su corrida inicial. Hacé el cambio en la definición correspondiente, revisá las pruebas relacionadas y ejecutá esa tarea antes de ampliar la matriz. Para una nueva clase de documento, verificá también una respuesta deliberadamente incorrecta: acertar la referencia no demuestra que el evaluador detecte errores.
 

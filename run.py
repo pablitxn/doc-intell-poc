@@ -12,15 +12,13 @@ from pathlib import Path
 import shlex
 import sys
 
-from evals.adapters.command import command_harness
-from evals.cli import add_execution_options, native_adapters, validate_execution_options
+from evals.cli import add_execution_options, add_run_options, validate_execution_options
+from evals.application import prepare_selection, run_selection
 from evals.datasets.loader import read_json
-from evals.experiments.runner import run_experiment
-from evals.experiments.comparison import write_comparison
 from evals.evaluators.definitions import code_definitions
 from evals.reporting.phoenix import prepare_dataset, publish_report, validate_current_report
 from evals.reporting.phoenix_evaluators import register_evaluators
-from evals.reporting.tracing import publish_traces
+from evals.reporting.trace_upload import publish_traces
 
 
 def main() -> int:
@@ -29,11 +27,7 @@ def main() -> int:
     add_execution_options(parser, source)
     source.add_argument('--upload-only', type=Path, help='Retry publication of local artifacts; never invokes a harness')
     source.add_argument('--import-run', type=Path, help='Import saved results into another Phoenix instance without running models or regrading')
-    parser.add_argument('--dataset', type=Path, default=Path(__file__).resolve().parent / 'datasets/tax-mini-poc')
-    parser.add_argument('--task', help='One task_id; defaults to all tasks in the selected dataset')
-    parser.add_argument('--timeout', type=float, default=120.0)
-    parser.add_argument('--output-dir', type=Path, default=Path('runs'))
-    parser.add_argument('--phoenix-url', default=os.environ.get('PHOENIX_ENDPOINT', 'http://127.0.0.1:6006'))
+    add_run_options(parser)
     args = parser.parse_args()
     validate_execution_options(parser, args)
     if (args.upload_only or args.import_run) and (args.task or args.check or args.repetitions != 1):
@@ -48,7 +42,7 @@ def main() -> int:
         if args.import_run:
             from phoenix.client import Client
             import httpx
-            from evals.adapters.network import trace_endpoint
+            from evals.runtime.network import trace_endpoint
             from evals.reporting.importer import import_report
             trace_endpoint(args.phoenix_url)
             headers = {}
@@ -59,12 +53,7 @@ def main() -> int:
                                          args.output_dir / 'imports')
             print(json.dumps(imported, indent=2))
             return 0
-        prepared = []
-        if args.harness_command:
-            command = shlex.split(args.harness_command)
-            prepared = [(command[0], command_harness(command, timeout_seconds=args.timeout), {})]
-        elif not args.upload_only:
-            prepared = native_adapters(args)
+        prepared = [] if args.upload_only else prepare_selection(args)
         prompt_root = None
         if args.upload_only:
             saved = read_json(run_dir / 'report.json')
@@ -83,17 +72,11 @@ def main() -> int:
             dataset = prepare_dataset(client, args.dataset, **dataset_options)
             registry = register_evaluators(http, code_definitions())
             print(f'Phoenix dataset: {dataset.name}; evaluators: {len(registry)}', flush=True)
-            run_dirs = []
             publication_failed = False
-            for name, adapter, metadata in prepared or [(None, None, None)]:
-                if adapter is not None:
-                    options = {'adapter_name': name, 'task_id': args.task}
-                    if not args.harness_command or args.repetitions != 1:
-                        options.update(repetitions=args.repetitions, harness_metadata=metadata)
-                    if prompt_root:
-                        options['prompt_root'] = prompt_root
-                    run_dir = run_experiment(args.dataset, adapter, args.output_dir, **options)
-                run_dirs.append(run_dir)
+
+            def publish_completed(name, completed_dir):
+                nonlocal run_dir, publication_failed
+                run_dir = completed_dir
                 print(f"Local report: {run_dir / 'report.json'}", flush=True)
                 try:
                     publish_traces(http, run_dir)
@@ -105,8 +88,11 @@ def main() -> int:
                                         '--phoenix-url', args.phoenix_url,
                                         '--upload-only', str(run_dir)])
                     print(f'Publication failed ({type(exc).__name__}); retry with {retry}', file=sys.stderr, flush=True)
-            if len(run_dirs) > 1:
-                print(f"Comparison: {write_comparison(run_dirs, args.output_dir)}")
+
+            if args.upload_only:
+                publish_completed(None, args.upload_only)
+            else:
+                run_selection(args, prepared, on_completed=publish_completed)
             if publication_failed:
                 return 1
     except Exception as exc:

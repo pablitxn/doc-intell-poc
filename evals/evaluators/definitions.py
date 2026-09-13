@@ -4,7 +4,7 @@ import ast
 import inspect
 
 from .schema import schema_errors, valid_value
-from .tax_mini import EVALUATOR_VERSION, GRADER_PATH, score_answer
+from .scoring import EVALUATOR_VERSION, GRADER_PATH, score_answer
 
 EVALUATOR_DEFINITIONS = {
     "schema_valid": "Required fields and types, decimal strings, and document/page/box references.",

@@ -40,7 +40,7 @@ Los totales son unidades del inventario revisado; no se suman las categorías pa
 
 - [Transcripción de las 54 respuestas](../tests/fixtures/tax_mini_pdf_audit.json): valores, etiquetas, fuentes y fórmulas. Ya se conocían los seis GT de conciliación por la investigación previa; no se afirma cegamiento completo. Los cálculos se rehacen desde los PDF, independientemente del grader.
 - [Recortes y comprobaciones documentales](dataset-audit-evidence.json): observaciones de palabras y bboxes reales. El checksum inicial de la consigna pertenece a la versión anterior; el recibo vigente está en el dataset.
-- [Tests del oracle y aritmética](../tests/test_dataset_source_audit.py), [tests adversariales](../tests/test_evaluator_adversarial.py), [checksums vigentes](../datasets/tax-mini-poc/SHA256SUMS).
+- [Tests del oracle y aritmética](../tests/datasets/test_dataset_source_audit.py), [tests adversariales](../tests/unit/test_evaluator_adversarial.py), [checksums vigentes](../datasets/tax-mini-poc/SHA256SUMS).
 - [Provenance revisada](../datasets/tax-mini-poc/provenance.json), con año/página por regla y [California DE44 de 2025](https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44-25.pdf) para evitar usar tasas de otro año.
 
 ```bash

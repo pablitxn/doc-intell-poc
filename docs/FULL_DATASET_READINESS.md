@@ -31,7 +31,7 @@ python3 -m evals --dataset datasets/tax-document-eval-v1 \
   --harness all --check --check-network
 ```
 
-La imagen de harnesses es la misma de la [guía corporativa](CORPORATE_READINESS.md). Si no existe localmente:
+El comando `scripts/prepare_full_dataset.py` delega en [`preparation/full_dataset.py`](../preparation/full_dataset.py); las comprobaciones de fuente y los extractores viven en ese paquete. La imagen de harnesses es la misma de la [guía corporativa](CORPORATE_READINESS.md). Si no existe localmente:
 
 ```bash
 docker build -f containers/harnesses.Dockerfile \
@@ -60,7 +60,7 @@ Para probar formatos distintos, reemplazar `--task` por:
 
 En esta preparación aprobaron **12/12 pruebas reales con Sol en medium**: las cuatro tareas anteriores sobre Pi, Tau y Codex. Una copia del proyecto en una ruta con espacios también pasó `prepare_full_dataset.py --check` y el diagnóstico. La matriz completa de 3.294 invocaciones no se ejecutó; estas pruebas cubren la integración y los formatos seleccionados.
 
-Si una corrida termina pero falla su publicación, reintentar indicando el mismo dataset. Este comando recupera la publicación sin repetir inferencias:
+Si una corrida hecha con el código vigente termina pero falla su publicación, reintentar indicando el mismo dataset. Este comando recupera la publicación sin repetir inferencias:
 
 ```bash
 ./run.py --dataset datasets/tax-document-eval-v1 --upload-only runs/ID_DE_LA_CORRIDA
@@ -104,7 +104,9 @@ Repetir la comprobación con JPG y JSON: el montaje los admite, pero la implemen
 
 El prompt vigente es `tax-fields-text-v5`: permite identificadores canónicos explícitos de fila/casilla, encabezado y JSON pointer. Cada tarea tiene expediente y ejercicio propios; los 1040 previos son 2024, las imágenes W-2 son 2010 y el contexto de los demás inputs TaxCalcBench es 2025. Se mantiene `tax-mini-v2` como scorer exacto reutilizable; el nombre histórico no cambia sus tipos ni su política de evaluación.
 
-Los nuevos reportes tienen otro hash de dataset/contrato. No deben mezclarse con la matriz minimal v4. Para recuperar copias históricas con su contrato original se agregó `migrate-baseline --historical-only`; su importación usa `--import-run`. Ver [fingerprints](FINGERPRINTS.md). Todos los scores y trazas deben interpretarse con sus versiones originales.
+El conjunto completo usa un dataset y contrato distintos de la matriz minimal v4. El reordenamiento posterior conserva esos hashes del completo, pero cambia `scoring_sha256` al mover el evaluador a `evals/evaluators/`. Por eso las 12 pruebas de esta preparación mantienen un scoring histórico, aunque también usen prompt v5: se republican con `./run.py --import-run runs/ID_DE_LA_CORRIDA`, no con `--upload-only`.
+
+Para recuperar copias de la matriz minimal auditada, `migrate-baseline --historical-only` valida las fuentes originales congeladas y conserva sus identidades; también se publica con `--import-run`. Ver [fingerprints](FINGERPRINTS.md). Todos los scores y trazas deben interpretarse con sus versiones originales.
 
 ## Validación técnica reproducible
 

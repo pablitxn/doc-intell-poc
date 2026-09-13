@@ -19,13 +19,14 @@ CONTRACT_FILES = (
     'evals/json_io.py',
 )
 SCORING_FILES = (
-    'datasets/tax-mini-poc/grade.py',
     'evals/evaluators/__init__.py',
     'evals/evaluators/definitions.py',
+    'evals/evaluators/grading.py',
     'evals/evaluators/schema.py',
-    'evals/evaluators/tax_mini.py',
+    'evals/evaluators/scoring.py',
 )
 FINGERPRINT_FIELDS = ('fingerprint_version', 'contract_sha256', 'scoring_sha256', 'runtime_code_sha256')
+HISTORICAL_SCORING_PATH = REPO_ROOT / 'artifacts/2026-09-13/architecture/baseline-scoring.json'
 
 
 def _source_bytes(root: Path, name: str) -> bytes:
@@ -75,21 +76,66 @@ def legacy_code_sha256(root: Path = REPO_ROOT) -> str:
     )).hexdigest()
 
 
+def _historical_scoring_sources(manifest: dict) -> dict[str, str]:
+    """Verify every frozen source against the original immutable baseline."""
+    from ..json_io import strict_json_loads
+
+    snapshot = strict_json_loads(HISTORICAL_SCORING_PATH.read_text())
+    sources = snapshot.get('sources', {})
+    names = {name for name in manifest['reviewed_sources']
+             if name.startswith('evals/evaluators/') or name == 'datasets/tax-mini-poc/grade.py'}
+    if (snapshot.get('reviewed_source_commit') != manifest['reviewed_source_commit']
+            or not isinstance(sources, dict) or set(sources) != names):
+        raise ValueError('Historical scoring source membership differs from the reviewed baseline')
+    digest = hashlib.sha256()
+    for name in sorted(names):
+        source = sources[name]
+        if (not isinstance(source, str)
+                or hashlib.sha256(source.encode()).hexdigest() != manifest['reviewed_sources'][name]):
+            raise ValueError('Historical scoring source bytes differ from the reviewed baseline')
+        digest.update(name.encode() + b'\0' + source.encode() + b'\0')
+    if (digest.hexdigest() != manifest['scoring_sha256']
+            or manifest['reviewed_sources']['datasets/tax-mini-poc/grade.py'] != manifest['grader_sha256']):
+        raise ValueError('Historical scoring fingerprint differs from the reviewed baseline')
+    return sources
+
+
+def _historical_score_answer(manifest: dict):
+    """Load only verified pure functions, without importing any current scorer."""
+    from datetime import date
+    from decimal import Decimal, InvalidOperation
+    import re
+
+    sources = _historical_scoring_sources(manifest)
+    namespace = {'date': date, 'Decimal': Decimal, 'InvalidOperation': InvalidOperation, 're': re}
+    for name, functions in (
+        ('datasets/tax-mini-poc/grade.py', {'equal_value', 'reference_key', 'grade'}),
+        ('evals/evaluators/schema.py', {'valid_value', 'schema_errors'}),
+        ('evals/evaluators/tax_mini.py', {'score_answer'}),
+    ):
+        nodes = [node for node in ast.parse(sources[name]).body
+                 if isinstance(node, ast.FunctionDef) and node.name in functions]
+        if len(nodes) != len(functions) or {node.name for node in nodes} != functions:
+            raise ValueError('Historical scoring source is missing required functions')
+        exec(compile(ast.Module(body=nodes, type_ignores=[]), name, 'exec'), namespace)
+    return namespace['score_answer']
+
+
 def migrate_baseline(run_dir: Path, output_dir: Path, *, dataset: Path | None = None,
                      historical_only: bool = False) -> Path:
     """Add verified semantic fingerprints to a copy of one audited legacy run.
 
     This is deliberately not a generic 'trust my old report' switch. Report and
-    sidecar bytes must match the committed nine-run baseline, current contract and
-    scoring sources must match its reviewed commit, and every prompt/score is
-    checked again without invoking a model. In historical-only mode the frozen
-    contract and recorded prompts remain historical while scoring and dataset
-    still must match. Existing publication checkpoints are copied unchanged;
-    importing into another Phoenix uses the separate importer.
+    sidecar bytes must match the committed nine-run baseline. Current-compatible
+    migration additionally requires identical current contract/scoring sources.
+    Historical-only migration verifies scores using the original frozen sources
+    after checking their hashes against that baseline; its old contract/scoring
+    identities and recorded prompts remain historical. Both modes verify the
+    reference dataset. Publication checkpoints are copied unchanged; importing
+    into another Phoenix uses the separate importer.
     """
     import json
     from ..datasets.loader import load_examples, read_json
-    from ..evaluators.tax_mini import evaluate
     from ..json_io import strict_json_loads
     from .prompt import build_prompt
     from .runner import _summary, build_dataset_snapshot
@@ -101,17 +147,15 @@ def migrate_baseline(run_dir: Path, output_dir: Path, *, dataset: Path | None = 
     allowed = next((entry for entry in manifest['runs'] if entry['report_sha256'] == original_sha), None)
     if allowed is None:
         raise ValueError('Legacy report is not an exact audited baseline; refusing migration')
-    fingerprints = code_fingerprints()
-    current_sources = source_manifest()
     if historical_only:
-        if (any(current_sources.get(name) != manifest['reviewed_sources'].get(name) for name in SCORING_FILES)
-                or fingerprints['scoring_sha256'] != manifest['scoring_sha256']
-                or fingerprints['fingerprint_version'] != manifest['fingerprint_version']):
-            raise ValueError('Current scoring sources differ from the reviewed baseline; historical migration is unavailable')
-    elif current_sources != manifest['reviewed_sources'] or any(
-            fingerprints[key] != manifest[key]
-            for key in ('fingerprint_version', 'contract_sha256', 'scoring_sha256')):
-        raise ValueError('Current contract/scoring sources differ from the reviewed baseline')
+        score_answer = _historical_score_answer(manifest)
+    else:
+        from ..evaluators.scoring import score_answer
+        fingerprints = code_fingerprints()
+        if source_manifest() != manifest['reviewed_sources'] or any(
+                fingerprints[key] != manifest[key]
+                for key in ('fingerprint_version', 'contract_sha256', 'scoring_sha256')):
+            raise ValueError('Current contract/scoring sources differ from the reviewed baseline')
     report = strict_json_loads(original_bytes.decode())
     if report.get('complete') is not True or report.get('run_id') != allowed['run_id']:
         raise ValueError('Baseline requires a complete matching run identity')
@@ -142,8 +186,9 @@ def migrate_baseline(run_dir: Path, output_dir: Path, *, dataset: Path | None = 
             raise ValueError('Baseline requires recorded task inputs')
         if not historical_only and row['input'] != build_prompt(example.input, dataset, document_root=prompt_root):
             raise ValueError('Baseline prompt differs from the current contract')
-        if row['scores'] != evaluate(row['output'], example, row['execution_status']):
-            raise ValueError('Baseline scores differ from the current evaluator')
+        if row['scores'] != score_answer(row['output'], example.expected, example.input.fields,
+                                        row['execution_status']):
+            raise ValueError('Baseline scores differ from the verified evaluator')
     summary = _summary(report['rows'])
     summary['groups'] = {
         group: _summary([row for row in report['rows'] if row['group'] == group])
@@ -193,11 +238,16 @@ def migrate_baseline(run_dir: Path, output_dir: Path, *, dataset: Path | None = 
         'original_report_sha256': original_sha,
         'reviewed_source_commit': manifest['reviewed_source_commit'],
         'mode': 'historical-only' if historical_only else 'current-compatible',
-        'validation': ('exact archived report and sidecar bytes, scoring source units, dataset, '
-                       'task membership, recorded prompts and scores; original contract preserved'
+        'validation': ('exact archived report and sidecar bytes, verified frozen scoring sources, dataset, '
+                       'task membership, recorded prompts and scores; original contract and scoring preserved'
                        if historical_only else
                        'exact archived bytes, source units, dataset, task membership, prompts and scores'),
     }
+    if historical_only:
+        report['fingerprint_migration']['scoring_snapshot'] = {
+            'path': HISTORICAL_SCORING_PATH.relative_to(REPO_ROOT).as_posix(),
+            'sha256': hashlib.sha256(HISTORICAL_SCORING_PATH.read_bytes()).hexdigest(),
+        }
     copies[Path('report.json')] = (json.dumps(report, indent=2, allow_nan=False) + '\n').encode()
     copies[Path('dataset-snapshot.json')] = snapshot_bytes
     destination.mkdir(parents=True, exist_ok=False)

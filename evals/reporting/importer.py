@@ -8,7 +8,8 @@ import time
 from urllib.parse import quote, urlsplit, urlunsplit
 
 from ..json_io import strict_json_loads
-from .tracing import _validate_spans, _rejected_spans, encode_otlp
+from ..telemetry.otlp import _rejected_spans, encode_otlp
+from ..telemetry.spans import _validate_spans
 
 
 SCORES = ("schema_valid", "value_accuracy", "evidence_accuracy", "task_pass", "execution_status")

@@ -13,8 +13,8 @@ from uuid import uuid4
 
 from ..contracts import HarnessAdapter, HarnessInvocation, HarnessResult
 from ..datasets.loader import load_examples
-from ..evaluators.tax_mini import EVALUATOR_VERSION, GRADER_PATH, evaluate
-from ..reporting.tracing import build_task_trace
+from ..evaluators.scoring import EVALUATOR_VERSION, GRADER_PATH, evaluate
+from ..telemetry.spans import build_task_trace
 from .prompt import PROMPT_VERSION, build_prompt
 from .fingerprints import code_fingerprints, legacy_code_sha256
 

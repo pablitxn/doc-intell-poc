@@ -8,7 +8,7 @@ from pathlib import Path
 from urllib.parse import quote
 
 from ..datasets.loader import load_examples, read_json
-from ..evaluators.tax_mini import EVALUATOR_VERSION, GRADER_PATH
+from ..evaluators.scoring import EVALUATOR_VERSION, GRADER_PATH
 from ..evaluators.definitions import EVALUATOR_DEFINITIONS
 from ..experiments.prompt import PROMPT_VERSION, build_prompt
 from ..experiments.fingerprints import FINGERPRINT_FIELDS, FINGERPRINT_VERSION, code_fingerprints
