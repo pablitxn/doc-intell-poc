@@ -17,3 +17,13 @@ tar -xzf artifacts/2026-09-13/runs.tar.gz
 En un checkout que ya contenga esos nombres, la extracción los sobrescribe. El respaldo contiene datos sintéticos y metadatos; no incluye credenciales, entornos virtuales ni caches. Algunas rutas de los reportes identifican el host original.
 
 Los IDs/checkpoints de Phoenix documentan la instancia local original. Extraer este archivo recupera los artefactos, **no restaura la base de Phoenix**. Esa base permanece en su volumen Docker persistente. Las futuras corridas siguen excluidas de Git; este respaldo es una instantánea explícita y versionada.
+
+La preparación posterior para el corporativo mantiene ese comprimido y su manifiesto intactos. Agrega:
+
+- `baseline-compatibility.json`: fuentes y archivos permitidos para migrar copias de los nueve reportes GPT-5.6, sin inferencias.
+- `pre-corporate-diagnostics.json`: diagnóstico exitoso desde una copia limpia, para los tres perfiles y sus conexiones.
+- `pre-corporate-import-validation.json`: verificación de resultados históricos y un fixture en Phoenix efímero, con reintento sin duplicados.
+- `pre-corporate-tests.txt`: salida de la suite completa de 225 tests.
+- `pre-corporate-validation.json`: alcance, entorno, fingerprints y hashes de la evidencia de esta etapa.
+
+Ver [resultados y límites](../../docs/VALIDATION_PRE_CORPORATE.md). Para reconstruir experimentos en otra instancia de Phoenix, seguir la [guía de importación](../../docs/CORPORATE_READINESS.md#reconstruir-el-historial-en-phoenix); no reutilizar los checkpoints antiguos como si identificaran la instancia nueva.

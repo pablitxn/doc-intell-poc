@@ -2,6 +2,7 @@
 
 import argparse
 import json
+import os
 from pathlib import Path
 import shlex
 
@@ -20,18 +21,23 @@ def main() -> None:
     parser.add_argument('--task', help='One task_id; defaults to all six')
     parser.add_argument('--timeout', type=float, default=120.0, help='Seconds per harness invocation (default: 120)')
     parser.add_argument('--output-dir', type=Path, default=Path('runs'))
+    parser.add_argument('--phoenix-url', default=os.environ.get('PHOENIX_ENDPOINT', 'http://127.0.0.1:6006'),
+                        help='Native OTel and diagnostic endpoint; this entrypoint does not publish evaluation reports')
     args = parser.parse_args()
     validate_execution_options(parser, args)
     try:
+        if args.check:
+            from .diagnostics import diagnose
+            diagnosis = diagnose(args)
+            print(json.dumps(diagnosis, indent=2))
+            if not diagnosis['ready']:
+                raise SystemExit(1)
+            return
         if args.harness_command:
             command = shlex.split(args.harness_command)
             prepared = [(command[0], command_harness(command, timeout_seconds=args.timeout), {})]
         else:
             prepared = native_adapters(args)
-        if args.check:
-            for name, _, metadata in prepared:
-                print(json.dumps({'harness': name, 'ready': True, **metadata}))
-            return
         run_dirs = []
         for name, adapter, metadata in prepared:
             options = {'adapter_name': name, 'task_id': args.task}

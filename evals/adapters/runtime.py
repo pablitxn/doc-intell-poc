@@ -75,9 +75,12 @@ def load_profile(name_or_path, model=None, thinking=None) -> dict:
         for name in forwarded
     ):
         raise ValueError("forward_env must contain environment variable names")
-    # These variables define the fresh workspace and must not import host configs.
-    protected = {"HOME", "PATH", "CODEX_HOME", "PI_CODING_AGENT_DIR", "LD_PRELOAD", "PYTHONPATH", "NODE_OPTIONS", "HTTP_PROXY", "HTTPS_PROXY", "ALL_PROXY", "NO_PROXY", "NODE_USE_ENV_PROXY"}
-    if protected.intersection(forwarded):
+    # The runner owns isolation and trace identity/destination. Importing host
+    # OTel settings could silently drop spans or detach them from the task.
+    protected = {"HOME", "PATH", "CODEX_HOME", "PI_CODING_AGENT_DIR", "LD_PRELOAD", "PYTHONPATH", "NODE_OPTIONS", "HTTP_PROXY", "HTTPS_PROXY", "ALL_PROXY", "NO_PROXY", "NODE_USE_ENV_PROXY", "TRACEPARENT", "TRACESTATE", "BAGGAGE"}
+    if protected.intersection(forwarded) or any(
+        name.startswith(("DOC_INTELL_", "OTEL_")) for name in forwarded
+    ):
         raise ValueError("forward_env cannot override the isolated runtime configuration")
     return profile
 

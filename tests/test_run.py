@@ -18,7 +18,9 @@ class RunEntrypointTests(unittest.TestCase):
         httpx.Client = MagicMock()
         dataset = SimpleNamespace(name="test-dataset")
         log = StringIO()
-        with patch.dict("sys.modules", {"phoenix.client": phoenix, "httpx": httpx}), patch.object(run, "read_json", return_value={"prompt_root": None}):
+        with patch.dict("sys.modules", {"phoenix.client": phoenix, "httpx": httpx}), \
+             patch.object(run, "read_json", return_value={"prompt_root": None}), \
+             patch.object(run, "validate_current_report"):
             with patch("sys.argv", ["run.py", *arguments]), redirect_stdout(log), redirect_stderr(log):
                 with patch.object(run, "command_harness") as factory, patch.object(run, "run_experiment", return_value=Path("runs/test")) as runner:
                     with patch.object(run, "prepare_dataset", return_value=dataset, side_effect=preflight_error):
@@ -44,6 +46,32 @@ class RunEntrypointTests(unittest.TestCase):
         factory.assert_not_called()
         runner.assert_not_called()
         self.assertEqual(upload.call_args.args[2], Path("runs/test"))
+
+    def test_import_never_constructs_a_harness_or_regrades_saved_answers(self):
+        with patch('evals.reporting.importer.import_report', return_value={
+                'complete': True, 'experiment_id': 'imported'}) as importer, \
+             patch.object(run, 'code_definitions', side_effect=AssertionError('must not load current scoring')):
+            code, factory, runner, upload, _ = self.execute([
+                '--import-run', 'runs/historical', '--output-dir', 'runs/restored',
+                '--phoenix-url', 'http://localhost:7777'])
+        self.assertEqual(code, 0)
+        factory.assert_not_called()
+        runner.assert_not_called()
+        upload.assert_not_called()
+        self.assertEqual(importer.call_args.args[2:], (Path('runs/historical'), Path('runs/restored/imports')))
+
+    def test_incompatible_upload_is_rejected_before_any_remote_publication(self):
+        with patch('sys.argv', ['run.py', '--upload-only', 'runs/old']), \
+             patch.object(run, 'read_json', return_value={'complete': True}), \
+             patch.object(run, 'prepare_dataset') as dataset, \
+             patch.object(run, 'register_evaluators') as registry, \
+             patch.object(run, 'publish_traces') as traces, \
+             redirect_stdout(StringIO()), redirect_stderr(StringIO()):
+            code = run.main()
+        self.assertEqual(code, 1)
+        dataset.assert_not_called()
+        registry.assert_not_called()
+        traces.assert_not_called()
 
     def test_all_finishes_local_comparison_when_one_publication_fails(self):
         adapters = [(name, MagicMock(), {}) for name in ('pi', 'tau', 'codex')]

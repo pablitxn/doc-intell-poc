@@ -7,9 +7,11 @@ La [auditoría del dataset y evaluadores](docs/DATASET_AUDIT.md) documenta la re
 
 El [reporte resumido del 13 de septiembre](docs/REPORTE_GPT56_2026-09-13.md) conserva el cierre de esta revisión. El [respaldo versionado de corridas](artifacts/2026-09-13/README.md) permite recuperar los resultados y las trazas al trasladar el proyecto.
 
+La [guía para el harness corporativo](docs/CORPORATE_READINESS.md) reúne diagnóstico, tracing nativo, comparación con otra implementación e importación en un Phoenix nuevo. La [validación de esta preparación](docs/VALIDATION_PRE_CORPORATE.md) registra 225 tests aprobados y las pruebas reales de transporte y recuperación, sin nuevas inferencias.
+
 ## Preparar y ejecutar
 
-Requisitos: Docker activo, `uv` y una sesión de Codex CLI autenticada con cuenta ChatGPT. El runner de procesos está verificado en macOS/Linux; en Windows usar WSL2 con Docker. Pi y Tau se instalan dentro de la imagen, sin instalar paquetes globales en el host.
+Requisitos: Docker activo, `uv` y una sesión de Codex CLI autenticada con cuenta ChatGPT. Se verificó el runner en macOS/arm64 con workers Linux/arm64; Linux nativo y Windows mediante WSL2/Docker requieren su propio diagnóstico. Pi y Tau se instalan dentro de la imagen, sin instalar paquetes globales en el host.
 
 ```bash
 docker build -f containers/harnesses.Dockerfile \
@@ -18,7 +20,11 @@ docker compose up -d --wait
 ./run.py --harness all --check
 ```
 
-`--check` valida imagen/versiones, motor y presencia/vigencia de autenticación sin hacer llamadas al modelo. El acceso efectivo al modelo se confirma en la primera ejecución real.
+`--check` valida dataset, runtime, credenciales configuradas, lectura aislada de documentos y herramientas PDF sin ejecutar el harness. Con `--check-network` también prueba TLS hacia los destinos permitidos y transporte a Phoenix. Devuelve un JSON con controles, advertencias y `model_access: not_tested`; la configuración efectiva y el acceso al modelo se confirman en una corrida real.
+
+```bash
+./run.py --harness all --check --check-network
+```
 
 La cuenta de Codex existente se reutiliza mediante una credencial temporal de acceso. No se copia el refresh token ni se cambia el archivo de autenticación del host. Si vence el acceso, refrescar la sesión con `codex login` y volver a ejecutar; no hay renovación automática desde los workers.
 
@@ -67,6 +73,8 @@ Los artefactos se guardan después de cada tarea terminada. Si falla la publicac
 
 Ese comando nunca llama al modelo. Los IDs de tareas y spans se conservan; ante una respuesta de red incierta puede repetirse la transmisión, no la inferencia. `--phoenix-url`/`PHOENIX_ENDPOINT` cambian el destino de los reportes y de ambas rutas de tracing, y `PHOENIX_API_KEY` configura su autenticación. El endpoint admite un origen HTTP(S), sin credenciales embebidas ni prefijo de ruta; los destinos loopback se traducen a `host.docker.internal` para el proxy.
 
+Para reconstruir un historial en **otra instancia** usar `--import-run runs/ID --phoenix-url URL --output-dir runs/restored`. Esa importación conserva los scores históricos, revalida el destino y deja los originales intactos. No usa los checkpoints de la instancia anterior ni registra evaluadores actuales para reetiquetar resultados antiguos. [Detalles y referencias históricas](docs/CORPORATE_READINESS.md#reconstruir-el-historial-en-phoenix).
+
 Si falla la publicación durante `--harness all`, se terminan las ejecuciones y la comparación locales, se informa cada directorio pendiente y el comando retorna 1. Los reportes interrumpidos, con `complete: false`, no se publican ni se mezclan con experimentos completos.
 
 El runner crea una traza por tarea/harness/repetición, asociada al experimento de Phoenix. Pi/Tau aportan spans de mensajes y herramientas observados. Codex aporta herramientas y uso agregado del turno: sus eventos no identifican cada petición LLM. Los tiempos de eventos son observados al recibirlos; la duración total incluye contenedores y limpieza. Los tokens cacheados son subconjuntos del total de entrada. Los costes de suscripción no se presentan como costes API: quedan `null`.
@@ -96,6 +104,8 @@ El perfil de ejemplo necesita completarse y su CLI privado todavía no se ha pro
 
 Los spans del OTel corporativo se envían directamente al collector. Su SDK debe cerrar/exportar antes de terminar el proceso y gestionar su propia recuperación; `--upload-only` sólo recupera los spans que guardó nuestro runner, no los spans nativos que nunca llegaron al collector.
 
+La prueba de conformance usa un SDK real y verifica spans, padres y exportación con/sin gzip en Phoenix efímero. `forward_env` reserva contexto W3C, `DOC_INTELL_*` y `OTEL_*` para preservar la correlación administrada por el runner.
+
 La interfaz anterior sigue disponible para un ejecutable instalado en el host:
 
 ```bash
@@ -123,9 +133,12 @@ DOC_INTELL_DOCKER_TESTS=1 python3 -m unittest discover -s tests -p test_runtime_
 
 # Suite completa, incluido protobuf y transporte OTel a Phoenix activo:
 DOC_INTELL_DOCKER_TESTS=1 DOC_INTELL_PHOENIX_TESTS=1 \
-  uv run --with opentelemetry-proto==1.44.0 python -m unittest discover -s tests -q
+  uv run --with arize-phoenix-client==3.5.0 --with opentelemetry-proto==1.44.0 \
+  python -m unittest discover -s tests -q
 ```
 
-El primer comando usa Python estándar; el test opcional de protobuf requiere las dependencias fijadas de `run.py`. El segundo prueba aislamiento con Docker real y no llama a proveedores.
+El primer comando usa Python estándar; el test opcional de protobuf requiere las dependencias fijadas de `run.py`. El segundo prueba aislamiento con Docker real y no llama a proveedores. La suite completa incluye el cliente Phoenix para importar a una instancia efímera real.
 
 El POC sigue usando el formato y grader de tax-mini-poc; agregar otro directorio de dataset no lo hace automáticamente compatible. No hay LLM juez. La CLI retorna 0 al producir/publicar reportes aunque los scores fallen, porque es una herramienta exploratoria, no un gate de CI.
+
+Las nuevas comparaciones separan hashes de contrato/scoring y runtime. Un cambio de adapter ya no bloquea una comparación compatible; el scoring y las consignas sí deben coincidir. La [migración explícita del baseline](docs/FINGERPRINTS.md) permite usar las nueve corridas anteriores sin repetir llamadas a modelos.

@@ -56,6 +56,12 @@ class Proxy(BaseHTTPRequestHandler):
         if self.headers.get('Transfer-Encoding'):
             self.send_error(411, 'Content-Length required')
             return
+        encodings = self.headers.get_all('Content-Encoding', [])
+        encoding = encodings[0].strip().lower() if len(encodings) == 1 else ''
+        if encodings and (len(encodings) != 1 or encoding not in {'identity', 'gzip'}):
+            # Never reflect an untrusted header or request body in the error.
+            self.send_error(415, 'Unsupported trace content encoding')
+            return
         try:
             length = int(self.headers.get('Content-Length', '0'))
             if not 0 < length <= MAX_BODY:
@@ -64,7 +70,14 @@ class Proxy(BaseHTTPRequestHandler):
             self.send_error(413, 'Invalid body length')
             return
         body = self.rfile.read(length)
+        if len(body) != length:
+            self.send_error(400, 'Incomplete trace body')
+            return
         headers = {'Content-Type': self.headers.get('Content-Type', 'application/x-protobuf')}
+        if encoding:
+            # Forward bytes unchanged: Phoenix must see the encoding that its
+            # OTLP receiver needs to decode the compressed protobuf correctly.
+            headers['Content-Encoding'] = encoding
         token = os.environ.get('PHOENIX_API_KEY')
         if token:
             headers['Authorization'] = f'Bearer {token}'

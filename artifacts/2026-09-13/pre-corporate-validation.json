@@ -1,0 +1,83 @@
+{
+  "validation_version": "pre-corporate-v1",
+  "date": "2026-09-13",
+  "base_commit": "f5d2419",
+  "model_calls": 0,
+  "suite": {
+    "tests": 225,
+    "skipped": 0,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 29.426,
+    "command": "DOC_INTELL_DOCKER_TESTS=1 DOC_INTELL_PHOENIX_TESTS=1 uv run --with arize-phoenix-client==3.5.0 --with opentelemetry-proto==1.44.0 python -m unittest discover -s tests -q"
+  },
+  "source_fingerprints": {
+    "fingerprint_version": "eval-fingerprints-v1",
+    "contract_sha256": "64a1323b937edbbbdd0bac05a8e5bae164f4a1e28670e4be8d98eba6075cbf2a",
+    "scoring_sha256": "90648ee27f2efe07cbb5f4e5643084d833cde89e380f45755bd1e4e40924a94f",
+    "runtime_code_sha256": "a87db96a43ab707508030aa19c459e37ef30898e9877c6625865b81ce03f0d82"
+  },
+  "fresh_source_diagnostic": {
+    "ready": true,
+    "host": {
+      "os": "Darwin",
+      "architecture": "arm64",
+      "python": "3.14.6"
+    },
+    "worker_os": "linux",
+    "worker_architecture": "arm64",
+    "image_id": "sha256:4ef9c523c9e83460597c0cc1e344fa1efea392e8272949821b882c6f1c674962",
+    "harnesses": [
+      "pi",
+      "tau",
+      "codex"
+    ],
+    "source_copy_excluded": [
+      ".git",
+      "runs",
+      ".env",
+      "credentials"
+    ],
+    "host_docker_and_credential_presence_reused": true,
+    "model_access": "not_tested"
+  },
+  "native_otel": {
+    "fixture": "tests/fixtures/corporate_otel.py",
+    "sdk_version": "1.44.0",
+    "phoenix_version": "20.11.0",
+    "compression_cases": [
+      "none",
+      "gzip"
+    ],
+    "traces": 2,
+    "spans": 10,
+    "parent_relationships_verified": true
+  },
+  "historical_import": {
+    "historical_model_rows": 24,
+    "fixture_rows": 1,
+    "scores": 125,
+    "spans": 160,
+    "originals_unchanged": true,
+    "repeat_no_duplicates": true,
+    "current_evaluators_registered": 0
+  },
+  "baseline_compatibility": {
+    "reports": 9,
+    "tasks": 54,
+    "original_rows_and_summaries_unchanged": true,
+    "original_archive_unchanged": true
+  },
+  "evidence_sha256": {
+    "pre-corporate-diagnostics.json": "64d3d1f8e67d5ced5a5822a818be778331e4b26256587d34a3535851957df877",
+    "pre-corporate-import-validation.json": "db726b0ea7550899f8b6890cd6c21e78db21a409db7e5376ecc8815cdb369ea3",
+    "pre-corporate-tests.txt": "b88a0871f93aff3ac6548d8ac45293ca637311ab6625db790f10439323ba1ea4"
+  },
+  "corporate_environment_tested": false,
+  "remaining": [
+    "Actual corporate OS and architecture",
+    "Docker availability and corporate network/authentication",
+    "Private harness CLI and effective model settings",
+    "Private SDK propagation and export"
+  ]
+}

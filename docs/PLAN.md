@@ -1,6 +1,6 @@
 # Pruebas de harnesses: definición e implementación v1
 
-Estado: integración nativa implementada, auditoría completada y matriz Luna/Sol/Terra ejecutada: 54/54 tareas aprobadas, publicación en Phoenix verificada y 178 tests verdes. Ver [auditoría](DATASET_AUDIT.md), [matriz GPT-5.6](VALIDATION_GPT56.md) y [resultados históricos](VALIDATION.md); los artefactos completos están en `runs/`.
+Estado: integración nativa implementada, auditoría completada y matriz Luna/Sol/Terra ejecutada: 54/54 tareas aprobadas y publicación en Phoenix verificada. La preparación para el corporativo agrega diagnóstico, conformance OTel con SDK real, fingerprints separados e importación a otra instancia: **225 tests aprobados**, sin nuevas inferencias. Ver [validación de esta etapa](VALIDATION_PRE_CORPORATE.md), [guía de traslado](CORPORATE_READINESS.md), [auditoría](DATASET_AUDIT.md), [matriz GPT-5.6](VALIDATION_GPT56.md) y [resultados históricos](VALIDATION.md). Los artefactos originales se conservan en `runs/` y en el [respaldo versionado](../artifacts/2026-09-13/README.md).
 
 ## Alcance acordado
 
@@ -31,7 +31,8 @@ La imagen contiene únicamente herramientas y harnesses. Cada worker monta sólo
 - Tokens ausentes y coste de suscripción permanecen desconocidos. No se suman dos veces tokens cacheados ni snapshots acumulados.
 - Los eventos persistidos contienen metadatos normalizados; no guardan stderr, texto intermedio ni argumentos/resultados crudos de herramientas.
 - El corporativo conserva su implementación OTel. No necesita emitir JSONL ni adoptar nuestro collector de eventos. Se le ofrece `TRACEPARENT`, IDs de correlación y configuración estándar OTLP. Continuar el padre requiere que su código extraiga ese contexto; ofrecer una variable de entorno no demuestra propagación. Si crea su propia traza, se correlaciona por IDs de ejecución.
-- `upload-only` reenvía los artefactos locales y no repite inferencias. Un HTTP de resultado incierto puede obligar a reenviar los mismos IDs de span; no se promete entrega exactamente una vez.
+- `--upload-only` reenvía artefactos completos con el contrato/scoring vigentes y no repite inferencias. Un HTTP de resultado incierto puede obligar a reenviar los mismos IDs de span; no se promete entrega exactamente una vez.
+- `--import-run` reconstruye resultados históricos en otra instancia con sus scores y metadatos originales. Revalida contenido remoto en cada reintento y guarda su recibo fuera de los originales; no ejecuta el evaluador actual ni llama al modelo.
 - `--phoenix-url` configura también el destino del proxy para OTel nativo. La recuperación de spans emitidos directamente por el corporativo pertenece a su SDK/exporter; nuestro reintento sólo recupera los artefactos locales.
 
 ## Criterios de aceptación
@@ -43,6 +44,10 @@ La imagen contiene únicamente herramientas y harnesses. Cada worker monta sólo
 5. Scores y traza asociados en Phoenix mediante `trace_id`; reintento de publicación sin llamar al harness.
 6. Pruebas reales contra el modelo separadas de los dobles de tests.
 7. Perfil corporativo con transporte JSON y OTel nativo, sin implementar todavía su CLI privado ni el MCP.
+8. Diagnóstico desde una copia limpia que verifica runtime, documentos y transportes sin iniciar el harness ni inferencias.
+9. Propagación padre-hijo con SDK OTel real y exportación HTTP/protobuf con y sin gzip a Phoenix efímero.
+10. Comparación con fingerprints separados y migración explícita de copias de los nueve reportes auditados, manteniendo intactos los originales.
+11. Importación a Phoenix vacío, recuperación tras respuesta incierta y reintento sin duplicados, con scores históricos y referencias guardadas cuando existen.
 
 ## Fuentes de las interfaces
 

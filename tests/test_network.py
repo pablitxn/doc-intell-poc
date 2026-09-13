@@ -1,6 +1,7 @@
 """No live sockets or Docker engine are used by these egress boundary tests."""
 
 from email.message import Message
+import gzip
 import importlib.util
 import io
 import os
@@ -127,6 +128,48 @@ class ProxyBoundaryTests(unittest.TestCase):
                 request.do_POST()
                 request.send_error.assert_called_once()
             connection.assert_not_called()
+
+    def test_trace_post_preserves_gzip_and_identity_without_decoding_body(self):
+        for encoding, body in (("gzip", gzip.compress(b"protobuf-trace")),
+                               ("identity", b"protobuf-trace")):
+            with self.subTest(encoding=encoding):
+                request = handler("/v1/traces", body=body, headers={
+                    "Content-Length": str(len(body)), "Content-Encoding": encoding,
+                })
+                with patch.object(proxy_module.http.client, "HTTPConnection") as constructor:
+                    response = constructor.return_value.getresponse.return_value
+                    response.status = 200
+                    response.read.return_value = b"accepted"
+                    response.getheader.return_value = "application/x-protobuf"
+                    request.do_POST()
+                sent = constructor.return_value.request.call_args.kwargs
+                self.assertEqual(sent["body"], body)
+                self.assertEqual(sent["headers"]["Content-Encoding"], encoding)
+
+    def test_trace_post_rejects_unknown_or_multiple_encodings_without_reflection(self):
+        for encoding in ("br", "deflate", "gzip, identity", "sensitive-sentinel", ""):
+            with self.subTest(encoding=encoding):
+                request = handler("/v1/traces", headers={
+                    "Content-Length": "14", "Content-Encoding": encoding,
+                })
+                with patch.object(proxy_module.http.client, "HTTPConnection") as constructor:
+                    request.do_POST()
+                constructor.assert_not_called()
+                request.send_error.assert_called_once_with(415, "Unsupported trace content encoding")
+                self.assertNotIn("sensitive-sentinel", repr(request.send_error.call_args))
+        request = handler("/v1/traces", headers={"Content-Length": "14", "Content-Encoding": "gzip"})
+        request.headers["Content-Encoding"] = "identity"
+        with patch.object(proxy_module.http.client, "HTTPConnection") as constructor:
+            request.do_POST()
+        constructor.assert_not_called()
+        request.send_error.assert_called_once_with(415, "Unsupported trace content encoding")
+
+    def test_trace_post_rejects_incomplete_body_before_upstream(self):
+        request = handler("/v1/traces", body=b"short", headers={"Content-Length": "14"})
+        with patch.object(proxy_module.http.client, "HTTPConnection") as constructor:
+            request.do_POST()
+        constructor.assert_not_called()
+        request.send_error.assert_called_once_with(400, "Incomplete trace body")
 
     def test_trace_post_respects_configured_https_origin_and_port(self):
         body = b"protobuf-trace"

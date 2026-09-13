@@ -62,6 +62,68 @@ class ComparisonTests(unittest.TestCase):
                 write_comparison(runs, root)
 
 
+
+    def test_runtime_sources_can_differ_with_matching_contract_and_scoring(self):
+        with TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            runs = [run_experiment(DATASET, lambda _: {}, root, task_id='reconcile_case') for _ in range(2)]
+            report = read_json(runs[1] / 'report.json')
+            report['eval_code_sha256'] = 'a' * 64
+            report['runtime_code_sha256'] = 'b' * 64
+            (runs[1] / 'report.json').write_text(json.dumps(report))
+            comparison = read_json(write_comparison(runs, root))
+            self.assertEqual(comparison['compatibility_mode'], 'contract-and-scoring')
+            self.assertNotEqual(comparison['harnesses'][0]['eval_code_sha256'],
+                                comparison['harnesses'][1]['eval_code_sha256'])
+
+    def test_changed_contract_or_scoring_blocks_comparison(self):
+        for key in ('contract_sha256', 'scoring_sha256'):
+            with self.subTest(key=key), TemporaryDirectory() as temporary:
+                root = Path(temporary)
+                runs = [run_experiment(DATASET, lambda _: {}, root, task_id='reconcile_case') for _ in range(2)]
+                report = read_json(runs[1] / 'report.json')
+                report[key] = 'a' * 64
+                (runs[1] / 'report.json').write_text(json.dumps(report))
+                with self.assertRaisesRegex(ValueError, 'matching'):
+                    write_comparison(runs, root)
+
+    def test_legacy_requires_matching_whole_source_and_cannot_mix_with_modern(self):
+        keys = ('fingerprint_version', 'contract_sha256', 'scoring_sha256', 'runtime_code_sha256')
+        with TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            runs = [run_experiment(DATASET, lambda _: {}, root, task_id='reconcile_case') for _ in range(2)]
+            reports = [read_json(run / 'report.json') for run in runs]
+            for key in keys:
+                reports[0].pop(key)
+            (runs[0] / 'report.json').write_text(json.dumps(reports[0]))
+            with self.assertRaisesRegex(ValueError, 'migrate legacy'):
+                write_comparison(runs, root)
+            for key in keys:
+                reports[1].pop(key)
+            (runs[1] / 'report.json').write_text(json.dumps(reports[1]))
+            self.assertEqual(read_json(write_comparison(runs, root))['compatibility_mode'], 'legacy-full-source')
+            reports[1]['eval_code_sha256'] = 'a' * 64
+            (runs[1] / 'report.json').write_text(json.dumps(reports[1]))
+            with self.assertRaisesRegex(ValueError, 'matching'):
+                write_comparison(runs, root)
+
+    def test_partial_fingerprint_metadata_cannot_fall_back_to_legacy(self):
+        for key in ('fingerprint_version', 'contract_sha256', 'scoring_sha256', 'runtime_code_sha256'):
+            self._assert_invalid_comparison_field(key, [None, '', ' ', 0, False, {}, []], 'metadata')
+
+    def test_missing_repetitions_cannot_hide_behind_complete_true(self):
+        with TemporaryDirectory() as temporary:
+            root = Path(temporary)
+            runs = [run_experiment(DATASET, lambda _: {}, root, task_id='reconcile_case', repetitions=2)
+                    for _ in range(2)]
+            for run in runs:
+                report = read_json(run / 'report.json')
+                report['rows'].pop()
+                (run / 'report.json').write_text(json.dumps(report))
+            with self.assertRaisesRegex(ValueError, 'complete task/repetition'):
+                write_comparison(runs, root)
+
+
     def _assert_invalid_comparison_field(self, key, invalid_values, message):
         with TemporaryDirectory() as temporary:
             root = Path(temporary)

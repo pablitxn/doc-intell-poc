@@ -16,6 +16,7 @@ from ..datasets.loader import load_examples
 from ..evaluators.tax_mini import EVALUATOR_VERSION, GRADER_PATH, evaluate
 from ..reporting.tracing import build_task_trace
 from .prompt import PROMPT_VERSION, build_prompt
+from .fingerprints import code_fingerprints, legacy_code_sha256
 
 
 def _summary(rows: list[dict]) -> dict:
@@ -42,6 +43,19 @@ def _write_json(path: Path, value: object) -> None:
     temporary.replace(path)
 
 
+
+def build_dataset_snapshot(examples, dataset: Path, prompt_root: Path | None) -> dict:
+    """Private report artifact for publication on a new machine; never an input mount."""
+    return {'examples': [
+        {'task_id': example.input.task_id, 'case_id': example.input.case_id,
+         'group': example.group, 'field_types': example.input.fields,
+         'document_ids': [doc['document_id'] for doc in example.input.documents],
+         'input': build_prompt(example.input, dataset, document_root=prompt_root),
+         'expected': example.expected}
+        for example in examples
+    ]}
+
+
 def run_experiment(
     dataset: Path, adapter: HarnessAdapter, output_dir: Path, *,
     adapter_name: str | None = None, task_id: str | None = None,
@@ -52,6 +66,8 @@ def run_experiment(
         raise ValueError('Repetitions must be a positive integer')
     dataset = dataset.resolve()
     examples, version = load_examples(dataset)
+    snapshot = {**build_dataset_snapshot(examples, dataset, prompt_root),
+                'dataset_version': version, 'prompt_version': PROMPT_VERSION}
     if task_id:
         examples = [example for example in examples if example.input.task_id == task_id]
         if not examples:
@@ -59,12 +75,14 @@ def run_experiment(
     run_id = datetime.now(timezone.utc).strftime('%Y%m%dT%H%M%SZ') + '-' + uuid4().hex[:12]
     run_dir = output_dir / run_id
     run_dir.mkdir(parents=True, exist_ok=False)
+    snapshot_path = run_dir / 'dataset-snapshot.json'
+    _write_json(snapshot_path, snapshot)
     adapter_label = adapter_name or (
         f"{getattr(adapter, '__module__', type(adapter).__module__)}:"
         f"{getattr(adapter, '__qualname__', type(adapter).__qualname__)}"
     )
     metadata = dict(harness_metadata or {})
-    code_root = Path(__file__).resolve().parents[1]
+    fingerprints = code_fingerprints()
     report = {
         'run_id': run_id, 'adapter': adapter_label, 'harness_metadata': metadata,
         'dataset': dataset.name, 'dataset_version': version, 'prompt_version': PROMPT_VERSION,
@@ -74,10 +92,9 @@ def run_experiment(
         'environment': {'os': platform.system(), 'architecture': platform.machine(),
                         'python': platform.python_version()},
         'grader_sha256': hashlib.sha256(GRADER_PATH.read_bytes()).hexdigest(),
-        'eval_code_sha256': hashlib.sha256(b''.join(
-            path.relative_to(code_root).as_posix().encode() + b'\0' + path.read_bytes()
-            for path in sorted(code_root.rglob('*.py'))
-        )).hexdigest(),
+        'eval_code_sha256': legacy_code_sha256(),
+        **fingerprints,
+        'dataset_snapshot_sha256': hashlib.sha256(snapshot_path.read_bytes()).hexdigest(),
         'rows': [],
     }
     rows = report['rows']
@@ -138,7 +155,8 @@ def run_experiment(
                 task_end_ns=time_ns(), events=result.events,
                 metadata={**metadata, 'run_id': run_id, 'harness': adapter_label,
                           'dataset_version': version, 'prompt_version': PROMPT_VERSION,
-                          'evaluator_version': EVALUATOR_VERSION, 'document_access': 'native'},
+                          'evaluator_version': EVALUATOR_VERSION, 'document_access': 'native',
+                          **fingerprints},
             )
             traces.extend(spans)
             _write_json(invocation_dir / 'events.json', result.events)

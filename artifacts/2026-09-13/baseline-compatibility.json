@@ -1,0 +1,477 @@
+{
+  "manifest_version": "tax-mini-gpt56-baseline-v1",
+  "reviewed_source_commit": "f5d2419f3ee496d8cd75219a3a957923ab89bdfb",
+  "archive_sha256": "5bc28681e8735bda082a264cfad1a29d273015900da3a35a01f199c2418182ab",
+  "review_scope": "Nine complete GPT-5.6 Luna/Sol/Terra medium runs from 2026-09-13; source snapshot differs after execution only in comparison validation, outside contract/scoring.",
+  "dataset_version": "0cc394dfbe7f4a18d7fda9265f7b6b0bc3137904f0e59719c53843ac7879720e",
+  "prompt_version": "tax-mini-text-v4",
+  "evaluator_version": "tax-mini-v2",
+  "grader_sha256": "3ce6de9cd299525801449fa67197b219548199f5507353872e95151b08ee515a",
+  "legacy_eval_code_sha256": "be2528cf68cfd10cc6cbf15afdece83e20786565c37b987e5ee00e3d6dc79c65",
+  "fingerprint_version": "eval-fingerprints-v1",
+  "contract_sha256": "64a1323b937edbbbdd0bac05a8e5bae164f4a1e28670e4be8d98eba6075cbf2a",
+  "scoring_sha256": "90648ee27f2efe07cbb5f4e5643084d833cde89e380f45755bd1e4e40924a94f",
+  "reviewed_sources": {
+    "datasets/tax-mini-poc/grade.py": "3ce6de9cd299525801449fa67197b219548199f5507353872e95151b08ee515a",
+    "evals/contracts.py#TaskInput": "1d040d4b6a657751918450e676c6131a4423ab6cf93e10a8566c41c59d3519c7",
+    "evals/datasets/loader.py": "009aefdd995156586f610fc37e99664e7ba2276a4ce8e9ce5755fcb61acb49f4",
+    "evals/evaluators/__init__.py": "07fd1591ad70624a3bbcb240fe94b0e56716f1716d80e37120a2186571a1a0a5",
+    "evals/evaluators/definitions.py": "fbbf5a5ede85b2b1f90c0088c6ba4c42dae2a2719a68cbeb3122aa17713580ab",
+    "evals/evaluators/schema.py": "958cf65b796a0ef4677e293976a3bc02dca1b7e33fd5eb56f4ebeae9affb466b",
+    "evals/evaluators/tax_mini.py": "b3b22c2d8b5afe30eb2055327a33ed759ed88fad24d197af6dbf1a81fd8d40ee",
+    "evals/experiments/prompt.py": "6f40aaf9d157f042323b64489d7e93d552f1030c6b26076f90d062b0d0be123f",
+    "evals/json_io.py": "eea328658f1cd21e2eb221b1c5d7431f70fe616793bb172e8cd12f24a7c1616e"
+  },
+  "runs": [
+    {
+      "run_id": "20260913T130351Z-7bd233432940",
+      "report_sha256": "c1695332899dac617e482434dcae1ef499bb9ab953648952241fb9574f68ad17",
+      "files": [
+        {
+          "path": "phoenix.json",
+          "sha256": "cd12eb58def2d736de8d8bc834a1c5e03588222369cb26c40a1a1109a016b5f1"
+        },
+        {
+          "path": "report.json",
+          "sha256": "c1695332899dac617e482434dcae1ef499bb9ab953648952241fb9574f68ad17"
+        },
+        {
+          "path": "scores.csv",
+          "sha256": "ec75723adc9f90d4f0b3eba7880402270b656f37c6137cef4e95b652465d116a"
+        },
+        {
+          "path": "tasks/extract_doc_001-1/events.json",
+          "sha256": "7df76d66ffeb43018513a73371a3d013094d51650f88927feed348216a239bfb"
+        },
+        {
+          "path": "tasks/extract_doc_002-1/events.json",
+          "sha256": "affb3d344292796420ef8cdb70441f383eae636152b3f6228f78f7a7c1da10e4"
+        },
+        {
+          "path": "tasks/extract_doc_003-1/events.json",
+          "sha256": "1ff8bdae810162c686147d22fb10e672b4f8a8ab5c67cc7803db3a54274dcc55"
+        },
+        {
+          "path": "tasks/extract_doc_004-1/events.json",
+          "sha256": "5e84caa7dd2a4e6685668e0c4f14f48c68603b60dc999c7a46fa50aaf4bd28b6"
+        },
+        {
+          "path": "tasks/extract_doc_005-1/events.json",
+          "sha256": "0309987f3f5186577d7cb3ebc84cbcdbe1894dd6fe793b6413ea6c6f266d12ed"
+        },
+        {
+          "path": "tasks/reconcile_case-1/events.json",
+          "sha256": "a5005b6b6c471d919d2d0c8af5c509843e3b1a7efd3f36e8cff759e40744fc54"
+        },
+        {
+          "path": "traces-upload.json",
+          "sha256": "b639e993884f9dae88792cd671d3e8d30eb5c8b1624aa84ee01a2b0ea5b8c900"
+        },
+        {
+          "path": "traces.json",
+          "sha256": "16dd55010927a18666cabe54bae887566303d44853b53a397550184ce1541d80"
+        }
+      ]
+    },
+    {
+      "run_id": "20260913T130552Z-e833633356e7",
+      "report_sha256": "5d0a335a971a439124d0cf1778edf00bea32866f95a90521de96a44352d5a730",
+      "files": [
+        {
+          "path": "phoenix.json",
+          "sha256": "f31cce703d864c4126a831bfd752c71d02797ed7af24540e5379effd806976ea"
+        },
+        {
+          "path": "report.json",
+          "sha256": "5d0a335a971a439124d0cf1778edf00bea32866f95a90521de96a44352d5a730"
+        },
+        {
+          "path": "scores.csv",
+          "sha256": "ff058087a0d2d839a664a90de78639c45b5ed372e2476a8f5bf18be0b297f404"
+        },
+        {
+          "path": "tasks/extract_doc_001-1/events.json",
+          "sha256": "ed43094a9d35dec52921fb21d0683c1cdde5b8bb8ee29d5b5b99cdc206c67c31"
+        },
+        {
+          "path": "tasks/extract_doc_002-1/events.json",
+          "sha256": "75ce2c3d66d278f747a18dbfad63303e48172ac49231b8ab69c9bd293d8039ae"
+        },
+        {
+          "path": "tasks/extract_doc_003-1/events.json",
+          "sha256": "afbf807d19cf120f49a9ab124ae6909978b4a49848899b120dc980fc5cdfaabb"
+        },
+        {
+          "path": "tasks/extract_doc_004-1/events.json",
+          "sha256": "1d9809e0c0e081af81b0123c8c9c507831acaad795f4fdd9139cd7959de67ee0"
+        },
+        {
+          "path": "tasks/extract_doc_005-1/events.json",
+          "sha256": "b2d556ebbf01ac48bf02908dd8d6e30cfc6be64f2f4f33b3ad6fb0e8491eb660"
+        },
+        {
+          "path": "tasks/reconcile_case-1/events.json",
+          "sha256": "771024f70f1bb41f28a5f7414fddd10add77f620cc50f76392dca1d2c83d9608"
+        },
+        {
+          "path": "traces-upload.json",
+          "sha256": "8f2ddc7dc0351a9e59637ff5eaa9c05a26d8388f735a36387c04e2b021c85aa2"
+        },
+        {
+          "path": "traces.json",
+          "sha256": "200256e7130b79a017e3eb636c7fb54cc91a8b54ae69b0d280171a8bf6263a4e"
+        }
+      ]
+    },
+    {
+      "run_id": "20260913T130802Z-4af026df085c",
+      "report_sha256": "25755637c595e0bd80ef92beefbd26fdfc7765f87449830c58159d39ea5b983e",
+      "files": [
+        {
+          "path": "phoenix.json",
+          "sha256": "5f8bb4030adcba68ce09bdb6041eedfdcc87baa572187c52525757d598505632"
+        },
+        {
+          "path": "report.json",
+          "sha256": "25755637c595e0bd80ef92beefbd26fdfc7765f87449830c58159d39ea5b983e"
+        },
+        {
+          "path": "scores.csv",
+          "sha256": "a73eceb9c37c4d643eb0363bb43cd45aa67001ef08ce3b45b50d05531c966727"
+        },
+        {
+          "path": "tasks/extract_doc_001-1/events.json",
+          "sha256": "0c784b82bde6e6a4a6d97cca612417cfcc68bbaf1c64520738763bf7ef3bfc22"
+        },
+        {
+          "path": "tasks/extract_doc_002-1/events.json",
+          "sha256": "408e691864abee3aacd342c3099ea02ecf4efdf17d5fc66da8e5bc1007d0b3d7"
+        },
+        {
+          "path": "tasks/extract_doc_003-1/events.json",
+          "sha256": "0161293d85d6be2a19f77de8faae8d90affd5c458b4c0d2b83d3cef1df5f03e5"
+        },
+        {
+          "path": "tasks/extract_doc_004-1/events.json",
+          "sha256": "f6fe8f12742927632e94e3a44912c3cf82b744272b0b126bbd422d3926e41013"
+        },
+        {
+          "path": "tasks/extract_doc_005-1/events.json",
+          "sha256": "89024b2adf4cd508df6ada0d8bea2477641bd3ebfce534f6765550650145ad71"
+        },
+        {
+          "path": "tasks/reconcile_case-1/events.json",
+          "sha256": "d2fd3f9ee7469a316a9eb373c60c06721c9e15b887e41c19092fe6e87f956f53"
+        },
+        {
+          "path": "traces-upload.json",
+          "sha256": "cdcd6f0c240728ce7d711285018740f6e7516fd47f2a190ada0dc3f95ddca5d7"
+        },
+        {
+          "path": "traces.json",
+          "sha256": "aaa9172d0d79c29744c810b07d4be30c8f412b4209a1d4c2e055efffa8b0d2a9"
+        }
+      ]
+    },
+    {
+      "run_id": "20260913T130955Z-a5ece05863e2",
+      "report_sha256": "0984b5d3483b77a0215a19c93670354fe36999461abbfe69ef31495293437ac3",
+      "files": [
+        {
+          "path": "phoenix.json",
+          "sha256": "0ff8a50b8a30d7a43cb2bc07abae79d2d6c169396d83dacaf676f0603e270a9d"
+        },
+        {
+          "path": "report.json",
+          "sha256": "0984b5d3483b77a0215a19c93670354fe36999461abbfe69ef31495293437ac3"
+        },
+        {
+          "path": "scores.csv",
+          "sha256": "b567d0d26875b3902bc002675858ba3e893390876246aa8ced3ef0cf8e647aba"
+        },
+        {
+          "path": "tasks/extract_doc_001-1/events.json",
+          "sha256": "07e3964723b33803785f073f052921792763667e95e068817eb14dc59000e3ae"
+        },
+        {
+          "path": "tasks/extract_doc_002-1/events.json",
+          "sha256": "f520ec67dfd2e74a7e008bf0a6592051510c4f3c4604794f56d6a8604b2b9dc2"
+        },
+        {
+          "path": "tasks/extract_doc_003-1/events.json",
+          "sha256": "6d8c1ce52de36f3e0a5166630f77938dec809e89de525848f235c6f0aedec6de"
+        },
+        {
+          "path": "tasks/extract_doc_004-1/events.json",
+          "sha256": "8e65bc41df38a2b0d9141fcc8ed9230cfb0dd135137615497275a36af52d8edf"
+        },
+        {
+          "path": "tasks/extract_doc_005-1/events.json",
+          "sha256": "86d16067eec38937e4287b5d43afa232a2fdd50f405f38f0fc54e9ccebf101e7"
+        },
+        {
+          "path": "tasks/reconcile_case-1/events.json",
+          "sha256": "253087bc2b3a7388d8e4d41a275a8365fc120a8e1452b29d150565ac04626f95"
+        },
+        {
+          "path": "traces-upload.json",
+          "sha256": "cb493e756baf991c9d0a99cb2e08e89b271305e3090fdecdce1f2c87c0f72298"
+        },
+        {
+          "path": "traces.json",
+          "sha256": "a42b957f0261e8df209373a8df28b3443d0c6f9190dafdee30bfb073b024c122"
+        }
+      ]
+    },
+    {
+      "run_id": "20260913T131150Z-fa07fa278f28",
+      "report_sha256": "ffb579d0435682b842b9e0c30605340a27e8a18ea0abf8e4bdfc6df935af6e54",
+      "files": [
+        {
+          "path": "phoenix.json",
+          "sha256": "01c26f28767a63eb5b8634e1176516cbdf20d4a9100e3cd9680e379aa9fa232a"
+        },
+        {
+          "path": "report.json",
+          "sha256": "ffb579d0435682b842b9e0c30605340a27e8a18ea0abf8e4bdfc6df935af6e54"
+        },
+        {
+          "path": "scores.csv",
+          "sha256": "669091f0344fc14dc1fdd4afc521186a0caf6ffdbe687aec2b5d077e2ca091c0"
+        },
+        {
+          "path": "tasks/extract_doc_001-1/events.json",
+          "sha256": "262a83846d93c1a1b41b0b32045894bafaab1ce0cc8f7064987cb6315884f445"
+        },
+        {
+          "path": "tasks/extract_doc_002-1/events.json",
+          "sha256": "436d7f8d65fa485f05ab1b8f0605f4eab333824c9b21ac9ef1bf66f52713543e"
+        },
+        {
+          "path": "tasks/extract_doc_003-1/events.json",
+          "sha256": "5f2acb5060ba705d6190bd4b24a04c74ca4e747493bab18f321fbed794216a07"
+        },
+        {
+          "path": "tasks/extract_doc_004-1/events.json",
+          "sha256": "633ad123500bc243f8e35a27d76224c477eeb7503863525e46a98d2b5052c09e"
+        },
+        {
+          "path": "tasks/extract_doc_005-1/events.json",
+          "sha256": "775796d71f16e400a5bc84ef861d0a7307aff9af90cdd04a1704fd0b052e48f3"
+        },
+        {
+          "path": "tasks/reconcile_case-1/events.json",
+          "sha256": "cbc928361c39787f781f11c68a58eb69d8ab73a1b85d7a9f734a7ec07d2f1a71"
+        },
+        {
+          "path": "traces-upload.json",
+          "sha256": "e988ca48a70c50d4a4f69bc0231fa57c5b34d3413adb69c0c2e40139a8488f81"
+        },
+        {
+          "path": "traces.json",
+          "sha256": "388f371cb6fef56d4751d333bffc2b8480ee6f355439a4fafb581f231517fadc"
+        }
+      ]
+    },
+    {
+      "run_id": "20260913T131342Z-79f4d256ee00",
+      "report_sha256": "3fce4f223235f85c62de40a1c055f60bbde84db1564c2a6b1384f4417b302cc2",
+      "files": [
+        {
+          "path": "phoenix.json",
+          "sha256": "b01339191ec7015c02e3729d8adc614249650882409b619addf53b1665b5307f"
+        },
+        {
+          "path": "report.json",
+          "sha256": "3fce4f223235f85c62de40a1c055f60bbde84db1564c2a6b1384f4417b302cc2"
+        },
+        {
+          "path": "scores.csv",
+          "sha256": "ca26a6047cbecec8aa2489fe93b9e2e3e4de7a22babd30a12ea33eb46067ff05"
+        },
+        {
+          "path": "tasks/extract_doc_001-1/events.json",
+          "sha256": "dcc04932cebb27a909058063432441d8fd726ebacdeedffef7cf4663ad4e19d9"
+        },
+        {
+          "path": "tasks/extract_doc_002-1/events.json",
+          "sha256": "993b5c50d3e240be42b00ab35c0811ecd4b0073d41978e3d98820e280072e1dd"
+        },
+        {
+          "path": "tasks/extract_doc_003-1/events.json",
+          "sha256": "39a0453cef314d5d78bf2ca486270ae43d73b46f831117942435e3d7e354e873"
+        },
+        {
+          "path": "tasks/extract_doc_004-1/events.json",
+          "sha256": "33b63cef6e015544352f92061c898740b76e72db923e98c4445570ae286970e1"
+        },
+        {
+          "path": "tasks/extract_doc_005-1/events.json",
+          "sha256": "48250191bb8acd01cad75c3bac569a84560bec126442048fbc2923ffbb3c6251"
+        },
+        {
+          "path": "tasks/reconcile_case-1/events.json",
+          "sha256": "b62c1ac034c165662888f4f745e06ac708558e8cfc2414d487817034497eedb6"
+        },
+        {
+          "path": "traces-upload.json",
+          "sha256": "38b82cd5aab898590d64fa12dcfbecd90027d64505c51856f60118ce1f1814fe"
+        },
+        {
+          "path": "traces.json",
+          "sha256": "87d3d2e3f966086dd038a7110225abd784fdbe664fc5c02e1d8eec1a63a7e0b0"
+        }
+      ]
+    },
+    {
+      "run_id": "20260913T131546Z-ebd6a3fe8527",
+      "report_sha256": "66f5c233503d60d80ec6264242f636467605d3d4646493bf0a7deb3831f8f71b",
+      "files": [
+        {
+          "path": "phoenix.json",
+          "sha256": "e8f9b17be03725efe21a284f17f84788e0abc36a7cc64f3c0ff87db004c6eaf4"
+        },
+        {
+          "path": "report.json",
+          "sha256": "66f5c233503d60d80ec6264242f636467605d3d4646493bf0a7deb3831f8f71b"
+        },
+        {
+          "path": "scores.csv",
+          "sha256": "29533d4f19ae25b48c4b2bf65b794fd479b811cfc2971a2d41b893c0623d34b2"
+        },
+        {
+          "path": "tasks/extract_doc_001-1/events.json",
+          "sha256": "b90923ad1b11628728dc9ca6ad438db99e7eb0e14d05598fd226851861ccaf48"
+        },
+        {
+          "path": "tasks/extract_doc_002-1/events.json",
+          "sha256": "07291e1a018acd613df38ceb27633e3112e8f198f18fe6eead7a361e23ae0655"
+        },
+        {
+          "path": "tasks/extract_doc_003-1/events.json",
+          "sha256": "0e9d69922ee480a44f141b1e0ba21596a72772975d55b8fd09b771cc716fc2a8"
+        },
+        {
+          "path": "tasks/extract_doc_004-1/events.json",
+          "sha256": "6cbf7c69aac1ebe629ecc5feafa712b5129ccd156361f62646614638574a46f8"
+        },
+        {
+          "path": "tasks/extract_doc_005-1/events.json",
+          "sha256": "5db570d5bbe7b000473198af09590807bbc67171a6b730cd5e722e9c25463a2b"
+        },
+        {
+          "path": "tasks/reconcile_case-1/events.json",
+          "sha256": "8429834489c7ecd1976bc02beff89a817af586d5a3fd3cf026d63344887d4b5f"
+        },
+        {
+          "path": "traces-upload.json",
+          "sha256": "0128cc330615fba21ff5ccd22af6fc71df4da29fcecf4efedd5a4fc5ecc371e8"
+        },
+        {
+          "path": "traces.json",
+          "sha256": "50b8473f75bcd28de24ffec291deca4105f9072720fe777c1be2257e3497192d"
+        }
+      ]
+    },
+    {
+      "run_id": "20260913T131724Z-b04cd83e4581",
+      "report_sha256": "91d69781b1c996252a8dff98a57153be324f004a179afa6740d65d4c738e6682",
+      "files": [
+        {
+          "path": "phoenix.json",
+          "sha256": "47107b24172e45d49cd3346213a7272082077a76ebc5ce09d307f5c2a000241f"
+        },
+        {
+          "path": "report.json",
+          "sha256": "91d69781b1c996252a8dff98a57153be324f004a179afa6740d65d4c738e6682"
+        },
+        {
+          "path": "scores.csv",
+          "sha256": "aaa8ef5efdc48b5a7687de2ffcf8a1d429b66d91cbe0f6ab55215b3177269dae"
+        },
+        {
+          "path": "tasks/extract_doc_001-1/events.json",
+          "sha256": "6a19fb622ea720a68e3d070194c49ec364375e9314933f0aa06e077ff8c7a63b"
+        },
+        {
+          "path": "tasks/extract_doc_002-1/events.json",
+          "sha256": "c861d1a45a3a4a7959541265e0c19a7cae4228bc10b9264c0c24c5cf2a22c1ec"
+        },
+        {
+          "path": "tasks/extract_doc_003-1/events.json",
+          "sha256": "55a3a51ac460c36b39f3d3c0e6a8ecbc3b0584ff6f3a13c26783b663367e099b"
+        },
+        {
+          "path": "tasks/extract_doc_004-1/events.json",
+          "sha256": "5b2f3ea991a3a18bace7bc0e1dfc2d1d05ee3b22b87f24e086f36c01e80bddc0"
+        },
+        {
+          "path": "tasks/extract_doc_005-1/events.json",
+          "sha256": "444ae6b2db8515deb3270604add06257412f578737aecb215289e232a5e44e2f"
+        },
+        {
+          "path": "tasks/reconcile_case-1/events.json",
+          "sha256": "b28b56d658664231fa51ead56279abcc1b71f63efb9d0c82c5398ad8b644be4f"
+        },
+        {
+          "path": "traces-upload.json",
+          "sha256": "d2ac26bd078fbd8b786c17fb30047ee67c59953ca469058a2646e0cc21a49381"
+        },
+        {
+          "path": "traces.json",
+          "sha256": "34eed38a49e6ed20d3a98ee90723677341a6abd9325371891dbe232784869645"
+        }
+      ]
+    },
+    {
+      "run_id": "20260913T131911Z-f727f56f2657",
+      "report_sha256": "004318de1203ae06f08973ef0a1e25d97de3fc49bcd44877b14c49d62286824b",
+      "files": [
+        {
+          "path": "phoenix.json",
+          "sha256": "8709a090fcee842b18e80c307bb699b571b1477759fb48004571ce5c5ea31cda"
+        },
+        {
+          "path": "report.json",
+          "sha256": "004318de1203ae06f08973ef0a1e25d97de3fc49bcd44877b14c49d62286824b"
+        },
+        {
+          "path": "scores.csv",
+          "sha256": "d2ef991418864c23a6fa4ed455daee445604b6a19e95e3166fd028ce33d6db55"
+        },
+        {
+          "path": "tasks/extract_doc_001-1/events.json",
+          "sha256": "c32de40dc8c179763234b7186243931cb129b5a72d3464eb63107c632521fdc3"
+        },
+        {
+          "path": "tasks/extract_doc_002-1/events.json",
+          "sha256": "39c30303fd16e1e7c8c31e1c6afa5bd17f51f18a7d31d66292e2c8f207338804"
+        },
+        {
+          "path": "tasks/extract_doc_003-1/events.json",
+          "sha256": "f199d0ca024b3dc16fba31f6dd673e759712a8ffb1ef01322db420a56f975e03"
+        },
+        {
+          "path": "tasks/extract_doc_004-1/events.json",
+          "sha256": "f3302f7a2413145a04cee3329d859fa654441d8d67ce979caa611a8b34edf793"
+        },
+        {
+          "path": "tasks/extract_doc_005-1/events.json",
+          "sha256": "b31001620c2d5a0c26d7aad891deda378e68d04c1b28c725d9a211ab501ef9b3"
+        },
+        {
+          "path": "tasks/reconcile_case-1/events.json",
+          "sha256": "48df523ee3fae5c6371c15259537462f836f228b29f0e878b73a33812a6836c6"
+        },
+        {
+          "path": "traces-upload.json",
+          "sha256": "4ee0be6bc99cd63039e79ca28030f144a05be2abe7be0c6d49796286b25ca56f"
+        },
+        {
+          "path": "traces.json",
+          "sha256": "5b099b979ec65132a7819c3ed2b060705236f853a30e32a99320f175df5bcd8b"
+        }
+      ]
+    }
+  ]
+}

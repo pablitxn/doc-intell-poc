@@ -93,6 +93,25 @@ class RuntimeTests(unittest.TestCase):
         self.assertEqual(profile["telemetry"], "native-otel")
         self.assertEqual(profile["auth"], "none")
 
+    def test_forwarded_host_environment_cannot_replace_trace_identity_or_exporter(self):
+        profile = load_profile("corporate.example")
+        destination = self.root / "corporate.json"
+        reserved = (
+            "TRACEPARENT", "TRACESTATE", "BAGGAGE", "DOC_INTELL_RUN_ID",
+            "DOC_INTELL_TASK_ID", "DOC_INTELL_REPETITION", "DOC_INTELL_HARNESS",
+            "DOC_INTELL_FUTURE_CONTEXT", "OTEL_RESOURCE_ATTRIBUTES",
+            "OTEL_EXPORTER_OTLP_ENDPOINT", "OTEL_EXPORTER_OTLP_TRACES_ENDPOINT",
+            "OTEL_EXPORTER_OTLP_TRACES_PROTOCOL", "OTEL_EXPORTER_OTLP_HEADERS",
+            "OTEL_TRACES_SAMPLER", "OTEL_SDK_DISABLED",
+        )
+        for variable in reserved:
+            with self.subTest(variable=variable):
+                destination.write_text(json.dumps({**profile, "forward_env": [variable]}))
+                with self.assertRaisesRegex(ValueError, "cannot override"):
+                    load_profile(destination)
+        destination.write_text(json.dumps({**profile, "forward_env": ["CORPORATE_PROVIDER_KEY"]}))
+        self.assertEqual(load_profile(destination)["forward_env"], ["CORPORATE_PROVIDER_KEY"])
+
     def test_corporate_preflight_checks_executable_without_running_harness_or_forwarding_secrets(self):
         profile = load_profile("corporate.example")
         profile["command"] = ["corporate-harness", "--provider-key", "argument-secret-sentinel"]

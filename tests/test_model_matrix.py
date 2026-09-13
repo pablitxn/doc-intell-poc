@@ -48,3 +48,10 @@ class ModelMatrixTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'unavailable'):
                 native_adapters(args)
         invoke.assert_not_called()
+
+    def test_network_checks_are_explicit_and_timeouts_are_finite(self):
+        for flags in (['--check-network'], ['--timeout', 'nan'],
+                      ['--timeout', 'inf'], ['--timeout', '0'], ['--timeout', '-1']):
+            with self.subTest(flags=flags), redirect_stderr(StringIO()), self.assertRaises(SystemExit):
+                parse(['--harness', 'pi', *flags])
+        self.assertTrue(parse(['--harness', 'pi', '--check', '--check-network']).check_network)

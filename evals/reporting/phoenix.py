@@ -3,13 +3,15 @@
 from datetime import datetime
 import hashlib
 import json
+import re
 from pathlib import Path
 from urllib.parse import quote
 
 from ..datasets.loader import load_examples, read_json
-from ..evaluators.tax_mini import EVALUATOR_VERSION
+from ..evaluators.tax_mini import EVALUATOR_VERSION, GRADER_PATH
 from ..evaluators.definitions import EVALUATOR_DEFINITIONS
 from ..experiments.prompt import PROMPT_VERSION, build_prompt
+from ..experiments.fingerprints import FINGERPRINT_FIELDS, FINGERPRINT_VERSION, code_fingerprints
 
 def prepare_dataset(client, root: Path, *, prompt_root: Path | None = None):
     """Always publish all tasks, even when the experiment selects only one."""
@@ -103,26 +105,63 @@ def _recover_run(client, request: dict, http=None) -> dict:
     return run
 
 
-def publish_report(client, dataset, run_dir: Path, evaluator_registry: dict | None = None, *, http=None) -> dict:
-    """Checkpoint upload progress; rerunning uploads never invokes the harness."""
-    report = read_json(run_dir / "report.json")
-    if report.get("complete") is False:
-        raise ValueError("Cannot publish an incomplete evaluation report")
-    if report["evaluator_version"] != EVALUATOR_VERSION:
-        raise ValueError("Report evaluator version differs from the loaded evaluator definitions")
-    repetitions = report.get("repetitions", 1)
+
+def validate_current_report(report: dict) -> None:
+    """Only attach today's evaluator definitions to verified compatible results.
+
+    Runtime changes are allowed. Historical results without the modern contract
+    and scoring fingerprints need archive import or explicit baseline migration.
+    The caller should run this before any dataset, registry or trace publication.
+    """
+    if not isinstance(report, dict) or report.get("complete") is not True:
+        raise ValueError("Cannot publish an incomplete evaluation report; complete must be explicitly true")
+    if any(key not in report for key in FINGERPRINT_FIELDS):
+        raise ValueError("Legacy or incomplete fingerprint metadata requires --import-run or explicit baseline migration")
+    if report["fingerprint_version"] != FINGERPRINT_VERSION:
+        raise ValueError("Unsupported fingerprint metadata; use --import-run for historical results")
+    for key in ("contract_sha256", "scoring_sha256", "runtime_code_sha256", "grader_sha256", "eval_code_sha256"):
+        if not isinstance(report.get(key), str) or re.fullmatch(r"[a-f0-9]{64}", report[key]) is None:
+            raise ValueError("Publication requires complete SHA256 source metadata")
+    current = code_fingerprints()
+    if report["contract_sha256"] != current["contract_sha256"] or report.get("prompt_version") != PROMPT_VERSION:
+        raise ValueError("Report does not match the current task contract; use --import-run for historical results")
+    if (report["scoring_sha256"] != current["scoring_sha256"]
+            or report["grader_sha256"] != hashlib.sha256(GRADER_PATH.read_bytes()).hexdigest()
+            or report.get("evaluator_version") != EVALUATOR_VERSION):
+        raise ValueError("Report scoring source differs from the current evaluator definitions; use --import-run")
+    repetitions = report.get("repetitions")
     if type(repetitions) is not int or repetitions < 1:
         raise ValueError("Report repetitions must be a positive integer")
-    examples = {row["metadata"]["task_id"]: row for row in dataset.examples}
-    identities = set()
-    for row in report["rows"]:
-        repetition = row.get("repetition", 1)
+    rows = report.get("rows")
+    if not isinstance(rows, list) or not rows:
+        raise ValueError("Publication requires nonempty task rows")
+    identities, tasks = set(), set()
+    for row in rows:
+        if not isinstance(row, dict) or not isinstance(row.get("task_id"), str) or not row["task_id"].strip():
+            raise ValueError("Report row requires a nonempty task identity")
+        repetition = row.get("repetition")
         if type(repetition) is not int or not 1 <= repetition <= repetitions:
             raise ValueError("Report row repetition is outside the experiment range")
         identity = row["task_id"], repetition
         if identity in identities:
             raise ValueError("Report contains duplicate task and repetition")
         identities.add(identity)
+        tasks.add(row["task_id"])
+    if identities != {(task, repetition) for task in tasks for repetition in range(1, repetitions + 1)}:
+        raise ValueError("Report is missing task repetitions")
+    summary = report.get("summary")
+    if (not isinstance(summary, dict) or type(summary.get("tasks_evaluated")) is not int
+            or summary["tasks_evaluated"] != len(rows)):
+        raise ValueError("Report summary task count differs from the saved rows")
+
+
+def publish_report(client, dataset, run_dir: Path, evaluator_registry: dict | None = None, *, http=None) -> dict:
+    """Checkpoint upload progress; rerunning uploads never invokes the harness."""
+    report = read_json(run_dir / "report.json")
+    validate_current_report(report)
+    repetitions = report["repetitions"]
+    examples = {row["metadata"]["task_id"]: row for row in dataset.examples}
+    for row in report["rows"]:
         example = examples.get(row["task_id"])
         if (example is None or example["input"]["text"] != row["input"]
                 or example["metadata"]["dataset_version"] != report["dataset_version"]
@@ -148,7 +187,7 @@ def publish_report(client, dataset, run_dir: Path, evaluator_registry: dict | No
 
     definitions = {
         name: {"description": description, "version": EVALUATOR_VERSION,
-               "source_sha256": report["eval_code_sha256"], "execution": "local"}
+               "source_sha256": report.get("scoring_sha256", report["eval_code_sha256"]), "execution": "local"}
         for name, description in EVALUATOR_DEFINITIONS.items()
     }
     for name, registration in (evaluator_registry or {}).items():
@@ -168,6 +207,10 @@ def publish_report(client, dataset, run_dir: Path, evaluator_registry: dict | No
                 "summary": report["summary"],
                 "evaluators": definitions,
                 "harness_metadata": report.get("harness_metadata", {}),
+                **{key: report[key] for key in (
+                    "fingerprint_version", "contract_sha256", "scoring_sha256", "runtime_code_sha256",
+                    "eval_code_sha256", "runtime_fingerprint_basis", "fingerprint_migration"
+                ) if key in report},
             },
             repetitions=repetitions,
         )

@@ -9,7 +9,7 @@ import unittest
 
 from evals.datasets.loader import load_examples, read_json
 from evals.experiments.runner import run_experiment
-from evals.reporting.phoenix import EVALUATOR_DEFINITIONS, prepare_dataset, publish_report
+from evals.reporting.phoenix import EVALUATOR_DEFINITIONS, prepare_dataset, publish_report, validate_current_report
 
 DATASET = Path(__file__).resolve().parents[1] / "datasets/tax-mini-poc"
 
@@ -293,7 +293,7 @@ class PhoenixReportingTests(unittest.TestCase):
         self.assertEqual(self.client.experiments.creates, [])
         self.assertEqual(self.client.experiments.runs, [])
 
-    def test_incomplete_report_is_rejected_before_mutations_and_legacy_is_allowed(self):
+    def test_incomplete_or_unknown_completion_is_rejected_before_mutations(self):
         dataset = prepare_dataset(self.client, DATASET)
         with TemporaryDirectory() as tmp:
             run_dir = run_experiment(DATASET, self.answer, Path(tmp), task_id="reconcile_case")
@@ -308,8 +308,88 @@ class PhoenixReportingTests(unittest.TestCase):
             self.assertEqual(self.client.experiments.evaluations, {})
             del report["complete"]
             (run_dir / "report.json").write_text(json.dumps(report))
+            with self.assertRaisesRegex(ValueError, "complete must be explicitly true"):
+                publish_report(self.client, dataset, run_dir)
+            self.assertEqual(self.client.experiments.creates, [])
+            self.assertFalse((run_dir / "phoenix.json").exists())
+
+    def test_historical_or_changed_scoring_sources_cannot_use_current_registry(self):
+        dataset = prepare_dataset(self.client, DATASET)
+        with TemporaryDirectory() as tmp:
+            run_dir = run_experiment(DATASET, self.answer, Path(tmp), task_id="reconcile_case")
+            original = read_json(run_dir / "report.json")
+            for key in ("scoring_sha256", "grader_sha256", "contract_sha256"):
+                with self.subTest(key=key):
+                    report = deepcopy(original)
+                    report[key] = "0" * 64
+                    (run_dir / "report.json").write_text(json.dumps(report))
+                    with self.assertRaisesRegex(ValueError, "--import-run"):
+                        publish_report(self.client, dataset, run_dir,
+                            evaluator_registry={"task_pass": {"id": "current-definition"}})
+                    self.assertFalse((run_dir / "phoenix.json").exists())
+            for key in ("fingerprint_version", "contract_sha256", "scoring_sha256", "runtime_code_sha256"):
+                original.pop(key)
+            (run_dir / "report.json").write_text(json.dumps(original))
+            with self.assertRaisesRegex(ValueError, "--import-run or explicit baseline migration"):
+                publish_report(self.client, dataset, run_dir)
+        self.assertEqual(self.client.experiments.creates, [])
+        self.assertEqual(self.client.experiments.runs, [])
+        self.assertEqual(self.client.experiments.evaluations, {})
+
+    def test_partial_or_unsupported_fingerprints_are_rejected(self):
+        with TemporaryDirectory() as tmp:
+            run_dir = run_experiment(DATASET, self.answer, Path(tmp), task_id="reconcile_case")
+            original = read_json(run_dir / "report.json")
+            for change in (
+                lambda report: report.pop("scoring_sha256"),
+                lambda report: report.update(fingerprint_version="future-unknown"),
+                lambda report: report.update(runtime_code_sha256=""),
+                lambda report: report.update(eval_code_sha256=None),
+                lambda report: report.update(evaluator_version="another-policy"),
+                lambda report: report.update(complete=1),
+            ):
+                report = deepcopy(original)
+                change(report)
+                with self.assertRaises(ValueError):
+                    validate_current_report(report)
+
+    def test_complete_flag_cannot_hide_missing_rows_or_wrong_summary_count(self):
+        dataset = prepare_dataset(self.client, DATASET)
+        with TemporaryDirectory() as tmp:
+            run_dir = run_experiment(DATASET, self.answer, Path(tmp), task_id="reconcile_case", repetitions=2)
+            original = read_json(run_dir / "report.json")
+            for change, message in (
+                (lambda report: report["rows"].pop(), "missing task repetitions"),
+                (lambda report: report.update(rows=[]), "nonempty task rows"),
+                (lambda report: report["summary"].update(tasks_evaluated=1), "summary task count"),
+                (lambda report: report["rows"][0].update(repetition=0), "outside the experiment range"),
+            ):
+                with self.subTest(message=message):
+                    report = deepcopy(original)
+                    change(report)
+                    (run_dir / "report.json").write_text(json.dumps(report))
+                    with self.assertRaisesRegex(ValueError, message):
+                        publish_report(self.client, dataset, run_dir)
+                    self.assertFalse((run_dir / "phoenix.json").exists())
+        self.assertEqual(self.client.experiments.creates, [])
+        self.assertEqual(self.client.experiments.runs, [])
+        self.assertEqual(self.client.experiments.evaluations, {})
+
+    def test_runtime_changes_are_allowed_and_full_source_provenance_is_published(self):
+        dataset = prepare_dataset(self.client, DATASET)
+        with TemporaryDirectory() as tmp:
+            run_dir = run_experiment(DATASET, self.answer, Path(tmp), task_id="reconcile_case")
+            report = read_json(run_dir / "report.json")
+            report.update(runtime_code_sha256="a" * 64, eval_code_sha256="b" * 64,
+                          runtime_fingerprint_basis="legacy-whole-evals",
+                          fingerprint_migration={"original_report_sha256": "c" * 64})
+            (run_dir / "report.json").write_text(json.dumps(report))
             state = publish_report(self.client, dataset, run_dir)
             self.assertTrue(state["complete"])
+        metadata = self.client.experiments.creates[0]["experiment_metadata"]
+        for key in ("eval_code_sha256", "runtime_code_sha256", "runtime_fingerprint_basis", "fingerprint_migration"):
+            self.assertEqual(metadata[key], report[key])
+        self.assertEqual(metadata["evaluators"]["task_pass"]["source_sha256"], report["scoring_sha256"])
 
     def test_stable_document_root_matches_dataset_and_run(self):
         prompt_root = Path("/workspace/dataset")

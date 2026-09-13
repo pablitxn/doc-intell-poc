@@ -1,0 +1,40 @@
+{
+  "destination": "disposable Phoenix20.11.0; cleaned after check",
+  "imports": [
+    {
+      "run_id": "20260913T115937Z-3ffe3d7663c1",
+      "evaluator_version": "tax-mini-v1",
+      "prompt_version": "tax-mini-text-v3",
+      "rows": 18,
+      "scores": 90,
+      "spans": 118,
+      "reference_status": "unavailable",
+      "originals_unchanged": true,
+      "repeat_no_duplicates": true
+    },
+    {
+      "run_id": "20260913T131150Z-fa07fa278f28",
+      "evaluator_version": "tax-mini-v2",
+      "prompt_version": "tax-mini-text-v4",
+      "rows": 6,
+      "scores": 30,
+      "spans": 41,
+      "reference_status": "unavailable",
+      "originals_unchanged": true,
+      "repeat_no_duplicates": true
+    },
+    {
+      "run_id": "original-run",
+      "evaluator_version": "tax-mini-v2",
+      "prompt_version": "tax-mini-text-v3",
+      "rows": 1,
+      "scores": 5,
+      "spans": 1,
+      "reference_status": "saved_snapshot",
+      "originals_unchanged": true,
+      "repeat_no_duplicates": true
+    }
+  ],
+  "current_evaluators_registered": 0,
+  "model_calls": 0
+}

@@ -1,0 +1,190 @@
+{
+  "diagnostics_version": "runtime-check-v1",
+  "ready": true,
+  "model_calls": 0,
+  "model_access": "not_tested",
+  "readiness_scope": "Runtime and selected transport checks; effective model settings/access require a real run",
+  "network_requested": true,
+  "host": {
+    "os": "Darwin",
+    "architecture": "arm64",
+    "python": "3.14.6"
+  },
+  "checks": {
+    "dataset": true,
+    "phoenix_runner": true
+  },
+  "harnesses": [
+    {
+      "harness": "pi",
+      "model": "gpt-5.6-sol",
+      "thinking": "medium",
+      "ready": true,
+      "checks": {
+        "runtime_and_credential_presence": true,
+        "documents_readable": true,
+        "references_hidden": true,
+        "pdf_tools": true,
+        "provider_tls_routes": true,
+        "phoenix_otlp_transport": true
+      },
+      "warnings": [],
+      "runtime": {
+        "image": "doc-intell-harnesses:pi-0.85.1_tau-0.4.3_codex-0.145.0",
+        "image_id": "sha256:4ef9c523c9e83460597c0cc1e344fa1efea392e8272949821b882c6f1c674962",
+        "name": "pi",
+        "version": "0.85.1",
+        "model": "gpt-5.6-sol",
+        "provider": "openai-codex",
+        "thinking": "medium",
+        "output_mode": "pi-jsonl",
+        "telemetry": "events",
+        "execution": "docker",
+        "filesystem_isolated": true,
+        "evaluator_network_isolated": true,
+        "model_access": "not_tested",
+        "auth": "codex-account",
+        "auth_refresh_exported": false
+      },
+      "image": {
+        "os": "linux",
+        "architecture": "arm64",
+        "version_verified_by_label": true
+      },
+      "network": [
+        {
+          "host": "chatgpt.com",
+          "tls_route": true,
+          "issue": null
+        },
+        {
+          "host": "api.openai.com",
+          "tls_route": true,
+          "issue": null
+        },
+        {
+          "host": "auth.openai.com",
+          "tls_route": true,
+          "issue": null
+        }
+      ],
+      "worker_python": "3.12.12"
+    },
+    {
+      "harness": "tau",
+      "model": "gpt-5.6-sol",
+      "thinking": "medium",
+      "ready": true,
+      "checks": {
+        "runtime_and_credential_presence": true,
+        "documents_readable": true,
+        "references_hidden": true,
+        "pdf_tools": true,
+        "provider_tls_routes": true,
+        "phoenix_otlp_transport": true
+      },
+      "warnings": [],
+      "runtime": {
+        "image": "doc-intell-harnesses:pi-0.85.1_tau-0.4.3_codex-0.145.0",
+        "image_id": "sha256:4ef9c523c9e83460597c0cc1e344fa1efea392e8272949821b882c6f1c674962",
+        "name": "tau",
+        "version": "0.4.3",
+        "model": "gpt-5.6-sol",
+        "provider": "openai-codex",
+        "thinking": "medium",
+        "output_mode": "tau-jsonl",
+        "telemetry": "events",
+        "execution": "docker",
+        "filesystem_isolated": true,
+        "evaluator_network_isolated": true,
+        "model_access": "not_tested",
+        "auth": "codex-account",
+        "auth_refresh_exported": false
+      },
+      "image": {
+        "os": "linux",
+        "architecture": "arm64",
+        "version_verified_by_label": true
+      },
+      "network": [
+        {
+          "host": "chatgpt.com",
+          "tls_route": true,
+          "issue": null
+        },
+        {
+          "host": "api.openai.com",
+          "tls_route": true,
+          "issue": null
+        },
+        {
+          "host": "auth.openai.com",
+          "tls_route": true,
+          "issue": null
+        }
+      ],
+      "worker_python": "3.12.12"
+    },
+    {
+      "harness": "codex",
+      "model": "gpt-5.6-sol",
+      "thinking": "medium",
+      "ready": true,
+      "checks": {
+        "runtime_and_credential_presence": true,
+        "documents_readable": true,
+        "references_hidden": true,
+        "pdf_tools": true,
+        "provider_tls_routes": true,
+        "phoenix_otlp_transport": true
+      },
+      "warnings": [],
+      "runtime": {
+        "image": "doc-intell-harnesses:pi-0.85.1_tau-0.4.3_codex-0.145.0",
+        "image_id": "sha256:4ef9c523c9e83460597c0cc1e344fa1efea392e8272949821b882c6f1c674962",
+        "name": "codex",
+        "version": "0.145.0",
+        "model": "gpt-5.6-sol",
+        "provider": "openai-codex",
+        "thinking": "medium",
+        "output_mode": "codex-jsonl",
+        "telemetry": "events",
+        "execution": "docker",
+        "filesystem_isolated": true,
+        "evaluator_network_isolated": true,
+        "model_access": "not_tested",
+        "auth": "codex-account",
+        "auth_refresh_exported": false
+      },
+      "image": {
+        "os": "linux",
+        "architecture": "arm64",
+        "version_verified_by_label": true
+      },
+      "network": [
+        {
+          "host": "chatgpt.com",
+          "tls_route": true,
+          "issue": null
+        },
+        {
+          "host": "api.openai.com",
+          "tls_route": true,
+          "issue": null
+        },
+        {
+          "host": "auth.openai.com",
+          "tls_route": true,
+          "issue": null
+        }
+      ],
+      "worker_python": "3.12.12"
+    }
+  ],
+  "issues": [],
+  "dataset": {
+    "version": "0cc394dfbe7f4a18d7fda9265f7b6b0bc3137904f0e59719c53843ac7879720e",
+    "tasks": 6,
+    "fields": 54
+  }
+}

@@ -1,16 +1,25 @@
 """Explicit Docker conformance checks; no model or provider request is made."""
 
+from contextlib import ExitStack
+import hashlib
 import json
 import os
 from pathlib import Path
+import shutil
 import subprocess
+import time
 from tempfile import TemporaryDirectory
 import unittest
+from urllib.error import HTTPError
+from urllib.request import ProxyHandler, Request, build_opener
+from uuid import uuid4
 
 from evals.adapters.native import NativeHarness
 from evals.adapters.runtime import DEFAULT_IMAGE, make_preparer
 from evals.contracts import HarnessInvocation
 from evals.datasets.loader import load_examples
+from evals.reporting.tracing import build_task_trace, encode_otlp
+from tests.phoenix_fixture import temporary_phoenix
 
 DATASET = Path(__file__).resolve().parents[1] / 'datasets/tax-mini-poc'
 
@@ -83,68 +92,70 @@ print(json.dumps(checks))
 
 
 @unittest.skipUnless(os.environ.get('DOC_INTELL_PHOENIX_TESTS') == '1',
-                     'Opt-in Docker and running Phoenix OTLP conformance')
+                     'Opt-in Docker and disposable Phoenix SDK conformance')
 class CorporateOtelConformanceTests(unittest.TestCase):
-    def test_corporate_json_harness_exports_otel_directly_through_sidecar(self):
-        # The two-byte protobuf is ExportTraceServiceRequest with one empty
-        # resource_spans message (field 1, length 0). It is a valid OTLP request
-        # containing zero spans, so this transport test creates no trace records.
-        # The fixture uses only Python's standard library, not an OTel SDK.
-        code = r'''
-import json, os, sys, time, urllib.request, urllib.error
-prompt = sys.stdin.read()
-endpoint = os.environ['OTEL_EXPORTER_OTLP_TRACES_ENDPOINT']
-request = urllib.request.Request(
-    endpoint, data=b'\x0a\x00', method='POST',
-    headers={'Content-Type': 'application/x-protobuf'},
-)
-for attempt in range(3):
-    try:
-        with urllib.request.urlopen(request, timeout=10) as response:
-            status = response.status
-            response.read()
-        break
-    except urllib.error.URLError:
-        if attempt == 2:
-            raise
-        time.sleep(0.2)
-print(json.dumps({
-    'values': {
-        'otlp_http_status': status,
-        'prompt': prompt,
-        'traceparent': os.environ['TRACEPARENT'],
-        'run_id': os.environ['DOC_INTELL_RUN_ID'],
-        'task_id': os.environ['DOC_INTELL_TASK_ID'],
-        'repetition': os.environ['DOC_INTELL_REPETITION'],
-        'endpoint': endpoint,
-        'protocol': os.environ['OTEL_EXPORTER_OTLP_TRACES_PROTOCOL'],
-        'resource_attributes': os.environ['OTEL_RESOURCE_ATTRIBUTES'],
-        'provider_credentials_absent': not any(os.environ.get(name) for name in (
-            'OPENAI_API_KEY', 'OPENAI_CODEX_ACCESS_TOKEN', 'PHOENIX_API_KEY')),
-    },
-    'evidence': {},
-}))
-'''
+    @classmethod
+    def setUpClass(cls):
+        cls.resources = ExitStack()
+        cls.addClassCleanup(cls.resources.close)
+        cls.phoenix_url = cls.resources.enter_context(temporary_phoenix())
+        cls.http = build_opener(ProxyHandler({}))
+        # The exact same production base and current proxy source are exercised;
+        # only this temporary derivative has a test SDK and corporate fixture.
+        root = Path(__file__).resolve().parents[1]
+        base = subprocess.run(['docker', 'image', 'inspect', '--format', '{{.Id}}', DEFAULT_IMAGE],
+                              capture_output=True, text=True, check=True, timeout=15).stdout.strip()
+        # Dockerfile FROM resolves names, not a local sha256 image identifier.
+        # Keep an owned alias so a concurrent rebuild cannot change this base.
+        base_alias = 'doc-intell-otel-base:' + uuid4().hex
+        subprocess.run(['docker', 'image', 'tag', base, base_alias],
+                       capture_output=True, check=True, timeout=15)
+        cls.resources.callback(subprocess.run, ['docker', 'image', 'rm', base_alias],
+                               capture_output=True, timeout=15, check=False)
+        sources = [root / 'tests/fixtures/corporate_otel.Dockerfile',
+                   root / 'tests/fixtures/corporate_otel.py', root / 'containers/egress_proxy.py']
+        fingerprint = hashlib.sha256(base.encode() + b''.join(path.read_bytes() for path in sources)).hexdigest()[:16]
+        cls.image = 'doc-intell-otel-conformance:' + fingerprint
+        with TemporaryDirectory(prefix='doc-intell-otel-build-') as temporary:
+            directory = Path(temporary)
+            for source, destination in zip(sources, ('Dockerfile', 'corporate_otel.py', 'egress_proxy.py')):
+                shutil.copyfile(source, directory / destination)
+            result = subprocess.run([
+                'docker', 'build', '--quiet', '--build-arg', 'HARNESS_IMAGE=' + base_alias,
+                '--tag', cls.image, str(directory),
+            ], capture_output=True, text=True, timeout=240)
+        if result.returncode:
+            raise RuntimeError('Could not build the test-only OpenTelemetry SDK image')
+
+    def test_corporate_sdk_exports_connected_spans_with_and_without_gzip(self):
+        for compression in ('none', 'gzip'):
+            with self.subTest(compression=compression):
+                self.check_sdk_trace(compression)
+
+    def check_sdk_trace(self, compression):
         profile = {
-            'name': 'corporate-otel-conformance', 'command': ['python3', '-c', code],
+            'name': 'corporate-otel-conformance',
+            'command': ['python3', '/opt/doc-intell/corporate_otel.py', compression],
             'output_mode': 'json', 'auth': 'none', 'telemetry': 'native-otel',
         }
-        phoenix_url = os.environ.get('PHOENIX_ENDPOINT', 'http://127.0.0.1:6006')
-        prompt = 'Check the native corporate OTLP transport without calling a model.'
+        prompt = 'Check the native corporate SDK without calling a model.'
+        start_ns = time.time_ns()
         with TemporaryDirectory() as temporary:
             invocation = HarnessInvocation(
                 input_text=prompt, task_id='native-otel-conformance', repetition=2,
                 dataset=DATASET, documents=(), artifact_dir=Path(temporary),
-                trace_id='a' * 32, parent_span_id='b' * 16,
-                run_id='corporate-otel-conformance-run',
+                trace_id=uuid4().hex, parent_span_id=uuid4().hex[:16],
+                run_id='corporate-conformance-' + uuid4().hex,
             )
             result = NativeHarness(
-                profile, make_preparer(profile, phoenix_url=phoenix_url), 45,
+                profile, make_preparer(profile, image=self.image, phoenix_url=self.phoenix_url), 45,
             ).invoke(invocation)
+        end_ns = time.time_ns()
         self.assertEqual(result.status, 'success', result.error)
-        self.assertEqual(result.events, [], 'The corporate fixture emits JSON, not JSONL lifecycle events')
+        self.assertEqual(result.events, [], 'Corporate stdout is JSON; its SDK emits the internal spans')
         values = result.output['values']
-        self.assertEqual(values['otlp_http_status'], 200)
+        self.assertTrue(values['flushed'])
+        self.assertEqual(values['trace_id'], invocation.trace_id)
         self.assertEqual(values['prompt'], prompt)
         self.assertEqual(values['traceparent'], f'00-{invocation.trace_id}-{invocation.parent_span_id}-01')
         self.assertEqual(values['run_id'], invocation.run_id)
@@ -159,6 +170,49 @@ print(json.dumps({
         self.assertEqual(attributes['benchmark.harness'], profile['name'])
         self.assertEqual(attributes['openinference.project.name'], 'doc-intell-poc')
         self.assertTrue(values['provider_credentials_absent'])
+
+        # Export the actual runner envelope as well. The SDK operation must join
+        # its harness.execute parent, which in turn belongs to task.execute.
+        root_span_id = uuid4().hex[:16]
+        spans = build_task_trace(
+            {'task_id': invocation.task_id, 'repetition': invocation.repetition,
+             'execution_status': 'success', 'scores': {'task_pass': True}},
+            trace_id=invocation.trace_id, root_span_id=root_span_id,
+            harness_span_id=invocation.parent_span_id, harness_start_ns=start_ns,
+            harness_end_ns=end_ns, task_end_ns=end_ns + 1, events=[], metadata={},
+        )
+        request = Request(self.phoenix_url + '/v1/traces', data=encode_otlp(spans, project_name='doc-intell-poc'),
+                          headers={'Content-Type': 'application/x-protobuf'}, method='POST')
+        with self.http.open(request, timeout=10) as response:
+            self.assertEqual(response.status, 200)
+        observed = self.wait_for_trace(invocation.trace_id, expected_spans=5)
+        actual = {span['name']: span for span in observed['spans']}
+        self.assertEqual(set(actual), {'task.execute', 'harness.execute', 'evaluate',
+                                      'corporate.execute', 'corporate.read_document'})
+        self.assertEqual(actual['task.execute']['span_id'], root_span_id)
+        self.assertEqual(actual['harness.execute']['span_id'], invocation.parent_span_id)
+        self.assertEqual(actual['harness.execute']['parent_id'], root_span_id)
+        self.assertEqual(actual['corporate.execute']['span_id'], values['operation_span_id'])
+        self.assertEqual(actual['corporate.execute']['parent_id'], invocation.parent_span_id)
+        self.assertEqual(actual['corporate.read_document']['span_id'], values['child_span_id'])
+        self.assertEqual(actual['corporate.read_document']['parent_id'], values['operation_span_id'])
+        self.assertEqual(actual['evaluate']['parent_id'], root_span_id)
+
+    def wait_for_trace(self, trace_id, expected_spans):
+        deadline = time.monotonic() + 20
+        endpoint = self.phoenix_url + '/v1/projects/doc-intell-poc/traces?limit=100&include_spans=true'
+        while time.monotonic() < deadline:
+            try:
+                with self.http.open(endpoint, timeout=5) as response:
+                    traces = json.load(response)['data']
+                for item in traces:
+                    if item['trace_id'] == trace_id and len(item['spans']) == expected_spans:
+                        return item
+            except HTTPError as error:
+                if error.code != 404:
+                    raise
+            time.sleep(0.25)
+        self.fail('The SDK trace did not reach isolated Phoenix with all expected span IDs')
 
 
 if __name__ == '__main__':
