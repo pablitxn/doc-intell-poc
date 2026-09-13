@@ -1,5 +1,5 @@
 {
-  "version": "0.1",
+  "version": "0.2",
   "synthetic": true,
   "source_corpus_records_reused": 0,
   "scope": "Five simplified digital-text PDFs, one coherent synthetic case; extraction and reconciliation smoke tests only.",
@@ -23,5 +23,45 @@
     "Full return calculation",
     "Scans/photos/long files"
   ],
-  "SUI_DI_note": "CA SDI is the selected employee-insurance example. It is a payroll summary, not an official universal SUI/DUI form. DUI remains unresolved."
+  "SUI_DI_note": "CA SDI is the selected employee-insurance example. It is a payroll summary, not an official universal SUI/DUI form. DUI remains unresolved.",
+  "reviewed_at": "2026-09-13",
+  "reviewed_rules": [
+    {
+      "rule": "8959 total withholding and wage subtotal differ in meaning",
+      "url": "https://www.irs.gov/pub/irs-prior/f8959--2025.pdf",
+      "revision": "2025",
+      "pdf_pages": [
+        1
+      ],
+      "lines": [
+        18,
+        22,
+        23,
+        24
+      ],
+      "application": "Canonical total withholding is line24; fixture excludes RRTA. Task explicitly requires24. No amount-only citation equivalence."
+    },
+    {
+      "rule": "California employee SDI rate and employer UI",
+      "url": "https://edd.ca.gov/siteassets/files/pdf_pub_ctr/de44-25.pdf",
+      "revision": "2025",
+      "pdf_pages": [
+        2,
+        16,
+        17
+      ],
+      "application": "1.2% employee SDI, no SDI wage limit; UI employer funded."
+    },
+    {
+      "rule": "Social Security contribution and benefit base",
+      "url": "https://www.ssa.gov/oact/cola/cbb.html",
+      "tax_year": 2025,
+      "application": "176100 wage base; 6.2% produces10918.20."
+    },
+    {
+      "rule": "Backup withholding",
+      "url": "https://www.irs.gov/businesses/small-businesses-self-employed/backup-withholding",
+      "application": "24% on1250 produces300."
+    }
+  ]
 }

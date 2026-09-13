@@ -1,6 +1,5 @@
 """Invoke an installed harness with UTF-8 text on stdin and JSON on stdout."""
 
-import json
 import math
 import os
 import shutil
@@ -8,6 +7,7 @@ import signal
 import subprocess
 
 from evals.contracts import HarnessAdapter
+from evals.json_io import strict_json_loads
 
 
 def command_harness(command: list[str], timeout_seconds: float = 120.0) -> HarnessAdapter:
@@ -65,7 +65,7 @@ def command_harness(command: list[str], timeout_seconds: float = 120.0) -> Harne
         if process.returncode != 0:
             raise RuntimeError(f"Harness command exited with status {process.returncode}")
         try:
-            return json.loads(stdout)
+            return strict_json_loads(stdout)
         except ValueError:
             raise ValueError("Harness stdout must contain one JSON response") from None
 

@@ -1,0 +1,11 @@
+{
+  "name": "codex",
+  "version": "0.145.0",
+  "provider": "openai-codex",
+  "model": "gpt-5.6-sol",
+  "thinking": "medium",
+  "command": ["codex", "exec", "--json", "--ephemeral", "--ignore-user-config", "--ignore-rules", "--skip-git-repo-check", "--dangerously-bypass-approvals-and-sandbox", "--model", "{model}", "--config", "model_reasoning_effort=\"{thinking}\"", "-"],
+  "output_mode": "codex-jsonl",
+  "telemetry": "events",
+  "auth": "codex-account"
+}

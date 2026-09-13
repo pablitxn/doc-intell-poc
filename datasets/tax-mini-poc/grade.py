@@ -65,9 +65,31 @@ def main():
     p.add_argument('--task',help='Evaluate one task_id; default evaluates all six')
     p.add_argument('--output',type=Path,help='Optional JSON report path')
     args=p.parse_args()
-    load=lambda path:json.loads(path.read_text(encoding='utf-8'))
-    report=grade(load(args.predictions),load(ROOT/'ground_truth/expected.json'),
-                 load(ROOT/'ground_truth/field_types.json'),args.task)
+    # The CLI uses the complete checkout's contract; grade() remains the pure
+    # value/evidence scorer reused by the runner and exported Phoenix code.
+    import sys
+    sys.path.insert(0,str(Path(__file__).resolve().parents[2]))
+    from evals.datasets.loader import load_examples, read_json
+    from evals.evaluators.schema import schema_errors
+
+    try:
+        examples,_=load_examples(ROOT)
+        expected={'answers':{example.input.task_id:example.expected for example in examples}}
+        types={example.input.task_id:example.input.fields for example in examples}
+        predictions=read_json(args.predictions)
+        if not isinstance(predictions,dict):predictions={}
+        report=grade(predictions,expected,types,args.task)
+    except (OSError,ValueError) as exc:
+        p.error(str(exc))
+    answers=predictions.get('answers',{})
+    if not isinstance(answers,dict):answers={}
+    for row in report['per_task']:
+        errors=schema_errors(answers.get(row['task_id']),types[row['task_id']])
+        row['schema_valid']=not errors
+        row['schema_errors']=errors
+        row['execution_status']='invalid_response' if errors else 'success'
+        row['passed']=row['passed'] and not errors
+    report['tasks_passed']=sum(row['passed'] for row in report['per_task'])
     text=json.dumps(report,indent=2)+'\n'
     if args.output:args.output.write_text(text,encoding='utf-8')
     print(text,end='')

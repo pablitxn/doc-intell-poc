@@ -1,0 +1,717 @@
+{
+  "method": "Manual transcription from pdftotext -layout on the five real fixture PDFs, before rereading expected.json for this audit. Prior knowledge disclosure: earlier task inspected six reconciliation GT values, especially lines 22/24. No assertion of complete blinding.",
+  "sources": {
+    "01_w2.pdf": {
+      "sha256": "99aacad453112c5340671ca2af94175703ccbbcd0c7f5725894ff4027838160b",
+      "page_count": 1
+    },
+    "02_1099_int.pdf": {
+      "sha256": "2162250cb39d81bd1f38b5857d0b970c607c5e2464d95da3e5f454fdd1814cc6",
+      "page_count": 1
+    },
+    "03_k1_1065.pdf": {
+      "sha256": "f1721042ccc48dc6ff625374e51e836ba1878580909616ec28bd277871abf592",
+      "page_count": 1
+    },
+    "04_form_8959.pdf": {
+      "sha256": "b9fb22618022d45a169429ce64a713ea8a6bd2d2ae6ab9cf74f2389e49770c27",
+      "page_count": 1
+    },
+    "05_ca_sdi_summary.pdf": {
+      "sha256": "1b922b2a15d0732d353945190ae6b7c3fc21cc8d6fc576cc387a12708e69cdd8",
+      "page_count": 1
+    }
+  },
+  "counts": {
+    "extraction": 48,
+    "reconciliation": 6
+  },
+  "tasks": {
+    "extract_doc_001": {
+      "wages": {
+        "value": "240000.00",
+        "evidence": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "1"
+          }
+        ],
+        "printed_label": "Wages, tips, other compensation",
+        "basis": "direct PDF transcription"
+      },
+      "federal_income_tax_withheld": {
+        "value": "42000.00",
+        "evidence": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "2"
+          }
+        ],
+        "printed_label": "Federal income tax withheld",
+        "basis": "direct PDF transcription"
+      },
+      "social_security_wages": {
+        "value": "176100.00",
+        "evidence": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "3"
+          }
+        ],
+        "printed_label": "Social security wages",
+        "basis": "direct PDF transcription"
+      },
+      "social_security_tax_withheld": {
+        "value": "10918.20",
+        "evidence": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "4"
+          }
+        ],
+        "printed_label": "Social security tax withheld",
+        "basis": "direct PDF transcription"
+      },
+      "medicare_wages": {
+        "value": "250000.00",
+        "evidence": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "5"
+          }
+        ],
+        "printed_label": "Medicare wages and tips",
+        "basis": "direct PDF transcription"
+      },
+      "medicare_tax_withheld": {
+        "value": "4075.00",
+        "evidence": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "6"
+          }
+        ],
+        "printed_label": "Medicare tax withheld",
+        "basis": "direct PDF transcription"
+      },
+      "retirement_deferral_D": {
+        "value": "10000.00",
+        "evidence": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "12 D"
+          }
+        ],
+        "printed_label": "Elective retirement deferral - code D",
+        "basis": "direct PDF transcription"
+      },
+      "retirement_plan": {
+        "value": true,
+        "evidence": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "13"
+          }
+        ],
+        "printed_label": "Retirement plan",
+        "basis": "direct PDF transcription"
+      },
+      "employee_sdi_withheld": {
+        "value": "3000.00",
+        "evidence": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "14"
+          }
+        ],
+        "printed_label": "CASDI - employee SDI withheld",
+        "basis": "direct PDF transcription"
+      },
+      "state": {
+        "value": "CA",
+        "evidence": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "15"
+          }
+        ],
+        "printed_label": "State",
+        "basis": "direct PDF transcription"
+      },
+      "state_wages": {
+        "value": "240000.00",
+        "evidence": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "16"
+          }
+        ],
+        "printed_label": "State wages, tips, etc.",
+        "basis": "direct PDF transcription"
+      },
+      "state_income_tax_withheld": {
+        "value": "16000.00",
+        "evidence": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "17"
+          }
+        ],
+        "printed_label": "State income tax withheld",
+        "basis": "direct PDF transcription"
+      }
+    },
+    "extract_doc_002": {
+      "interest_income": {
+        "value": "1250.00",
+        "evidence": [
+          {
+            "document_id": "DOC-002",
+            "page": 1,
+            "box": "1"
+          }
+        ],
+        "printed_label": "Interest income",
+        "basis": "direct PDF transcription"
+      },
+      "early_withdrawal_penalty": {
+        "value": "0.00",
+        "evidence": [
+          {
+            "document_id": "DOC-002",
+            "page": 1,
+            "box": "2"
+          }
+        ],
+        "printed_label": "Early withdrawal penalty",
+        "basis": "direct PDF transcription"
+      },
+      "us_savings_bond_interest": {
+        "value": "0.00",
+        "evidence": [
+          {
+            "document_id": "DOC-002",
+            "page": 1,
+            "box": "3"
+          }
+        ],
+        "printed_label": "Interest on U.S. savings bonds and Treasury obligations",
+        "basis": "direct PDF transcription"
+      },
+      "federal_income_tax_withheld": {
+        "value": "300.00",
+        "evidence": [
+          {
+            "document_id": "DOC-002",
+            "page": 1,
+            "box": "4"
+          }
+        ],
+        "printed_label": "Federal income tax withheld",
+        "basis": "direct PDF transcription"
+      },
+      "tax_exempt_interest": {
+        "value": "0.00",
+        "evidence": [
+          {
+            "document_id": "DOC-002",
+            "page": 1,
+            "box": "8"
+          }
+        ],
+        "printed_label": "Tax-exempt interest",
+        "basis": "direct PDF transcription"
+      },
+      "account_number": {
+        "value": "DEMO-00125",
+        "evidence": [
+          {
+            "document_id": "DOC-002",
+            "page": 1,
+            "box": "Account number"
+          }
+        ],
+        "printed_label": "Account number",
+        "basis": "direct PDF transcription"
+      },
+      "corrected": {
+        "value": false,
+        "evidence": [
+          {
+            "document_id": "DOC-002",
+            "page": 1,
+            "box": "CORRECTED"
+          }
+        ],
+        "printed_label": "Corrected statement",
+        "basis": "direct PDF transcription"
+      }
+    },
+    "extract_doc_003": {
+      "partner_type": {
+        "value": "Limited partner",
+        "evidence": [
+          {
+            "document_id": "DOC-003",
+            "page": 1,
+            "box": "G"
+          }
+        ],
+        "printed_label": "Partner type",
+        "basis": "direct PDF transcription"
+      },
+      "domestic_partner": {
+        "value": true,
+        "evidence": [
+          {
+            "document_id": "DOC-003",
+            "page": 1,
+            "box": "H1"
+          }
+        ],
+        "printed_label": "Domestic partner",
+        "basis": "direct PDF transcription"
+      },
+      "entity_type": {
+        "value": "Individual",
+        "evidence": [
+          {
+            "document_id": "DOC-003",
+            "page": 1,
+            "box": "I1"
+          }
+        ],
+        "printed_label": "Type of partner entity",
+        "basis": "direct PDF transcription"
+      },
+      "profit_share_end": {
+        "value": "10.00",
+        "evidence": [
+          {
+            "document_id": "DOC-003",
+            "page": 1,
+            "box": "J"
+          }
+        ],
+        "printed_label": "Profit share at year end",
+        "basis": "direct PDF transcription"
+      },
+      "ordinary_business_income": {
+        "value": "5000.00",
+        "evidence": [
+          {
+            "document_id": "DOC-003",
+            "page": 1,
+            "box": "1"
+          }
+        ],
+        "printed_label": "Ordinary business income (loss)",
+        "basis": "direct PDF transcription"
+      },
+      "net_rental_real_estate_income": {
+        "value": "0.00",
+        "evidence": [
+          {
+            "document_id": "DOC-003",
+            "page": 1,
+            "box": "2"
+          }
+        ],
+        "printed_label": "Net rental real estate income (loss)",
+        "basis": "direct PDF transcription"
+      },
+      "guaranteed_payments_services": {
+        "value": "0.00",
+        "evidence": [
+          {
+            "document_id": "DOC-003",
+            "page": 1,
+            "box": "4a"
+          }
+        ],
+        "printed_label": "Guaranteed payments for services",
+        "basis": "direct PDF transcription"
+      },
+      "interest_income": {
+        "value": "0.00",
+        "evidence": [
+          {
+            "document_id": "DOC-003",
+            "page": 1,
+            "box": "5"
+          }
+        ],
+        "printed_label": "Interest income",
+        "basis": "direct PDF transcription"
+      },
+      "net_earnings_self_employment": {
+        "value": "0.00",
+        "evidence": [
+          {
+            "document_id": "DOC-003",
+            "page": 1,
+            "box": "14 A"
+          }
+        ],
+        "printed_label": "Net earnings from self-employment - code A",
+        "basis": "direct PDF transcription"
+      }
+    },
+    "extract_doc_004": {
+      "line_1": {
+        "value": "250000.00",
+        "evidence": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "1"
+          }
+        ],
+        "printed_label": "Medicare wages and tips from Form W-2, box 5",
+        "basis": "direct PDF transcription"
+      },
+      "line_4": {
+        "value": "250000.00",
+        "evidence": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "4"
+          }
+        ],
+        "printed_label": "Total Medicare wages and tips",
+        "basis": "direct PDF transcription"
+      },
+      "line_5": {
+        "value": "200000.00",
+        "evidence": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "5"
+          }
+        ],
+        "printed_label": "Threshold for filing status: Single",
+        "basis": "direct PDF transcription"
+      },
+      "line_6": {
+        "value": "50000.00",
+        "evidence": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "6"
+          }
+        ],
+        "printed_label": "Excess Medicare wages over the threshold",
+        "basis": "direct PDF transcription"
+      },
+      "line_7": {
+        "value": "450.00",
+        "evidence": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "7"
+          }
+        ],
+        "printed_label": "Additional Medicare Tax on wages (0.9%)",
+        "basis": "direct PDF transcription"
+      },
+      "line_18": {
+        "value": "450.00",
+        "evidence": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "18"
+          }
+        ],
+        "printed_label": "Total Additional Medicare Tax",
+        "basis": "direct PDF transcription"
+      },
+      "line_19": {
+        "value": "4075.00",
+        "evidence": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "19"
+          }
+        ],
+        "printed_label": "Medicare tax withheld from Form W-2, box 6",
+        "basis": "direct PDF transcription"
+      },
+      "line_20": {
+        "value": "250000.00",
+        "evidence": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "20"
+          }
+        ],
+        "printed_label": "Medicare wages and tips from Form W-2, box 5",
+        "basis": "direct PDF transcription"
+      },
+      "line_21": {
+        "value": "3625.00",
+        "evidence": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "21"
+          }
+        ],
+        "printed_label": "Regular Medicare withholding: line 20 x 1.45%",
+        "basis": "direct PDF transcription"
+      },
+      "line_22": {
+        "value": "450.00",
+        "evidence": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "22"
+          }
+        ],
+        "printed_label": "Additional Medicare withholding: line 19 minus line 21",
+        "basis": "direct PDF transcription"
+      },
+      "line_24": {
+        "value": "450.00",
+        "evidence": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "24"
+          }
+        ],
+        "printed_label": "Total Additional Medicare Tax withholding",
+        "basis": "direct PDF transcription"
+      }
+    },
+    "extract_doc_005": {
+      "state": {
+        "value": "CA",
+        "evidence": [
+          {
+            "document_id": "DOC-005",
+            "page": 1,
+            "box": "State"
+          }
+        ],
+        "printed_label": "State",
+        "basis": "direct PDF transcription"
+      },
+      "program": {
+        "value": "CA SDI",
+        "evidence": [
+          {
+            "document_id": "DOC-005",
+            "page": 1,
+            "box": "Program"
+          }
+        ],
+        "printed_label": "Insurance program",
+        "basis": "direct PDF transcription"
+      },
+      "coverage_start": {
+        "value": "2025-01-01",
+        "evidence": [
+          {
+            "document_id": "DOC-005",
+            "page": 1,
+            "box": "Period start"
+          }
+        ],
+        "printed_label": "Period start",
+        "basis": "direct PDF transcription"
+      },
+      "coverage_end": {
+        "value": "2025-12-31",
+        "evidence": [
+          {
+            "document_id": "DOC-005",
+            "page": 1,
+            "box": "Period end"
+          }
+        ],
+        "printed_label": "Period end",
+        "basis": "direct PDF transcription"
+      },
+      "sdi_taxable_wages": {
+        "value": "250000.00",
+        "evidence": [
+          {
+            "document_id": "DOC-005",
+            "page": 1,
+            "box": "SDI wages"
+          }
+        ],
+        "printed_label": "Annual wages subject to SDI",
+        "basis": "direct PDF transcription"
+      },
+      "employee_sdi_rate": {
+        "value": "1.20",
+        "evidence": [
+          {
+            "document_id": "DOC-005",
+            "page": 1,
+            "box": "SDI rate"
+          }
+        ],
+        "printed_label": "Employee SDI rate",
+        "basis": "direct PDF transcription"
+      },
+      "employee_sdi_withheld": {
+        "value": "3000.00",
+        "evidence": [
+          {
+            "document_id": "DOC-005",
+            "page": 1,
+            "box": "SDI withheld"
+          }
+        ],
+        "printed_label": "Employee SDI withheld for the year",
+        "basis": "direct PDF transcription"
+      },
+      "employee_ui_applicable": {
+        "value": false,
+        "evidence": [
+          {
+            "document_id": "DOC-005",
+            "page": 1,
+            "box": "Employee UI"
+          }
+        ],
+        "printed_label": "Employee UI withholding applicable",
+        "basis": "direct PDF transcription"
+      },
+      "payroll_reference": {
+        "value": "PAYROLL-2025-0001",
+        "evidence": [
+          {
+            "document_id": "DOC-005",
+            "page": 1,
+            "box": "Payroll reference"
+          }
+        ],
+        "printed_label": "Annual payroll reference",
+        "basis": "direct PDF transcription"
+      }
+    },
+    "reconcile_case": {
+      "w2_federal_withheld": {
+        "value": "42000.00",
+        "evidence": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "2"
+          }
+        ],
+        "basis": "derived from independently transcribed PDF values and printed fixture notes",
+        "formula": "direct W-2 box 2"
+      },
+      "form1099_federal_withheld": {
+        "value": "300.00",
+        "evidence": [
+          {
+            "document_id": "DOC-002",
+            "page": 1,
+            "box": "4"
+          }
+        ],
+        "basis": "derived from independently transcribed PDF values and printed fixture notes",
+        "formula": "direct 1099-INT box 4"
+      },
+      "additional_medicare_withheld": {
+        "value": "450.00",
+        "evidence": [
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "24"
+          }
+        ],
+        "basis": "derived from independently transcribed PDF values and printed fixture notes",
+        "formula": "total withholding = line 22 + omitted nonapplicable line 23 = (4075.00 - 3625.00) + 0.00",
+        "alternative_evidence_question": "Line 22 names Additional Medicare withholding and equals line 24 because line 23 is nonapplicable in this fixture. Check official 2025 form semantics before deciding acceptable evidence alternatives."
+      },
+      "combined_federal_withholding_credit": {
+        "value": "42750.00",
+        "evidence": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "2"
+          },
+          {
+            "document_id": "DOC-002",
+            "page": 1,
+            "box": "4"
+          },
+          {
+            "document_id": "DOC-004",
+            "page": 1,
+            "box": "24"
+          }
+        ],
+        "basis": "derived from independently transcribed PDF values and printed fixture notes",
+        "formula": "42000.00 + 300.00 + 450.00 = 42750.00; do not add line 18 liability or full Medicare box 6",
+        "alternative_evidence_question": "Line 22 names Additional Medicare withholding and equals line 24 because line 23 is nonapplicable in this fixture. Check official 2025 form semantics before deciding acceptable evidence alternatives."
+      },
+      "ca_income_tax_withheld": {
+        "value": "16000.00",
+        "evidence": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "17"
+          }
+        ],
+        "basis": "derived from independently transcribed PDF values and printed fixture notes",
+        "formula": "direct W-2 box 17"
+      },
+      "unique_employee_sdi_withheld": {
+        "value": "3000.00",
+        "evidence": [
+          {
+            "document_id": "DOC-001",
+            "page": 1,
+            "box": "14"
+          },
+          {
+            "document_id": "DOC-005",
+            "page": 1,
+            "box": "SDI withheld"
+          }
+        ],
+        "basis": "derived from independently transcribed PDF values and printed fixture notes",
+        "formula": "DOC-005 states same annual payroll as W-2; same employer and PAYROLL-2025-0001; one deduction of 3000.00, not sum 6000.00"
+      }
+    }
+  },
+  "independent_arithmetic": {
+    "social_security": "176100.00 * 0.062 = 10918.20",
+    "regular_medicare": "250000.00 * 0.0145 = 3625.00",
+    "additional_medicare": "(250000.00 - 200000.00) * 0.009 = 450.00",
+    "medicare_withheld": "3625.00 + 450.00 = 4075.00",
+    "wages_difference": "250000.00 - 10000.00 = 240000.00",
+    "backup_withholding": "1250.00 * 0.24 = 300.00",
+    "employee_sdi": "250000.00 * 0.012 = 3000.00"
+  }
+}

@@ -62,6 +62,33 @@ class FakeExperiments:
         self.evaluations[key] = deepcopy(kwargs)
 
 
+class ConflictError(Exception):
+    response = SimpleNamespace(status_code=409)
+
+
+class LostResponseExperiments(FakeExperiments):
+    """The server commits successfully, but its first response never arrives."""
+    def __init__(self):
+        super().__init__()
+        self.persisted = {}
+
+    def log_run(self, **kwargs):
+        key = kwargs["experiment_id"], kwargs["dataset_example_id"], kwargs["repetition_number"]
+        if key in self.persisted:
+            raise ConflictError()
+        result = super().log_run(**kwargs)
+        self.persisted[key] = {
+            **deepcopy(kwargs), **result,
+            "start_time": kwargs["start_time"].isoformat(),
+            "end_time": kwargs["end_time"].isoformat(),
+        }
+        raise ConnectionError("response lost after commit")
+
+    def get_experiment(self, *, experiment_id):
+        return {"task_runs": [deepcopy(run) for run in self.persisted.values()
+                              if run["experiment_id"] == experiment_id]}
+
+
 def fake_client():
     return SimpleNamespace(datasets=FakeDatasets(), experiments=FakeExperiments())
 
@@ -232,6 +259,122 @@ class PhoenixReportingTests(unittest.TestCase):
                 publish_report(self.client, dataset, run_dir)
         self.assertEqual(self.client.experiments.creates, [])
         self.assertEqual(self.client.experiments.runs, [])
+
+    def test_repetitions_and_trace_links_survive_upload_retry(self):
+        dataset = prepare_dataset(self.client, DATASET)
+        self.client.experiments.fail_evaluation_call = 8
+        with TemporaryDirectory() as tmp:
+            run_dir = run_experiment(DATASET, self.answer, Path(tmp),
+                                     task_id="reconcile_case", repetitions=3)
+            report = read_json(run_dir / "report.json")
+            with self.assertRaises(ConnectionError):
+                publish_report(self.client, dataset, run_dir)
+            state = publish_report(self.client, dataset, run_dir)
+        self.assertEqual(self.client.experiments.creates[0]["repetitions"], 3)
+        self.assertEqual(len(self.client.experiments.runs), 3)
+        self.assertEqual(set(state["run_ids"]), {
+            "reconcile_case", "reconcile_case::2", "reconcile_case::3",
+        })
+        self.assertEqual([run["repetition_number"] for run in self.client.experiments.runs], [1, 2, 3])
+        self.assertEqual([run["trace_id"] for run in self.client.experiments.runs],
+                         [row["trace_id"] for row in report["rows"]])
+        self.assertEqual(len(self.client.experiments.evaluations), 15)
+
+    def test_duplicate_task_repetition_is_rejected_before_mutations(self):
+        dataset = prepare_dataset(self.client, DATASET)
+        with TemporaryDirectory() as tmp:
+            run_dir = run_experiment(DATASET, self.answer, Path(tmp), task_id="reconcile_case")
+            report = read_json(run_dir / "report.json")
+            report["rows"].append(deepcopy(report["rows"][0]))
+            (run_dir / "report.json").write_text(json.dumps(report))
+            with self.assertRaisesRegex(ValueError, "duplicate task and repetition"):
+                publish_report(self.client, dataset, run_dir)
+            self.assertFalse((run_dir / "phoenix.json").exists())
+        self.assertEqual(self.client.experiments.creates, [])
+        self.assertEqual(self.client.experiments.runs, [])
+
+    def test_incomplete_report_is_rejected_before_mutations_and_legacy_is_allowed(self):
+        dataset = prepare_dataset(self.client, DATASET)
+        with TemporaryDirectory() as tmp:
+            run_dir = run_experiment(DATASET, self.answer, Path(tmp), task_id="reconcile_case")
+            report = read_json(run_dir / "report.json")
+            report["complete"] = False
+            (run_dir / "report.json").write_text(json.dumps(report))
+            with self.assertRaisesRegex(ValueError, "incomplete evaluation report"):
+                publish_report(self.client, dataset, run_dir)
+            self.assertFalse((run_dir / "phoenix.json").exists())
+            self.assertEqual(self.client.experiments.creates, [])
+            self.assertEqual(self.client.experiments.runs, [])
+            self.assertEqual(self.client.experiments.evaluations, {})
+            del report["complete"]
+            (run_dir / "report.json").write_text(json.dumps(report))
+            state = publish_report(self.client, dataset, run_dir)
+            self.assertTrue(state["complete"])
+
+    def test_stable_document_root_matches_dataset_and_run(self):
+        prompt_root = Path("/workspace/dataset")
+        dataset = prepare_dataset(self.client, DATASET, prompt_root=prompt_root)
+        with TemporaryDirectory() as tmp:
+            run_dir = run_experiment(DATASET, self.answer, Path(tmp),
+                                     task_id="reconcile_case", prompt_root=prompt_root)
+            state = publish_report(self.client, dataset, run_dir)
+        self.assertTrue(state["complete"])
+        self.assertIn("/workspace/dataset/inputs/01_w2.pdf", dataset.examples[0]["input"]["text"])
+        self.assertNotIn(str(DATASET), dataset.examples[0]["input"]["text"])
+
+    def test_lost_successful_run_response_is_recovered_without_another_run(self):
+        self.client.experiments = LostResponseExperiments()
+        dataset = prepare_dataset(self.client, DATASET)
+        with TemporaryDirectory() as tmp:
+            run_dir = run_experiment(DATASET, self.answer, Path(tmp), task_id="reconcile_case")
+            with self.assertRaises(ConnectionError):
+                publish_report(self.client, dataset, run_dir)
+            self.assertEqual(read_json(run_dir / "phoenix.json")["run_ids"], {})
+            state = publish_report(self.client, dataset, run_dir)
+        self.assertTrue(state["complete"])
+        self.assertEqual(state["run_ids"], {"reconcile_case": "run-1"})
+        self.assertEqual(len(self.client.experiments.creates), 1)
+        self.assertEqual(len(self.client.experiments.runs), 1)
+        self.assertEqual(len(self.client.experiments.evaluations), 5)
+
+    def test_conflicting_foreign_run_is_not_adopted_or_annotated(self):
+        self.client.experiments = LostResponseExperiments()
+        dataset = prepare_dataset(self.client, DATASET)
+        with TemporaryDirectory() as tmp:
+            run_dir = run_experiment(DATASET, self.answer, Path(tmp), task_id="reconcile_case")
+            with self.assertRaises(ConnectionError):
+                publish_report(self.client, dataset, run_dir)
+            remote = next(iter(self.client.experiments.persisted.values()))
+            remote["trace_id"] = "f" * 32
+            with self.assertRaisesRegex(ValueError, "differs from the local attempt"):
+                publish_report(self.client, dataset, run_dir)
+            self.assertEqual(read_json(run_dir / "phoenix.json")["run_ids"], {})
+        self.assertEqual(len(self.client.experiments.runs), 1)
+        self.assertEqual(self.client.experiments.evaluations, {})
+
+    def test_conflict_recovery_follows_http_pagination(self):
+        self.client.experiments = LostResponseExperiments()
+        dataset = prepare_dataset(self.client, DATASET)
+        requests = []
+        def get(url, *, params):
+            requests.append((url, params))
+            remote = deepcopy(next(iter(self.client.experiments.persisted.values())))
+            if "cursor" not in params:
+                remote["dataset_example_id"] = "another-example"
+                data = {"data": [remote], "next_cursor": "page-2"}
+            else:
+                data = {"data": [remote], "next_cursor": None}
+            return SimpleNamespace(raise_for_status=lambda: None, json=lambda: data)
+        with TemporaryDirectory() as tmp:
+            run_dir = run_experiment(DATASET, self.answer, Path(tmp), task_id="reconcile_case")
+            with self.assertRaises(ConnectionError):
+                publish_report(self.client, dataset, run_dir)
+            state = publish_report(self.client, dataset, run_dir, http=SimpleNamespace(get=get))
+        self.assertTrue(state["complete"])
+        self.assertEqual(requests, [
+            ("/v1/experiments/experiment-1/runs", {"limit": 50}),
+            ("/v1/experiments/experiment-1/runs", {"limit": 50, "cursor": "page-2"}),
+        ])
 
 
 if __name__ == "__main__":

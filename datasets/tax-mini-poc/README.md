@@ -30,7 +30,7 @@ Para una sola tarea:
 python grade.py --predictions model-output.json --task extract_doc_001
 ~~~
 
-grade.py usa sólo Python estándar. No ejecuta un modelo ni se conecta a APIs. Puntúa cada valor y sus citas document_id/page/box; no exige una secuencia de herramientas. Usar strings decimales sin símbolos ni separadores de miles, por ejemplo “3000.00”. Los porcentajes están en puntos porcentuales: “1.20” significa 1,20%.
+grade.py usa sólo Python estándar y debe ejecutarse desde este checkout completo: comparte la validación de datos y esquema con el runner. No ejecuta un modelo ni se conecta a APIs. `tasks_passed` exige esquema válido, valores y citas correctos; `value_accuracy` es independiente y puede reconocer un valor numérico aunque su formato sea inválido. Puntúa citas document_id/page/box como conjuntos; no exige una secuencia de herramientas ni puntúa bbox. Usar strings decimales sin símbolos ni separadores de miles, por ejemplo “3000.00”. Los porcentajes están en puntos porcentuales: “1.20” significa 1,20%.
 
 **ground_truth/, grade.py y este README quedan fuera del entorno accesible al agente.** Copiar una carpeta no basta si el agente sigue pudiendo leer el resto del host: montar únicamente los inputs y la tarea en su contenedor. El grader mantiene las respuestas esperadas fuera de ese montaje.
 
@@ -40,6 +40,8 @@ grade.py usa sólo Python estándar. No ejecuta un modelo ni se conecta a APIs. 
 - Retención de impuesto sobre la renta de California: **16.000,00**.
 - SDI del empleado: **3.000,00**, aparece en el W-2 y en el resumen de nómina y se cuenta una vez.
 - La línea 18 de 8959 es impuesto calculado; la línea 24 es retención. No sumar ambas como pagos. Los 4.075,00 de Medicare del W-2 incluyen 3.625,00 regulares y 450,00 adicionales.
+
+La revisión 0.2 pide explícitamente usar/citar el total de línea 24 en la conciliación y en el crédito combinado. La línea 22 es el componente sobre salarios; coincide con la 24 sólo porque este fixture excluye RRTA. La igualdad de importes no sustituye la casilla requerida. Los valores esperados y los PDF no cambiaron. Ver [auditoría y cobertura](../../docs/DATASET_AUDIT.md).
 
 El resultado se deriva de datos explícitos y aritmética revisada, no de respuestas generadas por el modelo que se va a medir. La parte tributaria está acotada: esto no calcula una declaración completa, saldo a pagar, deducciones o créditos estatales.
 

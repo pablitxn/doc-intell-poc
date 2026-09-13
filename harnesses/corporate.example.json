@@ -1,0 +1,12 @@
+{
+  "name": "corporate",
+  "version": "replace-with-installed-version",
+  "provider": "replace-with-provider",
+  "model": "replace-with-model",
+  "thinking": "medium",
+  "command": ["corporate-harness"],
+  "output_mode": "json",
+  "telemetry": "native-otel",
+  "auth": "none",
+  "forward_env": []
+}

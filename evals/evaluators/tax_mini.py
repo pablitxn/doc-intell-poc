@@ -6,7 +6,7 @@ from pathlib import Path
 from ..contracts import Example
 from .schema import schema_errors
 
-EVALUATOR_VERSION = "tax-mini-v1"
+EVALUATOR_VERSION = "tax-mini-v2"
 GRADER_PATH = Path(__file__).resolve().parents[2] / "datasets/tax-mini-poc/grade.py"
 _spec = importlib.util.spec_from_file_location("tax_mini_grader", GRADER_PATH)
 _grader = importlib.util.module_from_spec(_spec)

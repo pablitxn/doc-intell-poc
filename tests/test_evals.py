@@ -58,6 +58,23 @@ class EvaluatorTests(unittest.TestCase):
         self.assertLess(score["evidence_accuracy"], 1)
         self.assertFalse(score["task_pass"])
 
+    def test_equal_amount_in_an_intermediate_box_is_not_the_requested_total(self):
+        example = self.examples[-1]
+        self.assertIn('use and cite the total on line 24', example.input.instruction)
+        output = deepcopy(example.expected)
+        output['evidence']['additional_medicare_withheld'][0]['box'] = '22'
+        score = evaluate(output, example)
+        self.assertEqual(score['value_accuracy'], 1)
+        self.assertLess(score['evidence_accuracy'], 1)
+        self.assertFalse(score['task_pass'])
+
+    def test_unrequested_top_level_answer_content_fails_schema(self):
+        example = self.examples[0]
+        output = deepcopy(example.expected)
+        output['unrequested'] = 'extra answer'
+        self.assertFalse(evaluate(output, example)['schema_valid'])
+        self.assertFalse(evaluate(output, example)['task_pass'])
+
     def test_double_counted_sdi_fails(self):
         example = self.examples[-1]
         output = deepcopy(example.expected)
@@ -191,6 +208,15 @@ class RunnerTests(unittest.TestCase):
 
 
 class PromptTests(unittest.TestCase):
+    def test_format_contract_is_explicit_for_reconciliation_too(self):
+        examples, _ = load_examples(DATASET)
+        for example in examples:
+            text = build_prompt(example.input, DATASET, document_root=Path('/workspace'))
+            self.assertIn('no currency/percent symbols', text)
+            self.assertIn('no thousands separators', text)
+            self.assertIn('evidence.box', text)
+            self.assertNotIn('ground_truth', text)
+
     def test_prompt_contains_dataset_reference_and_only_requested_documents(self):
         examples, _ = load_examples(DATASET)
         task = examples[0].input

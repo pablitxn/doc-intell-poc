@@ -1,0 +1,977 @@
+{
+  "checks": {
+    "oracle_values_compared": 54,
+    "oracle_canonical_evidence_compared": 54,
+    "task_types_match": true,
+    "bbox_crops_checked": 48,
+    "bbox_values_present": 48,
+    "bbox_labels_present": 48,
+    "checksum_files_checked": 14,
+    "checksum_files_matched": 14,
+    "arithmetic": {
+      "social_security": true,
+      "regular_medicare": true,
+      "additional_medicare_liability": true,
+      "additional_medicare_withholding": true,
+      "backup_withholding": true,
+      "sdi": true,
+      "federal_credit": true
+    },
+    "reconciliation_bboxes_checked": 9,
+    "reconciliation_bboxes_match": 9
+  },
+  "issues": [],
+  "bbox_evidence": [
+    {
+      "task": "extract_doc_001",
+      "field": "wages",
+      "doc": "DOC-001",
+      "box": "1",
+      "bbox": [
+        0.05556,
+        0.23232,
+        0.49346,
+        0.30051
+      ],
+      "crop_text": "1 | Wages, tips, other compensation $240,000.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_001",
+      "field": "federal_income_tax_withheld",
+      "doc": "DOC-001",
+      "box": "2",
+      "bbox": [
+        0.50654,
+        0.23232,
+        0.94444,
+        0.30051
+      ],
+      "crop_text": "2 | Federal income tax withheld $42,000.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_001",
+      "field": "social_security_wages",
+      "doc": "DOC-001",
+      "box": "3",
+      "bbox": [
+        0.05556,
+        0.30808,
+        0.49346,
+        0.37626
+      ],
+      "crop_text": "3 | Social security wages $176,100.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_001",
+      "field": "social_security_tax_withheld",
+      "doc": "DOC-001",
+      "box": "4",
+      "bbox": [
+        0.50654,
+        0.30808,
+        0.94444,
+        0.37626
+      ],
+      "crop_text": "4 | Social security tax withheld $10,918.20",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_001",
+      "field": "medicare_wages",
+      "doc": "DOC-001",
+      "box": "5",
+      "bbox": [
+        0.05556,
+        0.38384,
+        0.49346,
+        0.45202
+      ],
+      "crop_text": "5 | Medicare wages and tips $250,000.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_001",
+      "field": "medicare_tax_withheld",
+      "doc": "DOC-001",
+      "box": "6",
+      "bbox": [
+        0.50654,
+        0.38384,
+        0.94444,
+        0.45202
+      ],
+      "crop_text": "6 | Medicare tax withheld $4,075.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_001",
+      "field": "retirement_deferral_D",
+      "doc": "DOC-001",
+      "box": "12 D",
+      "bbox": [
+        0.05556,
+        0.4596,
+        0.49346,
+        0.52778
+      ],
+      "crop_text": "12 D | Elective retirement deferral - code D $10,000.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_001",
+      "field": "retirement_plan",
+      "doc": "DOC-001",
+      "box": "13",
+      "bbox": [
+        0.50654,
+        0.4596,
+        0.94444,
+        0.52778
+      ],
+      "crop_text": "13 | Retirement plan Yes",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_001",
+      "field": "employee_sdi_withheld",
+      "doc": "DOC-001",
+      "box": "14",
+      "bbox": [
+        0.05556,
+        0.57071,
+        0.49346,
+        0.63889
+      ],
+      "crop_text": "14 | CASDI - employee SDI withheld $3,000.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_001",
+      "field": "state",
+      "doc": "DOC-001",
+      "box": "15",
+      "bbox": [
+        0.50654,
+        0.57071,
+        0.94444,
+        0.63889
+      ],
+      "crop_text": "15 | State CA",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_001",
+      "field": "state_wages",
+      "doc": "DOC-001",
+      "box": "16",
+      "bbox": [
+        0.05556,
+        0.64646,
+        0.49346,
+        0.71465
+      ],
+      "crop_text": "16 | State wages, tips, etc. $240,000.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_001",
+      "field": "state_income_tax_withheld",
+      "doc": "DOC-001",
+      "box": "17",
+      "bbox": [
+        0.50654,
+        0.64646,
+        0.94444,
+        0.71465
+      ],
+      "crop_text": "17 | State income tax withheld $16,000.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_002",
+      "field": "interest_income",
+      "doc": "DOC-002",
+      "box": "1",
+      "bbox": [
+        0.05556,
+        0.23232,
+        0.94444,
+        0.28662
+      ],
+      "crop_text": "1 | Interest income $1,250.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_002",
+      "field": "early_withdrawal_penalty",
+      "doc": "DOC-002",
+      "box": "2",
+      "bbox": [
+        0.05556,
+        0.29419,
+        0.94444,
+        0.34848
+      ],
+      "crop_text": "2 | Early withdrawal penalty $0.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_002",
+      "field": "us_savings_bond_interest",
+      "doc": "DOC-002",
+      "box": "3",
+      "bbox": [
+        0.05556,
+        0.35606,
+        0.94444,
+        0.41035
+      ],
+      "crop_text": "3 | Interest on U.S. savings bonds and Treasury obligations $0.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_002",
+      "field": "federal_income_tax_withheld",
+      "doc": "DOC-002",
+      "box": "4",
+      "bbox": [
+        0.05556,
+        0.41793,
+        0.94444,
+        0.47222
+      ],
+      "crop_text": "4 | Federal income tax withheld $300.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_002",
+      "field": "tax_exempt_interest",
+      "doc": "DOC-002",
+      "box": "8",
+      "bbox": [
+        0.05556,
+        0.4798,
+        0.94444,
+        0.53409
+      ],
+      "crop_text": "8 | Tax-exempt interest $0.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_002",
+      "field": "account_number",
+      "doc": "DOC-002",
+      "box": "Account number",
+      "bbox": [
+        0.05556,
+        0.57702,
+        0.49346,
+        0.6452
+      ],
+      "crop_text": "Account number | Account number DEMO-00125",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_002",
+      "field": "corrected",
+      "doc": "DOC-002",
+      "box": "CORRECTED",
+      "bbox": [
+        0.50654,
+        0.57702,
+        0.94444,
+        0.6452
+      ],
+      "crop_text": "CORRECTED | Corrected statement No",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_003",
+      "field": "partner_type",
+      "doc": "DOC-003",
+      "box": "G",
+      "bbox": [
+        0.05556,
+        0.23232,
+        0.49346,
+        0.30051
+      ],
+      "crop_text": "G | Partner type Limited partner",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_003",
+      "field": "domestic_partner",
+      "doc": "DOC-003",
+      "box": "H1",
+      "bbox": [
+        0.50654,
+        0.23232,
+        0.94444,
+        0.30051
+      ],
+      "crop_text": "H1 | Domestic partner Yes",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_003",
+      "field": "entity_type",
+      "doc": "DOC-003",
+      "box": "I1",
+      "bbox": [
+        0.05556,
+        0.30808,
+        0.49346,
+        0.37626
+      ],
+      "crop_text": "I1 | Type of partner entity Individual",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_003",
+      "field": "profit_share_end",
+      "doc": "DOC-003",
+      "box": "J",
+      "bbox": [
+        0.50654,
+        0.30808,
+        0.94444,
+        0.37626
+      ],
+      "crop_text": "J | Profit share at year end 10.00%",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_003",
+      "field": "ordinary_business_income",
+      "doc": "DOC-003",
+      "box": "1",
+      "bbox": [
+        0.05556,
+        0.41919,
+        0.94444,
+        0.47348
+      ],
+      "crop_text": "1 | Ordinary business income (loss) $5,000.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_003",
+      "field": "net_rental_real_estate_income",
+      "doc": "DOC-003",
+      "box": "2",
+      "bbox": [
+        0.05556,
+        0.48106,
+        0.94444,
+        0.53535
+      ],
+      "crop_text": "2 | Net rental real estate income (loss) $0.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_003",
+      "field": "guaranteed_payments_services",
+      "doc": "DOC-003",
+      "box": "4a",
+      "bbox": [
+        0.05556,
+        0.54293,
+        0.94444,
+        0.59722
+      ],
+      "crop_text": "4a | Guaranteed payments for services $0.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_003",
+      "field": "interest_income",
+      "doc": "DOC-003",
+      "box": "5",
+      "bbox": [
+        0.05556,
+        0.6048,
+        0.94444,
+        0.65909
+      ],
+      "crop_text": "5 | Interest income $0.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_003",
+      "field": "net_earnings_self_employment",
+      "doc": "DOC-003",
+      "box": "14 A",
+      "bbox": [
+        0.05556,
+        0.66667,
+        0.94444,
+        0.72096
+      ],
+      "crop_text": "14 A | Net earnings from self-employment - code A $0.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_004",
+      "field": "line_1",
+      "doc": "DOC-004",
+      "box": "1",
+      "bbox": [
+        0.05556,
+        0.23232,
+        0.94444,
+        0.27273
+      ],
+      "crop_text": "1 | Medicare wages and tips from Form W-2, box 5 $250,000.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_004",
+      "field": "line_4",
+      "doc": "DOC-004",
+      "box": "4",
+      "bbox": [
+        0.05556,
+        0.2803,
+        0.94444,
+        0.32071
+      ],
+      "crop_text": "4 | Total Medicare wages and tips $250,000.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_004",
+      "field": "line_5",
+      "doc": "DOC-004",
+      "box": "5",
+      "bbox": [
+        0.05556,
+        0.32828,
+        0.94444,
+        0.36869
+      ],
+      "crop_text": "5 | Threshold for filing status: Single $200,000.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_004",
+      "field": "line_6",
+      "doc": "DOC-004",
+      "box": "6",
+      "bbox": [
+        0.05556,
+        0.37626,
+        0.94444,
+        0.41667
+      ],
+      "crop_text": "6 | Excess Medicare wages over the threshold $50,000.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_004",
+      "field": "line_7",
+      "doc": "DOC-004",
+      "box": "7",
+      "bbox": [
+        0.05556,
+        0.42424,
+        0.94444,
+        0.46465
+      ],
+      "crop_text": "7 | Additional Medicare Tax on wages (0.9%) $450.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_004",
+      "field": "line_18",
+      "doc": "DOC-004",
+      "box": "18",
+      "bbox": [
+        0.05556,
+        0.50758,
+        0.94444,
+        0.54798
+      ],
+      "crop_text": "18 | Total Additional Medicare Tax $450.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_004",
+      "field": "line_19",
+      "doc": "DOC-004",
+      "box": "19",
+      "bbox": [
+        0.05556,
+        0.59091,
+        0.94444,
+        0.63131
+      ],
+      "crop_text": "19 | Medicare tax withheld from Form W-2, box 6 $4,075.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_004",
+      "field": "line_20",
+      "doc": "DOC-004",
+      "box": "20",
+      "bbox": [
+        0.05556,
+        0.63889,
+        0.94444,
+        0.67929
+      ],
+      "crop_text": "20 | Medicare wages and tips from Form W-2, box 5 $250,000.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_004",
+      "field": "line_21",
+      "doc": "DOC-004",
+      "box": "21",
+      "bbox": [
+        0.05556,
+        0.68687,
+        0.94444,
+        0.72727
+      ],
+      "crop_text": "21 | Regular Medicare withholding: line 20 x 1.45% $3,625.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_004",
+      "field": "line_22",
+      "doc": "DOC-004",
+      "box": "22",
+      "bbox": [
+        0.05556,
+        0.73485,
+        0.94444,
+        0.77525
+      ],
+      "crop_text": "22 | Additional Medicare withholding: line 19 minus line 21 $450.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_004",
+      "field": "line_24",
+      "doc": "DOC-004",
+      "box": "24",
+      "bbox": [
+        0.05556,
+        0.78283,
+        0.94444,
+        0.82323
+      ],
+      "crop_text": "24 | Total Additional Medicare Tax withholding $450.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_005",
+      "field": "state",
+      "doc": "DOC-005",
+      "box": "State",
+      "bbox": [
+        0.05556,
+        0.23232,
+        0.49346,
+        0.30051
+      ],
+      "crop_text": "State | State CA",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_005",
+      "field": "program",
+      "doc": "DOC-005",
+      "box": "Program",
+      "bbox": [
+        0.50654,
+        0.23232,
+        0.94444,
+        0.30051
+      ],
+      "crop_text": "Program | Insurance program CA SDI",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_005",
+      "field": "coverage_start",
+      "doc": "DOC-005",
+      "box": "Period start",
+      "bbox": [
+        0.05556,
+        0.30808,
+        0.49346,
+        0.37626
+      ],
+      "crop_text": "Period start | Period start 2025-01-01",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_005",
+      "field": "coverage_end",
+      "doc": "DOC-005",
+      "box": "Period end",
+      "bbox": [
+        0.50654,
+        0.30808,
+        0.94444,
+        0.37626
+      ],
+      "crop_text": "Period end | Period end 2025-12-31",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_005",
+      "field": "sdi_taxable_wages",
+      "doc": "DOC-005",
+      "box": "SDI wages",
+      "bbox": [
+        0.05556,
+        0.41919,
+        0.49346,
+        0.48737
+      ],
+      "crop_text": "SDI wages | Annual wages subject to SDI $250,000.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_005",
+      "field": "employee_sdi_rate",
+      "doc": "DOC-005",
+      "box": "SDI rate",
+      "bbox": [
+        0.50654,
+        0.41919,
+        0.94444,
+        0.48737
+      ],
+      "crop_text": "SDI rate | Employee SDI rate 1.20%",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_005",
+      "field": "employee_sdi_withheld",
+      "doc": "DOC-005",
+      "box": "SDI withheld",
+      "bbox": [
+        0.05556,
+        0.49495,
+        0.49346,
+        0.56313
+      ],
+      "crop_text": "SDI withheld | Employee SDI withheld for the year $3,000.00",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_005",
+      "field": "employee_ui_applicable",
+      "doc": "DOC-005",
+      "box": "Employee UI",
+      "bbox": [
+        0.50654,
+        0.49495,
+        0.94444,
+        0.56313
+      ],
+      "crop_text": "Employee UI | Employee UI withholding applicable No",
+      "value_present": true,
+      "label_present": true
+    },
+    {
+      "task": "extract_doc_005",
+      "field": "payroll_reference",
+      "doc": "DOC-005",
+      "box": "Payroll reference",
+      "bbox": [
+        0.05556,
+        0.60606,
+        0.94444,
+        0.66035
+      ],
+      "crop_text": "Payroll reference | Annual payroll reference PAYROLL-2025-0001",
+      "value_present": true,
+      "label_present": true
+    }
+  ],
+  "checksum_evidence": [
+    {
+      "path": "README.md",
+      "matches": true
+    },
+    {
+      "path": "grade.py",
+      "matches": true
+    },
+    {
+      "path": "ground_truth/documents.json",
+      "matches": true
+    },
+    {
+      "path": "ground_truth/expected.json",
+      "matches": true
+    },
+    {
+      "path": "ground_truth/field_types.json",
+      "matches": true
+    },
+    {
+      "path": "ground_truth/relationships.json",
+      "matches": true
+    },
+    {
+      "path": "inputs/01_w2.pdf",
+      "matches": true
+    },
+    {
+      "path": "inputs/02_1099_int.pdf",
+      "matches": true
+    },
+    {
+      "path": "inputs/03_k1_1065.pdf",
+      "matches": true
+    },
+    {
+      "path": "inputs/04_form_8959.pdf",
+      "matches": true
+    },
+    {
+      "path": "inputs/05_ca_sdi_summary.pdf",
+      "matches": true
+    },
+    {
+      "path": "manifest.json",
+      "matches": true
+    },
+    {
+      "path": "provenance.json",
+      "matches": true
+    },
+    {
+      "path": "tasks.json",
+      "matches": true
+    }
+  ],
+  "reconciliation_bbox_evidence": [
+    {
+      "field": "w2_federal_withheld",
+      "reference": [
+        "DOC-001",
+        1,
+        "2"
+      ],
+      "bbox_matches_verified_pdf_crop": true
+    },
+    {
+      "field": "form1099_federal_withheld",
+      "reference": [
+        "DOC-002",
+        1,
+        "4"
+      ],
+      "bbox_matches_verified_pdf_crop": true
+    },
+    {
+      "field": "additional_medicare_withheld",
+      "reference": [
+        "DOC-004",
+        1,
+        "24"
+      ],
+      "bbox_matches_verified_pdf_crop": true
+    },
+    {
+      "field": "combined_federal_withholding_credit",
+      "reference": [
+        "DOC-001",
+        1,
+        "2"
+      ],
+      "bbox_matches_verified_pdf_crop": true
+    },
+    {
+      "field": "combined_federal_withholding_credit",
+      "reference": [
+        "DOC-002",
+        1,
+        "4"
+      ],
+      "bbox_matches_verified_pdf_crop": true
+    },
+    {
+      "field": "combined_federal_withholding_credit",
+      "reference": [
+        "DOC-004",
+        1,
+        "24"
+      ],
+      "bbox_matches_verified_pdf_crop": true
+    },
+    {
+      "field": "ca_income_tax_withheld",
+      "reference": [
+        "DOC-001",
+        1,
+        "17"
+      ],
+      "bbox_matches_verified_pdf_crop": true
+    },
+    {
+      "field": "unique_employee_sdi_withheld",
+      "reference": [
+        "DOC-001",
+        1,
+        "14"
+      ],
+      "bbox_matches_verified_pdf_crop": true
+    },
+    {
+      "field": "unique_employee_sdi_withheld",
+      "reference": [
+        "DOC-005",
+        1,
+        "SDI withheld"
+      ],
+      "bbox_matches_verified_pdf_crop": true
+    }
+  ],
+  "closing_integrity": {
+    "observed_at": "2026-09-13T12:51:10.834384+00:00",
+    "checks": [
+      {
+        "path": "README.md",
+        "expected_sha256": "e4b0a760685b7995cd3f3ec55ad95ddfaff4376eb27c96f67ec2cad4b1aae9f0",
+        "actual_sha256": "e4b0a760685b7995cd3f3ec55ad95ddfaff4376eb27c96f67ec2cad4b1aae9f0",
+        "matches": true
+      },
+      {
+        "path": "grade.py",
+        "expected_sha256": "fe4fd7990d3f3a569e12083909279c840cfdc62dd8af84ade3a030cf6d006b38",
+        "actual_sha256": "fe4fd7990d3f3a569e12083909279c840cfdc62dd8af84ade3a030cf6d006b38",
+        "matches": true
+      },
+      {
+        "path": "ground_truth/documents.json",
+        "expected_sha256": "ad8c333374876451f8e9db5fd1be9837ee60b5e7acfb176036fedf3d8b62daaf",
+        "actual_sha256": "ad8c333374876451f8e9db5fd1be9837ee60b5e7acfb176036fedf3d8b62daaf",
+        "matches": true
+      },
+      {
+        "path": "ground_truth/expected.json",
+        "expected_sha256": "fcc12531094289b6a619a2821dd9c7fd52cbea2796380bb5f0cd2c053027ce43",
+        "actual_sha256": "fcc12531094289b6a619a2821dd9c7fd52cbea2796380bb5f0cd2c053027ce43",
+        "matches": true
+      },
+      {
+        "path": "ground_truth/field_types.json",
+        "expected_sha256": "1557b7def0c5dd5a5a499199080c1399ae787288bd85b3d6e2f87ce3732d597d",
+        "actual_sha256": "1557b7def0c5dd5a5a499199080c1399ae787288bd85b3d6e2f87ce3732d597d",
+        "matches": true
+      },
+      {
+        "path": "ground_truth/relationships.json",
+        "expected_sha256": "847bff3087d4b72828fa932386a82b1e9c62e8fb5037b0cfed565ae410a7b596",
+        "actual_sha256": "847bff3087d4b72828fa932386a82b1e9c62e8fb5037b0cfed565ae410a7b596",
+        "matches": true
+      },
+      {
+        "path": "inputs/01_w2.pdf",
+        "expected_sha256": "99aacad453112c5340671ca2af94175703ccbbcd0c7f5725894ff4027838160b",
+        "actual_sha256": "99aacad453112c5340671ca2af94175703ccbbcd0c7f5725894ff4027838160b",
+        "matches": true
+      },
+      {
+        "path": "inputs/02_1099_int.pdf",
+        "expected_sha256": "2162250cb39d81bd1f38b5857d0b970c607c5e2464d95da3e5f454fdd1814cc6",
+        "actual_sha256": "2162250cb39d81bd1f38b5857d0b970c607c5e2464d95da3e5f454fdd1814cc6",
+        "matches": true
+      },
+      {
+        "path": "inputs/03_k1_1065.pdf",
+        "expected_sha256": "f1721042ccc48dc6ff625374e51e836ba1878580909616ec28bd277871abf592",
+        "actual_sha256": "f1721042ccc48dc6ff625374e51e836ba1878580909616ec28bd277871abf592",
+        "matches": true
+      },
+      {
+        "path": "inputs/04_form_8959.pdf",
+        "expected_sha256": "b9fb22618022d45a169429ce64a713ea8a6bd2d2ae6ab9cf74f2389e49770c27",
+        "actual_sha256": "b9fb22618022d45a169429ce64a713ea8a6bd2d2ae6ab9cf74f2389e49770c27",
+        "matches": true
+      },
+      {
+        "path": "inputs/05_ca_sdi_summary.pdf",
+        "expected_sha256": "1b922b2a15d0732d353945190ae6b7c3fc21cc8d6fc576cc387a12708e69cdd8",
+        "actual_sha256": "1b922b2a15d0732d353945190ae6b7c3fc21cc8d6fc576cc387a12708e69cdd8",
+        "matches": true
+      },
+      {
+        "path": "manifest.json",
+        "expected_sha256": "5f4e822fe9ca5c3db4afb5f0c1ac93ae442dfe4e609aa1d3131d5ce3dc4c7efe",
+        "actual_sha256": "5f4e822fe9ca5c3db4afb5f0c1ac93ae442dfe4e609aa1d3131d5ce3dc4c7efe",
+        "matches": true
+      },
+      {
+        "path": "provenance.json",
+        "expected_sha256": "5123938a6b1ef8fa6b06730b8aa200845cf4de2a01bc6b37c99316c4d3f58c1e",
+        "actual_sha256": "5123938a6b1ef8fa6b06730b8aa200845cf4de2a01bc6b37c99316c4d3f58c1e",
+        "matches": true
+      },
+      {
+        "path": "tasks.json",
+        "expected_sha256": "bf80cef5606ba6ccf8462504e2cb016c341a53f530d0d0f7b54128da56bc25a7",
+        "actual_sha256": "13d03924a36290a53fb19deab13815af3efa83457518ac6ca9ea1e4533fe0d90",
+        "matches": false
+      }
+    ],
+    "note": "Parent edited tasks.json during audit to clarify canonical evidence. Regenerate checksums when freezing new revision."
+  }
+}

@@ -104,7 +104,7 @@
         "inputs/04_form_8959.pdf",
         "inputs/05_ca_sdi_summary.pdf"
       ],
-      "instruction": "Reconcile this single taxpayer case for 2025. Report federal income tax withheld on W-2, federal income tax withheld on 1099, Additional Medicare withholding from Form 8959, their combined federal withholding credit, CA income tax withheld and unique employee SDI withheld. Do not count tax liability as another payment, regular Medicare as a federal income tax credit, or a payroll-summary copy as an additional SDI deduction. Cite the contributing document boxes; for unique SDI cite both records supporting the same deduction. This task does not request total tax due.",
+      "instruction": "Reconcile this single taxpayer case for 2025. Report federal income tax withheld on W-2, federal income tax withheld on 1099, total Additional Medicare Tax withholding from Form 8959 line 24, their combined federal withholding credit, CA income tax withheld and unique employee SDI withheld. For additional_medicare_withheld, use and cite the total on line 24, not the intermediate amount on line 22, even when the amounts coincide. For combined_federal_withholding_credit, cite W-2 box 2, 1099-INT box 4 and Form 8959 line 24. Do not count tax liability as another payment, regular Medicare as a federal income tax credit, or a payroll-summary copy as an additional SDI deduction. For unique SDI cite both records supporting the same deduction. This task does not request total tax due.",
       "fields": {
         "w2_federal_withheld": "money",
         "form1099_federal_withheld": "money",

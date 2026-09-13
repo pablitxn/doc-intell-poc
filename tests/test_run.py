@@ -18,7 +18,7 @@ class RunEntrypointTests(unittest.TestCase):
         httpx.Client = MagicMock()
         dataset = SimpleNamespace(name="test-dataset")
         log = StringIO()
-        with patch.dict("sys.modules", {"phoenix.client": phoenix, "httpx": httpx}):
+        with patch.dict("sys.modules", {"phoenix.client": phoenix, "httpx": httpx}), patch.object(run, "read_json", return_value={"prompt_root": None}):
             with patch("sys.argv", ["run.py", *arguments]), redirect_stdout(log), redirect_stderr(log):
                 with patch.object(run, "command_harness") as factory, patch.object(run, "run_experiment", return_value=Path("runs/test")) as runner:
                     with patch.object(run, "prepare_dataset", return_value=dataset, side_effect=preflight_error):
@@ -44,6 +44,18 @@ class RunEntrypointTests(unittest.TestCase):
         factory.assert_not_called()
         runner.assert_not_called()
         self.assertEqual(upload.call_args.args[2], Path("runs/test"))
+
+    def test_all_finishes_local_comparison_when_one_publication_fails(self):
+        adapters = [(name, MagicMock(), {}) for name in ('pi', 'tau', 'codex')]
+        with patch.object(run, 'native_adapters', return_value=adapters), \
+             patch.object(run, 'write_comparison', return_value=Path('runs/comparison.json')) as comparison:
+            code, _, runner, upload, log = self.execute(
+                ['--harness', 'all'], upload_error=[ConnectionError(), {'experiment_id':'two'}, {'experiment_id':'three'}])
+        self.assertEqual(code, 1)
+        self.assertEqual(runner.call_count, 3)
+        self.assertEqual(upload.call_count, 3)
+        comparison.assert_called_once()
+        self.assertIn('--upload-only runs/test', log)
 
 
 if __name__ == "__main__":

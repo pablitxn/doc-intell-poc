@@ -24,6 +24,8 @@ def schema_errors(output: object, fields: dict[str, str]) -> list[str]:
     if not isinstance(output, dict):
         return ["output must be an object"]
     errors = []
+    if set(output) != {'values', 'evidence'}:
+        errors.append('output must contain exactly values and evidence')
     for section in ("values", "evidence"):
         if not isinstance(output.get(section), dict):
             errors.append(f"{section} must be an object")

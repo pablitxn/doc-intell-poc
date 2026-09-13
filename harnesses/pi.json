@@ -1,0 +1,11 @@
+{
+  "name": "pi",
+  "version": "0.85.1",
+  "provider": "openai-codex",
+  "model": "gpt-5.6-sol",
+  "thinking": "medium",
+  "command": ["pi", "--print", "--mode", "json", "--no-session", "--no-extensions", "--no-skills", "--provider", "{provider}", "--model", "{model}", "--thinking", "{thinking}"],
+  "output_mode": "pi-jsonl",
+  "telemetry": "events",
+  "auth": "codex-account"
+}

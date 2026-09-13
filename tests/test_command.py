@@ -84,6 +84,33 @@ class CommandHarnessTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "one JSON response"):
             run("task")
 
+    def test_duplicate_object_keys_are_rejected_instead_of_silently_overwritten(self):
+        payloads = (
+            '{"values":{},"values":{"amount":42}}',
+            '{"values":{"amount":1,"amount":42}}',
+            r'{"evidence":{"private-key-sentinel":1,"private-key-sentinel":2}}',
+            r'{"values":{"amount":1,"\u0061mount":42}}',
+        )
+        for payload in payloads:
+            with self.subTest(payload=payload):
+                run = python_harness(f"import sys; sys.stdout.write({payload!r})")
+                with self.assertRaisesRegex(ValueError, "one JSON response") as raised:
+                    run("task")
+                self.assertNotIn("private-key-sentinel", str(raised.exception))
+
+    def test_nonfinite_json_numbers_are_rejected_including_numeric_overflow(self):
+        for number in ("NaN", "Infinity", "-Infinity", "1e999", "-1e999"):
+            with self.subTest(number=number):
+                payload = '{"values":{"amount":' + number + '}}'
+                run = python_harness(f"import sys; sys.stdout.write({payload!r})")
+                with self.assertRaisesRegex(ValueError, "one JSON response"):
+                    run("task")
+
+    def test_same_keys_in_distinct_objects_and_finite_numbers_remain_valid(self):
+        payload = '{"values":[{"amount":1.25},{"amount":-2e3}]}'
+        run = python_harness(f"import sys; sys.stdout.write({payload!r})")
+        self.assertEqual(run("task"), {"values": [{"amount": 1.25}, {"amount": -2000.0}]})
+
     def test_timeout_terminates_harness_and_hides_diagnostics(self):
         run = python_harness(
             "import sys,time; print('private diagnostic', file=sys.stderr, flush=True); time.sleep(5)",

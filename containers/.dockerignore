@@ -1,0 +1,4 @@
+**
+!harnesses.Dockerfile
+!entrypoint.py
+!egress_proxy.py
