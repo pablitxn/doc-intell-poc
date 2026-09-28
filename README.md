@@ -118,3 +118,7 @@ The detailed guides are currently in Spanish.
 | [Operations](docs/OPERACION.md) | Environment setup, score interpretation, troubleshooting, recovery, and tests |
 | [Full dataset guide](docs/FULL_DATASET_READINESS.md) | Source verification and execution examples |
 | [Documentation index](docs/README.md) | Design decisions, audits, and historical evidence |
+
+## License
+
+The project’s original code is licensed under the [MIT License](LICENSE). Third-party components and datasets may carry separate licenses; their own notices apply.
